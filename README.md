@@ -1,3 +1,8 @@
+# Earthly
++Earthly is a web application which dynamically generates visual charts of world ranking in categories children are interested in.
+
+----------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
