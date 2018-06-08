@@ -5,22 +5,26 @@ class EntityInfo extends Component {
   render(){
     var entityName = this.props.entity; //entity name or item name sent from TooltipScreen component
     let renderData = [];
+    let category = this.props.category;
+    let topic = this.props.topic; 
 
-    for(let item of db){
-      if (item.entity === entityName){
-        renderData.push(
-          <div>
-            <h2>Capital: {item.capital}</h2>
-            <h2>Population: {item.population}</h2>
-            <h2>Language: {item.language}</h2>
-            <h2>Greeting: {item.greeting}</h2>
-          </div>
-        );
-      }
+    let subCat = db[category][topic];
+    console.log(subCat);
+
+
+    for(let item of subCat){
+      if(item['entity'] == entityName)
+     for(let prop in item) {
+            console.log(`${prop}: ${item[prop]}`);
+            renderData.push(<li>{prop}: {item[prop]}</li>);
+
+    }
     }
     return (
      <div>
+      <ul>
       {renderData}
+      </ul>
      </div>
    );
  }}

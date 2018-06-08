@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from 'components/App';
+
 // import Map from 'components/Map';
 // import EntityName from 'components/EntityName';
 // import EntityInfo from 'components/EntityInfo';
@@ -18,13 +19,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<EntityInfo />, document.getElementById('EntityInfo'));
 
 let entityName = "Japan";
+let categoryName = "general";
+let topicName = "entity_info";
 // let entityName = "Mount Everest";
 // let entityName = "Empire State";
 
 
 //just for testing TooltipScreen.js
-ReactDOM.render(<TooltipScreen entityName={entityName} />, document.getElementById('tooltip-screen'));
-
+ReactDOM.render(<TooltipScreen entityName={entityName} categoryName = {categoryName} topicName = {topicName}/>, document.getElementById('test'));
 
 
 registerServiceWorker();
