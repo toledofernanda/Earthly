@@ -8,6 +8,7 @@ class Chart extends Component{
     let topic = this.props.topic; //props passed down
     let num = []; //an array to hold the percentage value for chart bars
 
+    // This component calculates percentage value for entities ranked within 10
     for(let topic in db[category]){
       if (topic == this.props.topic){
         let fields = db[category][topic];
