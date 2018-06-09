@@ -8,7 +8,6 @@ import App from 'components/App';
 import TooltipScreen from 'components/TooltipScreen';
 import Chart from 'components/Chart';
 import registerServiceWorker from './registerServiceWorker';
-import RankingBar from './components/RankingBar';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
