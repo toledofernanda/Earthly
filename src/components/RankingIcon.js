@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import icon from 'images/most_dogs.png';
 
 //This component renders icons for a ranking chart bar
 class RankingIcon extends Component{
