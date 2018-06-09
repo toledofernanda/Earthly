@@ -20,6 +20,7 @@ class EntityInfo extends Component {
 
     }
     }
+    
     return (
      <div>
       <ul>
