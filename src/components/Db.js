@@ -2,7 +2,7 @@ export var db = {
   animals: {
     most_dogs: [{
       ranking: 1,
-      entity: "United States",
+      entity_name: "United States",
       entity_type: "country",
       quantity: 75800000,
       label: "quantity",
@@ -11,7 +11,7 @@ export var db = {
       source_url: "http://un.com"
     },{
       ranking: 2,
-      entity: "Brazil",
+      entity_name: "Brazil",
       entity_type: "country",
       quantity: 35700000,
       label: "quantity",
@@ -20,7 +20,7 @@ export var db = {
       source_url: "http://un.com"
     }, {
       ranking: 3,
-      entity: "China",
+      entity_name: "China",
       entity_type: "country",
       quantity: 27400000,
       label: "quantity",
@@ -31,7 +31,7 @@ export var db = {
     ],
     most_camels: [{
       ranking: 1,
-      entity: "Somalia",
+      entity_name: "Somalia",
       entity_type: "country",
       quantity: 7221998,
       label: "quantity",
@@ -40,7 +40,7 @@ export var db = {
       source_url: "http://un.com"
     }, {
       ranking: 2,
-      entity: "Sudan",
+      entity_name: "Sudan",
       entity_type: "country",
       quantity: 4826059,
       label: "quantity",
@@ -49,7 +49,7 @@ export var db = {
       source_url: "http://un.com"
     }, {
       ranking: 3,
-      entity: "Kenya",
+      entity_name: "Kenya",
       entity_type: "country",
       quantity: 3222593,
       unit: "heads",
@@ -60,7 +60,7 @@ export var db = {
   },
   general: {
     entity_info: [{
-      entity:"Japan",
+      entity_name:"Japan",
       entity_type: "country",
       capital: "Tokyo",
       quantity: 128000000,
@@ -71,7 +71,7 @@ export var db = {
       source_name: "UN Data",
       source_url: "http://un.com"
     }, {
-      entity:"Canada",
+      entity_name:"Canada",
       entity_type: "country",
       capital: "Ottawa",
       quantity: 45000000,
@@ -82,7 +82,7 @@ export var db = {
       source_name: "UN Data",
       source_url: "http://un.com"
     }, {
-      entity: "Brazil",
+      entity_name: "Brazil",
       entity_type: "country",
       capital: "Brasilia",
       quantity: 210750000,
@@ -96,7 +96,7 @@ export var db = {
     ],
     smallest_population: [{
       ranking: 1,
-      entity: "Vatican",
+      entity_name: "Vatican",
       quantity: 809,
       label: "number of people",
       unit: "thousand",
@@ -104,7 +104,7 @@ export var db = {
       source_url: "http://un.com"
     }, {
       ranking: 2,
-      entity: "Niue",
+      entity_name: "Niue",
       quantity: 1600,
       label: "number of people",
       unit: "thousand",
@@ -112,7 +112,7 @@ export var db = {
       source_url: "http://un.com"
     }, {
       ranking: 3,
-      entity: "Tuvalu",
+      entity_name: "Tuvalu",
       quantity: 11100,
       label: "number of people",
       unit: "thousand",
