@@ -2,75 +2,122 @@ export var db = {
   animals: {
     most_dogs: [{
       ranking: 1,
-      country: "United States",
+      entity: "United States",
+      entity_type: "country",
       quantity: 75800000,
-      unit: "million"
+      label: "quantity",
+      unit: "million",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     },{
       ranking: 2,
-      country: "Brazil",
+      entity: "Brazil",
+      entity_type: "country",
       quantity: 35700000,
-      unit: "million"
+      label: "quantity",
+      unit: "million",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 3,
-      country: "China",
+      entity: "China",
+      entity_type: "country",
       quantity: 27400000,
-      unit: "million"
+      label: "quantity",
+      unit: "million",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ],
     most_camels: [{
       ranking: 1,
-      country: "Somalia",
+      entity: "Somalia",
+      entity_type: "country",
       quantity: 7221998,
-      unit: "heads"
+      label: "quantity",
+      unit: "heads",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 2,
-      country: "Sudan",
+      entity: "Sudan",
+      entity_type: "country",
       quantity: 4826059,
-      unit: "heads"
+      label: "quantity",
+      unit: "heads",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 3,
-      country: "Kenya",
+      entity: "Kenya",
+      entity_type: "country",
       quantity: 3222593,
-      unit: "heads"
+      unit: "heads",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ]
   },
   general: {
     entity_info: [{
       entity:"Japan",
+      entity_type: "country",
       capital: "Tokyo",
-      population: 128000000,
+      quantity: 128000000,
+      label: "number of people",
+      unit: "million",
       language: "Japanese",
-      greeting: "kon-ni-chiwa"
+      greeting: "kon-ni-chiwa",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       entity:"Canada",
+      entity_type: "country",
       capital: "Ottawa",
-      population: 45000000,
+      quantity: 45000000,
+      label: "number of people",
+      unit: "million",
       language: "English and French",
-      greeting: "Hello / Bon Jour"
+      greeting: "Hello / Bon Jour",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       entity: "Brazil",
+      entity_type: "country",
       capital: "Brasilia",
-      population: 210750000,
+      quantity: 210750000,
+      label: "population",
+      unit: "million",
       language: "Portuguese",
-      greeting: "Olá"
+      greeting: "Olá",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ],
     smallest_population: [{
       ranking: 1,
-      country: "Vatican",
+      entity: "Vatican",
       quantity: 809,
-      unit: "thousand"
+      label: "number of people",
+      unit: "thousand",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 2,
-      country: "Niue",
+      entity: "Niue",
       quantity: 1600,
-      unit: "thousand"
+      label: "number of people",
+      unit: "thousand",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 3,
-      country: "Tuvalu",
+      entity: "Tuvalu",
       quantity: 11100,
-      unit: "thousand"
+      label: "number of people",
+      unit: "thousand",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ]
   }
