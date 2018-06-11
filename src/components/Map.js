@@ -13,7 +13,7 @@ class Map extends Component {
         <iframe
             title={entityName}
             style= {{width: 100 + '%', height: 450 + 'px', border: 0, frameborder: 0}}
-            src={src} allowfullscreen>
+            src={src}>
         </iframe>
       </div>
     );

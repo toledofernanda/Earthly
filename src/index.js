@@ -17,13 +17,26 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 // ReactDOM.render(<EntityInfo />, document.getElementById('EntityInfo'));
 
-let entityName = "Japan";
+//for testing
+// let category = "animals";
+// let topic = "most_camels";
+
+// let category = "general";
+// let topic = "smallest_population";
+
+let category = "general";
+let topic = "entity_info";
+// let entityName = "Japan"; //-> for entityName component!
+
+// let entityName = "Japan";
 // let entityName = "Mount Everest";
-// let entityName = "Empire State";
+let entityName = "Caspian Sea";
 
 
 //just for testing TooltipScreen.js
-ReactDOM.render(<TooltipScreen entityName={entityName} />, document.getElementById('tooltip-screen'));
+ReactDOM.render(
+  <TooltipScreen entityName={entityName} category={category} topic={topic} />,
+  document.getElementById('tooltip-screen'));
 
 
 
