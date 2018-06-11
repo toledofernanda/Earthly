@@ -92,6 +92,24 @@ export var db = {
       greeting: "Olá",
       source_name: "UN Data",
       source_url: "http://un.com"
+      }, {
+        entity_name: "Mount Everest",
+        entity_type: "not_country",
+        location: "Nepal/Tibet",
+        quantity: 29035,
+        label: "height",
+        unit: "ft",
+        source_name: "UN Data",
+        source_url: "http://un.com"
+      }, {
+        entity_name: "Caspian Sea",
+        entity_type: "not_country",
+        location: "Kazakhstan, Russia, Turkmenistan, Azerbaijan, Iran",
+        quantity: 371000,
+        label: "area",
+        unit: "km2",
+        source_name: "UN Data",
+        source_url: "http://un.com"
       }
     ],
     smallest_population: [{
