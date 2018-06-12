@@ -17,6 +17,15 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 // ReactDOM.render(<EntityInfo />, document.getElementById('EntityInfo'));
 
+//for testing ranking RankingBar
+let category = "animals";
+let topic = "most_dogs";
+ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
+
+
+//just for testing TooltipScreen.js
+// ReactDOM.render(<TooltipScreen entityName={entityName} />, document.getElementById('tooltip-screen'));
+=======
 //for testing
 // let category = "animals";
 // let topic = "most_camels";
@@ -37,6 +46,7 @@ let entityName = "Caspian Sea";
 ReactDOM.render(
   <TooltipScreen entityName={entityName} category={category} topic={topic} />,
   document.getElementById('tooltip-screen'));
+
 
 
 
