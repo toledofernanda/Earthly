@@ -10,18 +10,19 @@ class Ranking extends Component{
 		let result = [];
 
 		for (let item of subCat){
-			if(item.hasOwnProperty('ranking') && item.hasOwnProperty('quantity')){ //checks if the property has ranking and number 
+			//show quantity for ranking
+			if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking')){ //checks if the property has ranking and number 
 				result.push(<li>{item['quantity']}</li>)
 				console.log(result);
-			} else if (item.hasOwnProperty('population') && (item['entity'] === entityName)){ 
-		   
-		    result.push(<p>{entityName} has {item['population']} people</p>)
-		    console.log(result)
-		  }
+			//show population for general informatio for each country
+			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('capital')){
+				result.push(<li>{item['quantity']}</li>)
+				console.log(result);
+			}	
 		}
 
 		return(
-			<div className = "ranking_number">
+			<div className = "ranking_quantity">
 
 			
 					{result} 

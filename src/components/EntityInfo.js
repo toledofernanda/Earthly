@@ -13,7 +13,7 @@ class EntityInfo extends Component {
 
 
     for(let item of subCat){
-      if(item['entity'] == entityName)
+      if(item['entity_name'] == entityName)
      for(let prop in item) {
             console.log(`${prop}: ${item[prop]}`);
             renderData.push(<li>{prop}: {item[prop]}</li>);

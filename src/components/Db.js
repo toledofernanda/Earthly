@@ -1,94 +1,141 @@
-
-// export var db= [
-//         {
-//         entity:"Japan",
-//         capital: "Tokyo",
-//         population: 128000000,
-//         language: "Japanese",
-//         greeting: "kon-ni-chiwa"
-//       },
-//       {
-//         entity:"Canada",
-//         capital: "Ottawa",
-//         population: 45000000,
-//         language: "English and French",
-//         greeting: "Hello / Bon Jour"
-//       }
-//   ]
-
 export var db = {
   animals: {
     most_dogs: [{
       ranking: 1,
-      country: "United States",
+      entity_name: "United States",
+      entity_type: "country",
       quantity: 75800000,
-      unit: "million"
+      label: "quantity",
+      unit: "million",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     },{
       ranking: 2,
-      country: "Brazil",
+      entity_name: "Brazil",
+      entity_type: "country",
       quantity: 35700000,
-      unit: "million"
+      label: "quantity",
+      unit: "million",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 3,
-      country: "China",
+      entity_name: "China",
+      entity_type: "country",
       quantity: 27400000,
-      unit: "million"
+      label: "quantity",
+      unit: "million",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ],
     most_camels: [{
       ranking: 1,
-      country: "Somalia",
+      entity_name: "Somalia",
+      entity_type: "country",
       quantity: 7221998,
-      unit: "heads"
+      label: "quantity",
+      unit: "heads",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 2,
-      country: "Sudan",
+      entity_name: "Sudan",
+      entity_type: "country",
       quantity: 4826059,
-      unit: "heads"
+      label: "quantity",
+      unit: "heads",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 3,
-      country: "Kenya",
+      entity_name: "Kenya",
+      entity_type: "country",
       quantity: 3222593,
-      unit: "heads"
+      unit: "heads",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ]
   },
   general: {
     entity_info: [{
-      entity:"Japan",
+      entity_name:"Japan",
+      entity_type: "country",
       capital: "Tokyo",
-      population: 128000000,
+      quantity: 128000000,
+      label: "number of people",
+      unit: "million",
       language: "Japanese",
-      greeting: "kon-ni-chiwa"
+      greeting: "kon-ni-chiwa",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
-      entity:"Canada",
+      entity_name:"Canada",
+      entity_type: "country",
       capital: "Ottawa",
-      population: 45000000,
+      quantity: 45000000,
+      label: "number of people",
+      unit: "million",
       language: "English and French",
-      greeting: "Hello / Bon Jour"
+      greeting: "Hello / Bon Jour",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
-      entity: "Brazil",
+      entity_name: "Brazil",
+      entity_type: "country",
       capital: "Brasilia",
-      population: 210750000,
+      quantity: 210750000,
+      label: "population",
+      unit: "million",
       language: "Portuguese",
-      greeting: "Olá"
+      greeting: "Olá",
+      source_name: "UN Data",
+      source_url: "http://un.com"
+      }, {
+        entity_name: "Mount Everest",
+        entity_type: "not_country",
+        location: "Nepal/Tibet",
+        quantity: 29035,
+        label: "height",
+        unit: "ft",
+        source_name: "UN Data",
+        source_url: "http://un.com"
+      }, {
+        entity_name: "Caspian Sea",
+        entity_type: "not_country",
+        location: "Kazakhstan, Russia, Turkmenistan, Azerbaijan, Iran",
+        quantity: 371000,
+        label: "area",
+        unit: "km2",
+        source_name: "UN Data",
+        source_url: "http://un.com"
       }
     ],
     smallest_population: [{
       ranking: 1,
-      country: "Vatican",
+      entity_name: "Vatican",
       quantity: 809,
-      unit: "thousand"
+      label: "number of people",
+      unit: "thousand",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 2,
-      country: "Niue",
+      entity_name: "Niue",
       quantity: 1600,
-      unit: "thousand"
+      label: "number of people",
+      unit: "thousand",
+      source_name: "UN Data",
+      source_url: "http://un.com"
     }, {
       ranking: 3,
-      country: "Tuvalu",
+      entity_name: "Tuvalu",
       quantity: 11100,
-      unit: "thousand"
+      label: "number of people",
+      unit: "thousand",
+      source_name: "UN Data",
+      source_url: "http://un.com"
       }
     ]
   }
