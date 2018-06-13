@@ -18,9 +18,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 // ReactDOM.render(<EntityInfo />, document.getElementById('EntityInfo'));
 
-let entityName = "Japan";
+let entityName = "Vatican";
 let categoryName = "general";
-let topicName = "entity_info";
+let topicName = "smallest_population";
 // let entityName = "Mount Everest";
 // let entityName = "Empire State";
 
