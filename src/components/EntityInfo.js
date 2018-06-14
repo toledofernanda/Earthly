@@ -7,8 +7,6 @@ class EntityInfo extends Component {
     let topic = this.props.topic; //sent through parent component
     let entityName = this.props.entity; //entity name or item name sent from TooltipScreen component
     let renderData = [];
-    let category = this.props.category;
-    let topic = this.props.topic; 
 
     // get topic object
     let subCat = db[category][topic];
