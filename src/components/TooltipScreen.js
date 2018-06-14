@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Map from 'components/Map';
 import EntityName from 'components/EntityName';
 import EntityInfo from 'components/EntityInfo';
-import Ranking from 'components/Ranking';
-// import './Map.css';
 
 class TooltipScreen extends Component {
   render() {
