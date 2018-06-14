@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from 'components/App';
+
 // import Map from 'components/Map';
 // import EntityName from 'components/EntityName';
 // import EntityInfo from 'components/EntityInfo';
@@ -17,6 +18,10 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<EntityName />, document.getElementById('EntityName'));
 
 // ReactDOM.render(<EntityInfo />, document.getElementById('EntityInfo'));
+
+let entityName = "Vatican";
+let categoryName = "general";
+let topicName = "smallest_population";
 
 //for testing ranking RankingBar
 let category = "animals";
@@ -47,8 +52,6 @@ let entityName = "Mount Everest";
 ReactDOM.render(
   <TooltipScreen entityName={entityName} category={category} topic={topic} />,
   document.getElementById('tooltip-screen'));
-
-
 
 
 registerServiceWorker();
