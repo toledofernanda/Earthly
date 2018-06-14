@@ -139,4 +139,3 @@ export var db = {
       }
     ]
   }
-}

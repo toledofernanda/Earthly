@@ -11,8 +11,7 @@ class TooltipScreen extends Component {
       <div className="tooltip-screen">
         <div className="entity-info">
           <EntityName entity={this.props.entityName} />
-          <Ranking entity = {this.props.entityName} category = {this.props.categoryName} topic = {this.props.topicName}/>          
-          <EntityInfo entity={this.props.entityName} category = {this.props.categoryName} topic = {this.props.topicName}/>
+          <EntityInfo entity={this.props.entityName} category={this.props.category} topic={this.props.topic} />
         </div>
         <div className="entity-map">
           <Map entity={this.props.entityName} />
