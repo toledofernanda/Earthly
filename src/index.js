@@ -5,7 +5,7 @@ import App from 'components/App';
 import Flag from 'components/Flag';
 import registerServiceWorker from './registerServiceWorker';
 
-let country = "Japan"
+let country = "New Zealand"
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<Flag country = {country}/>, document.getElementById('flag'));
