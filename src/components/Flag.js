@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {countryData} from './FlagData';
+import {db} from './Db';
 
 class Flag extends Component{
 	render(){
@@ -40,14 +41,36 @@ class Flag extends Component{
 		 return dataResult;
 		}
 
-		let topic = this.props.country;
+
+		let entityName = this.props.entity;
+		let category = this.props.category;
+    let topic = this.props.topic;
+		let nonCountryPic = this.props.nonCountry;//get a picture that discribes the ranking
+		let subCat = db[category][topic];
+		let isCountry = false;//see if the entity is country or not
+		let myimg; // image to display
+
+		for (let item of subCat){
+			//show quantity for ranking
+			if(item['entity_name'] === entityName){
+				if(item['entity_type'] === "country"){
+					isCountry = true;
+					//console.log("country");
+				} else if(item['entity_type'] === "not_country"){
+					//console.log("not a country");
+					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} />
+				}
+			}
+		}
+
+		//get the country flag if it's country
+		if(isCountry){
 		let countryAbb;
 
 		let country = parseCSV(countryData);
 
-		console.log(country);
 		for (let item of country){
-			if(item['country'] == topic){
+			if(item['country'] == entityName){
       for(let prop in item) {
             console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
@@ -55,7 +78,9 @@ class Flag extends Component{
 			}
 		}
 
-	  let myimg = <img src={require(`images/flags/${countryAbb}.png`)} />;
+	  myimg = <img src={require(`images/flags/${countryAbb}.png`)} />;
+	}
+
 
 		return (
 			<div className = "country_flag">
