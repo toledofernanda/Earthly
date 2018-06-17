@@ -8,6 +8,7 @@ import App from 'components/App';
 import TooltipScreen from 'components/TooltipScreen';
 import Chart from 'components/Chart';
 import registerServiceWorker from './registerServiceWorker';
+import CategoryFilter from 'components/CategoryFilter';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -21,6 +22,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //for testing ranking RankingBar
 let category = "animals";
 let topic = "most_dogs";
+ReactDOM.render(<CategoryFilter category={category} />, document.getElementById('filter'));
 ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
 
 
