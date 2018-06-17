@@ -10,7 +10,7 @@ class TopicFilter extends Component{
 
     for (let topic in db[category]){
       topicList.push(
-        <TopicButton topic={topic} onClick={this.select}/>
+        <TopicButton topic={topic} />
         );
     }
 

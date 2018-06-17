@@ -23,7 +23,7 @@ class TopicButton extends Component{
     };
     let topic = this.props.topic; //props passed down
     return (
-      <div className = "topic-button">
+      <div className = "topic-button"  onClick={this.select}>
           <img src={require(`images/${topic}.png`)}  style = {iconStyle} />
       </div>
    );

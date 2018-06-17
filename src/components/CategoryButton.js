@@ -12,6 +12,7 @@ class CategoryButton extends Component{
     } //above is default event handler found on React doc
   select() {
         console.log(`The category button was clicked.`);
+        console.log('this is:', this);
         this.setState({
           isSelected:true,
         });
@@ -24,7 +25,7 @@ class CategoryButton extends Component{
     }; //just for testing, made icon size larger
     let category = this.props.category; //props passed down
     return (
-      <div className = "category-button">
+      <div className = "category-button"  onClick={this.select}>
           <img src={require(`images/${category}.png`)}  style = {iconStyle} />
           {this.state.isSelected ? 'true' : 'false'} //test
       </div>
