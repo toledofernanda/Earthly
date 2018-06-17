@@ -6,22 +6,27 @@ class CategoryButton extends Component{
   constructor(props){
       super(props);
       this.state = {
-          check:false,
-      };
-      // this.click=this.click.bind(this);
-      this.select = this.setState({
-           check:true,
-         });
-      }
+          isSelected:false,
+        }
+      this.select = this.select.bind(this);
+    } //above is default event handler found on React doc
+  select() {
+        console.log(`The category button was clicked.`);
+        this.setState({
+          isSelected:true,
+        });
+        console.log(this.state);
+  }
   render(){
     let iconStyle = {
       width:100,
       height:100
-    };
+    }; //just for testing, made icon size larger
     let category = this.props.category; //props passed down
     return (
       <div className = "category-button">
           <img src={require(`images/${category}.png`)}  style = {iconStyle} />
+          {this.state.isSelected ? 'true' : 'false'} //test
       </div>
    );
   }

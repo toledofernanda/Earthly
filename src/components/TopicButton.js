@@ -6,13 +6,16 @@ class TopicButton extends Component{
   constructor(props){
       super(props);
       this.state = {
-          check:false,
-      };
-      // this.click=this.click.bind(this);
-      this.select = this.setState({
-           check:true,
-         });
-      }
+          isSelected:false,
+        }
+      this.select = this.select.bind(this);
+    } //above is default event handler found on React doc
+  select() {
+        this.setState({
+          isSelected:true,
+        });
+        console.log(this.state);
+  }
   render(){
     let iconStyle = {
       width:100,
