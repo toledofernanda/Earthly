@@ -20,10 +20,10 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<EntityInfo />, document.getElementById('EntityInfo'));
 
 //for testing ranking RankingBar
-let category = "animals";
-let topic = "most_dogs";
-ReactDOM.render(<CategoryFilter category={category} />, document.getElementById('filter'));
-ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
+// let category = "animals";
+// let topic = "most_dogs";
+ReactDOM.render(<CategoryFilter />, document.getElementById('filter'));
+// ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
 
 
 //just for testing TooltipScreen.js
@@ -46,9 +46,9 @@ let entityName = "Mount Everest";
 
 
 //just for testing TooltipScreen.js
-ReactDOM.render(
-  <TooltipScreen entityName={entityName} category={category} topic={topic} />,
-  document.getElementById('tooltip-screen'));
+// ReactDOM.render(
+//   <TooltipScreen entityName={entityName} category={category} topic={topic} />,
+//   document.getElementById('tooltip-screen'));
 
 
 
