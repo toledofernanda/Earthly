@@ -22,12 +22,16 @@ class TopicButton extends Component{
     };
     let topic = this.props.topic; //props passed down
     return (
+      <div>
         <div className = "topic-button"  onClick={this.select} topic={topic}><img src={require(`images/${topic}.png`)}  style = {iconStyle} /></div>
         {this.state.isSelected ?
-        <Result topic={topic}} /> :
-        null
+          "topic is selected" : null
+        // <Result topic={topic} /> :
+        // null
+      }
+    </div>
    );
-  }
+}
 }
 
 export default TopicButton;
