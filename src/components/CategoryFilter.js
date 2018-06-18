@@ -10,8 +10,9 @@ class CategoryFilter extends Component{
 
     for (let category in db){
       categoryList.push(
-        <CategoryButton category={category}/>
+        <CategoryButton key={category} category={category}/>
         );
+        console.log(category);
     }
 
   return (

@@ -6,16 +6,13 @@ import TopicButton from 'components/TopicButton';
 class TopicFilter extends Component{
   render(){
     let category = this.props.category; //props passed down from CategoryFilter
-    let isSelected = this.state.isSelected;
     let topicList = [];
 
     //Issue: isSelected value is not used effectively yet
     for (let topic in db[category]){
-      if ( isSelected == 'true'){
         topicList.push(
           <TopicButton topic={topic} />
           );
-      }
     }
 
   return (

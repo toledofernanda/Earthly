@@ -11,28 +11,55 @@ class CategoryButton extends Component{
       this.select = this.select.bind(this);
     } //above is default event handler found on React doc
   select() {
-        console.log(`The category button was clicked.`);
-        console.log('this is:', this);
+        // console.log(`The category button was clicked.`);
+        // console.log('this is:', this);
         this.setState({
           isSelected:true,
         });
-        console.log(this.state);
-
   }
-  render(){
+
+  render() {
     let iconStyle = {
       width:100,
       height:100
     }; //just for testing, made icon size larger
     let category = this.props.category; //props passed down
+      return (
+        <div>
+          <div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>
+          {this.state.isSelected ?
+             <TopicFilter category={category} /> :
+             null
+          }
+        </div>
+      );
+    }
 
-    return (
-      <div className = "category-button"  onClick={this.select} category={category} isSelected={this.state.isSelected}>
-          <img src={require(`images/${category}.png`)}  style = {iconStyle} />
-          {this.state.isSelected ? 'true' : 'false'} //test
-      </div>
-   );
-  }
+  //
+  //
+  // render(){
+  //   const isSelected = this.state.isSelected;
+  //   let iconStyle = {
+  //     width:100,
+  //     height:100
+  //   }; //just for testing, made icon size larger
+  //   let category = this.props.category; //props passed down
+  //   let renderData;
+  //
+  //   if (isSelected == true) {
+  //     renderData = <TopicFilter category={category} />;
+  //   } else {
+  //     console.log(category);
+  //     renderData = <div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>;
+  //   }
+  //   return (
+  //     <div>
+  //       <CategoryButton />
+  //       {renderData}
+  //     </div>
+  //   );
+  // }
 }
+
 
 export default CategoryButton;
