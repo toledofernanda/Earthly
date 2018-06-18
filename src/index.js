@@ -9,6 +9,7 @@ import App from 'components/App';
 import TooltipScreen from 'components/TooltipScreen';
 import Chart from 'components/Chart';
 import registerServiceWorker from './registerServiceWorker';
+import CategoryFilter from 'components/CategoryFilter';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -24,9 +25,10 @@ let categoryName = "general";
 let topicName = "smallest_population";
 
 //for testing ranking RankingBar
-let category = "animals";
-let topic = "most_dogs";
-ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
+// let category = "animals";
+// let topic = "most_dogs";
+ReactDOM.render(<CategoryFilter />, document.getElementById('filter'));
+// ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
 
 
 //just for testing TooltipScreen.js
@@ -49,9 +51,9 @@ ReactDOM.render(<Chart category={category} topic={topic} />, document.getElement
 
 
 //just for testing TooltipScreen.js
-ReactDOM.render(
-  <TooltipScreen entityName={entityName} category={category} topic={topic} />,
-  document.getElementById('tooltip-screen'));
+// ReactDOM.render(
+//   <TooltipScreen entityName={entityName} category={category} topic={topic} />,
+//   document.getElementById('tooltip-screen'));
 
 
 registerServiceWorker();
