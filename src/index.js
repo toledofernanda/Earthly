@@ -7,8 +7,9 @@ import App from 'components/App';
 // import EntityName from 'components/EntityName';
 // import EntityInfo from 'components/EntityInfo';
 // import TooltipScreen from 'components/TooltipScreen';
-import Chart from 'components/Chart';
-import RankingEntity from 'components/RankingEntity';
+// import Chart from 'components/Chart';
+// import RankingEntity from 'components/RankingEntity';
+import Result from 'components/Result';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -30,14 +31,17 @@ let topic = "most_dogs";
 // let topic = "entity_info";
 // let entityName = "Brazil";
 
-ReactDOM.render(
-  <RankingEntity category={category} topic={topic} />,
-  document.getElementById('ranking-entity'));
+// ReactDOM.render(
+//   <RankingEntity category={category} topic={topic} />,
+//   document.getElementById('ranking-entity'));
 
 //for testing ranking RankingBar
 // let category = "animals";
 // let topic = "most_dogs";
-ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
+// ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
+
+//TEST RESULT
+ReactDOM.render(<Result category={category} topic={topic} />, document.getElementById('result'));
 
 
 // let category = "general";
