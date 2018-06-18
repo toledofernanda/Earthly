@@ -44,7 +44,7 @@ ReactDOM.render(<Chart category={category} topic={topic} />, document.getElement
 // let entityName = "Japan"; //-> for entityName component!
 
 // let entityName = "Japan";
-let entityName = "Mount Everest";
+//let entityName = "Mount Everest";
 // let entityName = "Caspian Sea";
 
 
