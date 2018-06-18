@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Map from 'components/Map';
 import EntityName from 'components/EntityName';
 import EntityInfo from 'components/EntityInfo';
-// import './Map.css';
 
 class TooltipScreen extends Component {
   render() {
