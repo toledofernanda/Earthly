@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import Map from 'components/Map';
 import EntityName from 'components/EntityName';
 import EntityInfo from 'components/EntityInfo';
-// import './Map.css';
 
 class TooltipScreen extends Component {
   render() {
     return (
       <div className="tooltip-screen">
         <div className="entity-info">
-          <EntityName entity={this.props.entityName} />
-          <EntityInfo entity={this.props.entityName} category={this.props.category} topic={this.props.topic} />
+          <EntityName {...this.props} />
+          <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
         </div>
         <div className="entity-map">
           <Map entity={this.props.entityName} />
