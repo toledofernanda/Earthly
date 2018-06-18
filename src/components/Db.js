@@ -60,38 +60,60 @@ export var db = {
   },
   general: {
     entity_info: [{
-      entity_name:"Japan",
-      entity_type: "country",
-      capital: "Tokyo",
-      quantity: 128000000,
-      label: "number of people",
-      unit: "million",
-      language: "Japanese",
-      greeting: "kon-ni-chiwa",
-      source_name: "UN Data",
-      source_url: "http://un.com"
-    }, {
-      entity_name:"Canada",
-      entity_type: "country",
-      capital: "Ottawa",
-      quantity: 45000000,
-      label: "number of people",
-      unit: "million",
-      language: "English and French",
-      greeting: "Hello / Bon Jour",
-      source_name: "UN Data",
-      source_url: "http://un.com"
-    }, {
-      entity_name: "Brazil",
-      entity_type: "country",
-      capital: "Brasilia",
-      quantity: 210750000,
-      label: "population",
-      unit: "million",
-      language: "Portuguese",
-      greeting: "Olá",
-      source_name: "UN Data",
-      source_url: "http://un.com"
+        entity_name:"Japan",
+        entity_type: "country",
+        capital: "Tokyo",
+        quantity: 128000000,
+        label: "number of people",
+        unit: "million",
+        language: "Japanese",
+        greeting: "kon-ni-chiwa",
+        source_name: "UN Data",
+        source_url: "http://un.com"
+      }, {
+        entity_name:"Canada",
+        entity_type: "country",
+        capital: "Ottawa",
+        quantity: 45000000,
+        label: "number of people",
+        unit: "million",
+        language: "English and French",
+        greeting: "Hello / Bon Jour",
+        source_name: "UN Data",
+        source_url: "http://un.com"
+      }, {
+        entity_name: "Brazil",
+        entity_type: "country",
+        capital: "Brasilia",
+        quantity: 210750000,
+        label: "population",
+        unit: "million",
+        language: "Portuguese",
+        greeting: "Olá",
+        source_name: "UN Data",
+        source_url: "http://un.com"
+      }, {
+        entity_name: "United States",
+        entity_type: "country",
+        capital: "Washington, D.C.",
+        quantity: 325700000,
+        label: "population",
+        unit: "million",
+        language: "English",
+        greeting: "Hello",
+        source_name: "UN Data",
+        source_url: "http://un.com"
+      }, {
+        entity_name: "China",
+        entity_type: "country",
+        capital: "Beijing",
+        quantity: 1379000000,
+        label: "population",
+        unit: "million",
+        language: "Chinese",
+        greeting: "nǐ hǎo",
+        source_name: "UN Data",
+        source_url: "http://un.com"
       }, {
         entity_name: "Mount Everest",
         entity_type: "not_country",
