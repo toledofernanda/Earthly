@@ -5,16 +5,15 @@ class EntityInfo extends Component {
   render(){
     let category = this.props.category; //sent through parent component
     let topic = this.props.topic; //sent through parent component
-    let entityName = this.props.entity; //entity name or item name sent from TooltipScreen component
+    let entityName = this.props.entityName; //entity name or item name sent from TooltipScreen component
     let renderData = [];
 
     // get topic object
     let subCat = db[category][topic];
-
     if (topic === "entity_info") { //if is entity_info topic, just print info about certain entity
       for (let propObj of subCat) { //each prop inside topic array
         if (propObj["entity_name"] === entityName) { //just print info about entity selected
-          if (propObj["entity_type"] === "country") { //if is a country
+            if (propObj["entity_type"] === "country") { //if is a country
             renderData.push(
                 <div className="entity-info country" key="entity-info">
                   <ul>
@@ -43,8 +42,8 @@ class EntityInfo extends Component {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-    function numberWithCommas(x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    function numberWithCommas(number) {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     return (
