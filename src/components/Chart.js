@@ -10,7 +10,7 @@ class Chart extends Component{
 
     // This component calculates percentage value for entities ranked within 10
     for(let topic in db[category]){
-      if (topic == this.props.topic){
+      if (topic === this.props.topic){
         let fields = db[category][topic];
         num.push(100); //No.1 is always 100%
 

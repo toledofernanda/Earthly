@@ -42,44 +42,42 @@ class Flag extends Component{
 		}
 
 
-		let entityName = this.props.entity;
+		let entityName = this.props.entityName;
 		let category = this.props.category;
     let topic = this.props.topic;
-		let nonCountryPic = this.props.nonCountry;//get a picture that discribes the ranking
-		let subCat = db[category][topic];
+		let nonCountryPic = "mountain";//get a picture that discribes the ranking
+		let subCat = db[category][topic]; //always general and topic to check if is a country
 		let isCountry = false;//see if the entity is country or not
 		let myimg; // image to display
 
 		for (let item of subCat){
-			//show quantity for ranking
+			//check if is a country
 			if(item['entity_name'] === entityName){
 				if(item['entity_type'] === "country"){
 					isCountry = true;
-					//console.log("country");
+					// console.log("country");
 				} else if(item['entity_type'] === "not_country"){
-					//console.log("not a country");
-					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} />
+					// console.log("not a country");
+					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} alt={nonCountryPic} />
 				}
 			}
 		}
 
 		//get the country flag if it's country
 		if(isCountry){
-		let countryAbb;
+			let countryAbb;
 
-		let country = parseCSV(countryData);
+			let country = parseCSV(countryData);
 
-		for (let item of country){
-			if(item['country'] == entityName){
-      for(let prop in item) {
-            console.log(item["countryCode"].toLowerCase());
+			for (let item of country){
+				if(item['country'] === entityName){
+            // console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
-    }
+				}
 			}
-		}
 
-	  myimg = <img src={require(`images/flags/${countryAbb}.png`)} />;
-	}
+		  myimg = <img src={require(`images/flags/${countryAbb}.png`)} alt={countryAbb} />;
+		}
 
 
 		return (
