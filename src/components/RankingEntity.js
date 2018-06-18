@@ -5,7 +5,7 @@ import EntityName from 'components/EntityName';
 import TooltipScreen from 'components/TooltipScreen';
 import RankingNumber from 'components/RankingNumber';
 
-class RankingEntity extends Component{
+class RankingEntity extends Component {
   render(){
     let category = this.props.category; //props passed down
     let topic = this.props.topic; //props passed down
@@ -18,7 +18,7 @@ class RankingEntity extends Component{
       entityName = entity["entity_name"]; //get entityName to get info
 
       entities.push(
-        <div className="ranking-entity">
+        <div className="ranking-entity" key={entityName} >
           <div className="entity-flag-name">
             <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
             <EntityName entityName={entityName} />
@@ -30,7 +30,7 @@ class RankingEntity extends Component{
     }
 
     return (
-      <div className="ranking-entities">
+      <div className="ranking-entities" key="ranking-entities">
           {entities}
       </div>
     )
