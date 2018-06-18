@@ -14,7 +14,6 @@ class TopicButton extends Component{
         this.setState({
           isSelected:true,
         });
-        console.log(this.state);
   }
   render(){
     let iconStyle = {
@@ -23,9 +22,10 @@ class TopicButton extends Component{
     };
     let topic = this.props.topic; //props passed down
     return (
-      <div className = "topic-button"  onClick={this.select}>
-          <img src={require(`images/${topic}.png`)}  style = {iconStyle} />
-      </div>
+        <div className = "topic-button"  onClick={this.select} topic={topic}><img src={require(`images/${topic}.png`)}  style = {iconStyle} /></div>
+        {this.state.isSelected ?
+        <Result topic={topic}} /> :
+        null
    );
   }
 }
