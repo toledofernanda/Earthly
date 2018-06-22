@@ -9,7 +9,6 @@ import Donation from 'components/Donation';
 import About from 'components/About';
 import Contact from 'components/Contact';
 import Footer from 'components/Footer';
-import Home from 'components/Home';
 
 
 class App extends Component {
@@ -28,7 +27,7 @@ class App extends Component {
            <Route path="/about" component={About}/>
            <Route path="/contact" component={Contact}/>
            <Redirect to="/"/>
-</Switch>
+        </Switch>
        </div>
 
        <Footer />
