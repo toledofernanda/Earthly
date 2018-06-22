@@ -25,7 +25,7 @@ class Chart extends Component{
     }
 
     return (
-      <div className="chart">
+      <div className="chart" key="chart">
         <RankingBar barLength={num[0]} topic={topic}/>
         <RankingBar barLength={num[1]} topic={topic} />
         <RankingBar barLength={num[2]} topic={topic} />

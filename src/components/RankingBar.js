@@ -8,7 +8,7 @@ class RankingBar extends Component{
     let iconCount = parseInt(this.props.barLength / 5); //supposing No.1 = 100% is 20 icons
 
     return (
-      <div className="ranking-bar">
+      <div className="ranking-bar" key="ranking-bar">
         <RankingIcon iconCount={iconCount} {...this.props}/>
       </div>
     )

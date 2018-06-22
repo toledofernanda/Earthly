@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
-import { db } from './Db';
+import { Link } from "react-router-dom";
 import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
 
 class Result extends Component {
+
+  constructor(props){
+      super(props);
+      // let category = props.match.params.catName;//← here
+      this.state = {
+          category: props.match.params,
+          topic: props.match.params.topName //get clicked category name
+        }
+      // console.log("match obj", props.match)
+      // console.log("props obj", this.props.category)
+  } //above is default event handler found on React doc
+
   render(){
+    // console.log("props obj", this.props.category)
     let category = this.props.category;
-    let topic = this.props.topic;
+    let topic = this.state.topic;
     let renderData = [];
+
+    // console.log("result cat", category)
 
     renderData.push(
       <div className="result" key="result">
@@ -23,6 +38,7 @@ class Result extends Component {
     )
 
     function capitalizeAllLetters(string) {
+      // console.log("string", string)
       var splitString = string.toLowerCase().split('_');
       //loop through each string
       for (var i = 0; i < splitString.length; i++) {
@@ -35,6 +51,7 @@ class Result extends Component {
 
     return (
       <div>
+        <Link to={`/`}>Categories</Link> / <Link to={`/${category}`}>{capitalizeAllLetters(category)}</Link> / {capitalizeAllLetters(topic)}
         {renderData}
       </div>
     )
