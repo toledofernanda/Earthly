@@ -17,6 +17,9 @@ class CategoryButton extends Component{
           isSelected:true,
         });
   }
+  // if (this.state.setState === true){
+  //
+  // }
 
   render() {
     let iconStyle = {
@@ -25,40 +28,14 @@ class CategoryButton extends Component{
     }; //just for testing, made icon size larger
     let category = this.props.category; //props passed down
       return (
-        <div>
-          <div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>
+        <div id="category-main">
           {this.state.isSelected ?
-             <TopicFilter category={category} /> :
-             null
+            (<TopicFilter category={category} />) :
+            (<div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>)
           }
         </div>
       );
     }
-
-  //
-  //
-  // render(){
-  //   const isSelected = this.state.isSelected;
-  //   let iconStyle = {
-  //     width:100,
-  //     height:100
-  //   }; //just for testing, made icon size larger
-  //   let category = this.props.category; //props passed down
-  //   let renderData;
-  //
-  //   if (isSelected == true) {
-  //     renderData = <TopicFilter category={category} />;
-  //   } else {
-  //     console.log(category);
-  //     renderData = <div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>;
-  //   }
-  //   return (
-  //     <div>
-  //       <CategoryButton />
-  //       {renderData}
-  //     </div>
-  //   );
-  // }
 }
 
 

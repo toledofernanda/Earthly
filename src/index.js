@@ -31,14 +31,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<CategoryFilter />, document.getElementById('filter'));
 // ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
 
-ReactDOM.render(
-  <RankingEntity category={category} topic={topic} />,
-  document.getElementById('ranking-entity'));
-
-//for testing ranking RankingBar
-// let category = "animals";
-// let topic = "most_dogs";
-ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
+// ReactDOM.render(
+//   <RankingEntity category={category} topic={topic} />,
+//   document.getElementById('ranking-entity'));
+//
+// //for testing ranking RankingBar
+// // let category = "animals";
+// // let topic = "most_dogs";
+// ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
 
 
 // let category = "general";
