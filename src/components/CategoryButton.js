@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import TopicFilter from 'components/TopicFilter';
+import { Link } from 'react-router-dom'; //first npm install react-render-dom
+
 
 //This component displays a category in primary categories
 class CategoryButton extends Component{
-  constructor(props){
-      super(props);
-      this.state = {
-          isSelected:false,
-        }
-      this.select = this.select.bind(this);
-    } //above is default event handler found on React doc
-  select() {
-        // console.log(`The category button was clicked.`);
-        // console.log('this is:', this);
-        this.setState({
-          isSelected:true,
-        });
-  }
-  // if (this.state.setState === true){
-  //
+  // constructor(props){
+  //     super(props);
+  //     this.state = {
+  //         isSelected: this.props.state,
+  //       }
+  //     this.select = this.select.bind(this);
+  // } //above is default event handler found on React doc
+
+  // select() {
+  //   // console.log(`The category button was clicked.`);
+  //   // console.log('this is:', this);
+  //   this.setState({
+  //     isSelected:true,
+  //   });
   // }
 
   render() {
@@ -26,16 +26,47 @@ class CategoryButton extends Component{
       width:100,
       height:100
     }; //just for testing, made icon size larger
+
     let category = this.props.category; //props passed down
-      return (
-        <div id="category-main">
-          {this.state.isSelected ?
-            (<TopicFilter category={category} />) :
-            (<div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>)
-          }
-        </div>
-      );
-    }
+// console.log("cate but" + " " + `/category/${category}` );
+    return (
+      <div>
+
+        {/*if category is selected, show topics related*/}
+         <div className="category-button"  onClick={(e) => this.props.select(e, category)} category={category}>
+           <Link to={`/${category}`}>
+              <img src={require(`images/${category}.png`)} alt={category} style = {iconStyle} />
+           </Link>
+           <span>{category}</span>
+         </div>
+      </div>
+    );
+  }
+
+  //
+  //
+  // render(){
+  //   const isSelected = this.state.isSelected;
+  //   let iconStyle = {
+  //     width:100,
+  //     height:100
+  //   }; //just for testing, made icon size larger
+  //   let category = this.props.category; //props passed down
+  //   let renderData;
+  //
+  //   if (isSelected == true) {
+  //     renderData = <TopicFilter category={category} />;
+  //   } else {
+  //     console.log(category);
+  //     renderData = <div className="category-button"  onClick={this.select} category={category}><img src={require(`images/${category}.png`)}  style = {iconStyle} /></div>;
+  //   }
+  //   return (
+  //     <div>
+  //       <CategoryButton />
+  //       {renderData}
+  //     </div>
+  //   );
+  // }
 }
 
 

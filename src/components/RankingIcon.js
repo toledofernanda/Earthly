@@ -13,7 +13,7 @@ class RankingIcon extends Component{
     }
 
     return (
-      <div className="ranking-icon">
+      <div className="ranking-icon" key="ranking-icon">
         {renderData}
       </div>
     )
