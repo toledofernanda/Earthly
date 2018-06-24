@@ -13,7 +13,6 @@ import { BrowserRouter } from "react-router-dom";
 // import Result from 'components/Result';
 import CategoryFilter from 'components/CategoryFilter';
 import registerServiceWorker from './registerServiceWorker';
-import CategoryFilter from 'components/CategoryFilter';
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
