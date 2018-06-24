@@ -4,7 +4,7 @@ import { db } from './Db';
 import TopicButton from 'components/TopicButton';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Result from 'components/Result';
-
+import StepTitle from 'components/StepTitle';
 
 //This component displays a list of secondary categories (topics)
 class TopicFilter extends Component{
@@ -47,6 +47,29 @@ class TopicFilter extends Component{
   }
 
   render(){
+    let divStyle = {
+      height: '100%',
+      display: 'flex',
+      flexFlow: 'row wrap',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'white',
+      borderRadius: 30,
+      border: '1px solid black',
+      width: 768,
+      padding: '0 150px',
+      boxSizing: 'border-box'
+    };
+    let outerDiv = {
+      margin: 'auto',
+      width: '1024',
+      height: '70vh',
+      display: 'flex',
+      justifyContent: 'center'
+    };
+    let catStyle = {
+      flex: '0 0 33.33%'
+    }
     // console.log("insde top filter");
     let category = this.state.category;
     // let category = this.props.category; //props passed down from CategoryFilter
@@ -55,7 +78,7 @@ class TopicFilter extends Component{
     //Issue: isSelected value is not used effectively yet
     for (let topic in db[category]){
         topicList.push(
-          <div key={`${topic}-button`}>
+          <div key={`${topic}-button`} style={catStyle}>
             <TopicButton category={category} topic={topic} select={this.select} />
           </div>
         );
@@ -73,12 +96,12 @@ class TopicFilter extends Component{
     }
 
     return (
-      <div key="topic-filter">
+      <div key="topic-filter" style = {outerDiv}>
         {this.state.isSelected ?
           <Route path={`/${category}/:topName`} render={(props) => (
           <Result {...props} category={category}/>)}/>
         :
-          <div className="topic-list">
+          <div className="topic-list" style={divStyle}>
             <Link to={`/`}>Categories</Link> / <Link to={`/${category}`}>{capitalizeAllLetters(category)}</Link>
             {topicList}
           </div>

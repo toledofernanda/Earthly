@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Result from 'components/Result';
 import { Link } from "react-router-dom";
-
+import FilterButtonText from 'components/FilterButtonText';
 
 //This component displays a secondary category(topics)
 class TopicButton extends Component{
@@ -24,21 +24,27 @@ class TopicButton extends Component{
   //       });
   // }
   render(){
-    let iconStyle = {
-      width:100,
-      height:100
+    let buttonStyle = {
+      flex: '0 0 33.33%',
+      textAlign: 'center'
     };
+    let buttonIcon = {
+      width: 100,
+      height: 'auto',
+      borderRadius: 20
+    }
 
     let category = this.props.category; //props passed down
     let topic = this.props.topic; //props passed down
 
     return (
-      <div>
+      <div style = {buttonStyle}>
 
         <div className = "topic-button"  onClick={this.props.select} topic={topic}>
           <Link to={`/${category}/${topic}`}>
-            <img src={require(`images/${topic}.png`)}  alt={topic} style = {iconStyle} />
+            <img src={require(`images/${topic}.png`)}  alt={topic}  style={buttonIcon} />
           </Link>
+            <FilterButtonText topic={topic}/>
         </div>
 
     </div>

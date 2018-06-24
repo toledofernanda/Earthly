@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopicFilter from 'components/TopicFilter';
 import { Link } from 'react-router-dom'; //first npm install react-render-dom
+import FilterButtonText from 'components/FilterButtonText';
 
 
 //This component displays a category in primary categories
@@ -22,22 +23,26 @@ class CategoryButton extends Component{
   // }
 
   render() {
-    let iconStyle = {
-      width:100,
-      height:100
-    }; //just for testing, made icon size larger
-
+    let buttonStyle = {
+      flex: '0 0 33.33%',
+      textAlign: 'center'
+    };
+    let buttonIcon = {
+      width: 100,
+      height: 'auto',
+      borderRadius: 20
+    }
+    let name = "stepOne"
     let category = this.props.category; //props passed down
 // console.log("cate but" + " " + `/category/${category}` );
     return (
-      <div>
-
+      <div style = {buttonStyle}>
         {/*if category is selected, show topics related*/}
          <div className="category-button"  onClick={(e) => this.props.select(e, category)} category={category}>
            <Link to={`/${category}`}>
-              <img src={require(`images/${category}.png`)} alt={category} style = {iconStyle} />
+              <img src={require(`images/${category}.png`)} alt={category}  style={buttonIcon} />
            </Link>
-           <span>{category}</span>
+             <FilterButtonText name = {name} category={category}/>
          </div>
       </div>
     );
