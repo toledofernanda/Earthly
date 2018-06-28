@@ -4,14 +4,26 @@ import RankingBar from 'components/RankingBar';
 
 class Chart extends Component{
   render(){
+
+    /* CSS */
+    let chart = {
+      backgroundColor: 'white',
+      padding: '20px',
+      borderRadius: '0px 30px 30px 0px',
+    }
+
+    /* JS */
     let category = this.props.category; //props passed down
     let topic = this.props.topic; //props passed down
     let num = []; //an array to hold the percentage value for chart bars
+    let entityNames = []; //array to store each entity name
 
     // This component calculates percentage value for entities ranked within 10
     for(let topic in db[category]){
       if (topic === this.props.topic){
         let fields = db[category][topic];
+
+        //get quantity of each entity
         num.push(100); //No.1 is always 100%
 
         let base = fields[0].quantity; //quantity of No.1
@@ -21,21 +33,26 @@ class Chart extends Component{
           percent = percent.toFixed(2)*100;
           num.push(percent); //calculated percent value is pushed to the array
         }
+
+        //get entity names
+        for (let i = 0; i < fields.length; i++) {
+          entityNames.push(fields[i].entity_name);
+        }
       }
     }
 
     return (
-      <div className="chart" key="chart">
-        <RankingBar barLength={num[0]} topic={topic}/>
-        <RankingBar barLength={num[1]} topic={topic} />
-        <RankingBar barLength={num[2]} topic={topic} />
-        <RankingBar barLength={num[3]} topic={topic}/>
-        <RankingBar barLength={num[4]} topic={topic} />
-        <RankingBar barLength={num[5]} topic={topic} />
-        <RankingBar barLength={num[6]} topic={topic} />
-        <RankingBar barLength={num[7]} topic={topic} />
-        <RankingBar barLength={num[8]} topic={topic} />
-        <RankingBar barLength={num[9]} topic={topic} />
+      <div className="chart" key="chart" style={chart}>
+        <RankingBar barLength={num[0]} topic={topic} category={category} entityName={entityNames[0]} />
+        <RankingBar barLength={num[1]} topic={topic} category={category} entityName={entityNames[1]} />
+        <RankingBar barLength={num[2]} topic={topic} category={category} entityName={entityNames[2]} />
+        <RankingBar barLength={num[3]} topic={topic} category={category} entityName={entityNames[3]}/>
+        <RankingBar barLength={num[4]} topic={topic} category={category} entityName={entityNames[4]} />
+        <RankingBar barLength={num[5]} topic={topic} category={category} entityName={entityNames[5]} />
+        <RankingBar barLength={num[6]} topic={topic} category={category} entityName={entityNames[6]} />
+        <RankingBar barLength={num[7]} topic={topic} category={category} entityName={entityNames[7]} />
+        <RankingBar barLength={num[8]} topic={topic} category={category} entityName={entityNames[8]} />
+        <RankingBar barLength={num[9]} topic={topic} category={category} entityName={entityNames[9]} />
       </div>
     )
   }

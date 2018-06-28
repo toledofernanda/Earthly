@@ -4,6 +4,14 @@ import {db} from './Db';
 
 class Flag extends Component{
 	render(){
+
+		/* CSS */
+		let flag = {
+			maxWidth: '80px',
+			borderRadius: '5px'
+		}
+
+		/* JS */
 		function parseCSV(data) {
 
 		 let records = data.split('\n'); //create array based on each line
@@ -76,7 +84,7 @@ class Flag extends Component{
 				}
 			}
 
-		  myimg = <img src={require(`images/flags/${countryAbb}.png`)} alt={countryAbb} />;
+		  myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} />;
 		}
 
 

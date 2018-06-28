@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
+import Breadcrumb from 'components/Breadcrumb';
 
 class Result extends Component {
 
@@ -17,6 +17,24 @@ class Result extends Component {
   } //above is default event handler found on React doc
 
   render(){
+
+    /* CSS */
+    let rankingInfo = {
+      maxWidth: '1024px',
+      margin: 'auto',
+      backgroundColor: 'lightgrey',
+      borderRadius: 30,
+      border: '1px solid darkgrey',
+      display: 'flex',
+      flexFlow: 'row nowrap',
+      position: 'relative'
+    };
+
+    let topicInfo = {
+      textAlign: 'center'
+    }
+
+    /* JS */
     // console.log("props obj", this.props.category)
     let category = this.props.category;
     let topic = this.state.topic;
@@ -26,11 +44,10 @@ class Result extends Component {
 
     renderData.push(
       <div className="result" key="result">
-        <div className="category-info">
-          <h1>{capitalizeAllLetters(category)}</h1>
+        <div className="topic-info" style={topicInfo}>
           <h2>{capitalizeAllLetters(topic)}</h2>
         </div>
-        <div className="ranking-info">
+        <div className="ranking-info" style={rankingInfo}>
           <RankingEntity category={category} topic={topic} />
           <Chart category={category} topic={topic} />
         </div>
@@ -51,7 +68,7 @@ class Result extends Component {
 
     return (
       <div>
-        <Link to={`/`}>Categories</Link> / <Link to={`/${category}`}>{capitalizeAllLetters(category)}</Link> / {capitalizeAllLetters(topic)}
+        <Breadcrumb component={'result'} category={category} topic={topic} />
         {renderData}
       </div>
     )

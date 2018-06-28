@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import { db } from './Db';
 import RankingIcon from 'components/RankingIcon';
+import RankingNumber from 'components/RankingNumber';
+
 
 // This component calculate the number of icons to be displayed for each bar
 class RankingBar extends Component{
@@ -10,6 +12,7 @@ class RankingBar extends Component{
     return (
       <div className="ranking-bar" key="ranking-bar">
         <RankingIcon iconCount={iconCount} {...this.props}/>
+        <RankingNumber {...this.props} />
       </div>
     )
   }
