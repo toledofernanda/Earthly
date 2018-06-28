@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Result from 'components/Result';
 import { Link } from "react-router-dom";
 import FilterButtonText from 'components/FilterButtonText';
 
@@ -41,7 +40,7 @@ class TopicButton extends Component{
       <div style = {buttonStyle}>
 
         <div className = "topic-button"  onClick={this.props.select} topic={topic}>
-          <Link to={`/${category}/${topic}`}>
+          <Link to={`/category/${category}/${topic}`}>
             <img src={require(`images/${topic}.png`)}  alt={topic}  style={buttonIcon} />
           </Link>
             <FilterButtonText topic={topic}/>

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import { db } from './Db';
 import TopicButton from 'components/TopicButton';
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Result from 'components/Result';
 import StepTitle from 'components/StepTitle';
+import Breadcrumb from 'components/Breadcrumb';
+
 
 //This component displays a list of secondary categories (topics)
 class TopicFilter extends Component{
@@ -84,25 +85,26 @@ class TopicFilter extends Component{
         );
     }
 
-    function capitalizeAllLetters(string) {
-      var splitString = string.toLowerCase().split('_');
-      //loop through each string
-      for (var i = 0; i < splitString.length; i++) {
-       // assign it back to the array after capitalized
-       splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
-      }
-      // join all strings into an unique string and return it
-      return splitString.join(' ');
-    }
+    // function capitalizeAllLetters(string) {
+    //   var splitString = string.toLowerCase().split('_');
+    //   //loop through each string
+    //   for (var i = 0; i < splitString.length; i++) {
+    //    // assign it back to the array after capitalized
+    //    splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
+    //   }
+    //   // join all strings into an unique string and return it
+    //   return splitString.join(' ');
+    // }
 
     return (
-      <div key="topic-filter" style = {outerDiv}>
+      <div className="topic-filter" key="topic-filter" style = {outerDiv}>
         {this.state.isSelected ?
-          <Route path={`/${category}/:topName`} render={(props) => (
+          <Route path={`/category/${category}/:topName`} render={(props) => (
           <Result {...props} category={category}/>)}/>
         :
           <div className="topic-list" style={divStyle}>
-            <Link to={`/`}>Categories</Link> / <Link to={`/${category}`}>{capitalizeAllLetters(category)}</Link>
+            <Breadcrumb component={'topic'} category={category} />
+            <StepTitle />
             {topicList}
           </div>
         }

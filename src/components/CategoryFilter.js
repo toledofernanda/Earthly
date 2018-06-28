@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { db } from './Db';
 import CategoryButton from 'components/CategoryButton';
-import { Link } from 'react-router-dom'; //first npm install react-render-dom
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import TopicFilter from 'components/TopicFilter';
 import StepTitle from 'components/StepTitle';
 
@@ -42,12 +41,11 @@ class CategoryFilter extends Component{
       isSelected: !prevState.isSelected
     }));
     // this.category = cat;
-
-
-    console.log('cat new state', this.state.isSelected);
+    // console.log('cat new state', this.state.isSelected);
     // console.log('this.category', this.category);
     // this.lastState =this.state.isSelected;
   }
+
   render(){
     let divStyle = {
       height: '100%',
@@ -64,7 +62,7 @@ class CategoryFilter extends Component{
     };
     let outerDiv = {
       margin: 'auto',
-      width: '1024',
+      width: '1024px',
       height: '70vh',
       display: 'flex',
       justifyContent: 'center'
@@ -85,9 +83,9 @@ class CategoryFilter extends Component{
     }
 
     return (
-      <div key="category-filter" style = {outerDiv}>
+      <div className="category-filter" key="category-filter" style = {outerDiv}>
         {this.state.isSelected ?
-          <Route path={`/:catName`} component={TopicFilter} />
+          <Route path={`/category/:catName`} component={TopicFilter} />
         :
           <div className="category-list" style={divStyle}>
             <StepTitle />

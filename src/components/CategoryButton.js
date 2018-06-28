@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import TopicFilter from 'components/TopicFilter';
 import { Link } from 'react-router-dom'; //first npm install react-render-dom
 import FilterButtonText from 'components/FilterButtonText';
-
 
 //This component displays a category in primary categories
 class CategoryButton extends Component{
@@ -39,7 +37,7 @@ class CategoryButton extends Component{
       <div style = {buttonStyle}>
         {/*if category is selected, show topics related*/}
          <div className="category-button"  onClick={(e) => this.props.select(e, category)} category={category}>
-           <Link to={`/${category}`}>
+           <Link to={`/category/${category}`}>
               <img src={require(`images/${category}.png`)} alt={category}  style={buttonIcon} />
            </Link>
              <FilterButtonText name = {name} category={category}/>
