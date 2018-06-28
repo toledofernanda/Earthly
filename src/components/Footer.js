@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'; //first npm install react-render-dom
-import About from 'components/About';
-import Contact from 'components/Contact';
 
 class Footer extends Component{
   render(){
