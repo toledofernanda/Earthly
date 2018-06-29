@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from 'components/App';
+import { BrowserRouter } from "react-router-dom";
 
 // import Map from 'components/Map';
 // import EntityName from 'components/EntityName';
@@ -9,10 +10,11 @@ import App from 'components/App';
 // import TooltipScreen from 'components/TooltipScreen';
 // import Chart from 'components/Chart';
 // import RankingEntity from 'components/RankingEntity';
-import Result from 'components/Result';
+// import Result from 'components/Result';
+import CategoryFilter from 'components/CategoryFilter';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
 //just for testing Map.js
 // ReactDOM.render(<Map />, document.getElementById('map'));
@@ -24,9 +26,12 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //just for testing TooltipScreen.js
 // ReactDOM.render(<TooltipScreen entityName={entityName} />, document.getElementById('tooltip-screen'));
 
+// ReactDOM.render(<CategoryFilter />, document.getElementById('filter'));
+
+
 //for testing RANKING ENTITY
-let category = "animals";
-let topic = "most_dogs";
+// let category = "animals";
+// let topic = "most_dogs";
 // let category = "general";
 // let topic = "entity_info";
 // let entityName = "Brazil";
@@ -41,7 +46,7 @@ let topic = "most_dogs";
 // ReactDOM.render(<Chart category={category} topic={topic} />, document.getElementById('ranking'));
 
 //TEST RESULT
-ReactDOM.render(<Result category={category} topic={topic} />, document.getElementById('result'));
+// ReactDOM.render(<Result category={category} topic={topic} />, document.getElementById('result'));
 
 
 // let category = "general";
@@ -55,7 +60,6 @@ ReactDOM.render(<Result category={category} topic={topic} />, document.getElemen
 // let entityName = "Japan";
 // let entityName = "Mount Everest";
 // let entityName = "Caspian Sea";
-
 
 // //just for testing TooltipScreen.js
 // ReactDOM.render(

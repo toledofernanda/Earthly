@@ -3,6 +3,20 @@ import { db } from './Db';
 
 class EntityInfo extends Component {
   render(){
+
+    /* CSS */
+    let infoUl = {
+      margin: '0',
+      padding: '0',
+    }
+
+    let infoLi = {
+      listStyleType: 'none',
+      fontSize: '.8em',
+      margin: '5px 0'
+    }
+
+    /* JS */
     let category = this.props.category; //sent through parent component
     let topic = this.props.topic; //sent through parent component
     let entityName = this.props.entityName; //entity name or item name sent from TooltipScreen component
@@ -15,21 +29,21 @@ class EntityInfo extends Component {
         if (propObj["entity_name"] === entityName) { //just print info about entity selected
             if (propObj["entity_type"] === "country") { //if is a country
             renderData.push(
-                <div className="entity-info country" key="entity-info">
-                  <ul>
-                    <li><b>Capital: </b>{propObj["capital"]}</li>
-                    <li><b>Population: </b>{numberWithCommas(propObj["quantity"])} {propObj["unit"]}</li>
-                    <li><b>Language: </b>{propObj["language"]}</li>
-                    <li><b>Greeting: </b>{propObj["greeting"]}</li>
+                <div className="entity-info country" key="entity-info" >
+                  <ul style={infoUl}>
+                    <li style={infoLi} ><b>Capital: </b>{propObj["capital"]}</li>
+                    <li style={infoLi}><b>Population: </b>{numberWithCommas(propObj["quantity"])}</li>
+                    <li style={infoLi}><b>Language: </b>{propObj["language"]}</li>
+                    <li style={infoLi}><b>Greeting: </b>{propObj["greeting"]}</li>
                   </ul>
                 </div>
             );
           } else { //if is not a country
             renderData.push(
               <div className="entity-info not-country" key="entity-info">
-                <ul>
-                  <li><b>Location: </b>{propObj["location"]}</li>
-                  <li><b>{capitalizeFirstLetter(propObj["label"])}: </b>{numberWithCommas(propObj["quantity"])} {propObj["unit"]}</li>
+                <ul style={infoUl}>
+                  <li style={infoLi}><b>Location: </b>{propObj["location"]}</li>
+                  <li style={infoLi}><b>{capitalizeFirstLetter(propObj["label"])}: </b>{numberWithCommas(propObj["quantity"])} {propObj["unit"]}</li>
                 </ul>
               </div>
             );
@@ -47,7 +61,7 @@ class EntityInfo extends Component {
     }
 
     return (
-     <div>
+     <div className="entitiesInfo">
         {renderData}
      </div>
    );
