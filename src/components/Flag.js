@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
 import {countryData} from './FlagData';
 import {db} from './Db';
+import TooltipScreen from 'components/TooltipScreen';
+
 
 class Flag extends Component{
+	constructor(props) {
+		super(props);
+
+		this.toggleTooltip = this.toggleTooltip.bind(this);
+
+		this.state = {
+			tooltipOpen: false
+		};
+	}
+
+	toggleTooltip() {
+		console.log("clicked flag");
+		this.setState({
+			tooltipOpen: !this.state.tooltipOpen
+		});
+		console.log("tooltipOpen");
+	}
+
 	render(){
 
 		/* CSS */
@@ -87,16 +107,30 @@ class Flag extends Component{
 		  myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} />;
 		}
 
+		if(this.state.tooltipOpen) {
+			console.log('is open');
+			return (
+				<div className="flag-tooltip">
+					<div className = "country_flag" onClick={this.toggleTooltip}>
+				  	{myimg}
+					</div>
+					<div className="tooltip">
+						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} />
+					</div>
+				</div>
+			 );
+		} else {
+			console.log('not open');
 
-		return (
-			<div className = "country_flag">
-		  	{myimg}
-			</div>
-		  	);
-
+			return (
+				<div className="flag-tooltip">
+					<div className = "country_flag" onClick={this.toggleTooltip}>
+				  	{myimg}
+					</div>
+				</div>
+			 );
+		}
 	}
-
-
 }
 
 export default Flag;

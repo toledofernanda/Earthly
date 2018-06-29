@@ -2,20 +2,22 @@ import React, { Component } from 'react';
 import Map from 'components/Map';
 import EntityName from 'components/EntityName';
 import EntityInfo from 'components/EntityInfo';
+import Flag from 'components/Flag';
 
 class TooltipScreen extends Component {
   render() {
 
     /* CSS */
     let tooltip = {
+      width: '40vw',
       maxWidth: '600px',
       position: 'absolute',
-      left: '130px',
-      top: '30px',
+      left: '110px',
+      top: '10px',
       zIndex: '2',
       backgroundColor: 'white',
       padding: '10px 20px 20px 20px',
-      borderRadius: 20,
+      borderRadius: '0 20px 20px 20px',
       border: '1px solid darkgrey',
     }
 
@@ -25,7 +27,8 @@ class TooltipScreen extends Component {
     }
 
     let entityInfo  = {
-      flex: '1 0 40%'
+      flex: '1 0 40%',
+      minWidth: '150px'
     }
 
     let entityMap = {
@@ -51,7 +54,7 @@ class TooltipScreen extends Component {
     return (
       <div className="tooltip-screen" style={tooltip}>
         <div className="close-button">
-          <button id="close-tooltip" style={closeButton} onClick={this.handleClick}>x</button>
+          <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
         </div>
         <div className="info-map" style={infoMap}>
           <div className="entity-info" style={entityInfo}>

@@ -2,23 +2,8 @@ import React, { Component } from 'react';
 import { db } from './Db';
 import Flag from 'components/Flag';
 import EntityName from 'components/EntityName';
-import TooltipScreen from 'components/TooltipScreen';
 
 class RankingEntity extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggleTooltip = this.toggleTooltip.bind(this);
-    this.state = {
-      tooltipOpen: false
-    };
-  }
-
-  toggleTooltip() {
-    this.setState({
-      tooltipOpen: !this.state.tooltipOpen
-    });
-  }
 
   render(){
 
@@ -30,7 +15,8 @@ class RankingEntity extends Component {
       alignItems: 'center',
       boxSizing: 'border-box',
       height: '90px',
-      width: '95px'
+      width: '95px',
+      position: 'relative'
     }
 
     let rankingEntities = {
@@ -53,33 +39,17 @@ class RankingEntity extends Component {
     for (let entity of subCat) {
       entityName = entity["entity_name"]; //get entityName to get info
 
-      if(this.state.tooltipOpen) {
-        entities.push(
-          <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order">
-              <span style={orderStyle} >{order}</span>
-            </div>
-            <div className="entity-flag-name" onClick={this.toggleTooltip}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
-              <EntityName entityName={entityName} parent={'ranking-entity'} />
-            </div>
-            <TooltipScreen entityName={entityName} category={"general"} topic={"entity_info"} />
+      entities.push(
+        <div className="ranking-entity" key={entityName} style={rankingEntity}>
+          <div className="order">
+            <span style={orderStyle} >{order}</span>
           </div>
-        )
-      } else {
-        entities.push(
-          <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order">
-              <span style={orderStyle} >{order}</span>
-            </div>
-            <div className="entity-flag-name" onClick={this.toggleTooltip}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
-              <EntityName entityName={entityName} parent={'ranking-entity'} />
-            </div>
+          <div className="entity-flag-name">
+            <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+            <EntityName entityName={entityName} parent={'ranking-entity'} />
           </div>
-        )
-      }
-
+        </div>
+      )
 
       order++;
     }
