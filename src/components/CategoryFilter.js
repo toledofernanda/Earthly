@@ -19,12 +19,12 @@ class CategoryFilter extends Component{
         }
       this.select = this.select.bind(this);
 
-      console.log("cat state", this.state.isSelected);
+      // console.log("cat state", this.state.isSelected);
 
   } //above is default event handler found on React doc
 
   select(e, cat) {
-    console.log(`The category button was clicked.`);
+    // console.log(`The category button was clicked.`);
     // console.log('this is:', this);
      e.preventDefault();
     // this.setState({
@@ -62,7 +62,7 @@ class CategoryFilter extends Component{
     };
     let outerDiv = {
       margin: 'auto',
-      width: '1024px',
+      // width: '1024px',
       height: '70vh',
       display: 'flex',
       justifyContent: 'center'
