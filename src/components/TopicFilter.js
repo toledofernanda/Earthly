@@ -4,7 +4,6 @@ import TopicButton from 'components/TopicButton';
 import { Route } from "react-router-dom";
 import Result from 'components/Result';
 import StepTitle from 'components/StepTitle';
-import Breadcrumb from 'components/Breadcrumb';
 
 
 //This component displays a list of secondary categories (topics)
@@ -29,13 +28,13 @@ class TopicFilter extends Component{
         }
       this.select = this.select.bind(this);
 
-      console.log("topic state", this.state.isSelected);
+      // console.log("topic state", this.state.isSelected);
 
       // console.log("category obj", this.state.category)
   } //above is default event handler found on React doc
 
   select() {
-    console.log(`The topic button was clicked.`);
+    // console.log(`The topic button was clicked.`);
     // console.log('this is:', this);
     // this.setState({
     //   isSelected: true,
@@ -44,11 +43,13 @@ class TopicFilter extends Component{
       isSelected: !prevState.isSelected
     }));
 
-  console.log('topic new state', this.state.isSelected);
+  // console.log('topic new state', this.state.isSelected);
   }
 
   render(){
     let divStyle = {
+      width: '1024px',
+      margin: 'auto',
       height: '100%',
       display: 'flex',
       flexFlow: 'row wrap',
@@ -62,8 +63,7 @@ class TopicFilter extends Component{
       boxSizing: 'border-box'
     };
     let outerDiv = {
-      margin: 'auto',
-      width: '1024',
+      width: '100%',
       height: '70vh',
       display: 'flex',
       justifyContent: 'center'
@@ -103,7 +103,6 @@ class TopicFilter extends Component{
           <Result {...props} category={category}/>)}/>
         :
           <div className="topic-list" style={divStyle}>
-            <Breadcrumb component={'topic'} category={category} />
             <StepTitle />
             {topicList}
           </div>

@@ -27,11 +27,14 @@ class Result extends Component {
       border: '1px solid darkgrey',
       display: 'flex',
       flexFlow: 'row nowrap',
-      position: 'relative'
     };
 
     let topicInfo = {
       textAlign: 'center'
+    }
+
+    let result = {
+      width: '100%'
     }
 
     /* JS */
@@ -43,7 +46,7 @@ class Result extends Component {
     // console.log("result cat", category)
 
     renderData.push(
-      <div className="result" key="result">
+      <div className="result-chart" key="result-chart">
         <div className="topic-info" style={topicInfo}>
           <h2>{capitalizeAllLetters(topic)}</h2>
         </div>
@@ -67,8 +70,8 @@ class Result extends Component {
     }
 
     return (
-      <div>
-        <Breadcrumb component={'result'} category={category} topic={topic} />
+      <div className="result" style={result}>
+        <Breadcrumb category={category} topic={topic} />
         {renderData}
       </div>
     )

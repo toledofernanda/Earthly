@@ -6,14 +6,12 @@ class Breadcrumb extends Component {
 
     /* CSS */
     let breadcrumb = {
-      backgroundColor: '#19A9E1',
+      backgroundColor: 'rgba(25,169,225,0.7)',
       padding: '10px',
-      fontSize: '0.9em'
+      fontSize: '0.7em'
     }
 
     /* JS */
-    let component = this.props.component;
-
     function capitalizeAllLetters(string) {
       // console.log("string", string)
       var splitString = string.toLowerCase().split('_');
@@ -26,21 +24,14 @@ class Breadcrumb extends Component {
       return splitString.join(' ');
     }
 
-    console.log("bread", this.props.category);
+    // console.log("bread", this.props.category);
 
-    if(component === 'topic') {
-      return (
-        <div className="breadcrumb" style={breadcrumb}>
-          <Link to={`/category`}>Categories</Link> / <Link to={`/category/${this.props.category}`}>{capitalizeAllLetters(this.props.category)}</Link>
-        </div>
-      );
-    } else {
-      return (
-        <div className="breadcrumb" style={breadcrumb}>
-          <Link to={`/category`}>Categories</Link> / <Link to={`/category/${this.props.category}`}>{capitalizeAllLetters(this.props.category)}</Link> / {capitalizeAllLetters(this.props.topic)}
-        </div>
-      );
-    }
+    return (
+      <div className="breadcrumb" style={breadcrumb}>
+        <Link to={`/category`}>Categories</Link> / <Link to={`/category/${this.props.category}`}>{capitalizeAllLetters(this.props.category)}</Link>
+      </div>
+    );
+
   }
 }
 
