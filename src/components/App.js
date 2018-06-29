@@ -14,15 +14,36 @@ class App extends Component {
   render() {
 
     /* CSS */
-    let bg = require('images/seigaiha.png'); //waves bg
+    let bg = require('images/background.png'); //waves bg
+
+    let app = {
+      minHeight: '100%',
+      // display: 'grid',
+      // gridTemplateRows: '70px 1fr 50px'
+      display: 'flex',
+      flexFlow: 'column',
+      // justifyContent: 'space-between'
+      alignItems: 'stretch'
+    }
+
+    let header = {
+      flex: '0 0 70px'
+    }
 
     let mainBg = {
       backgroundImage: `url(${bg})`,
+      flex: '1 0 auto',
+    }
+
+    let footer = {
+      flex: '0 0 50px',
     }
 
     return (
-      <div className="app">
-        <Header />
+      <div className="app" style={app}>
+        <div className="header" style={header}>
+          <Header />
+        </div>
 
        <div className="content" style={mainBg}>
         <Switch>
@@ -36,8 +57,10 @@ class App extends Component {
         </Switch>
        </div>
 
-       <Footer />
-      </div>
+       <div className="footer" style={footer}>
+          <Footer />
+       </div>
+    </div>
 
     );
   }
