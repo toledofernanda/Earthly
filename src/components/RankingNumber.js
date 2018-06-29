@@ -3,6 +3,13 @@ import { db } from './Db';
 
 class Ranking extends Component{
 	render(){
+
+		/* CSS */
+		let rankingNum = {
+			fontSize: '.7em'
+		}
+
+		/* JS */
 		let entityName = this.props.entityName;
 		let category = this.props.category;
     let topic = this.props.topic;
@@ -21,10 +28,8 @@ class Ranking extends Component{
     }
 
 		return(
-			<div className = "ranking_quantity">
-				<p>
+			<div className = "ranking_quantity" style={rankingNum}>
 					{result}
-				</p>
 			</div>
 		)
 	}
