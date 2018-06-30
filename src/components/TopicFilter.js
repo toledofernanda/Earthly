@@ -18,7 +18,7 @@ class TopicFilter extends Component{
 //   this.state = {
 //     instructors: [],
 //   };
-// }
+// } 
   constructor(props){
       super(props);
       // let category = props.match.params.catName;//← here

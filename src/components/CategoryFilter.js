@@ -62,7 +62,7 @@ class CategoryFilter extends Component{
       margin: '5%',
       marginBottom: 0,
       boxSizing: 'border-box'
-    }; //style for the inside div of main component
+    };  //style for the inside div of main component
     let outerDiv = {
       margin: 'auto',
       display: 'flex',
