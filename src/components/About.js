@@ -9,7 +9,7 @@ const memberBox = {
   alignItems:'center',
   padding: '10px',
   marginBottom:'60px',
-  width:'19%',
+  width:'20%',
   flex: '0 0 15%',
   backgroundColor: '#4AB85C'
 },
@@ -22,7 +22,7 @@ const memberBox = {
   alignItems:'center',
   padding: '10px',
   marginBottom:'60px',
-  width:'19%',
+  width:'20%',
   flex: '0 0 15%',
   backgroundColor: '#F05027'
 },
@@ -35,7 +35,7 @@ const memberBox = {
     alignItems:'center',
     padding: '10px',
     marginBottom:'60px',
-    width:'19%',
+    width:'20%',
       flex: '0 0 15%',
     backgroundColor: '#19A9E1'
   },
@@ -48,7 +48,7 @@ const memberBox = {
     alignItems:'center',
     padding: '10px',
     marginBottom:'60px',
-    width:'19%',
+    width:'20%',
     flex: '0 0 15%',
     backgroundColor: '#00B8A6'
   },
@@ -61,7 +61,7 @@ const memberBox = {
     alignItems:'center',
     padding: '10px',
     marginBottom:'60px',
-    width:'19%',
+    width:'20%',
     flex: '0 0 15%',
     backgroundColor: '#152D53'
   },

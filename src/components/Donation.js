@@ -22,6 +22,7 @@ class Donation extends Component{
           <h1 style={{marginTop: '100px'}}>Donations</h1>
           <p style={{fontSize:'20px'}}>Your donation helps us to keep Earthly free for student use.<br />
             Help inspire student learning by donating today.</p>
+          <h4>Please choose an amount to donate for us!</h4>
         </div>
           <div className = "donate" style = {{display:'flex', justifyContent:'space-around'}}>
 
