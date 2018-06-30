@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 class Home extends Component {
   render() {
+
+    /* CSS */
     let main = {
       margin: 'auto',
-      width: '1024px',
       height: '70vh',
       textAlign: 'center',
       display: 'flex',
@@ -19,8 +20,9 @@ class Home extends Component {
       backgroundColor: 'orange',
       borderRadius: 10,
       padding: '20px',
-      fontSize: '1.9em',
-      cursor: 'pointer'
+      fontSize: '1.7em',
+      cursor: 'pointer',
+      marginTop: '19px'
     }
 
     return (
