@@ -18,7 +18,7 @@ class TopicFilter extends Component{
 //   this.state = {
 //     instructors: [],
 //   };
-// }
+// } 
   constructor(props){
       super(props);
       // let category = props.match.params.catName;//← here
@@ -59,12 +59,14 @@ class TopicFilter extends Component{
       borderRadius: 30,
       border: '1px solid black',
       padding: '7% 20%',
+      margin: '5%',
+      marginBottom: 0,
       boxSizing: 'border-box'
     }; //style for the inside div of main component
     let outerDiv = {
+      width: '100%',
       margin: 'auto',
       display: 'flex',
-      padding: '4%',
       justifyContent: 'center'
     }; //style for the outside div of main component
     let catStyle = {
