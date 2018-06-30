@@ -11,3 +11,14 @@ html, body, #root {
 a, a:visited {
   list-style-type: none;
 }
+
+.StripeCheckout {
+  background-color: pink !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.StripeCheckout span {
+  background-image: none !important;
+  background-color: #F05027;
+}
