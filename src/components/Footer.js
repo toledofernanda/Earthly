@@ -6,10 +6,10 @@ const footerDes = {
   display:'flex',
   justifyContent:'center',
   backgroundColor: '#152D53',
-  marginBottom: '0',
+  margin: '0',
   listStyleType:'none',
   height:'40px',
-  paddingTop:'10px'
+  paddingTop:'20px'
 }
 
 class Footer extends Component{
