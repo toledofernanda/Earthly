@@ -86,7 +86,7 @@ class Flag extends Component{
 					// console.log("country");
 				} else if(item['entity_type'] === "not_country"){
 					// console.log("not a country");
-					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} alt={nonCountryPic} />
+					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} style={flag} alt={nonCountryPic} />
 				}
 			}
 		}
