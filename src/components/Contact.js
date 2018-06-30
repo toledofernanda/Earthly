@@ -28,11 +28,14 @@ const comment = {
 }
 
 const submitButton = {
-  with: '70px',
+  with: '100px',
   alignSelf: 'center',
   backgroundColor: '#F05027',
   border: 'none',
-  borderRadius: 7
+  borderRadius: 7,
+  width: '80px',
+  height: '25px',
+  color:'white'
 
 }
 
