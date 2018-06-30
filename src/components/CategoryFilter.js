@@ -48,7 +48,9 @@ class CategoryFilter extends Component{
 
   render(){
     let divStyle = {
+      maxWidth: '1024px',
       height: '100%',
+      minHeight: '50vh',
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
@@ -56,21 +58,21 @@ class CategoryFilter extends Component{
       backgroundColor: 'white',
       borderRadius: 30,
       border: '1px solid black',
-      width: 768,
-      padding: '0 150px',
+      padding: '7% 20%',
       boxSizing: 'border-box'
-    };
+    }; //style for the inside div of main component
     let outerDiv = {
       margin: 'auto',
-      // width: '1024px',
-      height: '70vh',
       display: 'flex',
+      padding: '4%',
       justifyContent: 'center'
-    };
+    }; //style for the outside div of main component
     let catStyle = {
       flex: '0 0 33.33%'
     }
     let categoryList = [];
+    let title = "step1";
+    console.log(title);
 
     for (let category in db){
       categoryList.push(
@@ -88,7 +90,7 @@ class CategoryFilter extends Component{
           <Route path={`/category/:catName`} component={TopicFilter} />
         :
           <div className="category-list" style={divStyle}>
-            <StepTitle />
+            <StepTitle title={title}  />
             {categoryList}
           </div>
         }

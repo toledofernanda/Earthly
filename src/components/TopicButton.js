@@ -25,7 +25,8 @@ class TopicButton extends Component{
   render(){
     let buttonStyle = {
       flex: '0 0 33.33%',
-      textAlign: 'center'
+      textAlign: 'center',
+      margin: '10px'
     };
     let buttonIcon = {
       width: 100,
