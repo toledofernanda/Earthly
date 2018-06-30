@@ -6,6 +6,8 @@ class Breadcrumb extends Component {
 
     /* CSS */
     let breadcrumb = {
+      position: 'fixed',
+      width: '100%',
       backgroundColor: 'rgba(25,169,225,0.7)',
       padding: '10px',
       fontSize: '0.7em'
