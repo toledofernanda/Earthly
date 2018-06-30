@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CategoryButton from 'components/CategoryButton';
 //This component displays a category in primary categories
 class FilterButtonText extends Component{
   constructor(props){
@@ -13,12 +12,15 @@ class FilterButtonText extends Component{
     };
     let category = this.props.category;
     let topic = this.props.topic;
+    let dbtext = "";
     let text = "";
 
     if (this.props.name == "stepOne"){
-      text = `${category}`;
+      dbtext = `${category}`;
+      text = dbtext.toUpperCase();
     }else {
-      text = `${topic}`;
+      dbtext = `${topic}`;
+      text = dbtext.toUpperCase();
   }
     return (
       <p style={catTextStyle}>

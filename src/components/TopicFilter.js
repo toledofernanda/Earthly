@@ -48,9 +48,9 @@ class TopicFilter extends Component{
 
   render(){
     let divStyle = {
-      width: '1024px',
-      margin: 'auto',
+      maxWidth: '1024px',
       height: '100%',
+      minHeight: '50vh',
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
@@ -58,16 +58,15 @@ class TopicFilter extends Component{
       backgroundColor: 'white',
       borderRadius: 30,
       border: '1px solid black',
-      width: 768,
-      padding: '0 150px',
+      padding: '7% 20%',
       boxSizing: 'border-box'
-    };
+    }; //style for the inside div of main component
     let outerDiv = {
-      width: '100%',
-      height: '70vh',
+      margin: 'auto',
       display: 'flex',
+      padding: '4%',
       justifyContent: 'center'
-    };
+    }; //style for the outside div of main component
     let catStyle = {
       flex: '0 0 33.33%'
     }
