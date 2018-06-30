@@ -37,6 +37,11 @@ class Result extends Component {
       width: '100%'
     }
 
+    let resultChart = {
+      marginTop: '35px',
+      padding: '10px'
+    }
+
     /* JS */
     // console.log("props obj", this.props.category)
     let category = this.props.category;
@@ -46,7 +51,7 @@ class Result extends Component {
     // console.log("result cat", category)
 
     renderData.push(
-      <div className="result-chart" key="result-chart">
+      <div className="result-chart" key="result-chart" style={resultChart}>
         <div className="topic-info" style={topicInfo}>
           <h2>{capitalizeAllLetters(topic)}</h2>
         </div>
