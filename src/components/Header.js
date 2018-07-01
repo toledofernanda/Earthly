@@ -29,11 +29,11 @@ let appName = {
   listStyleType: 'none',
   color: 'white',
   letterSpacing: '4px',
-  paddingLeft: '10px'
+  paddingLeft: '10px',
 }
 
 const button = {
-  padding:'5px',
+  padding:'10px',
   marginRight:'60px',
   backgroundColor:'#F05027',
   borderRadius: 7,
@@ -47,14 +47,14 @@ class Header extends Component{
         <header className="header">
           <ul style={headerDes}>
             <li style= {{width: '250px', marginTop:'5px'}}>
-              <Link to="/">
+              <Link to="/" style={{textDecoration:'none'}}>
                 <div style={logoName}>
                   <img src={require(`images/earthly_logo.svg`)} style={logo} alt={'Earthly'} />
                   <span style={appName}>earthly</span>
                 </div>
               </Link>
             </li>
-            <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}>Donation</Link></li>
+            <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}>Donate</Link></li>
           </ul>
         </header>
     )
