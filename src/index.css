@@ -6,8 +6,29 @@ html, body, #root {
   height: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 12pt;
+  color: black;
 }
 
 a, a:visited {
-  list-style-type: none;
+  color: black;
 }
+
+.breadcrumb a:hover {
+  color: white; /*affects breadcrumb links */
+}
+
+
+/* for flag hover effect*/
+/* .entity-flag-name {
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.country_flag img {
+  border: 1px solid lightgrey;
+}
+
+.entity-flag-name:hover {
+  background-color: white;
+  cursor: pointer;
+} */
