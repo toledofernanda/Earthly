@@ -9,7 +9,7 @@ class Breadcrumb extends Component {
       position: 'fixed',
       width: '100%',
       backgroundColor: 'rgba(25,169,225,0.7)',
-      padding: '10px',
+      padding: '10px 10px 10px 40px',
       fontSize: '0.7em'
     }
 
