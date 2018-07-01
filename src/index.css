@@ -32,3 +32,14 @@ a, a:visited {
   background-color: white;
   cursor: pointer;
 } */
+
+.StripeCheckout {
+  background-color: pink !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.StripeCheckout span {
+  background-image: none !important;
+  background-color: #F05027;
+}
