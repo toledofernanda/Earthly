@@ -18,11 +18,8 @@ class App extends Component {
 
     let app = {
       minHeight: '100%',
-      // display: 'grid',
-      // gridTemplateRows: '70px 1fr 50px'
       display: 'flex',
       flexFlow: 'column',
-      // justifyContent: 'space-between'
       alignItems: 'stretch'
     }
 
@@ -30,7 +27,7 @@ class App extends Component {
       flex: '0 0 70px'
     }
 
-    let mainBg = {
+    let mainContent = {
       backgroundImage: `url(${bg})`,
       flex: '1 0 auto',
     }
@@ -45,7 +42,7 @@ class App extends Component {
           <Header />
         </div>
 
-       <div className="content" style={mainBg}>
+       <div className="content" style={mainContent}>
         <Switch>
            <Route exact path="/" component={Home} />
            <Route path={`/category`} component={CategoryFilter} />
