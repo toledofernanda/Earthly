@@ -15,7 +15,7 @@ class FilterButtonText extends Component{
     let dbtext = "";
     let text = "";
 
-    if (this.props.name == "stepOne"){
+    if (this.props.name === "stepOne"){
       dbtext = `${category}`;
       text = dbtext.toUpperCase();
     }else {
