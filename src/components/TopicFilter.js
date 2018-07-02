@@ -20,7 +20,7 @@ class TopicFilter extends Component{
     this.setState(prevState => ({
       isSelected: !prevState.isSelected
     }));
-  }
+  } 
   render(){
     let divStyle = {
       maxWidth: '1024px',

@@ -26,7 +26,7 @@ class FilterButtonText extends Component{
       <p style={catTextStyle}>
         {text}
       </p>
-      );
+      ); 
     }
   }
 
