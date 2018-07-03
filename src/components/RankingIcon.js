@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 //This component renders icons for a ranking chart bar
 class RankingIcon extends Component{
   render(){
+    let rankingIconsDiv = {
+      // display: 'flex',
+      // flexFlow: 'row nowrap' //so they don't wrap to next line
+    }
+    
     let iconCount = this.props.iconCount; //props from RankingBar
     let topic = this.props.topic; //props passed down
     let image =  <img src={require(`images/${topic}.png`)} alt={`${topic}`} />   //image tag for icon
@@ -13,7 +18,7 @@ class RankingIcon extends Component{
     }
 
     return (
-      <div className="ranking-icon">
+      <div className="ranking-icon" key="ranking-icon" style={rankingIconsDiv}>
         {renderData}
       </div>
     )

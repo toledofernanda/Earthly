@@ -1,5 +1,45 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800');
+
+html, body, #root {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  color: black;
+}
+
+a, a:visited {
+  color: black;
+}
+
+.breadcrumb a:hover {
+  color: white; /*affects breadcrumb links */
+}
+
+
+/* for flag hover effect*/
+/* .entity-flag-name {
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.country_flag img {
+  border: 1px solid lightgrey;
+}
+
+.entity-flag-name:hover {
+  background-color: white;
+  cursor: pointer;
+} */
+
+.StripeCheckout {
+  background-color: pink !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.StripeCheckout span {
+  background-image: none !important;
+  background-color: #F05027;
 }
