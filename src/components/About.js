@@ -3,66 +3,49 @@ import React, { Component } from 'react';
 const memberBox = {
   fernanda: {
   color: 'white',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent:'center',
-  alignItems:'center',
+  textAlign:'center',
   padding: '10px',
   marginBottom:'60px',
-  width:'20%',
-  flex: '0 0 15%',
+  width:'170px',
   backgroundColor: '#4AB85C'
 },
 
   mana:{
   color: 'white',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent:'center',
+  textAlign:'center',
   alignItems:'center',
   padding: '10px',
   marginBottom:'60px',
-  width:'20%',
-  flex: '0 0 15%',
+  width:'170px',
   backgroundColor: '#F05027'
 },
 
   tomo:{
     color: 'white',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent:'center',
+    textAlign:'center',
     alignItems:'center',
     padding: '10px',
     marginBottom:'60px',
-    width:'20%',
-      flex: '0 0 15%',
+    width:'170px',
     backgroundColor: '#19A9E1'
   },
 
   jenn:{
     color: 'white',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent:'center',
+    textAlign:'center',
     alignItems:'center',
     padding: '10px',
     marginBottom:'60px',
-    width:'20%',
-    flex: '0 0 15%',
+    width:'170px',
     backgroundColor: '#00B8A6'
   },
   marlowe:{
-    flasxWrap:'wrap',
     color: 'white',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent:'center',
+    textAlign:'center',
     alignItems:'center',
     padding: '10px',
     marginBottom:'60px',
-    width:'20%',
-    flex: '0 0 15%',
+    width:'170px',
     backgroundColor: '#152D53'
   },
 
@@ -84,7 +67,7 @@ class About extends Component{
       </div>
         <div style = {{display:'flex', justifyContent:'space-around', flexFlow:'row wrap', boxSizing:'border-box'}} className='aboutContainer'>
           <div className='Fernanda' style = {memberBox.fernanda}>
-            <img style = {memberImage} img src={require(`images/most_dogs.png`)} />
+            <img style = {memberImage} img src={require(`images/most_dogs.png`)} alt="FernandaPic"/>
             <h3>Fernanda</h3>
             <h4>Lead Dev</h4>
             <p>Fernanda has a background and Advertising at Mackenzie University in
@@ -103,7 +86,7 @@ class About extends Component{
 
           </div>
           <div className='Mana' style = {memberBox.mana}>
-            <img style = {memberImage} img src={require(`images/most_dogs.png`)} />
+            <img style = {memberImage} img src={require(`images/most_dogs.png`) } alt="manaPic"/>
             <h3>Mana</h3>
             <h4>Dev and QA</h4>
             <p>Fernanda has a background and Advertising at Mackenzie University in
@@ -121,7 +104,7 @@ class About extends Component{
             </p>
           </div>
           <div className='Tomoko' style = {memberBox.tomo}>
-            <img style = {memberImage} img src={require(`images/most_dogs.png`)} />
+            <img style = {memberImage} img src={require(`images/most_dogs.png`) } alt="tomokoPic"/>
             <h3>Tomoko</h3>
             <h4>Dev and PM</h4>
             <p>Fernanda has a background and Advertising at Mackenzie University in
@@ -139,7 +122,7 @@ class About extends Component{
             </p>
           </div>
           <div className='Jenn' style = {memberBox.jenn}>
-            <img style = {memberImage} img src={require(`images/most_dogs.png`)} />
+            <img style = {memberImage} img src={require(`images/most_dogs.png`)}  alt="jennPic" />
             <h3>Jenn</h3>
             <h4>UX and Designer</h4>
             <p>Fernanda has a background and Advertising at Mackenzie University in
@@ -157,7 +140,7 @@ class About extends Component{
             </p>
           </div>
           <div className='Marlowe' style = {memberBox.marlowe}>
-            <img style = {memberImage} img src={require(`images/most_dogs.png`)} />
+            <img style = {memberImage} img src={require(`images/most_dogs.png`)}  alt="marlowePic"/>
             <h3>Marlowe</h3>
             <h4>UX and Designer</h4>
             <p>Fernanda has a background and Advertising at Mackenzie University in
