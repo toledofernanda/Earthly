@@ -20,7 +20,7 @@ class TopicFilter extends Component{
     this.setState(prevState => ({
       isSelected: !prevState.isSelected
     }));
-  } 
+  }
   render(){
     let divStyle = {
       maxWidth: '1024px',
@@ -59,15 +59,10 @@ class TopicFilter extends Component{
     }
     return (
       <div className="topic-filter" key="topic-filter" style = {outerDiv}>
-        {this.state.isSelected ?
-          <Route path={`/category/${category}/:topName`} render={(props) => (
-          <Result {...props} category={category}/>)}/>
-        :
           <div className="topic-list" style={divStyle}>
             <StepTitle />
             {topicList}
           </div>
-        }
       </div>
     )
   }

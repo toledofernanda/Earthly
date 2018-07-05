@@ -9,7 +9,7 @@ class Result extends Component {
       super(props);
       // let category = props.match.params.catName;//← here
       this.state = {
-          category: props.match.params,
+          category: props.match.params.catName,
           topic: props.match.params.topName //get clicked category name
         }
       // console.log("match obj", props.match)
