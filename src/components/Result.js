@@ -2,68 +2,70 @@ import React, { Component } from 'react';
 import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
+import { Link } from "react-router-dom";
 
 class Result extends Component {
 
   constructor(props){
-      super(props);
-      // let category = props.match.params.catName;//← here
-      this.state = {
-          category: props.match.params.catName,
-          topic: props.match.params.topName //get clicked category name
-        }
-      // console.log("match obj", props.match)
-      // console.log("props obj", this.props.category)
+    super(props);
+    this.state = {
+        category: props.match.params.catName, //get clicked category from URL
+        topic: props.match.params.topName //get clicked topic from URL
+      }
   } //above is default event handler found on React doc
 
   render(){
 
     /* CSS */
     let rankingInfo = {
-      maxWidth: '1024px',
-      margin: 'auto',
-      backgroundColor: 'lightgrey',
-      borderRadius: 30,
-      border: '1px solid darkgrey',
       display: 'flex',
       flexFlow: 'row nowrap',
     };
 
-    let topicInfo = {
-      textAlign: 'center'
+    let chartHeader = {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      textAlign: 'center',
+      padding: '0 30px'
     }
 
-    let result = {
-      width: '100%'
+    let backButton = {
+      backgroundColor: 'transparent',
+      border: 'none',
+      fontSize: '1.8em',
+      cursor: 'pointer'
     }
 
     let resultChart = {
-      marginTop: '35px',
-      padding: '10px'
+      maxWidth: '1024px', /*only for this element so breadcrumb is 100%*/
+      margin: '5% 5% 20px 5%',
+      backgroundColor: 'white',
+      borderRadius: 30,
+      border: '1px solid darkgrey',
+      marginTop: '60px',
     }
 
     /* JS */
-    // console.log("props obj", this.props.category)
-    let category = this.props.category;
+    let category = this.state.category;
     let topic = this.state.topic;
     let renderData = [];
 
-    // console.log("result cat", category)
-
     renderData.push(
       <div className="result-chart" key="result-chart" style={resultChart}>
-        <div className="topic-info" style={topicInfo}>
-          <h2>{capitalizeAllLetters(topic)}</h2>
-        </div>
-        <div className="ranking-info" style={rankingInfo}>
-          <RankingEntity category={category} topic={topic} />
-          <Chart category={category} topic={topic} />
-        </div>
+          <div className="chart-header" style={chartHeader}>
+            <Link to={`/category/${category}`}><button style={backButton}>{'<'}</button></Link>
+            <h2>{capitalizeAllLetters(topic)}</h2>
+            <span>unit</span>
+          </div>
+          <div className="ranking-info" style={rankingInfo}>
+            <RankingEntity category={category} topic={topic} />
+            <Chart category={category} topic={topic} />
+          </div>
       </div>
     )
 
     function capitalizeAllLetters(string) {
-      // console.log("string", string)
       var splitString = string.toLowerCase().split('_');
       //loop through each string
       for (var i = 0; i < splitString.length; i++) {
@@ -75,7 +77,7 @@ class Result extends Component {
     }
 
     return (
-      <div className="result" style={result}>
+      <div className="result">
         <Breadcrumb category={category} topic={topic} />
         {renderData}
       </div>
