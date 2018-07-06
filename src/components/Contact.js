@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const boxPosition = {
   marginRight: '10vw',
@@ -75,6 +76,7 @@ class Contact extends Component {
       phone,
       message
     })
+
    }
 
   render() {
