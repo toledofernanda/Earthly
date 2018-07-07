@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { db } from './Db';
 import RankingBar from 'components/RankingBar';
+import Source from 'components/Source';
 
 class Chart extends Component{
   render(){
@@ -8,7 +9,7 @@ class Chart extends Component{
     /* CSS */
     let chart = {
       backgroundColor: 'white',
-      padding: '20px',
+      padding: '20px 20px 10px 20px',
       borderRadius: '0px 30px 30px 0px',
     }
 
@@ -17,6 +18,7 @@ class Chart extends Component{
     let topic = this.props.topic; //props passed down
     let num = []; //an array to hold the percentage value for chart bars
     let entityNames = []; //array to store each entity name
+    let source; //source name
 
     // This component calculates percentage value for entities ranked within 10
     for(let topic in db[category]){
@@ -38,6 +40,9 @@ class Chart extends Component{
         for (let i = 0; i < fields.length; i++) {
           entityNames.push(fields[i].entity_name);
         }
+
+        //get source names
+        source = fields[0].source_name;
       }
     }
 
@@ -53,6 +58,7 @@ class Chart extends Component{
         <RankingBar barLength={num[7]} topic={topic} category={category} entityName={entityNames[7]} />
         <RankingBar barLength={num[8]} topic={topic} category={category} entityName={entityNames[8]} />
         <RankingBar barLength={num[9]} topic={topic} category={category} entityName={entityNames[9]} />
+        <Source source={source} />
       </div>
     )
   }

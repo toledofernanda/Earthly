@@ -7,7 +7,7 @@ export var db = {
       quantity: 75800000,
       label: "quantity",
       unit: "million",
-      source_name: "UN Data",
+      source_name: "Animals Data",
       source_url: "http://un.com"
     },{
       ranking: 2,
@@ -16,7 +16,7 @@ export var db = {
       quantity: 35700000,
       label: "quantity",
       unit: "million",
-      source_name: "UN Data",
+      source_name: "Animals Data",
       source_url: "http://un.com"
     }, {
       ranking: 3,
@@ -25,7 +25,7 @@ export var db = {
       quantity: 27400000,
       label: "quantity",
       unit: "million",
-      source_name: "UN Data",
+      source_name: "Animals Data",
       source_url: "http://un.com"
       }
     ],

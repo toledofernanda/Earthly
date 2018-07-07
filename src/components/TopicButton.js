@@ -4,24 +4,6 @@ import FilterButtonText from 'components/FilterButtonText';
 
 //This component displays a secondary category(topics)
 class TopicButton extends Component{
-  // constructor(props){
-  //     super(props);
-  //     this.state = {
-  //         isSelected:false,
-  //       }
-  //     this.select = this.select.bind(this);
-  //   } //above is default event handler found on React doc
-  // select() {
-  //       this.setState({
-  //         isSelected:true,
-  //       });
-  // }
-  //
-  // disselect() {
-  //       this.setState({
-  //         isSelected:false,
-  //       });
-  // }
   render(){
     let buttonStyle = {
       flex: '0 0 33.33%',
@@ -39,8 +21,7 @@ class TopicButton extends Component{
 
     return (
       <div style = {buttonStyle}>
-
-        <div className = "topic-button"  onClick={this.props.select} topic={topic}>
+        <div className = "topic-button" topic={topic}>
           <Link to={`/category/${category}/${topic}`}>
             <img src={require(`images/${topic}.png`)}  alt={topic}  style={buttonIcon} />
           </Link>
@@ -49,7 +30,7 @@ class TopicButton extends Component{
 
     </div>
    );
-}
+ }
 }
 
 export default TopicButton;
