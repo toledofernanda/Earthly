@@ -3,6 +3,7 @@ import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
 import { Link } from "react-router-dom";
+import { db } from './Db';
 
 class Result extends Component {
 
@@ -39,23 +40,23 @@ class Result extends Component {
 
     let resultChart = {
       maxWidth: '1024px', /*only for this element so breadcrumb is 100%*/
-      margin: '5% 5% 20px 5%',
+      margin: '60px 5% 20px 5%',
       backgroundColor: 'white',
       borderRadius: 30,
       border: '1px solid darkgrey',
-      marginTop: '60px',
     }
 
     /* JS */
     let category = this.state.category;
     let topic = this.state.topic;
+    let topicDescription = db[category][topic][0]['topic_description'];
     let renderData = [];
 
     renderData.push(
       <div className="result-chart" key="result-chart" style={resultChart}>
           <div className="chart-header" style={chartHeader}>
             <Link to={`/category/${category}`}><button style={backButton}>{'<'}</button></Link>
-            <h2>{capitalizeAllLetters(topic)}</h2>
+            <h2>{topicDescription}</h2>
             <span>unit</span>
           </div>
           <div className="ranking-info" style={rankingInfo}>
