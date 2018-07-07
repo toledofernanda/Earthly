@@ -4,7 +4,7 @@ Cook Islands,CK,New Zealand Dollars,NZD
 Niue,NU,New Zealand Dollars,NZD
 Pitcairn,PN,New Zealand Dollars,NZD
 Tokelau,TK,New Zealand Dollars,NZD
-Australian,AU,Australian Dollars,AUD
+Australia,AU,Australian Dollars,AUD
 Christmas Island,CX,Australian Dollars,AUD
 Cocos (Keeling) Islands,CC,Australian Dollars,AUD
 Heard and Mc Donald Islands,HM,Australian Dollars,AUD
@@ -144,7 +144,7 @@ Haiti,HT,Gourde,HTG
 Honduras,HN,Lempira,HNL
 Hungary,HU,Forint,HUF
 Iceland,IS,Icelandic Krona,ISK
-Iran (Islamic Republic of),IR,Iranian Rial,IRR
+Iran,IR,Iranian Rial,IRR
 Iraq,IQ,Iraqi Dinar,IQD
 Israel,IL,Shekel,ILS
 Jamaica,JM,Jamaican Dollar,JMD
@@ -194,7 +194,7 @@ Philippines,PH,Peso,PHP
 Poland,PL,Zloty,PLN
 Qatar,QA,Rial,QAR
 Romania,RO,Leu,RON
-Russian Federation,RU,Ruble,RUB
+Russia,RU,Ruble,RUB
 Rwanda,RW,Rwanda Franc,RWF
 Sao Tome and Principe,ST,Dobra,STD
 Saudi Arabia,SA,Riyal,SAR
