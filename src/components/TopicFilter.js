@@ -51,11 +51,14 @@ class TopicFilter extends Component{
     let topicList = [];
     //Issue: isSelected value is not used effectively yet
     for (let topic in db[category]){
-        topicList.push(
-          <div key={`${topic}-button`} style={catStyle}>
-            <TopicButton category={category} topic={topic}  />
-          </div>
-        );
+        //if topic is entity_info don't display it on topic list, we just use it for tooltip component
+        if(topic !== "entity_info") {
+          topicList.push(
+            <div key={`${topic}-button`} style={catStyle}>
+              <TopicButton category={category} topic={topic}  />
+            </div>
+          );
+        }
     }
     return (
       <div className="topic-filter" key="topic-filter" style = {outerDiv}>
