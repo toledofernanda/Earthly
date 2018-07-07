@@ -152,7 +152,7 @@ Jordan,JO,Jordanian Dinar,JOD
 Kazakhstan,KZ,Tenge,KZT
 Kenya,KE,Kenyan Shilling,KES
 Korea North,KP,Won,KPW
-Korea South,KR,Won,KRW
+South Korea,KR,Won,KRW
 Kuwait,KW,Kuwaiti Dinar,KWD
 Kyrgyzstan,KG,Som,KGS
 Lao PeopleÕs Democratic Republic,LA,Kip,LAK
@@ -161,7 +161,7 @@ Lebanon,LB,Lebanese Pound,LBP
 Lesotho,LS,Loti,LSL
 Liberia,LR,Liberian Dollar,LRD
 Libyan Arab Jamahiriya,LY,Libyan Dinar,LYD
-Liechtenstein,LI,Swiss Franc,CHF
+Lichtenstein,LI,Swiss Franc,CHF
 Switzerland,CH,Swiss Franc,CHF
 Lithuania,LT,Lita,LTL
 Macau,MO,Pataca,MOP
