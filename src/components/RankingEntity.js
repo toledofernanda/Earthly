@@ -15,12 +15,14 @@ class RankingEntity extends Component {
       alignItems: 'center',
       boxSizing: 'border-box',
       height: '90px',
-      width: '95px',
-      position: 'relative'
+      width: '115px',
+      position: 'relative',
+      padding: '10px'
     }
 
     let rankingEntities = {
-      padding: '10px'
+      backgroundColor: 'lightgrey',
+      borderRadius: '0 0 0 30px'
     }
 
     let orderStyle = {

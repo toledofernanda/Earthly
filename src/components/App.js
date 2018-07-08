@@ -47,8 +47,8 @@ class App extends Component {
         <Switch>
            <Route exact path="/" component={Home} />
            <Route exact path={`/category`} component={CategoryFilter} />
-           <Route exact　path={`/category/:catName`} component={TopicFilter} />
-           <Route exact　path={`/category/:catName/:topName`} component={Result} />
+           <Route exact path={`/category/:catName`} component={TopicFilter} />
+           <Route exact path={`/category/:catName/:topName`} component={Result} />
            <Route path="/donation" component={Donation}/>
            <Route path="/about" component={About}/>
            <Route path="/contact" component={Contact}/>
