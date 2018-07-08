@@ -158,7 +158,63 @@ export var db = {
       unit: "thousand",
       source_name: "UN Data",
       source_url: "http://un.com"
-      }
+    }, {
+      ranking: 4,
+          entity_name: "4Vatican",
+          quantity: 20000,
+          label: "number of people",
+          unit: "thousand",
+          source_name: "UN Data",
+          source_url: "http://un.com"
+        }, {
+          ranking: 5,
+          entity_name: "5Niue",
+          quantity: 30000,
+          label: "number of people",
+          unit: "thousand",
+          source_name: "UN Data",
+          source_url: "http://un.com"
+        }, {
+          ranking: 6,
+          entity_name: "6Tuvalu",
+          quantity: 40000,
+          label: "number of people",
+          unit: "thousand",
+          source_name: "UN Data",
+          source_url: "http://un.com"
+          }, {
+            ranking: 7,
+                entity_name: "7Vatican",
+                quantity: 45000,
+                label: "number of people",
+                unit: "thousand",
+                source_name: "UN Data",
+                source_url: "http://un.com"
+              }, {
+                ranking: 8,
+                entity_name: "8Niue",
+                quantity: 50000,
+                label: "number of people",
+                unit: "thousand",
+                source_name: "UN Data",
+                source_url: "http://un.com"
+              }, {
+                ranking: 9,
+                entity_name: "9Tuvalu",
+                quantity: 51100,
+                label: "number of people",
+                unit: "thousand",
+                source_name: "UN Data",
+                source_url: "http://un.com"
+                }, {
+                  ranking: 10,
+                  entity_name: "10Tuvalu",
+                  quantity: 61100,
+                  label: "number of people",
+                  unit: "thousand",
+                  source_name: "UN Data",
+                  source_url: "http://un.com"
+                  }
     ]
   },
   animals2: {
