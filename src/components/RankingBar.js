@@ -16,7 +16,7 @@ class RankingBar extends Component{
     }
 
     /* JS */
-    let iconCount = parseInt(this.props.barLength / 5); //supposing No.1 = 100% is 20 icons
+    let iconCount = parseInt(this.props.barLength / 5, 10); //supposing No.1 = 100% is 20 icons
 
     return (
       <div className="ranking-bar" key="ranking-bar" style={rankingBar}>
