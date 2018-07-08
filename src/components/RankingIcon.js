@@ -13,6 +13,9 @@ class RankingIcon extends Component{
       maxWidth: '5%',
       height: 'auto'
     }
+    let halfIcon = {
+      width:'2%'
+    }
 
     let iconCount = this.props.iconCount; //props from RankingBar
     let topic = this.props.topic; //props passed down
@@ -21,6 +24,10 @@ class RankingIcon extends Component{
 
     for(let i=0; i<iconCount; i++){
       renderData.push(image);
+    }
+
+    if(iconCount < 1){
+      renderData.push(<img src={require(`images/${topic}.png`)} alt={`${topic}`} style={halfIcon}/>)
     }
 
     return (

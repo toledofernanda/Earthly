@@ -32,9 +32,9 @@ class Chart extends Component{
             let percent = "";
             percent = (fields[i].quantity)/base;
             num[i] = percent.toFixed(2)*100;
-            if (num[i] < 5){
-              num[i] = 5; // we need half icon
-            }
+            // if (num[i] < 5){
+            //   num[i] = 5; // we need half icon
+            // }
           }
         } else {
         //get quantity of each entity
@@ -45,9 +45,9 @@ class Chart extends Component{
             let percent = "";
             percent = (fields[i].quantity)/base;
             percent = percent.toFixed(2)*100;
-            if (percent < 5){
-              percent = 5; // we need half icon
-            }
+            // if (percent < 5){
+            //   percent = 5; // we need half icon
+            // }
             num.push(percent); //calculated percent value is pushed to the array
           }
         }
