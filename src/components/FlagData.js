@@ -36,7 +36,7 @@ Samoa,WS,Euros,EUR
 San Marino,SM,Euros,EUR
 Slovenia,SI,Euros,EUR
 Spain,ES,Euros,EUR
-Vatican City State (Holy See),VA,Euros,EUR
+Vatican,VA,Euros,EUR
 South Georgia and the South Sandwich Islands,GS,Sterling,GBP
 United Kingdom,GB,Sterling,GBP
 Jersey,JE,Sterling,GBP
@@ -63,7 +63,7 @@ Antigua and Barbuda,AG,East Caribbean Dollar,XCD
 Dominica,DM,East Caribbean Dollar,XCD
 Grenada,GD,East Caribbean Dollar,XCD
 Montserrat,MS,East Caribbean Dollar,XCD
-Saint Kitts,KN,East Caribbean Dollar,XCD
+Saint Kitts and Nevis,KN,East Caribbean Dollar,XCD
 Saint Lucia,LC,East Caribbean Dollar,XCD
 Saint Vincent Grenadines,VC,East Caribbean Dollar,XCD
 Argentina,AR,Peso,ARS
@@ -101,7 +101,7 @@ Cambodia,KH,Riel,KHR
 Cameroon,CM,CFA Franc BEAC,XAF
 Central African Republic,CF,CFA Franc BEAC,XAF
 Chad,TD,CFA Franc BEAC,XAF
-Congo Republic of the Democratic,CG,CFA Franc BEAC,XAF
+DR Congo,CG,CFA Franc BEAC,XAF
 Equatorial Guinea,GQ,CFA Franc BEAC,XAF
 Gabon,GA,CFA Franc BEAC,XAF
 Cape Verde,CV,Escudo,CVE
@@ -174,7 +174,7 @@ Malta,MT,Maltese Lira,MTL
 Mauritania,MR,Ouguiya,MRO
 Mauritius,MU,Mauritian Rupee,MUR
 Mexico,MX,Peso,MXN
-Moldova Republic of,MD,Leu,MDL
+Moldova,MD,Leu,MDL
 Mongolia,MN,Tugrik,MNT
 Morocco,MA,Dirham,MAD
 Western Sahara,EH,Dirham,MAD

@@ -80,6 +80,8 @@ class Flag extends Component{
 
 		for (let item of subCat){
 			//check if is a country
+			// console.log("item['entity_name']", item['entity_name'])
+			// console.log("entityName", entityName)
 			if(item['entity_name'] === entityName){
 				if(item['entity_type'] === "country"){
 					isCountry = true;
@@ -99,7 +101,8 @@ class Flag extends Component{
 
 			for (let item of country){
 				if(item['country'] === entityName){
-            // console.log(item["countryCode"].toLowerCase());
+					console.log(entityName)
+            console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
 				}
 			}
