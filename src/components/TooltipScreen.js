@@ -11,7 +11,7 @@ class TooltipScreen extends Component {
       width: '40vw',
       maxWidth: '600px',
       position: 'absolute',
-      left: '110px',
+      left: '120px',
       top: '10px',
       zIndex: '2',
       backgroundColor: 'white',
