@@ -22,6 +22,10 @@ class RankingIcon extends Component{
     for(let i=0; i<iconCount; i++){
       renderData.push(image);
     }
+    // 
+    // if(iconCount < 1){
+    //   renderData.push(<img src={require(`images/${topic}.png`)} alt={`${topic}`} style={halfIcon}/>)
+    // }
 
     return (
       <div className="ranking-icon" key="ranking-icon" style={rankingIconsDiv}>
