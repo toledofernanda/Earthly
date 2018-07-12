@@ -8,9 +8,10 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      backgroundColor: 'white',
+      // backgroundColor: 'white',
       padding: '20px 20px 10px 20px',
       borderRadius: '0px 30px 30px 0px',
+      width: '80vw'
     }
 
     /* JS */
@@ -25,15 +26,32 @@ class Chart extends Component{
       if (topic === this.props.topic){
         let fields = db[category][topic];
 
+        //smallest rankings
+        if ( topic === 'smallest_countries' | topic === 'smallest_population'){
+          let base = fields[9].quantity; //quantity of No.10
+          num[9] = 100;
+          for(let i= 8; i>=0; i--){
+            let percent = "";
+            percent = (fields[i].quantity)/base;
+            num[i] = percent.toFixed(2)*100;
+            // if (num[i] < 5){
+            //   num[i] = 5; // we need half icon
+            // }
+          }
+        } else {
         //get quantity of each entity
-        num.push(100); //No.1 is always 100%
+          num.push(100); //No.1 is always 100%
 
-        let base = fields[0].quantity; //quantity of No.1
-        for(let i=1; i<fields.length; i++){
-          let percent = "";
-          percent = (fields[i].quantity)/base;
-          percent = percent.toFixed(2)*100;
-          num.push(percent); //calculated percent value is pushed to the array
+          let base = fields[0].quantity; //quantity of No.1
+          for(let i=1; i<fields.length; i++){
+            let percent = "";
+            percent = (fields[i].quantity)/base;
+            percent = percent.toFixed(2)*100;
+            // if (percent < 5){
+            //   percent = 5; // we need half icon
+            // }
+            num.push(percent); //calculated percent value is pushed to the array
+          }
         }
 
         //get entity names

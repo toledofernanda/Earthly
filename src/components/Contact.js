@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const boxPosition = {
   marginRight: '10vw',
@@ -41,6 +45,41 @@ const submitButton = {
 
 
 class Contact extends Component {
+  constructor(){
+    super()
+    this.state={
+      firstName:'',
+      lastName:'',
+      email:'',
+      phone:'',
+      message:''
+
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+  async handleSubmit(e){
+    e.preventDefault()
+    const {firstName, lastName, email,phone, message} = this.state
+
+    const form = await axios.post('/api/form',{
+      firstName,
+      lastName,
+      email,
+      phone,
+      message
+    })
+
+  
+   }
+
   render() {
     return (
       <div style = {boxPosition} className = "donationBox">
@@ -52,37 +91,57 @@ class Contact extends Component {
             </p>
         </div>
         <div className = "contactForm">
-            <form style = {form} action="https://formspree.io/langara.earthly@gmail.com" method="POST">
-                <label style ={{width: '40%'}}>
-                  First Name
-                  <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <input type="text" name="firstName" />
-                </label>
-                <br />
-                <label style ={{width: '40%'}}>
-                Last Name
-                <input type="text" name="lastName" />
-                </label>
-                <br />
-                <label style ={{width: '40%'}}>
-                Email
-                <input type="email" name="_replyto" />
-                </label>
-                <br />
-                <label style ={{width: '40%'}}>
-                Phone
-                <span><input type="tel" name="phoneNumber" /></span>
-                </label>
-                <br />
-                <div className='commentBox' style = {comment}>
-                <label style = {{alignSelf: 'center'}}>Comments</label><br />
-                  <label style = {{alignSelf: 'center', width:'70%'}}>
-                  <textarea style ={{boxSizing: 'border-box',width: '100%', height:'140px'}} type="text" name="comments" width='80%'></textarea>
-                  </label>
-                  <br />
-                  <input style = {submitButton} type="submit" value="Submit" />
-                </div>
-            </form>
+          <Form onSubmit={this.handleSubmit}>
+            <FormGroup>
+              <Label for="firstName">First Name</Label>
+              <input
+              type="text"
+              name= "firstName"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label for="lastName">Last Name</Label>
+              <input
+              type="text"
+              name= "lastName"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label for="email">Email</Label>
+              <input
+              type="email"
+              name= "email"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label for="phone">phone</Label>
+              <input
+              type="text"
+              pattern="[0-9]*"
+              name= "phone"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup style={{width:'200px'}}>
+              <Label for="message">Message</Label>
+              <input
+              type="textarea"
+              name= "message"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+            <button>Submit</button>
+          </Form>
+
+
           </div>
       </div>
 
