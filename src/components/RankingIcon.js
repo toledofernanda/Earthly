@@ -14,6 +14,7 @@ class RankingIcon extends Component{
       height: 'auto'
     }
 
+    let halfIcon = {
       // clipPath: 'inset(10px 20px 30px 40px)'
       width: '10px'
     }
