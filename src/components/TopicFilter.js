@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { db } from './Db';
 import TopicButton from 'components/TopicButton';
 import StepTitle from 'components/StepTitle';
+import BackButton from 'components/BackButton';
 import { Link } from "react-router-dom";
 
 //This component displays a list of secondary categories (topics)
@@ -41,9 +42,7 @@ class TopicFilter extends Component{
     }
 
     let backButton = {
-      backgroundColor: 'transparent',
-      border: 'none',
-      fontSize: '1.8em',
+      width: '19px',
       cursor: 'pointer'
     }
 
@@ -51,16 +50,19 @@ class TopicFilter extends Component{
     let topicList = [];
     //Issue: isSelected value is not used effectively yet
     for (let topic in db[category]){
-        topicList.push(
-          <div key={`${topic}-button`} style={catStyle}>
-            <TopicButton category={category} topic={topic}  />
-          </div>
-        );
+        //if topic is entity_info don't display it on topic list, we just use it for tooltip component
+        if(topic !== "entity_info") {
+          topicList.push(
+            <div key={`${topic}-button`} style={catStyle}>
+              <TopicButton category={category} topic={topic}  />
+            </div>
+          );
+        }
     }
     return (
       <div className="topic-filter" key="topic-filter" style = {outerDiv}>
           <div className="topic-list" style={divStyle}>
-            <Link to={`/category`}><button style={backButton}>{'<'}</button></Link>
+            <BackButton component={'topic'} />
             <StepTitle />
             {topicList}
           </div>

@@ -6,7 +6,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
-    "bootstrap": "^4.1.1",
     "concurrently": "^3.6.0",
     "data.js": "^0.11.5",
     "express": "^4.16.3",

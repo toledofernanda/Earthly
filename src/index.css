@@ -17,22 +17,6 @@ a, a:visited {
   color: white; /*affects breadcrumb links */
 }
 
-
-/* for flag hover effect*/
-/* .entity-flag-name {
-  padding: 3px;
-  border-radius: 5px;
-}
-
-.country_flag img {
-  border: 1px solid lightgrey;
-}
-
-.entity-flag-name:hover {
-  background-color: white;
-  cursor: pointer;
-} */
-
 .StripeCheckout {
   background-color: pink !important;
   background: none !important;

@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
+import BackButton from 'components/BackButton';
+import Unit from 'components/Unit';
 import { Link } from "react-router-dom";
+import { db } from './Db';
 
 class Result extends Component {
 
@@ -17,6 +20,11 @@ class Result extends Component {
   render(){
 
     /* CSS */
+    let resultOuterDiv = {
+      display: 'flex',
+      justifyContent: 'center'
+    }
+
     let rankingInfo = {
       display: 'flex',
       flexFlow: 'row nowrap',
@@ -30,33 +38,31 @@ class Result extends Component {
       padding: '0 30px'
     }
 
-    let backButton = {
-      backgroundColor: 'transparent',
-      border: 'none',
-      fontSize: '1.8em',
-      cursor: 'pointer'
-    }
-
     let resultChart = {
       maxWidth: '1024px', /*only for this element so breadcrumb is 100%*/
-      margin: '5% 5% 20px 5%',
+      margin: '60px 5% 20px 5%',
       backgroundColor: 'white',
       borderRadius: 30,
       border: '1px solid darkgrey',
-      marginTop: '60px',
+    }
+
+    let topicD = {
+      flex: '0 0 60%'
     }
 
     /* JS */
     let category = this.state.category;
     let topic = this.state.topic;
+    let topicDescription = db[category][topic][0]['topic_description'];
+    let unit = db[category][topic][0]['unit'];
     let renderData = [];
 
     renderData.push(
       <div className="result-chart" key="result-chart" style={resultChart}>
           <div className="chart-header" style={chartHeader}>
-            <Link to={`/category/${category}`}><button style={backButton}>{'<'}</button></Link>
-            <h2>{capitalizeAllLetters(topic)}</h2>
-            <span>unit</span>
+            <BackButton category={category} component={'result'} />
+            <h2 style={topicD} >{topicDescription}</h2>
+            <Unit unit={unit} />
           </div>
           <div className="ranking-info" style={rankingInfo}>
             <RankingEntity category={category} topic={topic} />
@@ -65,19 +71,19 @@ class Result extends Component {
       </div>
     )
 
-    function capitalizeAllLetters(string) {
-      var splitString = string.toLowerCase().split('_');
-      //loop through each string
-      for (var i = 0; i < splitString.length; i++) {
-       // assign it back to the array after capitalized
-       splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
-      }
-      // join all strings into an unique string and return it
-      return splitString.join(' ');
-    }
+    // function capitalizeAllLetters(string) {
+    //   var splitString = string.toLowerCase().split('_');
+    //   //loop through each string
+    //   for (var i = 0; i < splitString.length; i++) {
+    //    // assign it back to the array after capitalized
+    //    splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
+    //   }
+    //   // join all strings into an unique string and return it
+    //   return splitString.join(' ');
+    // }
 
     return (
-      <div className="result">
+      <div className="result" style={resultOuterDiv}>
         <Breadcrumb category={category} topic={topic} />
         {renderData}
       </div>
