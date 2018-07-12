@@ -50,6 +50,7 @@ class Chart extends Component{
             let percent = "";
             percent = parseFloat(fields[i].quantity.replace(/,/g, ''))/base;
             percent = percent.toFixed(2)*100;
+
             num.push(percent); //calculated percent value is pushed to the array
           }
         }

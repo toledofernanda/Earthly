@@ -101,8 +101,8 @@ class Flag extends Component{
 
 			for (let item of country){
 				if(item['country'] === entityName){
-					console.log(entityName)
-            console.log(item["countryCode"].toLowerCase());
+					// console.log(entityName)
+            // console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
 				}
 			}
