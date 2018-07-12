@@ -712,7 +712,7 @@ export let db = {
         entity_name: 'United States',
         entity_type: 'country',
         quantity: '56.7',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -721,7 +721,7 @@ export let db = {
         entity_name: 'Tunisia',
         entity_type: 'country',
         quantity: '55',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -730,7 +730,7 @@ export let db = {
         entity_name: 'Iran',
         entity_type: 'country',
         quantity: '54',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -739,7 +739,7 @@ export let db = {
         entity_name: 'Israel',
         entity_type: 'country',
         quantity: '54',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -748,7 +748,7 @@ export let db = {
         entity_name: 'Kuwait',
         entity_type: 'country',
         quantity: '54',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -757,7 +757,7 @@ export let db = {
         entity_name: 'Iraq',
         entity_type: 'country',
         quantity: '53.9',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -766,7 +766,7 @@ export let db = {
         entity_name: 'Pakistan',
         entity_type: 'country',
         quantity: '53.5',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -775,7 +775,7 @@ export let db = {
         entity_name: 'United Arab Emirates',
         entity_type: 'country',
         quantity: '52.1',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -784,7 +784,7 @@ export let db = {
         entity_name: 'Saudi Arabia',
         entity_type: 'country',
         quantity: '52',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -793,7 +793,7 @@ export let db = {
         entity_name: 'Egypt',
         entity_type: 'country',
         quantity: '51',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       }
@@ -804,7 +804,7 @@ export let db = {
         entity_name: 'Russia',
         entity_type: 'country',
         quantity: '-67.8 ',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -813,7 +813,7 @@ export let db = {
         entity_name: 'Greenland',
         entity_type: 'country',
         quantity: '-66.1 ',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -822,7 +822,7 @@ export let db = {
         entity_name: 'Canada',
         entity_type: 'country',
         quantity: '-63.0',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -831,7 +831,7 @@ export let db = {
         entity_name: 'United States',
         entity_type: 'country',
         quantity: '-62.2',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -840,7 +840,7 @@ export let db = {
         entity_name: 'Mongolia',
         entity_type: 'country',
         quantity: '-55.3',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -849,7 +849,7 @@ export let db = {
         entity_name: 'Kyrgyzstan',
         entity_type: 'country',
         quantity: '-53.6',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -858,7 +858,7 @@ export let db = {
         entity_name: 'Sweden',
         entity_type: 'country',
         quantity: '-53.0',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -867,7 +867,7 @@ export let db = {
         entity_name: 'China',
         entity_type: 'country',
         quantity: '-52.3',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -876,7 +876,7 @@ export let db = {
         entity_name: 'Afghanistan',
         entity_type: 'country',
         quantity: '-52.2',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -885,7 +885,7 @@ export let db = {
         entity_name: 'Finland',
         entity_type: 'country',
         quantity: '-51.5',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       }
@@ -4653,7 +4653,7 @@ export let db = {
         entity_name: 'United States',
         entity_type: 'country',
         quantity: '56.7',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4662,7 +4662,7 @@ export let db = {
         entity_name: 'Tunisia',
         entity_type: 'country',
         quantity: '55',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4671,7 +4671,7 @@ export let db = {
         entity_name: 'Iran',
         entity_type: 'country',
         quantity: '54',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4680,7 +4680,7 @@ export let db = {
         entity_name: 'Israel',
         entity_type: 'country',
         quantity: '54',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4689,7 +4689,7 @@ export let db = {
         entity_name: 'Kuwait',
         entity_type: 'country',
         quantity: '54',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4698,7 +4698,7 @@ export let db = {
         entity_name: 'Iraq',
         entity_type: 'country',
         quantity: '53.9',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4707,7 +4707,7 @@ export let db = {
         entity_name: 'Pakistan',
         entity_type: 'country',
         quantity: '53.5',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4716,7 +4716,7 @@ export let db = {
         entity_name: 'United Arab Emirates',
         entity_type: 'country',
         quantity: '52.1',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4725,7 +4725,7 @@ export let db = {
         entity_name: 'Saudi Arabia',
         entity_type: 'country',
         quantity: '52',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4734,7 +4734,7 @@ export let db = {
         entity_name: 'Egypt',
         entity_type: 'country',
         quantity: '51',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       }
@@ -4745,7 +4745,7 @@ export let db = {
         entity_name: 'Russia',
         entity_type: 'country',
         quantity: '-67.8 ',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4754,7 +4754,7 @@ export let db = {
         entity_name: 'Greenland',
         entity_type: 'country',
         quantity: '-66.1 ',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4763,7 +4763,7 @@ export let db = {
         entity_name: 'Canada',
         entity_type: 'country',
         quantity: '-63.0',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4772,7 +4772,7 @@ export let db = {
         entity_name: 'United States',
         entity_type: 'country',
         quantity: '-62.2',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4781,7 +4781,7 @@ export let db = {
         entity_name: 'Mongolia',
         entity_type: 'country',
         quantity: '-55.3',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4790,7 +4790,7 @@ export let db = {
         entity_name: 'Kyrgyzstan',
         entity_type: 'country',
         quantity: '-53.6',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4799,7 +4799,7 @@ export let db = {
         entity_name: 'Sweden',
         entity_type: 'country',
         quantity: '-53.0',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4808,7 +4808,7 @@ export let db = {
         entity_name: 'China',
         entity_type: 'country',
         quantity: '-52.3',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4817,7 +4817,7 @@ export let db = {
         entity_name: 'Afghanistan',
         entity_type: 'country',
         quantity: '-52.2',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
@@ -4826,7 +4826,7 @@ export let db = {
         entity_name: 'Finland',
         entity_type: 'country',
         quantity: '-51.5',
-        unit: 'Celcius (&#8451;)',
+        unit: 'Celcius (°C)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       }
