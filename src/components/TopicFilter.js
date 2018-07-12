@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { db } from './Db';
 import TopicButton from 'components/TopicButton';
 import StepTitle from 'components/StepTitle';
+import BackButton from 'components/BackButton';
 import { Link } from "react-router-dom";
 
 //This component displays a list of secondary categories (topics)
@@ -41,9 +42,7 @@ class TopicFilter extends Component{
     }
 
     let backButton = {
-      backgroundColor: 'transparent',
-      border: 'none',
-      fontSize: '1.8em',
+      width: '19px',
       cursor: 'pointer'
     }
 
@@ -63,7 +62,7 @@ class TopicFilter extends Component{
     return (
       <div className="topic-filter" key="topic-filter" style = {outerDiv}>
           <div className="topic-list" style={divStyle}>
-            <Link to={`/category`}><button style={backButton}>{'<'}</button></Link>
+            <BackButton component={'topic'} />
             <StepTitle />
             {topicList}
           </div>
