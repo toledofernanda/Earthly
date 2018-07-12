@@ -55,8 +55,7 @@ class CategoryFilter extends Component{
     return (
       <div className="category-filter" key="category-filter" style = {outerDiv}>
           <div className="category-list" style={divStyle}>
-            <Link to={`/`}><button style={backButton} >{'<'}</button></Link>
-            <StepTitle title={title}  />
+          
             {categoryList}
           </div>
       </div>
