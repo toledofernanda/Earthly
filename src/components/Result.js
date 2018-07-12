@@ -66,16 +66,16 @@ class Result extends Component {
       </div>
     )
 
-    function capitalizeAllLetters(string) {
-      var splitString = string.toLowerCase().split('_');
-      //loop through each string
-      for (var i = 0; i < splitString.length; i++) {
-       // assign it back to the array after capitalized
-       splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
-      }
-      // join all strings into an unique string and return it
-      return splitString.join(' ');
-    }
+    // function capitalizeAllLetters(string) {
+    //   var splitString = string.toLowerCase().split('_');
+    //   //loop through each string
+    //   for (var i = 0; i < splitString.length; i++) {
+    //    // assign it back to the array after capitalized
+    //    splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
+    //   }
+    //   // join all strings into an unique string and return it
+    //   return splitString.join(' ');
+    // }
 
     return (
       <div className="result">
