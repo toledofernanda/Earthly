@@ -14,7 +14,8 @@ class RankingIcon extends Component{
       height: 'auto'
     }
     let halfIcon = {
-      clipPath: 'inset(3%)'
+      // clipPath: 'inset(10px 20px 30px 40px)'
+      width: '10px'
     }
 
     let iconCount = this.props.iconCount; //props from RankingBar
