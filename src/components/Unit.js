@@ -5,7 +5,7 @@ class Unit extends Component {
 
     /* CSS */
     let unitStyle = {
-      flex: '0 0 10%',
+      flex: '0 0 20%',
       fontSize: '.8em',
       textAlign: 'right'
     }

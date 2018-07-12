@@ -47,7 +47,7 @@ class Result extends Component {
     }
 
     let topicD = {
-      flex: '0 0 80%'
+      flex: '0 0 60%'
     }
 
     /* JS */
