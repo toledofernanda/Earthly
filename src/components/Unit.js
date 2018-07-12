@@ -3,6 +3,13 @@ import React, { Component } from "react";
 class Unit extends Component {
   render() {
 
+    /* CSS */
+    let unitStyle = {
+      flex: '0 0 10%',
+      fontSize: '.8em',
+      textAlign: 'right'
+    }
+
     /* JS */
     let unit = this.props.unit;
     let renderData = '';
@@ -12,7 +19,7 @@ class Unit extends Component {
     }
 
     return (
-      <div className="unit">
+      <div className="unit" style={unitStyle}>
         {renderData}
       </div>
     );
