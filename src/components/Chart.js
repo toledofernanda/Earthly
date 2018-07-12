@@ -34,30 +34,33 @@ class Chart extends Component{
       if (topic === this.props.topic){
         let fields = db[category][topic];
 
-        //smallest rankings
+        //smallest inverted rankings
         if ( topic === 'smallest_countries' | topic === 'smallest_population'){
-          let base = fields[9].quantity; //quantity of No.10
+          //parseFloat needed as quantity in Db has commas
+          let base = parseFloat(fields[9].quantity.replace(/,/g, '')); //quantity of No.10
           num[9] = 100;
           for(let i= 8; i>=0; i--){
             let percent = "";
-            percent = (fields[i].quantity)/base;
+            percent = parseFloat(fields[i].quantity.replace(/,/g, ''))/base;
             num[i] = percent.toFixed(2)*100;
-            // if (num[i] < 5){
-            //   num[i] = 5; // we need half icon
-            // }
+          }//these topics are inverted chart
+        } else if ( topic === 'most_soccer_world_cup_champion' | topic === 'basketball_world_cup_gold_medals'){
+          for (let i=0; i<fields.length; i++){
+            num[i] = fields[i].quantity;
+            console.log(num[i]);
           }
-        } else {
+        }//for these topics, we need to show exact number of icons
+        else {
         //get quantity of each entity
           num.push(100); //No.1 is always 100%
 
-          let base = fields[0].quantity; //quantity of No.1
+          //parseFloat needed as quantity in Db has commas
+          let base = parseFloat(fields[0].quantity.replace(/,/g, '')); //quantity of No.1
           for(let i=1; i<fields.length; i++){
             let percent = "";
-            percent = (fields[i].quantity)/base;
+            percent = parseFloat(fields[i].quantity.replace(/,/g, ''))/base;
             percent = percent.toFixed(2)*100;
-            // if (percent < 5){
-            //   percent = 5; // we need half icon
-            // }
+
             num.push(percent); //calculated percent value is pushed to the array
           }
         }
@@ -66,7 +69,6 @@ class Chart extends Component{
         for (let i = 0; i < fields.length; i++) {
           entityNames.push(fields[i].entity_name);
         }
-
         //get source names
         source = fields[0].source_name;
 
