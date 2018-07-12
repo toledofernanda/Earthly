@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { db } from './Db';
 import RankingBar from 'components/RankingBar';
+import Source from 'components/Source';
+import Label from 'components/Label';
 
 class Chart extends Component{
   render(){
@@ -13,11 +15,19 @@ class Chart extends Component{
       width: '80vw'
     }
 
+    let labelSourceDiv = {
+      display: 'flex',
+      flexFlow: 'row wrap',
+      justifyContent: 'space-between'
+    }
+
     /* JS */
     let category = this.props.category; //props passed down
     let topic = this.props.topic; //props passed down
     let num = []; //an array to hold the percentage value for chart bars
     let entityNames = []; //array to store each entity name
+    let source; //source name
+    let label;
 
     // This component calculates percentage value for entities ranked within 10
     for(let topic in db[category]){
@@ -59,6 +69,11 @@ class Chart extends Component{
         for (let i = 0; i < fields.length; i++) {
           entityNames.push(fields[i].entity_name);
         }
+        //get source names
+        source = fields[0].source_name;
+
+        //get labelSourceDiv
+        label = fields[0].label;
       }
     }
 
@@ -74,6 +89,11 @@ class Chart extends Component{
         <RankingBar barLength={num[7]} topic={topic} category={category} entityName={entityNames[7]} />
         <RankingBar barLength={num[8]} topic={topic} category={category} entityName={entityNames[8]} />
         <RankingBar barLength={num[9]} topic={topic} category={category} entityName={entityNames[9]} />
+
+        <div className="label-source" style={labelSourceDiv} >
+          <Label label={label} />
+          <Source source={source} />
+        </div>
       </div>
     )
   }

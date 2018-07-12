@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
+import BackButton from 'components/BackButton';
+import Unit from 'components/Unit';
 import { Link } from "react-router-dom";
 import { db } from './Db';
 
@@ -18,6 +20,11 @@ class Result extends Component {
   render(){
 
     /* CSS */
+    let resultOuterDiv = {
+      display: 'flex',
+      justifyContent: 'center'
+    }
+
     let rankingInfo = {
       display: 'flex',
       flexFlow: 'row nowrap',
@@ -31,13 +38,6 @@ class Result extends Component {
       padding: '0 30px'
     }
 
-    let backButton = {
-      backgroundColor: 'transparent',
-      border: 'none',
-      fontSize: '1.8em',
-      cursor: 'pointer'
-    }
-
     let resultChart = {
       maxWidth: '1024px', /*only for this element so breadcrumb is 100%*/
       margin: '60px 5% 20px 5%',
@@ -46,18 +46,23 @@ class Result extends Component {
       border: '1px solid darkgrey',
     }
 
+    let topicD = {
+      flex: '0 0 60%'
+    }
+
     /* JS */
     let category = this.state.category;
     let topic = this.state.topic;
     let topicDescription = db[category][topic][0]['topic_description'];
+    let unit = db[category][topic][0]['unit'];
     let renderData = [];
 
     renderData.push(
       <div className="result-chart" key="result-chart" style={resultChart}>
           <div className="chart-header" style={chartHeader}>
-            <Link to={`/category/${category}`}><button style={backButton}>{'<'}</button></Link>
-            <h2>{topicDescription}</h2>
-            <span>unit</span>
+            <BackButton category={category} component={'result'} />
+            <h2 style={topicD} >{topicDescription}</h2>
+            <Unit unit={unit} />
           </div>
           <div className="ranking-info" style={rankingInfo}>
             <RankingEntity category={category} topic={topic} />
@@ -78,7 +83,7 @@ class Result extends Component {
     // }
 
     return (
-      <div className="result">
+      <div className="result" style={resultOuterDiv}>
         <Breadcrumb category={category} topic={topic} />
         {renderData}
       </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { db } from './Db';
 import CategoryButton from 'components/CategoryButton';
 import StepTitle from 'components/StepTitle';
+import BackButton from 'components/BackButton';
 import { Link } from "react-router-dom";
 
 //This component displays a list of categories
@@ -35,9 +36,7 @@ class CategoryFilter extends Component{
     }
 
     let backButton = {
-      backgroundColor: 'transparent',
-      border: 'none',
-      fontSize: '1.8em',
+      width: '19px',
       cursor: 'pointer'
     }
 
@@ -55,7 +54,8 @@ class CategoryFilter extends Component{
     return (
       <div className="category-filter" key="category-filter" style = {outerDiv}>
           <div className="category-list" style={divStyle}>
-          
+            <BackButton component={'category'} />
+            <StepTitle title={title}  />
             {categoryList}
           </div>
       </div>

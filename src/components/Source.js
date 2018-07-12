@@ -5,9 +5,7 @@ class Source extends Component{
 
     /* CSS */
     let source = {
-      textAlign: 'right',
       fontSize: '.6em',
-      paddingRight: '10px'
     }
 
     return (
