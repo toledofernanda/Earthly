@@ -18,6 +18,11 @@ class Result extends Component {
   render(){
 
     /* CSS */
+    let resultOuterDiv = {
+      display: 'flex',
+      justifyContent: 'center'
+    }
+
     let rankingInfo = {
       display: 'flex',
       flexFlow: 'row nowrap',
@@ -78,7 +83,7 @@ class Result extends Component {
     // }
 
     return (
-      <div className="result">
+      <div className="result" style={resultOuterDiv}>
         <Breadcrumb category={category} topic={topic} />
         {renderData}
       </div>
