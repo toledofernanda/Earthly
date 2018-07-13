@@ -65,6 +65,8 @@ class Contact extends Component {
   }
 
   async handleSubmit(e){
+    alert('Thank you for your feedback ' + this.state.firstName + '!');
+
     e.preventDefault()
     const {firstName, lastName, email,phone, message} = this.state
 
@@ -76,8 +78,7 @@ class Contact extends Component {
       message
     })
 
-
-   }
+}
 
   render() {
     return (
@@ -90,37 +91,37 @@ class Contact extends Component {
             </p>
         </div>
         <div className = "contactForm">
-          <Form onSubmit={this.handleSubmit}>
-            <FormGroup>
+          <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center'}}>
+            <FormGroup style={{flexBasis:'50%'}}>
               <Label for="firstName">First Name</Label>
-              <input
+              <input style={{border:'1px solid gray', borderRadius:7}}
               type="text"
               name= "firstName"
               onChange = {this.handleChange}
               />
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup style={{flexBasis:'50%'}}>
               <Label for="lastName">Last Name</Label>
-              <input
+              <input style={{border:'1px solid gray', borderRadius:7}}
               type="text"
               name= "lastName"
               onChange = {this.handleChange}
               />
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup style={{flexBasis:'50%'}}>
               <Label for="email">Email</Label>
-              <input
+              <input style={{border:'1px solid gray', borderRadius:7}}
               type="email"
               name= "email"
               onChange = {this.handleChange}
               />
             </FormGroup>
 
-            <FormGroup>
+            <FormGroup style={{flexBasis:'50%'}}>
               <Label for="phone">phone</Label>
-              <input
+              <input style={{border:'1px solid gray', borderRadius:7}}
               type="text"
               pattern="[0-9]*"
               name= "phone"
@@ -128,16 +129,16 @@ class Contact extends Component {
               />
             </FormGroup>
 
-            <FormGroup style={{width:'200px'}}>
-              <Label for="message">Message</Label>
-              <input
+            <FormGroup style={{flexBasis:'100%'}}>
+              <Label for="message" style={{width:'100%'}}>Message</Label>
+              <textarea style={{width: '60%', height:'200px',border:'1px solid black', borderRadius:7}}
               type="textarea"
               name= "message"
               onChange = {this.handleChange}
               />
             </FormGroup>
 
-            <button>Submit</button>
+            <button style={submitButton}>Submit</button>
           </Form>
 
 
