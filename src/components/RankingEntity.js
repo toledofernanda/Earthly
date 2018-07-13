@@ -41,7 +41,6 @@ class RankingEntity extends Component {
     let order = 1;
     let specificOrder; //for cases where there are ties on ranking
 
-    console.log("topic", topic)
     if(topic === 'basketball_world_cup_gold_medals') {
       specificOrder = [1,2,3,3];
       let index = 0;
