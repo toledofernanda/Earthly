@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import BackButton from 'components/BackButton';
 
 const boxPosition = {
   marginRight: '10vw',
@@ -84,6 +85,7 @@ class Contact extends Component {
     return (
       <div style = {boxPosition} className = "donationBox">
         <div className = "contactTop" style = {{textAlign: 'center'}}>
+          <BackButton component={'contact'} />
             <h1>Contact</h1>
             <p style={{width:'50%', marginLeft:'auto', marginRight:'auto'}}>Get in touch with us.
             We would love to hear from you What would you like to see added to Earthly?
