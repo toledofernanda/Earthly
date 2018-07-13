@@ -15,28 +15,42 @@ class TopicFilter extends Component{
   }
 
   render(){
-    let divStyle = {
+    let outerDiv = {
       maxWidth: '1024px',
+      margin: 'auto',
+      display: 'flex',
+      flexFlow: 'column wrap',
+      paddingBottom: '4%',
+      justifyContent: 'center',
+      marginTop: '5%', 
+      marginBottom: '5%',
+      backgroundColor: 'white',
+      borderRadius: 30,
+    }; //style for the outside div of main component
+
+    let filterTopStyle = {
+      padding: '3%',
+      display: 'grid',
+      gridTemplateColumns: '40px 10fr'
+      // display: 'flex',
+      // flexFlow: 'row nowrap',
+      // justifyContent: 'center'
+    };
+
+    let divStyle = {
       height: '100%',
       minHeight: '50vh',
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'white',
-      borderRadius: 30,
-      border: '1px solid black',
+      alignItems: 'flex-start',
+      // border: '1px solid black',
       padding: '7% 20%',
-      margin: '5%',
-      marginBottom: 0,
+      // margin: '5%',
+      // marginBottom: 0,
       boxSizing: 'border-box'
-    }; //style for the inside div of main component
-    let outerDiv = {
-      width: '100%',
-      margin: 'auto',
-      display: 'flex',
-      justifyContent: 'center'
-    }; //style for the outside div of main component
+    };  //style for the inside div of main component
+
     let catStyle = {
       flex: '0 0 33.33%'
     }
@@ -45,6 +59,7 @@ class TopicFilter extends Component{
       width: '19px',
       cursor: 'pointer'
     }
+
 
     let category = this.state.category;
     let topicList = [];
@@ -61,14 +76,16 @@ class TopicFilter extends Component{
     }
     return (
       <div className="topic-filter" key="topic-filter" style = {outerDiv}>
-          <div className="topic-list" style={divStyle}>
+         <div className="filterTop" style={filterTopStyle}>
             <BackButton component={'topic'} />
             <StepTitle />
+         </div>
+         <div className="topic-list" style={divStyle}>
             {topicList}
           </div>
       </div>
     )
   }
-}
+}  // <Link to={`/category`}><button style={backButton}>{'<'}</button></Link>
 
 export default TopicFilter;

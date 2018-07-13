@@ -11,7 +11,7 @@ class RankingBar extends Component{
 
     /* CSS */
     let rankingBar = {
-      marginBottom: '20px',
+      marginBottom: '32px',
       maxWidth:'100%'
     }
 

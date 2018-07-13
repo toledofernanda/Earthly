@@ -20,8 +20,7 @@ class FilterButtonText extends Component{
       dbtext = `${category}`;
       text = dbtext.toUpperCase();
     }else {
-      dbtext = `${topic}`;
-      // dbtext = `${db[category][topic][0][topic_description]}`;
+      dbtext = db[category][topic][0]['topic_description'];
       text = dbtext.toUpperCase();
   }
     return (

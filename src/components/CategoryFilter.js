@@ -9,35 +9,54 @@ import { Link } from "react-router-dom";
 class CategoryFilter extends Component{
 
   render(){
-    let divStyle = {
+    let outerDiv = {
       maxWidth: '1024px',
+      margin: 'auto',
+      display: 'flex',
+      flexFlow: 'column wrap',
+      paddingBottom: '4%',
+      justifyContent: 'center',
+      marginTop: '5%', 
+      marginBottom: '5%',
+      backgroundColor: 'white',
+      borderRadius: 30,
+    }; //style for the outside div of main component
+
+    let filterTopStyle = {
+      padding: '3%',
+      display: 'grid',
+      gridTemplateColumns: '40px 10fr'
+      // display: 'flex',
+      // flexFlow: 'row nowrap',
+      // justifyContent: 'center'
+    };
+
+    let divStyle = {
       height: '100%',
       minHeight: '50vh',
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'white',
-      borderRadius: 30,
-      border: '1px solid black',
+      alignItems: 'flex-start',
+      // border: '1px solid black',
       padding: '7% 20%',
-      margin: '5%',
-      marginBottom: 0,
+      // margin: '5%',
+      // marginBottom: 0,
       boxSizing: 'border-box'
     };  //style for the inside div of main component
-    let outerDiv = {
-      margin: 'auto',
-      display: 'flex',
-      paddingBottom: '4%',
-      justifyContent: 'center'
-    }; //style for the outside div of main component
+
     let catStyle = {
       flex: '0 0 33.33%'
     }
 
-    let backButton = {
-      width: '19px',
-      cursor: 'pointer'
+    // let backButton = {
+    //   width: '19px',
+    //   cursor: 'pointer',
+    //   alignSelf: 'center'
+    // }
+
+    let titleStyle = {
+      // flex: '0 0 80%'
     }
 
     let categoryList = [];
@@ -53,9 +72,11 @@ class CategoryFilter extends Component{
 
     return (
       <div className="category-filter" key="category-filter" style = {outerDiv}>
-          <div className="category-list" style={divStyle}>
+          <div className="filterTop" style={filterTopStyle}>
             <BackButton component={'category'} />
-            <StepTitle title={title}  />
+            <StepTitle title={title} style={titleStyle} />
+          </div>
+          <div className="category-list" style={divStyle}>
             {categoryList}
           </div>
       </div>
