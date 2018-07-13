@@ -13,6 +13,10 @@ a, a:visited {
   color: black;
 }
 
+.button-shadow {
+  box-shadow: '2px 2px 3px lightgray';
+}
+
 .breadcrumb a:hover {
   color: white; /*affects breadcrumb links */
 }
