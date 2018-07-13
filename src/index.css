@@ -14,7 +14,11 @@ a, a:visited {
 }
 
 .button-shadow {
-  box-shadow: '2px 2px 3px lightgray';
+  box-shadow: 2px 2px 3px lightgray;
+}
+
+.start-hover {
+  background-color: #4DCABD !important;
 }
 
 .breadcrumb a:hover {
