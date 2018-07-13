@@ -32,6 +32,12 @@ class Flag extends Component{
 			borderRadius: '5px'
 		}
 
+		let nepalFlag = {
+			paddingRight:'20px',
+			height:'43px',
+			borderRadius: '5px'
+		}
+
 		/* JS */
 		function parseCSV(data) {
 
@@ -102,13 +108,21 @@ class Flag extends Component{
 
 			for (let item of country){
 				if(item['country'] === entityName){
+
 					// console.log(entityName)
             // console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
+						if(countryAbb == 'np'){
+							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} />;
+
+						} else{
+							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} />;
+
+						}
+
 				}
 			}
 
-		  myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} />;
 		}
 
 		if(this.state.tooltipOpen) {

@@ -85,43 +85,26 @@ class Contact extends Component {
       <div style = {boxPosition} className = "donationBox">
         <div className = "contactTop" style = {{textAlign: 'center'}}>
             <h1>Contact</h1>
-            <p style={{marginLeft:'10px', marginRight:'10px'}}>Get in touch with us.
+            <p style={{width:'50%', marginLeft:'auto', marginRight:'auto'}}>Get in touch with us.
             We would love to hear from you What would you like to see added to Earthly?
             Questions, comments, or complaints? Fill out the form below and we will be in touch with you shortly.
             </p>
         </div>
         <div className = "contactForm">
           <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center'}}>
-            <FormGroup style={{flexBasis:'50%'}}>
+            <div>
+            <FormGroup  style={{display:'flex', marginRight:'30px', marginBottom:'10px'}}>
               <Label for="firstName">First Name</Label>
-              <input style={{border:'1px solid gray', borderRadius:7}}
+              <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'5px'}}
               type="text"
               name= "firstName"
               onChange = {this.handleChange}
               />
             </FormGroup>
 
-            <FormGroup style={{flexBasis:'50%'}}>
-              <Label for="lastName">Last Name</Label>
-              <input style={{border:'1px solid gray', borderRadius:7}}
-              type="text"
-              name= "lastName"
-              onChange = {this.handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup style={{flexBasis:'50%'}}>
-              <Label for="email">Email</Label>
-              <input style={{border:'1px solid gray', borderRadius:7}}
-              type="email"
-              name= "email"
-              onChange = {this.handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup style={{flexBasis:'50%'}}>
+            <FormGroup style={{display:'flex',justifyContent:'flex-end', marginRight:'30px', marginBottom:'10px'}}>
               <Label for="phone">phone</Label>
-              <input style={{border:'1px solid gray', borderRadius:7}}
+              <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'5px'}}
               type="text"
               pattern="[0-9]*"
               name= "phone"
@@ -129,9 +112,32 @@ class Contact extends Component {
               />
             </FormGroup>
 
+          </div>
+          <div>
+            <FormGroup style={{display:'flex', marginRight:'30px', marginBottom:'10px'}}>
+              <Label for="lastName">Last Name</Label>
+              <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'5px'}}
+              type="text"
+              name= "lastName"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup style={{display:'flex',justifyContent:'flex-end', marginRight:'30px', marginBottom:'10px'}}>
+              <Label for="email">Email</Label>
+              <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'5px'}}
+              type="email"
+              name= "email"
+              onChange = {this.handleChange}
+              />
+            </FormGroup>
+
+
+          </div>
+
             <FormGroup style={{flexBasis:'100%'}}>
-              <Label for="message" style={{width:'100%'}}>Message</Label>
-              <textarea style={{width: '60%', height:'200px',border:'1px solid black', borderRadius:7}}
+              <Label for="message" style={{margin:'10px'}}>Message<br /></Label>
+              <textarea style={{marginTop:'10px',marginBottom:'10px', width: '50%', height:'200px',border:'1px solid black', borderRadius:7}}
               type="textarea"
               name= "message"
               onChange = {this.handleChange}

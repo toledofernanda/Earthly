@@ -14,7 +14,7 @@ class RankingEntity extends Component {
       justifyContent: 'space-between',
       alignItems: 'center',
       boxSizing: 'border-box',
-      height: '85px',
+      height: '84px',
       width: '115px',
       position: 'relative',
       paddingRight: '10px',
@@ -28,7 +28,8 @@ class RankingEntity extends Component {
     }
 
     let orderStyle = {
-      fontSize: '.8em'
+      fontSize: '.8em',
+      parringTop:'-2px'
     }
 
     /* JS */
@@ -45,7 +46,7 @@ class RankingEntity extends Component {
 
       entities.push(
         <div className="ranking-entity" key={entityName} style={rankingEntity}>
-          <div className="order">
+          <div className="order" style={{marginTop:'-15px'}}>
             <span style={orderStyle} >{order}</span>
           </div>
           <div className="entity-flag-name" >
