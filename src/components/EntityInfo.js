@@ -32,7 +32,7 @@ class EntityInfo extends Component {
                 <div className="entity-info country" key="entity-info" >
                   <ul style={infoUl}>
                     <li style={infoLi} ><b>Capital: </b>{propObj["capital"]}</li>
-                    <li style={infoLi}><b>Population: </b>{numberWithCommas(propObj["quantity"])}</li>
+                    <li style={infoLi}><b>Population: </b>{numberWithCommas(propObj["population"])}</li>
                     <li style={infoLi}><b>Language: </b>{propObj["language"]}</li>
                     <li style={infoLi}><b>Greeting: </b>{propObj["greeting"]}</li>
                   </ul>

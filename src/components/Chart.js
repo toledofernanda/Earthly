@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
 import { db } from './Db';
 import RankingBar from 'components/RankingBar';
+import Source from 'components/Source';
+import Label from 'components/Label';
 
 class Chart extends Component{
   render(){
 
     /* CSS */
     let chart = {
-      backgroundColor: 'white',
-      padding: '20px',
+      // backgroundColor: 'white',
+      padding: '20px 20px 10px 20px',
       borderRadius: '0px 30px 30px 0px',
+      width: '80vw'
+    }
+
+    let labelSourceDiv = {
+      display: 'flex',
+      flexFlow: 'row wrap',
+      justifyContent: 'space-between'
     }
 
     /* JS */
@@ -17,27 +26,54 @@ class Chart extends Component{
     let topic = this.props.topic; //props passed down
     let num = []; //an array to hold the percentage value for chart bars
     let entityNames = []; //array to store each entity name
+    let source; //source name
+    let label;
 
     // This component calculates percentage value for entities ranked within 10
     for(let topic in db[category]){
       if (topic === this.props.topic){
         let fields = db[category][topic];
 
+        //smallest inverted rankings
+        if ( topic === 'smallest_countries' | topic === 'smallest_population'){
+          //parseFloat needed as quantity in Db has commas
+          let base = parseFloat(fields[9].quantity.replace(/,/g, '')); //quantity of No.10
+          num[9] = 100;
+          for(let i= 8; i>=0; i--){
+            let percent = "";
+            percent = parseFloat(fields[i].quantity.replace(/,/g, ''))/base;
+            num[i] = percent.toFixed(2)*100;
+          }//these topics are inverted chart
+        } else if ( topic === 'most_soccer_world_cup_champion' | topic === 'basketball_world_cup_gold_medals'){
+          for (let i=0; i<fields.length; i++){
+            num[i] = fields[i].quantity;
+            console.log(num[i]);
+          }
+        }//for these topics, we need to show exact number of icons
+        else {
         //get quantity of each entity
-        num.push(100); //No.1 is always 100%
+          num.push(100); //No.1 is always 100%
 
-        let base = fields[0].quantity; //quantity of No.1
-        for(let i=1; i<fields.length; i++){
-          let percent = "";
-          percent = (fields[i].quantity)/base;
-          percent = percent.toFixed(2)*100;
-          num.push(percent); //calculated percent value is pushed to the array
+          //parseFloat needed as quantity in Db has commas
+          let base = parseFloat(fields[0].quantity.replace(/,/g, '')); //quantity of No.1
+          for(let i=1; i<fields.length; i++){
+            let percent = "";
+            percent = parseFloat(fields[i].quantity.replace(/,/g, ''))/base;
+            percent = percent.toFixed(2)*100;
+
+            num.push(percent); //calculated percent value is pushed to the array
+          }
         }
 
         //get entity names
         for (let i = 0; i < fields.length; i++) {
           entityNames.push(fields[i].entity_name);
         }
+        //get source names
+        source = fields[0].source_name;
+
+        //get labelSourceDiv
+        label = fields[0].label;
       }
     }
 
@@ -53,6 +89,11 @@ class Chart extends Component{
         <RankingBar barLength={num[7]} topic={topic} category={category} entityName={entityNames[7]} />
         <RankingBar barLength={num[8]} topic={topic} category={category} entityName={entityNames[8]} />
         <RankingBar barLength={num[9]} topic={topic} category={category} entityName={entityNames[9]} />
+
+        <div className="label-source" style={labelSourceDiv} >
+          <Label label={label} />
+          <Source source={source} />
+        </div>
       </div>
     )
   }
