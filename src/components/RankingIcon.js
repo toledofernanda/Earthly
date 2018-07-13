@@ -22,7 +22,7 @@ class RankingIcon extends Component{
 
     let iconCount = this.props.iconCount; //props from RankingBar
     let topic = this.props.topic; //props passed down
-    let image =  <img src={require(`images/${topic}.png`)} alt={`${topic}`} style={rankingIcon}/>   //image tag for icon
+    let image =  <img src={require(`images/${topic}_colored.svg`)} alt={`${topic}`} style={rankingIcon}/>   //image tag for icon
     let renderData = []; //variable to hold iconCount number of icons
 
     for(let i=0; i<iconCount; i++){
@@ -30,7 +30,7 @@ class RankingIcon extends Component{
     }
 
     if(iconCount < 1){
-      renderData.push(<img src={require(`images/${topic}.png`)} alt={`${topic}`} style={halfIcon}/>)
+      renderData.push(<img src={require(`images/${topic}_colored.svg`)} alt={`${topic}`} style={halfIcon}/>)
     }
 
     return (
