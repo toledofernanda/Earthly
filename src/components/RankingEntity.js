@@ -39,25 +39,118 @@ class RankingEntity extends Component {
     let entityName = "";
     let entities = [];
     let order = 1;
+    let specificOrder; //for cases where there are ties on ranking
 
-    // get all entities that appear on that category/topic
-    for (let entity of subCat) {
-      entityName = entity["entity_name"]; //get entityName to get info
+    if(topic === 'basketball_world_cup_gold_medals') {
+      specificOrder = [1,2,3,3];
+      let index = 0;
 
-      entities.push(
-        <div className="ranking-entity" key={entityName} style={rankingEntity}>
-          <div className="order" style={{marginTop:'-15px'}}>
-            <span style={orderStyle} >{order}</span>
+      // get all entities that appear on that category/topic
+      for (let entity of subCat) {
+        entityName = entity["entity_name"]; //get entityName to get info
+
+        entities.push(
+          <div className="ranking-entity" key={entityName} style={rankingEntity}>
+            <div className="order" style={{marginTop:'-15px'}}>
+              <span style={orderStyle} >{specificOrder[index]}</span>
+            </div>
+            <div className="entity-flag-name" >
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <EntityName entityName={entityName} parent={'ranking-entity'} />
+            </div>
           </div>
-          <div className="entity-flag-name" >
-            <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
-            <EntityName entityName={entityName} parent={'ranking-entity'} />
-          </div>
-        </div>
-      )
+        )
 
-      order++;
+        index++;
+      }
+    } else if(topic === 'most_soccer_world_cup_champion') {
+      specificOrder = [1,2,2,3,3,4,4,4];
+      let index = 0;
+
+      // get all entities that appear on that category/topic
+      for (let entity of subCat) {
+        entityName = entity["entity_name"]; //get entityName to get info
+
+        entities.push(
+          <div className="ranking-entity" key={entityName} style={rankingEntity}>
+            <div className="order" style={{marginTop:'-15px'}}>
+              <span style={orderStyle} >{specificOrder[index]}</span>
+            </div>
+            <div className="entity-flag-name" >
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <EntityName entityName={entityName} parent={'ranking-entity'} />
+            </div>
+          </div>
+        )
+
+        index++;
+      }
+    } else if(topic === 'highest_temperature') {
+      specificOrder = [1,2,3,3,3,4,5,6,7,8];
+      let index = 0;
+
+      // get all entities that appear on that category/topic
+      for (let entity of subCat) {
+        entityName = entity["entity_name"]; //get entityName to get info
+
+        entities.push(
+          <div className="ranking-entity" key={entityName} style={rankingEntity}>
+            <div className="order" style={{marginTop:'-15px'}}>
+              <span style={orderStyle} >{specificOrder[index]}</span>
+            </div>
+            <div className="entity-flag-name" >
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <EntityName entityName={entityName} parent={'ranking-entity'} />
+            </div>
+          </div>
+        )
+
+        index++;
+      }
+    } else if(topic === 'most_earthquakes') {
+      specificOrder = [1,2,3,4,5,6,7,8,9,9];
+      let index = 0;
+
+      // get all entities that appear on that category/topic
+      for (let entity of subCat) {
+        entityName = entity["entity_name"]; //get entityName to get info
+
+        entities.push(
+          <div className="ranking-entity" key={entityName} style={rankingEntity}>
+            <div className="order" style={{marginTop:'-15px'}}>
+              <span style={orderStyle} >{specificOrder[index]}</span>
+            </div>
+            <div className="entity-flag-name" >
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <EntityName entityName={entityName} parent={'ranking-entity'} />
+            </div>
+          </div>
+        )
+
+        index++;
+      }
+    } else {
+      // get all entities that appear on that category/topic
+      for (let entity of subCat) {
+        entityName = entity["entity_name"]; //get entityName to get info
+
+        entities.push(
+          <div className="ranking-entity" key={entityName} style={rankingEntity}>
+            <div className="order" style={{marginTop:'-15px'}}>
+              <span style={orderStyle} >{order}</span>
+            </div>
+            <div className="entity-flag-name" >
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <EntityName entityName={entityName} parent={'ranking-entity'} />
+            </div>
+          </div>
+        )
+
+        order++;
+      }
     }
+
+
 
     return (
       <div className="ranking-entities" key="ranking-entities" style={rankingEntities}>
