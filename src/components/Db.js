@@ -1609,7 +1609,7 @@ export let db = {
       },
       { topic_description: 'Longest Rivers',
         ranking: '3',
-        entity_name: 'Yangtze (Chang Jiang; Long River)',
+        entity_name: 'Yangtze',
         location: 'China',
         entity_type: 'not_country',
         quantity: '6,300',
