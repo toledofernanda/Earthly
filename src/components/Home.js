@@ -42,7 +42,6 @@ class Home extends Component {
       marginTop: '19px',
       letterSpacing: '3px',
       color: 'white',
-      boxShadow: '2px 2px 3px lightgray'
     }
 
     return (
@@ -50,7 +49,7 @@ class Home extends Component {
         <div className="main-content" style={mainContent}>
           <h1>Welcome to Earthly!</h1>
           <h3>Learn about world rankings and countries</h3>
-          <Link to={`/category`}><button style={startButton}>Start</button></Link>
+          <Link to={`/category`}><button style={startButton} className='button-shadow'>Start</button></Link>
         </div>
       </div>
 
