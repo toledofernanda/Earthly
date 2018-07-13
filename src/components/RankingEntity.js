@@ -14,13 +14,15 @@ class RankingEntity extends Component {
       justifyContent: 'space-between',
       alignItems: 'center',
       boxSizing: 'border-box',
-      height: '90px',
+      height: '85px',
       width: '115px',
       position: 'relative',
-      padding: '10px'
+      paddingRight: '10px',
+      paddingLeft: '10px'
     }
 
     let rankingEntities = {
+      paddingTop:'10px',
       backgroundColor: 'lightgrey',
       borderRadius: '0 0 0 30px'
     }
@@ -46,7 +48,7 @@ class RankingEntity extends Component {
           <div className="order">
             <span style={orderStyle} >{order}</span>
           </div>
-          <div className="entity-flag-name">
+          <div className="entity-flag-name" >
             <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
             <EntityName entityName={entityName} parent={'ranking-entity'} />
           </div>

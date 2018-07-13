@@ -27,7 +27,8 @@ class Flag extends Component{
 
 		/* CSS */
 		let flag = {
-			maxWidth: '80px',
+			width:'75px',
+			height:'43px',
 			borderRadius: '5px'
 		}
 
