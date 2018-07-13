@@ -10,13 +10,14 @@ class RankingIcon extends Component{
     }
     let rankingIcon = {
       flex: '0 1 auto',
-      maxWidth: '5%',
-      height: 'auto'
+      width: '5%',
+      height: '5%'
     }
 
     let halfIcon = {
       // clipPath: 'inset(10px 20px 30px 40px)'
-      width: '10px'
+      width: '2.5%',
+      height: '3vw'
     }
 
     let iconCount = this.props.iconCount; //props from RankingBar
@@ -27,10 +28,10 @@ class RankingIcon extends Component{
     for(let i=0; i<iconCount; i++){
       renderData.push(image);
     }
-    //
-    // if(iconCount < 1){
-    //   renderData.push(<img src={require(`images/${topic}.png`)} alt={`${topic}`} style={halfIcon}/>)
-    // }
+
+    if(iconCount < 1){
+      renderData.push(<img src={require(`images/${topic}.png`)} alt={`${topic}`} style={halfIcon}/>)
+    }
 
     return (
       <div className="ranking-icon" key="ranking-icon" style={rankingIconsDiv}>
