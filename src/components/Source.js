@@ -5,7 +5,7 @@ class Source extends Component{
 
     /* CSS */
     let source = {
-      fontSize: '.6em',
+      fontSize: '.7em',
     }
 
     return (
