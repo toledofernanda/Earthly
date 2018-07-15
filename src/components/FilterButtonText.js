@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { db } from './Db';
 //This component displays a category in primary categories
 class FilterButtonText extends Component{
-  constructor(props){
-      super(props);
-    }
   render() {
     let catTextStyle = {
       textAlign: 'center',
@@ -16,12 +13,16 @@ class FilterButtonText extends Component{
     let dbtext = "";
     let text = "";
 
+    function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     if (this.props.name === "stepOne"){
       dbtext = `${category}`;
-      text = dbtext.toUpperCase();
+      text = capitalizeFirstLetter(dbtext);
     }else {
       dbtext = db[category][topic][0]['topic_description'];
-      text = dbtext.toUpperCase();
+      text = capitalizeFirstLetter(dbtext);
   }
     return (
       <p style={catTextStyle}>

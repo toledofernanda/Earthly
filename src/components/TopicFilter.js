@@ -20,16 +20,16 @@ class TopicFilter extends Component{
       margin: 'auto',
       display: 'flex',
       flexFlow: 'column wrap',
-      paddingBottom: '4%',
+      // paddingBottom: '4%',
       justifyContent: 'center',
-      marginTop: '5%', 
+      marginTop: '5%',
       marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
 
     let filterTopStyle = {
-      padding: '3%',
+      padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '40px 10fr'
       // display: 'flex',
@@ -45,7 +45,7 @@ class TopicFilter extends Component{
       justifyContent: 'center',
       alignItems: 'flex-start',
       // border: '1px solid black',
-      padding: '7% 20%',
+      padding: '6% 20%',
       // margin: '5%',
       // marginBottom: 0,
       boxSizing: 'border-box'
@@ -77,7 +77,7 @@ class TopicFilter extends Component{
     return (
       <div className="topic-filter" key="topic-filter" style = {outerDiv}>
          <div className="filterTop" style={filterTopStyle}>
-            <BackButton component={'topic'} />
+            <BackButton component={'topic'} className='button-shadow' />
             <StepTitle />
          </div>
          <div className="topic-list" style={divStyle}>

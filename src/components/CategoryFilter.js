@@ -14,16 +14,16 @@ class CategoryFilter extends Component{
       margin: 'auto',
       display: 'flex',
       flexFlow: 'column wrap',
-      paddingBottom: '4%',
+      // paddingBottom: '4%',
       justifyContent: 'center',
-      marginTop: '5%', 
+      marginTop: '5%',
       marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
 
     let filterTopStyle = {
-      padding: '3%',
+      padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '40px 10fr'
       // display: 'flex',
@@ -40,6 +40,7 @@ class CategoryFilter extends Component{
       alignItems: 'flex-start',
       // border: '1px solid black',
       padding: '7% 20%',
+      paddingTop: '4%',
       // margin: '5%',
       // marginBottom: 0,
       boxSizing: 'border-box'
@@ -73,7 +74,7 @@ class CategoryFilter extends Component{
     return (
       <div className="category-filter" key="category-filter" style = {outerDiv}>
           <div className="filterTop" style={filterTopStyle}>
-            <BackButton component={'category'} />
+            <BackButton component={'category'} className='button-shadow' />
             <StepTitle title={title} style={titleStyle} />
           </div>
           <div className="category-list" style={divStyle}>

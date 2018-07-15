@@ -6275,7 +6275,7 @@ export let db = {
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
       { topic_description: 'Most World Champions in Soccer World Cup',
-        ranking: '3',
+        ranking: '2',
         entity_name: 'Italy',
         entity_type: 'country',
         quantity: '4',
@@ -6295,7 +6295,7 @@ export let db = {
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
       { topic_description: 'Most World Champions in Soccer World Cup',
-        ranking: '5',
+        ranking: '4',
         entity_name: 'Uruguay',
         entity_type: 'country',
         quantity: '2',
@@ -6305,7 +6305,17 @@ export let db = {
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
       { topic_description: 'Most World Champions in Soccer World Cup',
-        ranking: '6',
+        ranking: '4',
+        entity_name: 'France',
+        entity_type: 'country',
+        quantity: '2',
+        label: 'Number of Times that Won World Cup',
+        unit: 'none',
+        source_name: 'The Soccer World Cups',
+        source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
+      },
+      { topic_description: 'Most World Champions in Soccer World Cup',
+        ranking: '7',
         entity_name: 'United Kingdom',
         entity_type: 'country',
         quantity: '1',
@@ -6314,18 +6324,9 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
+
       { topic_description: 'Most World Champions in Soccer World Cup',
         ranking: '7',
-        entity_name: 'France',
-        entity_type: 'country',
-        quantity: '1',
-        label: 'Number of Times that Won World Cup',
-        unit: 'none',
-        source_name: 'The Soccer World Cups',
-        source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
-      },
-      { topic_description: 'Most World Champions in Soccer World Cup',
-        ranking: '8',
         entity_name: 'Spain',
         entity_type: 'country',
         quantity: '1',

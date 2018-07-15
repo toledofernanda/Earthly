@@ -15,9 +15,9 @@ class RankingIcon extends Component{
     }
 
     let halfIcon = {
-      // clipPath: 'inset(10px 20px 30px 40px)'
-      width: '2.5%',
-      height: '3vw'
+      clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)',
+      width: '5%',
+      height: '5%'
     }
 
     let iconCount = this.props.iconCount; //props from RankingBar
