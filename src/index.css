@@ -6,15 +6,15 @@ html, body, #root {
   height: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 12pt;
-  color: black;
+  color: #58595B; /*style guide gray */
 }
 
 a, a:visited {
-  color: black;
+  color: #58595B;
 }
 
 .button-shadow {
-  box-shadow: 2px 2px 3px lightgray;
+  box-shadow: 2px 2px 3px #58595B;
 }
 
 .start-hover {
