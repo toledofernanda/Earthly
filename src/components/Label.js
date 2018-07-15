@@ -5,9 +5,7 @@ class Label extends Component{
 
     /* CSS */
     let label = {
-      // textAlign: 'right',
-      fontSize: '.6em',
-      // paddingRight: '10px'
+      fontSize: '.7em',
     }
 
     return (
