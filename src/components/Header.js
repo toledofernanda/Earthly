@@ -41,8 +41,26 @@ const button = {
   color:'white'
 }
 
+
 class Header extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+      isHovered: false
+    }
+    this.handleHover = this.handleHover.bind(this);
+  }
+
+  handleHover() {
+    console.log("hovered")
+    this.setState({
+        isHovered: !this.state.isHovered
+    });
+  }
+
   render(){
+    const hoverClass = this.state.isHovered ? "donation-hover" : "";
     return(
         <header className="header">
           <ul style={headerDes}>
@@ -54,7 +72,11 @@ class Header extends Component{
                 </div>
               </Link>
             </li>
-            <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}>Donate</Link></li>
+            <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}
+            className={hoverClass}
+            onMouseEnter={this.handleHover}
+            onMouseLeave={this.handleHover}
+            >Donate</Link></li>
           </ul>
         </header>
     )
