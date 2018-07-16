@@ -14,22 +14,35 @@ class RankingEntity extends Component {
       justifyContent: 'space-between',
       alignItems: 'center',
       boxSizing: 'border-box',
-      height: '84px',
-      width: '115px',
+      height: '10%',
+      minHeight: '70px',
+      width: '100%',
       position: 'relative',
       paddingRight: '10px',
-      paddingLeft: '10px'
+      paddingLeft: '10px',
+      marginBottom: '5px'
     }
 
     let rankingEntities = {
+      flex: '1 1 20%',
       paddingTop:'10px',
       backgroundColor: 'lightgrey',
-      borderRadius: '0 0 0 30px'
+      borderRadius: '0 0 0 30px',
+      boxSizing: 'border-box',
+      height: 'fit-content',
+      paddingBottom: '15px',
+      maxWidth: '127px'
     }
 
     let orderStyle = {
-      fontSize: '.8em',
-      parringTop:'-2px'
+      fontSize: 'calc(0.5em + .5vw)',
+      flex: '1 1 20%',
+      paddingBottom: '15px',
+      paddingRight: '5px'
+    }
+
+    let entityFlagName = {
+      flex: '1 1 80%'
     }
 
     /* JS */
@@ -51,10 +64,10 @@ class RankingEntity extends Component {
 
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order" style={{marginTop:'-15px'}}>
-              <span style={orderStyle} >{specificOrder[index]}</span>
+            <div className="order" style={orderStyle}>
+              <span>{specificOrder[index]}</span>
             </div>
-            <div className="entity-flag-name" >
+            <div className="entity-flag-name" style={entityFlagName}>
               <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
@@ -73,10 +86,10 @@ class RankingEntity extends Component {
 
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order" style={{marginTop:'-15px'}}>
-              <span style={orderStyle} >{specificOrder[index]}</span>
+            <div className="order" style={orderStyle}>
+              <span>{specificOrder[index]}</span>
             </div>
-            <div className="entity-flag-name" >
+            <div className="entity-flag-name" style={entityFlagName}>
               <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
@@ -95,10 +108,10 @@ class RankingEntity extends Component {
 
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order" style={{marginTop:'-15px'}}>
-              <span style={orderStyle} >{specificOrder[index]}</span>
+            <div className="order" style={orderStyle}>
+              <span>{specificOrder[index]}</span>
             </div>
-            <div className="entity-flag-name" >
+            <div className="entity-flag-name" style={entityFlagName}>
               <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
@@ -117,10 +130,10 @@ class RankingEntity extends Component {
 
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order" style={{marginTop:'-15px'}}>
-              <span style={orderStyle} >{specificOrder[index]}</span>
+            <div className="order" style={orderStyle}>
+              <span>{specificOrder[index]}</span>
             </div>
-            <div className="entity-flag-name" >
+            <div className="entity-flag-name" style={entityFlagName}>
               <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
@@ -136,10 +149,10 @@ class RankingEntity extends Component {
 
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
-            <div className="order" style={{marginTop:'-15px'}}>
-              <span style={orderStyle} >{order}</span>
+            <div className="order" style={orderStyle}>
+              <span>{order}</span>
             </div>
-            <div className="entity-flag-name" >
+            <div className="entity-flag-name" style={entityFlagName}>
               <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
