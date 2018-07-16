@@ -149,7 +149,7 @@ class Contact extends Component {
               />
             </FormGroup>
 
-            <button style={submitButton} className="button-shadow">Submit</button>
+            <button style={submitButton}>Submit</button>
           </Form>
 
 

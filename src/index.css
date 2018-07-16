@@ -14,7 +14,7 @@ a, a:visited {
 }
 
 .button-shadow {
-  box-shadow: 2px 2px 3px lightgray;
+  box-shadow: 2px 2px 3px #58595B;
 }
 
 .start-hover {
