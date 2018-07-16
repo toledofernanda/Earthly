@@ -6,19 +6,23 @@ html, body, #root {
   height: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 12pt;
-  color: #58595B; /*style guide gray */
+  color: black;
 }
 
 a, a:visited {
-  color: #58595B;
+  color: black;
 }
 
 .button-shadow {
-  box-shadow: 2px 2px 3px #58595B;
+  box-shadow: 2px 2px 3px lightgray;
 }
 
 .start-hover {
   background-color: #4DCABD !important;
+}
+
+.donation-hover {
+  background-color: rgb(236, 120, 91) !important;
 }
 
 .breadcrumb a:hover {
