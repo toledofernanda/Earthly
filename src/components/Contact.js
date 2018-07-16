@@ -45,6 +45,7 @@ const submitButton = {
 }
 
 
+
 class Contact extends Component {
   constructor(){
     super()
@@ -85,17 +86,17 @@ class Contact extends Component {
 
   render() {
     return (
-      <div style = {boxPosition} className = "donationBox">
+      <div style = {boxPosition} className = "donationBox" >
         <div className = "contactTop" style = {{textAlign: 'center'}}>
           <BackButton className='button-shadow' component={'contact'} />
             <h1>Contact</h1>
-            <p style={{width:'50%', marginLeft:'auto', marginRight:'auto'}}>Get in touch with us.
+            <p style={{width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>Get in touch with us.
             We would love to hear from you What would you like to see added to Earthly?
             Questions, comments, or complaints? Fill out the form below and we will be in touch with you shortly.
             </p>
         </div>
         <div className = "contactForm">
-          <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center'}}>
+          <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center',color:'#58595B'}}>
             <div>
             <FormGroup  style={{display:'flex', marginRight:'30px', marginBottom:'10px'}}>
               <Label for="firstName">First Name</Label>
@@ -148,7 +149,7 @@ class Contact extends Component {
               />
             </FormGroup>
 
-            <button style={submitButton}>Submit</button>
+            <button style={submitButton} className="button-shadow">Submit</button>
           </Form>
 
 

@@ -38,7 +38,8 @@ const button = {
   backgroundColor:'#F05027',
   borderRadius: 7,
   textDecoration:'none',
-  color:'white'
+  color:'white',
+  boxShadow: '1px 3px 1px lightgray'
 }
 
 
@@ -72,7 +73,7 @@ class Header extends Component{
                 </div>
               </Link>
             </li>
-            <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}
+            <li style= {{marginTop:'25px'}}><Link to="/donation" className="button-shadow" style={button}
             className={hoverClass}
             onMouseEnter={this.handleHover}
             onMouseLeave={this.handleHover}
