@@ -2369,7 +2369,7 @@ export let db = {
         entity_type: 'country',
         quantity: '29,124,000',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a486'
       },
@@ -2379,7 +2379,7 @@ export let db = {
         entity_type: 'country',
         quantity: '13,066,778',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a487'
       },
@@ -2389,7 +2389,7 @@ export let db = {
         entity_type: 'country',
         quantity: '7,007,125',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a488'
       },
@@ -2399,7 +2399,7 @@ export let db = {
         entity_type: 'country',
         quantity: '6,764,324',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a489'
       },
@@ -2409,7 +2409,7 @@ export let db = {
         entity_type: 'country',
         quantity: '6,529,676',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a490'
       },
@@ -2419,7 +2419,7 @@ export let db = {
         entity_type: 'country',
         quantity: '5,829,142',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a491'
       },
@@ -2429,7 +2429,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,858,066',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a492'
       },
@@ -2439,7 +2439,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,775,150',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a493'
       },
@@ -2449,7 +2449,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,559,639',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a494'
       },
@@ -2459,7 +2459,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,037,962',
         label: 'Banana Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a495'
       }
@@ -2471,7 +2471,7 @@ export let db = {
         entity_type: 'country',
         quantity: '17,251,291',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a490'
       },
@@ -2481,7 +2481,7 @@ export let db = {
         entity_type: 'country',
         quantity: '8,419,881',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a491'
       },
@@ -2491,7 +2491,7 @@ export let db = {
         entity_type: 'country',
         quantity: '7,503,000',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a492'
       },
@@ -2501,7 +2501,7 @@ export let db = {
         entity_type: 'country',
         quantity: '5,160,000',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a493'
       },
@@ -2511,7 +2511,7 @@ export let db = {
         entity_type: 'country',
         quantity: '4,603,253',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a494'
       },
@@ -2521,7 +2521,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,438,030',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a495'
       },
@@ -2531,7 +2531,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,137,546',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a496'
       },
@@ -2541,7 +2541,7 @@ export let db = {
         entity_type: 'country',
         quantity: '2,138,474',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a497'
       },
@@ -2551,7 +2551,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,944,023',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a498'
       },
@@ -2561,7 +2561,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,850,000',
         label: 'Orange Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a499'
       }
@@ -2573,7 +2573,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,889,354',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a572'
       },
@@ -2583,7 +2583,7 @@ export let db = {
         entity_type: 'country',
         quantity: '601,349',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a573'
       },
@@ -2593,7 +2593,7 @@ export let db = {
         entity_type: 'country',
         quantity: '455,394',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a574'
       },
@@ -2603,7 +2603,7 @@ export let db = {
         entity_type: 'country',
         quantity: '309,431',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a575'
       },
@@ -2613,7 +2613,7 @@ export let db = {
         entity_type: 'country',
         quantity: '304,938',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a576'
       },
@@ -2623,7 +2623,7 @@ export let db = {
         entity_type: 'country',
         quantity: '195,492',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a577'
       },
@@ -2633,7 +2633,7 @@ export let db = {
         entity_type: 'country',
         quantity: '176,045',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a578'
       },
@@ -2643,7 +2643,7 @@ export let db = {
         entity_type: 'country',
         quantity: '172,630',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a579'
       },
@@ -2653,7 +2653,7 @@ export let db = {
         entity_type: 'country',
         quantity: '137,365',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a580'
       },
@@ -2663,7 +2663,7 @@ export let db = {
         entity_type: 'country',
         quantity: '122,942',
         label: 'Avocado Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a581'
       }
@@ -2675,7 +2675,7 @@ export let db = {
         entity_type: 'country',
         quantity: '3,019,051',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a656'
       },
@@ -2685,7 +2685,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,460,800',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a657'
       },
@@ -2695,7 +2695,7 @@ export let db = {
         entity_type: 'country',
         quantity: '745,084',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a658'
       },
@@ -2705,7 +2705,7 @@ export let db = {
         entity_type: 'country',
         quantity: '639,305',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a659'
       },
@@ -2715,7 +2715,7 @@ export let db = {
         entity_type: 'country',
         quantity: '469,091',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a660'
       },
@@ -2725,7 +2725,7 @@ export let db = {
         entity_type: 'country',
         quantity: '362,367',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a661'
       },
@@ -2735,7 +2735,7 @@ export let db = {
         entity_type: 'country',
         quantity: '348,000',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a662'
       },
@@ -2745,7 +2745,7 @@ export let db = {
         entity_type: 'country',
         quantity: '277,760',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a663'
       },
@@ -2755,7 +2755,7 @@ export let db = {
         entity_type: 'country',
         quantity: '236,145',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a664'
       },
@@ -2765,7 +2765,7 @@ export let db = {
         entity_type: 'country',
         quantity: '203,535',
         label: 'Coffee Beans Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a665'
       }
@@ -2777,7 +2777,7 @@ export let db = {
         entity_type: 'country',
         quantity: '131,689,035',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a15'
       },
@@ -2787,7 +2787,7 @@ export let db = {
         entity_type: 'country',
         quantity: '93,500,000',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a16'
       },
@@ -2797,7 +2797,7 @@ export let db = {
         entity_type: 'country',
         quantity: '73,294,568',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a17'
       },
@@ -2807,7 +2807,7 @@ export let db = {
         entity_type: 'country',
         quantity: '62,859,050',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a18'
       },
@@ -2817,7 +2817,7 @@ export let db = {
         entity_type: 'country',
         quantity: '30,486,700',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a19'
       },
@@ -2827,7 +2827,7 @@ export let db = {
         entity_type: 'country',
         quantity: '29,504,454',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a20'
       },
@@ -2837,7 +2837,7 @@ export let db = {
         entity_type: 'country',
         quantity: '26,098,830',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a21'
       },
@@ -2847,7 +2847,7 @@ export let db = {
         entity_type: 'country',
         quantity: '26,005,213',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a22'
       },
@@ -2857,7 +2857,7 @@ export let db = {
         entity_type: 'country',
         quantity: '24,463,800',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a23'
       },
@@ -2867,7 +2867,7 @@ export let db = {
         entity_type: 'country',
         quantity: '22,274,514',
         label: 'Wheat Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data ',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a24'
       }
@@ -2879,7 +2879,7 @@ export let db = {
         entity_type: 'country',
         quantity: '2,978,000',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a497'
       },
@@ -2889,7 +2889,7 @@ export let db = {
         entity_type: 'country',
         quantity: '2,429,839',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a498'
       },
@@ -2899,7 +2899,7 @@ export let db = {
         entity_type: 'country',
         quantity: '2,289,576',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a499'
       },
@@ -2909,7 +2909,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,678,337',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a500'
       },
@@ -2919,7 +2919,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,262,353',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a501'
       },
@@ -2929,7 +2929,7 @@ export let db = {
         entity_type: 'country',
         quantity: '857,754',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a502'
       },
@@ -2939,7 +2939,7 @@ export let db = {
         entity_type: 'country',
         quantity: '850,600',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a503'
       },
@@ -2949,7 +2949,7 @@ export let db = {
         entity_type: 'country',
         quantity: '822,000',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a504'
       },
@@ -2959,7 +2959,7 @@ export let db = {
         entity_type: 'country',
         quantity: '457,270',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a505'
       },
@@ -2969,7 +2969,7 @@ export let db = {
         entity_type: 'country',
         quantity: '379,282',
         label: 'Lemon/Lime Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a506'
       }
@@ -2981,7 +2981,7 @@ export let db = {
         entity_type: 'country',
         quantity: '2,390,287',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a592'
       },
@@ -2991,7 +2991,7 @@ export let db = {
         entity_type: 'country',
         quantity: '523,595',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a593'
       },
@@ -3001,7 +3001,7 @@ export let db = {
         entity_type: 'country',
         quantity: '434,048',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a594'
       },
@@ -3011,7 +3011,7 @@ export let db = {
         entity_type: 'country',
         quantity: '294,413',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a595'
       },
@@ -3021,7 +3021,7 @@ export let db = {
         entity_type: 'country',
         quantity: '225,797',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a596'
       },
@@ -3031,7 +3031,7 @@ export let db = {
         entity_type: 'country',
         quantity: '182,589',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a597'
       },
@@ -3041,7 +3041,7 @@ export let db = {
         entity_type: 'country',
         quantity: '65,036',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a598'
       },
@@ -3051,7 +3051,7 @@ export let db = {
         entity_type: 'country',
         quantity: '43,950',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a599'
       },
@@ -3061,7 +3061,7 @@ export let db = {
         entity_type: 'country',
         quantity: '28,300',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a600'
       },
@@ -3071,7 +3071,7 @@ export let db = {
         entity_type: 'country',
         quantity: '25,600',
         label: 'Kiwi Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a601'
       }
@@ -3083,7 +3083,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,889,354',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a515'
       },
@@ -3093,7 +3093,7 @@ export let db = {
         entity_type: 'country',
         quantity: '601,349',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a516'
       },
@@ -3103,7 +3103,7 @@ export let db = {
         entity_type: 'country',
         quantity: '455,394',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a517'
       },
@@ -3113,7 +3113,7 @@ export let db = {
         entity_type: 'country',
         quantity: '309,431',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a518'
       },
@@ -3123,7 +3123,7 @@ export let db = {
         entity_type: 'country',
         quantity: '304,938',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a519'
       },
@@ -3133,7 +3133,7 @@ export let db = {
         entity_type: 'country',
         quantity: '195,492',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a520'
       },
@@ -3143,7 +3143,7 @@ export let db = {
         entity_type: 'country',
         quantity: '176,045',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a521'
       },
@@ -3153,7 +3153,7 @@ export let db = {
         entity_type: 'country',
         quantity: '172,630',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a522'
       },
@@ -3163,7 +3163,7 @@ export let db = {
         entity_type: 'country',
         quantity: '137,365',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a523'
       },
@@ -3173,7 +3173,7 @@ export let db = {
         entity_type: 'country',
         quantity: '122,942',
         label: 'Apples Production (2016)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'UN Data',
         source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a524'
       }
@@ -3185,7 +3185,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,000,130',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3195,7 +3195,7 @@ export let db = {
         entity_type: 'country',
         quantity: '900,094',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3205,7 +3205,7 @@ export let db = {
         entity_type: 'country',
         quantity: '303,308',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3215,7 +3215,7 @@ export let db = {
         entity_type: 'country',
         quantity: '295,830',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3225,7 +3225,7 @@ export let db = {
         entity_type: 'country',
         quantity: '174,932',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3235,7 +3235,7 @@ export let db = {
         entity_type: 'country',
         quantity: '157,388',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3245,7 +3245,7 @@ export let db = {
         entity_type: 'country',
         quantity: '116,780',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3255,7 +3255,7 @@ export let db = {
         entity_type: 'country',
         quantity: '88,900',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3265,7 +3265,7 @@ export let db = {
         entity_type: 'country',
         quantity: '83,990',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       },
@@ -3275,7 +3275,7 @@ export let db = {
         entity_type: 'country',
         quantity: '69,924',
         label: 'Tea Production (2018)',
-        unit: 'tonne (t)',
+        unit: 'tonne',
         source_name: 'Trendrr',
         source_url: 'https://www.trendrr.net/5624/top-10-biggest-highest-tea-producing-countries-in-the-world-famous-best/'
       }
