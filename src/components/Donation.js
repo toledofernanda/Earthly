@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
+import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const donation = {
   marginRight: '10vw',
@@ -12,7 +15,53 @@ const donation = {
   borderRadius: 30,
   padding: '20px'
 }
+
+const submitButton = {
+  with: '100px',
+  alignSelf: 'center',
+  backgroundColor: '#F05027',
+  border: 'none',
+  borderRadius: 7,
+  width: '80px',
+  height: '25px',
+  color:'white'
+
+}
+
+//hundle donation button
 class Donation extends Component{
+
+  //hundle email
+  constructor(){
+    super()
+    this.state={
+      firstname:'',
+      amount:'',
+      email:'',
+      message:''
+
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
+
+  async handleSubmit(e){
+    e.preventDefault()
+    const {firstName, amount, email, message} = this.state
+
+    const form = await axios.post('/api/form',{
+      firstName,
+      amount,
+      email,
+      message
+    })
+}
 
   onToken = (token) => {
     fetch('/save-stripe-token', {
@@ -26,114 +75,76 @@ class Donation extends Component{
   }
 
   render(){
+    let amount = parseInt(this.state.amount) * 100;
     return(
       <div className="donation" style={donation}>
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <p style={{width:'60%', textAlign:'center'}}>Help Earthly to continue adding content by donationg today. 100% of your donations goes towards research and site development.</p>
             <img style ={{width:'25%'}} src={require(`images/most_dogs.png`)} alt="donationImg" />
           </div>
-          <div className="donationButton">
-            <ul style={{listStyleType:'none', display:'flex', justifyContent:'space-around'}}>
-              <li>
-                <StripeCheckout
-                  token={this.onToken}
-                  stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
-                  name="Earthly"
-                  description="Donation"
-                  panelLabel="Donate"
-                  amount={500}
-                  currency="CAD"
-                  label ="Donate $5"
+
+          <div className = "contactForm">
+            <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center'}}>
+              <FormGroup style={{flexBasis:'50%'}}>
+                <Label for="firstName">Name</Label>
+                <input style={{border:'1px solid gray', borderRadius:7}}
+                type="text"
+                name= "firstName"
+                onChange = {this.handleChange}
                 />
-              </li>
+              </FormGroup>
 
-              <li>
-                <StripeCheckout
-                  token={this.onToken}
-                  stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
-                  name="Earthly"
-                  description="Donation"
-                  panelLabel="Donate"
-                  amount={1000}
-                  currency="CAD"
-                  label ="Donate $10"
+              <FormGroup style={{flexBasis:'50%'}}>
+                <Label for="amount">Amount</Label>
+                <input style={{border:'1px solid gray', borderRadius:7}}
+                type="text"
+                name= "amount"
+                onChange = {this.handleChange}
                 />
-              </li>
+              </FormGroup>
 
-              <li>
-                <StripeCheckout
-                  token={this.onToken}
-                  stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
-                  name="Earthly"
-                  description="Donation"
-                  panelLabel="Donate"
-                  amount={2000}
-                  currency="CAD"
-                  label ="Donate $20"
+              <FormGroup style={{flexBasis:'50%'}}>
+                <Label for="email">Email</Label>
+                <input style={{border:'1px solid gray', borderRadius:7}}
+                type="email"
+                name= "email"
+                onChange = {this.handleChange}
                 />
-              </li>
+              </FormGroup>
 
-              <li>
-                <StripeCheckout
-                  token={this.onToken}
-                  stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
-                  name="Earthly"
-                  description="Donation"
-                  panelLabel="Donate"
-                  amount={5000}
-                  currency="CAD"
-                  label ="Donate $50"
+
+              <FormGroup style={{flexBasis:'100%'}}>
+                <Label for="message" style={{width:'100%'}}>Message</Label>
+                <textarea style={{width: '60%', height:'200px',border:'1px solid black', borderRadius:7}}
+                type="textarea"
+                name= "message"
+                onChange = {this.handleChange}
                 />
-              </li>
+              </FormGroup>
 
-              <li>
-                <StripeCheckout
-                  token={this.onToken}
-                  stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
-                  name="Earthly"
-                  description="Donation"
-                  panelLabel="Donate"
-                  amount={10000}
-                  currency="CAD"
-                  label ="Donate $100"
-                />
-              </li>
+              <div className="donationButton">
+                <div style={{listStyleType:'none', display:'flex', justifyContent:'space-around'}}>
 
-
-            </ul>
+                    <StripeCheckout
+                      token={this.onToken}
+                      stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
+                      name="Earthly"
+                      description="Donation"
+                      panelLabel="Donate"
+                      amount={amount}
+                      currency="CAD"
+                      label ="Donate"
+                    />
+                </div>
+            </div>
+            </Form>
           </div>
+
+
+
+
       </div>
-      // <div className = "donationBox" style={{width:'80%', margin:'auto'}}>
-      //   <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginBottom:'30px'}}>
-      //     <h1 style={{marginTop: '100px'}}>Donations</h1>
-      //     <p style={{fontSize:'20px'}}>Your donation helps us to keep Earthly free for student use.<br />
-      //       Help inspire student learning by donating today.</p>
-      //     <h4>Please choose an amount to donate for us!</h4>
-      //   </div>
-      //     <div className = "donate" style = {{display:'flex', justifyContent:'space-around'}}>
-      //
-      //         <a style ={donateButton} class="gumroad-button" href="https://gum.co/DYaBs" target="_blank">
-      //         $5
-      //         <script src="https://gumroad.com/js/gumroad.js"></script></a>
-      //
-      //         <a style ={donateButton} class="gumroad-button" href="https://gum.co/oehga" target="_blank">
-      //         $10
-      //         <script src="https://gumroad.com/js/gumroad.js"></script></a>
-      //
-      //         <a style ={donateButton} class="gumroad-button" href="https://gum.co/dkZic">
-      //         $20
-      //         <script src="https://gumroad.com/js/gumroad.js"></script></a>
-      //
-      //         <a style ={donateButton} class="gumroad-button" href="https://gum.co/Qkgbg" target="_blank">
-      //         $50
-      //         <script src="https://gumroad.com/js/gumroad.js"></script></a>
-      //
-      //         <a style ={donateButton} class="gumroad-button" href="https://gum.co/mosC?wanted=true" target="_blank">
-      //         $100
-      //         <script src="https://gumroad.com/js/gumroad.js"></script>
-      //         </a>
-      //   </div>
-      // </div>
+
     )
   }
 }
