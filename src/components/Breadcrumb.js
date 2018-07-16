@@ -12,6 +12,8 @@ class Breadcrumb extends Component {
       backgroundColor: '#43C5ED',
       padding: '10px 10px 10px 5%',
       fontSize: '0.7em',
+      fontWeight: 'bold',
+      letterSpacing: '1px',
       top: '70px',
     }
 

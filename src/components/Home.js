@@ -32,6 +32,7 @@ class Home extends Component {
     //inner content div
     let mainContent = {
       maxWidth: '1024px',
+      width: '100%',
       height: '100%',
       minHeight: '50vh',
       textAlign: 'center',
@@ -42,7 +43,7 @@ class Home extends Component {
       backgroundColor: 'white',
       borderRadius: 30,
       border: '1px solid darkgrey',
-      padding: '7% 20%',
+      padding: '7% 7%',
       margin: '5%',
       marginBottom: 0,
       boxSizing: 'border-box'
