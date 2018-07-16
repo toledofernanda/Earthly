@@ -8,10 +8,10 @@ class TooltipScreen extends Component {
 
     /* CSS */
     let tooltip = {
-      width: '40vw',
+      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
-      left: '120px',
+      left: '110%',
       top: '10px',
       zIndex: '2',
       backgroundColor: 'white',
