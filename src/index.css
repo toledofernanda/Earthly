@@ -10,7 +10,7 @@ html, body, #root {
 }
 
 a, a:visited {
-  color: #58595B;
+  color: #58595B; /*style guide gray */
 }
 
 .button-shadow {
@@ -19,6 +19,10 @@ a, a:visited {
 
 .start-hover {
   background-color: #4DCABD !important;
+}
+
+.donation-hover {
+  background-color: rgb(236, 120, 91) !important;
 }
 
 .breadcrumb a:hover {

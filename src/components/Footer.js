@@ -9,6 +9,7 @@ const footerDes = {
   listStyleType:'none',
   height:'40px',
   paddingTop:'10px',
+  paddingLeft:'0'
 }
 
 class Footer extends Component{

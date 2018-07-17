@@ -39,9 +39,11 @@ const submitButton = {
   borderRadius: 7,
   width: '80px',
   height: '25px',
-  color:'white'
+  color:'white',
+  fontSize:'15px'
 
 }
+
 
 
 class Contact extends Component {
@@ -66,7 +68,8 @@ class Contact extends Component {
   }
 
   async handleSubmit(e){
-    alert('Thank you for your feedback ' + this.state.firstName + '!');
+    if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
+    //alert('Thank you for your feedback ' + this.state.firstName + '!');
 
     e.preventDefault()
     const {firstName, lastName, email,phone, message} = this.state
@@ -83,17 +86,17 @@ class Contact extends Component {
 
   render() {
     return (
-      <div style = {boxPosition} className = "donationBox">
+      <div style = {boxPosition} className = "donationBox" >
         <div className = "contactTop" style = {{textAlign: 'center'}}>
-          <BackButton component={'contact'} />
+          <BackButton className='button-shadow' component={'contact'} />
             <h1>Contact</h1>
-            <p style={{width:'50%', marginLeft:'auto', marginRight:'auto'}}>Get in touch with us.
+            <p style={{width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>Get in touch with us.
             We would love to hear from you What would you like to see added to Earthly?
             Questions, comments, or complaints? Fill out the form below and we will be in touch with you shortly.
             </p>
         </div>
         <div className = "contactForm">
-          <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center'}}>
+          <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center',color:'#58595B'}}>
             <div>
             <FormGroup  style={{display:'flex', marginRight:'30px', marginBottom:'10px'}}>
               <Label for="firstName">First Name</Label>
@@ -139,7 +142,7 @@ class Contact extends Component {
 
             <FormGroup style={{flexBasis:'100%'}}>
               <Label for="message" style={{margin:'10px'}}>Message<br /></Label>
-              <textarea style={{marginTop:'10px',marginBottom:'10px', width: '50%', height:'200px',border:'1px solid black', borderRadius:7}}
+              <textarea style={{fontSize:'18px', padding:'5px', marginTop:'10px',marginBottom:'10px', width: '50%', height:'200px',border:'1px solid black', borderRadius:7}}
               type="textarea"
               name= "message"
               onChange = {this.handleChange}
