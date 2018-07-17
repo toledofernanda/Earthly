@@ -6,11 +6,11 @@ html, body, #root {
   height: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 12pt;
-  color: black;
+  color: #58595B;
 }
 
 a, a:visited {
-  color: black;
+  color: #58595B;
 }
 
 .button-shadow {
