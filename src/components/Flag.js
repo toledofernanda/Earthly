@@ -30,7 +30,8 @@ class Flag extends Component{
 			width: '100%',
 			maxWidth: '75px',
 			height: '100%',
-			borderRadius: '5px'
+			borderRadius: '5px',
+			border: '1px solid lightgrey'
 		}
 
 		let countryFlag = {
@@ -87,26 +88,9 @@ class Flag extends Component{
     let topic = this.props.topic;
 		let nonCountryPic = "mountain";//get a picture that discribes the ranking
 		let subCat = db[category][topic]; //always general and topic to check if is a country
-		let isCountry = false;//see if the entity is country or not
 		let myimg; // image to display
 
-		for (let item of subCat){
-			//check if is a country
-			// console.log("item['entity_name']", item['entity_name'])
-			// console.log("entityName", entityName)
-			if(item['entity_name'] === entityName){
-				if(item['entity_type'] === "country"){
-					isCountry = true;
-					// console.log("country");
-				} else if(item['entity_type'] === "not_country"){
-					// console.log("not a country");
-					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} style={flag} alt={nonCountryPic} />
-				}
-			}
-		}
-
-		//get the country flag if it's country
-		if(isCountry){
+		//get the country flag
 			let countryAbb;
 
 			let country = parseCSV(countryData);
@@ -128,8 +112,6 @@ class Flag extends Component{
 				}
 			}
 
-		}
-
 		if(this.state.tooltipOpen) {
 			console.log('is open');
 			return (
@@ -143,7 +125,7 @@ class Flag extends Component{
 				</div>
 			 );
 		} else {
-			console.log('not open');
+			// console.log('not open');
 
 			return (
 				<div className="flag-tooltip">
