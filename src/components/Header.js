@@ -9,9 +9,11 @@ const headerDes = {
   marginTop: '0',
   position:'fixed',
   zIndex: 5,
-  width: '100%',
+  width: '92%',
   top: '0',
-  listStyleType:'none'
+  listStyleType:'none',
+  paddingLeft: '4%',
+  paddingRight: '4%'
 }
 
 let logoName = {
@@ -34,7 +36,7 @@ let appName = {
 
 const button = {
   padding:'10px',
-  marginRight:'60px',
+
   backgroundColor:'#F05027',
   borderRadius: 7,
   textDecoration:'none',

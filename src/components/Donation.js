@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+
 
 const donation = {
   marginRight: '10vw',
