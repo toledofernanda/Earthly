@@ -5,15 +5,17 @@ import { Link } from 'react-router-dom';
 import BackButton from 'components/BackButton';
 
 const boxPosition = {
-  marginRight: '10vw',
-  marginLeft:'10vw',
+  marginRight:'auto',
+  marginLeft:'auto',
   marginTop:'100px',
-  width: '1024',
+  marginBottom:'100px',
+  maxWidth: '1024px',
   height: '70%',
   boxSizing:'border-box',
   backgroundColor: "white",
   borderRadius: 30,
-  padding: '20px'
+  padding: '20px',
+  border: '1px solid darkgrey',
 }
 
 const form = {
@@ -40,8 +42,8 @@ const submitButton = {
   width: '80px',
   height: '25px',
   color:'white',
-  fontSize:'15px'
-
+  fontSize:'15px',
+  boxShadow: '1px 3px 1px lightgray'
 }
 
 
@@ -86,9 +88,9 @@ class Contact extends Component {
 
   render() {
     return (
-      <div style = {boxPosition} className = "donationBox" >
+      <div style = {boxPosition} className = "contactBox" >
         <div className = "contactTop" style = {{textAlign: 'center'}}>
-          <BackButton className='button-shadow' component={'contact'} />
+          <BackButton component={'contact'} />
             <h1>Contact</h1>
             <p style={{width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>Get in touch with us.
             We would love to hear from you What would you like to see added to Earthly?
