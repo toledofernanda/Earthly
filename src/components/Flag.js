@@ -27,9 +27,14 @@ class Flag extends Component{
 
 		/* CSS */
 		let flag = {
-			maxWidth:'75px',
-			height:'43px',
+			width: '100%',
+			maxWidth: '75px',
+			height: '100%',
 			borderRadius: '5px'
+		}
+
+		let countryFlag = {
+			textAlign: 'center'
 		}
 
 		let nepalFlag = {
@@ -142,7 +147,7 @@ class Flag extends Component{
 
 			return (
 				<div className="flag-tooltip">
-					<div className = "country_flag" onClick={this.toggleTooltip}>
+					<div className = "country_flag" onClick={this.toggleTooltip} style={countryFlag}>
 				  	{myimg}
 					</div>
 				</div>

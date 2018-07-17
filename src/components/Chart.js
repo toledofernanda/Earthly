@@ -9,16 +9,19 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      // backgroundColor: 'white',
-      padding: '20px 20px 10px 20px',
+      flex: '1 1 80%',
+      padding: '10px 20px 10px 20px',
       borderRadius: '0px 30px 30px 0px',
-      width: '80vw'
+      width: '80vw',
+      boxSizing: 'border-box',
+      height: 'fit-content'
     }
 
     let labelSourceDiv = {
       display: 'flex',
       flexFlow: 'row wrap',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      marginTop: '15px'
     }
 
     /* JS */
