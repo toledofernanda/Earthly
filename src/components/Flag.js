@@ -31,7 +31,6 @@ class Flag extends Component{
 			maxWidth: '75px',
 			height: '100%',
 			borderRadius: '5px',
-			border: '1px solid lightgrey'
 		}
 
 		let countryFlag = {
@@ -102,10 +101,10 @@ class Flag extends Component{
             // console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
 						if(countryAbb == 'np'){
-							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} />;
+							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} className='button-shadow' />;
 
 						} else{
-							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} />;
+							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} className='button-shadow' />;
 
 						}
 
@@ -113,14 +112,14 @@ class Flag extends Component{
 			}
 
 		if(this.state.tooltipOpen) {
-			console.log('is open');
+			// console.log('is open');
 			return (
 				<div className="flag-tooltip">
 					<div className = "country_flag" onClick={this.toggleTooltip}>
 				  	{myimg}
 					</div>
 					<div className="tooltip">
-						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} />
+						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} className='button-shadow' />
 					</div>
 				</div>
 			 );
