@@ -32,6 +32,18 @@ const submitButton = {
 
 }
 
+let TitleStyle = {
+  textAlign: 'center',
+  fontSize: '14pt',
+  flex: '0 0 100%',
+}
+
+let filterTopStyle = {
+  padding: '1.5% 4%',
+  display: 'grid',
+  gridTemplateColumns: '40px 10fr'
+};
+
 const back ={
   textAlign: 'left !important'
 }
@@ -86,10 +98,12 @@ class Donation extends Component{
     let amount = parseInt(this.state.amount) * 100;
     return(
       <div className="donation" style={donation}>
-        <BackButton component={'donation'} />
+        <div className="contactTitle" style={filterTopStyle}>
+          <BackButton component={'donation'} />
+          <h1 style = {TitleStyle}>Donation</h1>
+        </div>
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
 
-            <h1>Donation</h1>
             <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
 Your donation will help us keep Earthly free and add new rankings and features.
 100% of your donations goes towards research and app development.</p>

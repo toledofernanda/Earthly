@@ -41,7 +41,7 @@ const button = {
   borderRadius: 7,
   textDecoration:'none',
   color:'white',
-  boxShadow: '1px 3px 1px lightgray'
+  
 }
 
 
@@ -76,7 +76,7 @@ class Header extends Component{
               </Link>
             </li>
             <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}
-            className={hoverClass}
+            className={['button-shadow', hoverClass].join(' ')}
             onMouseEnter={this.handleHover}
             onMouseLeave={this.handleHover}
             >Donate</Link></li>
