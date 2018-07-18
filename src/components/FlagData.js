@@ -4,7 +4,7 @@ Cook Islands,CK,New Zealand Dollars,NZD
 Niue,NU,New Zealand Dollars,NZD
 Pitcairn,PN,New Zealand Dollars,NZD
 Tokelau,TK,New Zealand Dollars,NZD
-Australian,AU,Australian Dollars,AUD
+Australia,AU,Australian Dollars,AUD
 Christmas Island,CX,Australian Dollars,AUD
 Cocos (Keeling) Islands,CC,Australian Dollars,AUD
 Heard and Mc Donald Islands,HM,Australian Dollars,AUD
@@ -36,7 +36,7 @@ Samoa,WS,Euros,EUR
 San Marino,SM,Euros,EUR
 Slovenia,SI,Euros,EUR
 Spain,ES,Euros,EUR
-Vatican City State (Holy See),VA,Euros,EUR
+Vatican,VA,Euros,EUR
 South Georgia and the South Sandwich Islands,GS,Sterling,GBP
 United Kingdom,GB,Sterling,GBP
 Jersey,JE,Sterling,GBP
@@ -63,7 +63,7 @@ Antigua and Barbuda,AG,East Caribbean Dollar,XCD
 Dominica,DM,East Caribbean Dollar,XCD
 Grenada,GD,East Caribbean Dollar,XCD
 Montserrat,MS,East Caribbean Dollar,XCD
-Saint Kitts,KN,East Caribbean Dollar,XCD
+Saint Kitts and Nevis,KN,East Caribbean Dollar,XCD
 Saint Lucia,LC,East Caribbean Dollar,XCD
 Saint Vincent Grenadines,VC,East Caribbean Dollar,XCD
 Argentina,AR,Peso,ARS
@@ -101,7 +101,7 @@ Cambodia,KH,Riel,KHR
 Cameroon,CM,CFA Franc BEAC,XAF
 Central African Republic,CF,CFA Franc BEAC,XAF
 Chad,TD,CFA Franc BEAC,XAF
-Congo Republic of the Democratic,CG,CFA Franc BEAC,XAF
+DR Congo,CG,CFA Franc BEAC,XAF
 Equatorial Guinea,GQ,CFA Franc BEAC,XAF
 Gabon,GA,CFA Franc BEAC,XAF
 Cape Verde,CV,Escudo,CVE
@@ -144,7 +144,7 @@ Haiti,HT,Gourde,HTG
 Honduras,HN,Lempira,HNL
 Hungary,HU,Forint,HUF
 Iceland,IS,Icelandic Krona,ISK
-Iran (Islamic Republic of),IR,Iranian Rial,IRR
+Iran,IR,Iranian Rial,IRR
 Iraq,IQ,Iraqi Dinar,IQD
 Israel,IL,Shekel,ILS
 Jamaica,JM,Jamaican Dollar,JMD
@@ -152,7 +152,7 @@ Jordan,JO,Jordanian Dinar,JOD
 Kazakhstan,KZ,Tenge,KZT
 Kenya,KE,Kenyan Shilling,KES
 Korea North,KP,Won,KPW
-Korea South,KR,Won,KRW
+South Korea,KR,Won,KRW
 Kuwait,KW,Kuwaiti Dinar,KWD
 Kyrgyzstan,KG,Som,KGS
 Lao PeopleÕs Democratic Republic,LA,Kip,LAK
@@ -161,7 +161,7 @@ Lebanon,LB,Lebanese Pound,LBP
 Lesotho,LS,Loti,LSL
 Liberia,LR,Liberian Dollar,LRD
 Libyan Arab Jamahiriya,LY,Libyan Dinar,LYD
-Liechtenstein,LI,Swiss Franc,CHF
+Lichtenstein,LI,Swiss Franc,CHF
 Switzerland,CH,Swiss Franc,CHF
 Lithuania,LT,Lita,LTL
 Macau,MO,Pataca,MOP
@@ -174,7 +174,7 @@ Malta,MT,Maltese Lira,MTL
 Mauritania,MR,Ouguiya,MRO
 Mauritius,MU,Mauritian Rupee,MUR
 Mexico,MX,Peso,MXN
-Moldova Republic of,MD,Leu,MDL
+Moldova,MD,Leu,MDL
 Mongolia,MN,Tugrik,MNT
 Morocco,MA,Dirham,MAD
 Western Sahara,EH,Dirham,MAD
@@ -194,7 +194,7 @@ Philippines,PH,Peso,PHP
 Poland,PL,Zloty,PLN
 Qatar,QA,Rial,QAR
 Romania,RO,Leu,RON
-Russian Federation,RU,Ruble,RUB
+Russia,RU,Ruble,RUB
 Rwanda,RW,Rwanda Franc,RWF
 Sao Tome and Principe,ST,Dobra,STD
 Saudi Arabia,SA,Riyal,SAR

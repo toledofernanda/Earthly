@@ -5,6 +5,7 @@ import Home from 'components/Home';
 import CategoryFilter from 'components/CategoryFilter';
 import TopicFilter from 'components/TopicFilter';
 import Donation from 'components/Donation';
+import Result from 'components/Result';
 import About from 'components/About';
 import Contact from 'components/Contact';
 import Footer from 'components/Footer';
@@ -45,8 +46,9 @@ class App extends Component {
        <div className="content" style={mainContent}>
         <Switch>
            <Route exact path="/" component={Home} />
-           <Route path={`/category`} component={CategoryFilter} />
-           <Route path={`/category/:catName`} component={TopicFilter} />
+           <Route exact path={`/category`} component={CategoryFilter} />
+           <Route exact path={`/category/:catName`} component={TopicFilter} />
+           <Route exact path={`/category/:catName/:topName`} component={Result} />
            <Route path="/donation" component={Donation}/>
            <Route path="/about" component={About}/>
            <Route path="/contact" component={Contact}/>

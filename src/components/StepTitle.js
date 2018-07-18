@@ -7,7 +7,7 @@ class StepTitle extends Component{
       textAlign: 'center',
       fontSize: '14pt',
       flex: '0 0 100%',
-      marginBottom: '10%' //margin to detach the title from buttons
+      // marginBottom: '10%' //margin to detach the title from buttons
     };
     let step = ""; //variable to hold text to display
     if (this.props.title === "step1"){

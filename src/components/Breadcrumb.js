@@ -7,15 +7,18 @@ class Breadcrumb extends Component {
     /* CSS */
     let breadcrumb = {
       position: 'fixed',
+      zIndex: 3,
       width: '100%',
-      backgroundColor: 'rgba(25,169,225,0.7)',
-      padding: '10px 10px 10px 40px',
-      fontSize: '0.7em'
+      backgroundColor: '#43C5ED',
+      padding: '10px 10px 10px 12%',
+      fontSize: '0.7em',
+      fontWeight: 'bold',
+      letterSpacing: '1px',
+      top: '70px',
     }
 
     /* JS */
     function capitalizeAllLetters(string) {
-      // console.log("string", string)
       var splitString = string.toLowerCase().split('_');
       //loop through each string
       for (var i = 0; i < splitString.length; i++) {
@@ -25,8 +28,6 @@ class Breadcrumb extends Component {
       // join all strings into an unique string and return it
       return splitString.join(' ');
     }
-
-    // console.log("bread", this.props.category);
 
     return (
       <div className="breadcrumb" style={breadcrumb}>

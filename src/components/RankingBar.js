@@ -11,11 +11,25 @@ class RankingBar extends Component{
 
     /* CSS */
     let rankingBar = {
-      marginBottom: '20px'
+      maxWidth:'100%',
+      flex: '0 1 88%',
+      boxSizing: 'border-box',
+      display: 'flex',
+      flexFlow: 'column',
+      justifyContent: 'center',
+      padding: '0px 0 0px 10px'
     }
 
     /* JS */
-    let iconCount = parseInt(this.props.barLength / 5); //supposing No.1 = 100% is 20 icons
+    let topic = this.props.topic; //props passed down
+    let iconCount;
+
+    if( topic === 'most_soccer_world_cup_champion' | topic === 'basketball_world_cup_gold_medals'){
+      iconCount = this.props.barLength;
+      console.log(iconCount);
+    }else{
+      iconCount = parseInt(this.props.barLength / 5, 10); //supposing No.1 = 100% is 20 icons
+    }
 
     return (
       <div className="ranking-bar" key="ranking-bar" style={rankingBar}>

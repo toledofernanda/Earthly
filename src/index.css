@@ -6,32 +6,28 @@ html, body, #root {
   height: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 12pt;
-  color: black;
+  color: #58595B; /*style guide gray */
 }
 
 a, a:visited {
-  color: black;
+  color: #152D53; /*style guide deep navy */
+}
+
+.button-shadow {
+  box-shadow: 2px 2px 3px #58595B;
+}
+
+.start-hover {
+  background-color: #4DCABD !important;
+}
+
+.donation-hover {
+  background-color: rgb(236, 120, 91) !important;
 }
 
 .breadcrumb a:hover {
   color: white; /*affects breadcrumb links */
 }
-
-
-/* for flag hover effect*/
-/* .entity-flag-name {
-  padding: 3px;
-  border-radius: 5px;
-}
-
-.country_flag img {
-  border: 1px solid lightgrey;
-}
-
-.entity-flag-name:hover {
-  background-color: white;
-  cursor: pointer;
-} */
 
 .StripeCheckout {
   background-color: pink !important;

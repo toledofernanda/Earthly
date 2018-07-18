@@ -27,7 +27,19 @@ class Flag extends Component{
 
 		/* CSS */
 		let flag = {
-			maxWidth: '80px',
+			width: '100%',
+			maxWidth: '75px',
+			height: '100%',
+			borderRadius: '5px',
+		}
+
+		let countryFlag = {
+			textAlign: 'center'
+		}
+
+		let nepalFlag = {
+			paddingRight:'20px',
+			height:'43px',
 			borderRadius: '5px'
 		}
 
@@ -75,56 +87,48 @@ class Flag extends Component{
     let topic = this.props.topic;
 		let nonCountryPic = "mountain";//get a picture that discribes the ranking
 		let subCat = db[category][topic]; //always general and topic to check if is a country
-		let isCountry = false;//see if the entity is country or not
 		let myimg; // image to display
 
-		for (let item of subCat){
-			//check if is a country
-			if(item['entity_name'] === entityName){
-				if(item['entity_type'] === "country"){
-					isCountry = true;
-					// console.log("country");
-				} else if(item['entity_type'] === "not_country"){
-					// console.log("not a country");
-					myimg = <img src={require(`images/notCountryPic/${nonCountryPic}.jpeg`)} style={flag} alt={nonCountryPic} />
-				}
-			}
-		}
-
-		//get the country flag if it's country
-		if(isCountry){
+		//get the country flag
 			let countryAbb;
 
 			let country = parseCSV(countryData);
 
 			for (let item of country){
 				if(item['country'] === entityName){
+
+					// console.log(entityName)
             // console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
+						if(countryAbb == 'np'){
+							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} className='button-shadow' />;
+
+						} else{
+							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} className='button-shadow' />;
+
+						}
+
 				}
 			}
 
-		  myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} />;
-		}
-
 		if(this.state.tooltipOpen) {
-			console.log('is open');
+			// console.log('is open');
 			return (
 				<div className="flag-tooltip">
 					<div className = "country_flag" onClick={this.toggleTooltip}>
 				  	{myimg}
 					</div>
 					<div className="tooltip">
-						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} />
+						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} className='button-shadow' />
 					</div>
 				</div>
 			 );
 		} else {
-			console.log('not open');
+			// console.log('not open');
 
 			return (
 				<div className="flag-tooltip">
-					<div className = "country_flag" onClick={this.toggleTooltip}>
+					<div className = "country_flag" onClick={this.toggleTooltip} style={countryFlag}>
 				  	{myimg}
 					</div>
 				</div>

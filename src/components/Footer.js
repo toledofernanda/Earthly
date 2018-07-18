@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom'; //first npm install react-render-dom
 const footerDes = {
   display:'flex',
   justifyContent:'center',
-  backgroundColor: '#152D53',
   margin: '0',
   listStyleType:'none',
   height:'40px',
-  paddingTop:'20px'
+  paddingTop:'10px',
+  paddingLeft:'0'
 }
 
 class Footer extends Component{
   render(){
     return(
-      <footer className="footer">
+      <footer className="footer" style={{backgroundColor: '#152D53', boxSizing:'border-box',height:'50px', margin: '0'}}>
         <ul style={footerDes}>
           <li><Link to="/about" style={{textDecoration:'none', color: 'white'}}>about<span style={{marginLeft: '5px', marginRight:'5px'}}>|</span></Link></li>
           <li><Link to="/contact" style={{textDecoration:'none', color: 'white'}}>contact</Link></li>
