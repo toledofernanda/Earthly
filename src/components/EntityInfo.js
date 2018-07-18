@@ -32,7 +32,7 @@ class EntityInfo extends Component {
                 <div className="entity-info country" key="entity-info" >
                   <ul style={infoUl}>
                     <li style={infoLi} ><b>Capital: </b>{propObj["capital"]}</li>
-                    <li style={infoLi}><b>Population: </b>{propObj["population"]}</li>
+                    <li style={infoLi}><b>Population: </b>{numberWithCommas(propObj["population"])}</li>
                     <li style={infoLi}><b>Language: </b>{propObj["language"]}</li>
                     <li style={infoLi}><b>Greeting: </b>{propObj["greeting"]}</li>
                   </ul>
@@ -54,6 +54,10 @@ class EntityInfo extends Component {
 
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    function numberWithCommas(number) {
+      return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     return (
