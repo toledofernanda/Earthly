@@ -6,15 +6,17 @@ import BackButton from 'components/BackButton';
 import ThankYou from 'components/ThankYou';
 
 const boxPosition = {
-  marginRight: '10vw',
-  marginLeft:'10vw',
+  marginRight:'auto',
+  marginLeft:'auto',
   marginTop:'100px',
-  width: '1024',
+  marginBottom:'100px',
+  maxWidth: '1024px',
   height: '70%',
   boxSizing:'border-box',
   backgroundColor: "white",
   borderRadius: 30,
-  padding: '20px'
+  padding: '20px',
+  border: '1px solid darkgrey',
 }
 
 const form = {
@@ -41,8 +43,8 @@ const submitButton = {
   width: '80px',
   height: '25px',
   color:'white',
-  fontSize:'15px'
-
+  fontSize:'15px',
+  boxShadow: '1px 3px 1px lightgray'
 }
 
 class Contact extends Component {
