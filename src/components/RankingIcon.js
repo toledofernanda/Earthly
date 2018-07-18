@@ -32,7 +32,7 @@ class RankingIcon extends Component{
     if(iconCount < 1){
       renderData.push(<img src={require(`images/${topic}_colored.svg`)} alt={`${topic}`} style={halfIcon}/>)
     }
-
+// console.log("ranking icon", image)
     return (
       <div className="ranking-icon" key="ranking-icon" style={rankingIconsDiv}>
         {renderData}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RankingEntity from 'components/RankingEntity';
 import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
 import BackButton from 'components/BackButton';
@@ -26,8 +25,8 @@ class Result extends Component {
     }
 
     let rankingInfo = {
-      display: 'flex',
-      flexFlow: 'row nowrap',
+      // display: 'flex',
+      // flexFlow: 'row nowrap',
     };
 
     let chartHeader = {
@@ -65,7 +64,7 @@ class Result extends Component {
             <Unit unit={unit} />
           </div>
           <div className="ranking-info" style={rankingInfo}>
-            <RankingEntity category={category} topic={topic} />
+            {/* <RankingEntity category={category} topic={topic} /> */}
             <Chart category={category} topic={topic} />
           </div>
       </div>
