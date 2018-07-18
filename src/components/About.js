@@ -76,7 +76,7 @@ class About extends Component{
     return(
       <div className="about" key="about" style = {outerDiv}>
           <div className="aboutTitle" style={filterTopStyle}>
-            <BackButton component={'category'} className='button-shadow' />
+            <BackButton component={'category'} />
             <h1 style = {TitleStyle}>About</h1>
           </div>
           <div className="aboutEarthly" style = {earthly}>
@@ -97,7 +97,7 @@ class About extends Component{
               </p>
             </div>
             <div style={Object.assign({}, member, mana)}>
-              <img style = {memberImage} img src={require(`images/most_dogs.png`) } alt="manaPic"/>
+              <img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
               <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development.  Mana has a background in British and American studies.  In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
