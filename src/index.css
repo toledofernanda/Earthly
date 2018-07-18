@@ -6,11 +6,11 @@ html, body, #root {
   height: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 12pt;
-  color: #58595B; /*style guide gray */
+  color: #58595B;
 }
 
 a, a:visited {
-  color: #58595B; /*style guide gray */
+  color: #58595B;
 }
 
 .button-shadow {
@@ -30,7 +30,6 @@ a, a:visited {
 }
 
 .StripeCheckout {
-  background-color: pink !important;
   background: none !important;
   box-shadow: none !important;
 }
@@ -38,4 +37,5 @@ a, a:visited {
 .StripeCheckout span {
   background-image: none !important;
   background-color: #F05027;
+  box-shadow: 1px 3px 1px lightgray !important;
 }
