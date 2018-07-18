@@ -93,7 +93,7 @@ class Donation extends Component{
             <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
 Your donation will help us keep Earthly free and add new rankings and features.
 100% of your donations goes towards research and app development.</p>
-            <img style ={{width:'25%'}} src={require(`images/team.jpg`)} alt="donationImg" />
+            <img style ={{width:'40%', borderRadius:10, marginTop:'10px', marginBottom:'15px'}} src={require(`images/team.jpg`)} alt="donationImg" />
           </div>
 
           <div className = "contactForm">
@@ -111,7 +111,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
 
               <FormGroup  style={{margin:'10px',paddingRight:'16px'}}>
                 <Label for="amount">Amoun</Label>
-                <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'10px', padding:'3px'}}
+                <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'15px', padding:'3px'}}
                 type="text"
                 name= "amount"
                 onChange = {this.handleChange}
