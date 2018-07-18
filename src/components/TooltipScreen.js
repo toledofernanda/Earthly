@@ -11,13 +11,14 @@ class TooltipScreen extends Component {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
-      left: '110%',
+      left: '10%',
       top: '10px',
       zIndex: '2',
       backgroundColor: 'white',
       padding: '10px 20px 20px 20px',
       borderRadius: '0 20px 20px 20px',
       border: '1px solid darkgrey',
+      marginLeft: '15px'
     }
 
     let infoMap = {

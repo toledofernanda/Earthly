@@ -12,13 +12,12 @@ class RankingBar extends Component{
     /* CSS */
     let rankingBar = {
       maxWidth:'100%',
-      height: '10.5%',
-      minHeight: '70px',
+      flex: '0 1 88%',
       boxSizing: 'border-box',
       display: 'flex',
       flexFlow: 'column',
       justifyContent: 'center',
-      marginBottom: '3px'
+      padding: '0px 0 0px 10px'
     }
 
     /* JS */
