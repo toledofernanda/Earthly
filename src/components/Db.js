@@ -706,8 +706,8 @@ export let db = {
     ]
   },
   environment: {
-    highest_temperature: [
-      { topic_description: 'Highest Temperature',
+    highest_temperatures: [
+      { topic_description: 'Highest Temperatures',
         ranking: '1',
         entity_name: 'United States',
         entity_type: 'country',
@@ -798,8 +798,8 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       }
     ],
-    lowest_temperature: [
-      { topic_description: 'Lowest Temperature',
+    lowest_temperatures: [
+      { topic_description: 'Lowest Temperatures',
         ranking: '1',
         entity_name: 'Russia',
         entity_type: 'country',
@@ -1084,8 +1084,8 @@ export let db = {
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       }
     ],
-    most_volcanos: [
-      { topic_description: 'Most Volcanos',
+    most_volcanoes: [
+      { topic_description: 'Most Volcanoes',
         ranking: '1',
         entity_name: 'United States',
         entity_type: 'country',
@@ -4036,8 +4036,8 @@ export let db = {
           unit: 'foot (ft)',
         }
     ],
-    happiest_country: [
-      { topic_description: 'Happiest Country',
+    happiest_countries: [
+      { topic_description: 'Happiest Countries',
         ranking: '1',
         entity_name: 'Norway',
         entity_type: 'country',
@@ -4118,8 +4118,8 @@ export let db = {
         source_url: 'http://worldhappiness.report/ed/2018/'
       }
     ],
-    largest_country: [
-      { topic_description: 'Largest Country',
+    largest_countries: [
+      { topic_description: 'Largest Countries',
         ranking: '1',
         entity_name: 'Russia',
         entity_type: 'country',
@@ -4618,7 +4618,7 @@ export let db = {
         source_url: 'https://data.worldbank.org/indicator/SP.POP.TOTL'
       }
     ],
-    highest_temperature: [
+    highest_temperatures: [
       { topic_description: 'Highest Temperature',
         ranking: '1',
         entity_name: 'United States',
@@ -4710,8 +4710,8 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       }
     ],
-    lowest_temperature: [
-      { topic_description: 'Lowest Temperature',
+    lowest_temperatures: [
+      { topic_description: 'Lowest Temperatures',
         ranking: '1',
         entity_name: 'Russia',
         entity_type: 'country',
@@ -5006,107 +5006,6 @@ export let db = {
         source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
       }
     ],
-    tallest_buildings: [
-      { topic_description: 'Tallest Buildings',
-        ranking: '1',
-        entity_name: 'Burj Khalifa',
-        location: 'United Arab Emirates',
-        entity_type: 'not_country',
-        quantity: '2,717',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '2',
-        entity_name: 'Shanghai Tower',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '2,073',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '3',
-        entity_name: 'Makkah Royal Clock Tower',
-        location: 'Saudi Arabia',
-        entity_type: 'not_country',
-        quantity: '1,972',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '4',
-        entity_name: 'Ping An International Finance Centre',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,965',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '5',
-        entity_name: 'Lotte World Tower',
-        location: 'South South Korea',
-        entity_type: 'not_country',
-        quantity: '1,819',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '6',
-        entity_name: 'One World Trade Center',
-        location: 'United States',
-        entity_type: 'not_country',
-        quantity: '1,776',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '6',
-        entity_name: 'Guangzhou CTF Finance Centre',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,739',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '7',
-        entity_name: 'Tianjin CTF Finance Centre',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,739',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '8',
-        entity_name: 'China Zun',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,667',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '9',
-        entity_name: 'Tapei 101',
-        location: 'Taipei',
-        entity_type: 'not_country',
-        quantity: '1,667',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '10',
-        entity_name: 'Shanghai World Financial Center',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,614',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      }
-    ]
   },
   industry: {
     market_share_electric_cars: [
@@ -5413,107 +5312,6 @@ export let db = {
         unit: 'none',
         source_name: 'Japan Automobile Manufacturers Association (2015)',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/car_ex.html'
-      }
-    ],
-    tallest_buildings: [
-      { topic_description: 'Tallest Buildings',
-        ranking: '1',
-        entity_name: 'Burj Khalifa',
-        location: 'United Arab Emirates',
-        entity_type: 'not_country',
-        quantity: '2,717',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '2',
-        entity_name: 'Shanghai Tower',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '2,073',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '3',
-        entity_name: 'Makkah Royal Clock Tower',
-        location: 'Saudi Arabia',
-        entity_type: 'not_country',
-        quantity: '1,972',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '4',
-        entity_name: 'Ping An International Finance Centre',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,965',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '5',
-        entity_name: 'Lotte World Tower',
-        location: 'South South Korea',
-        entity_type: 'not_country',
-        quantity: '1,819',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '6',
-        entity_name: 'One World Trade Center',
-        location: 'United States',
-        entity_type: 'not_country',
-        quantity: '1,776',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '6',
-        entity_name: 'Guangzhou CTF Finance Centre',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,739',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '7',
-        entity_name: 'Tianjin CTF Finance Centre',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,739',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '8',
-        entity_name: 'China Zun',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,667',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '9',
-        entity_name: 'Tapei 101',
-        location: 'Taipei',
-        entity_type: 'not_country',
-        quantity: '1,667',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
-      },
-      { topic_description: 'Tallest Buildings',
-        ranking: '10',
-        entity_name: 'Shanghai World Financial Center',
-        location: 'China',
-        entity_type: 'not_country',
-        quantity: '1,614',
-        unit: 'foot (ft)',
-        source_name: 'World Atlas'
       }
     ],
     hydropower_generation: [
