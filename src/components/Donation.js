@@ -2,18 +2,22 @@ import React, { Component } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
+import BackButton from 'components/BackButton';
+
 
 
 const donation = {
-  marginRight: '10vw',
-  marginLeft:'10vw',
+  marginRight:'auto',
+  marginLeft:'auto',
   marginTop:'100px',
-  width: '1024',
+  marginBottom:'100px',
+  maxWidth: '1024px',
   height: '70%',
   boxSizing:'border-box',
   backgroundColor: "white",
   borderRadius: 30,
-  padding: '20px'
+  padding: '20px',
+  border: '1px solid darkgrey',
 }
 
 const submitButton = {
@@ -26,6 +30,10 @@ const submitButton = {
   height: '25px',
   color:'white'
 
+}
+
+const back ={
+  textAlign: 'left !important'
 }
 
 //hundle donation button
@@ -78,46 +86,56 @@ class Donation extends Component{
     let amount = parseInt(this.state.amount) * 100;
     return(
       <div className="donation" style={donation}>
+        <BackButton component={'donation'} />
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-            <p style={{width:'60%', textAlign:'center'}}>Help Earthly to continue adding content by donationg today. 100% of your donations goes towards research and site development.</p>
-            <img style ={{width:'25%'}} src={require(`images/most_dogs.png`)} alt="donationImg" />
+
+            <h1>Donation</h1>
+            <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
+Your donation will help us keep Earthly free and add new rankings and features.
+100% of your donations goes towards research and app development.</p>
+            <img style ={{width:'25%'}} src={require(`images/team.jpg`)} alt="donationImg" />
           </div>
 
           <div className = "contactForm">
-            <Form onSubmit={this.handleSubmit} style={{display:'flex', flexWrap:'wrap', justifyContent:'center', textAlign:'center'}}>
-              <FormGroup style={{flexBasis:'50%'}}>
+            <Form onSubmit={this.handleSubmit} style={{textAlign:'center'}}>
+              <div>
+              <FormGroup style={{margin:'10px'}}>
                 <Label for="firstName">Name</Label>
-                <input style={{border:'1px solid gray', borderRadius:7}}
+                <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'10px', padding:'3px'}}
                 type="text"
                 name= "firstName"
                 onChange = {this.handleChange}
+                required
                 />
               </FormGroup>
 
-              <FormGroup style={{flexBasis:'50%'}}>
-                <Label for="amount">Amount</Label>
-                <input style={{border:'1px solid gray', borderRadius:7}}
+              <FormGroup  style={{margin:'10px',paddingRight:'16px'}}>
+                <Label for="amount">Amoun</Label>
+                <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'10px', padding:'3px'}}
                 type="text"
                 name= "amount"
                 onChange = {this.handleChange}
+                required
                 />
               </FormGroup>
 
-              <FormGroup style={{flexBasis:'50%'}}>
+              <p style={{fontSize:'13px'}}>Please enter email ifyou would like to hear any updates or comment back from us!</p>
+              <FormGroup  style={{margin:'10px'}}>
                 <Label for="email">Email</Label>
-                <input style={{border:'1px solid gray', borderRadius:7}}
+                <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px'}}
                 type="email"
                 name= "email"
                 onChange = {this.handleChange}
                 />
               </FormGroup>
+            </div>
 
-
-              <FormGroup style={{flexBasis:'100%'}}>
+              <FormGroup style ={{display:'flex', justifyContent:'center', flexWrap:'wrap'}}>
                 <Label for="message" style={{width:'100%'}}>Message</Label>
-                <textarea style={{width: '60%', height:'200px',border:'1px solid black', borderRadius:7}}
+                <textarea style={{width: '30%', margin:'20px',height:'200px',border:'1px solid black', borderRadius:7, padding:'10px', fontSize:'18px'}}
                 type="textarea"
                 name= "message"
+                placeholder="Tell us what other rankings and features you’d like to see in Earthly!"
                 onChange = {this.handleChange}
                 />
               </FormGroup>
