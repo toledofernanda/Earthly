@@ -133,7 +133,6 @@ Your donation will help us keep Earthly free and add new rankings and features.
                 />
               </FormGroup>
 
-              <p style={{fontSize:'13px'}}>Please enter email ifyou would like to hear any updates or comment back from us!</p>
               <FormGroup  style={{margin:'10px'}}>
                 <Label for="email">Email</Label>
                 <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px'}}
