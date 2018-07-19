@@ -50,12 +50,6 @@ class CategoryFilter extends Component{
       flex: '0 0 33.33%'
     }
 
-    // let backButton = {
-    //   width: '19px',
-    //   cursor: 'pointer',
-    //   alignSelf: 'center'
-    // }
-
     let titleStyle = {
       // flex: '0 0 80%'
     }
