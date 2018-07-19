@@ -32,12 +32,14 @@ a, a:visited {
 .StripeCheckout {
   background-color: pink !important;
   background: none !important;
-  box-shadow: none !important;
+  box-shadow: 2px 2px 3px #58595B !important;
+  padding: 0px !important;
 }
 
 .StripeCheckout span {
   background-image: none !important;
   background-color: #F05027;
+
 }
 
 /* button style and background color for filters */
