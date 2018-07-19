@@ -157,6 +157,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
                 <div style={{listStyleType:'none', display:'flex', justifyContent:'space-around'}}>
 
                     <StripeCheckout
+                      
                       token={this.onToken}
                       stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
                       name="Earthly"
