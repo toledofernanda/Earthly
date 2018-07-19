@@ -45,14 +45,15 @@ class TopicFilter extends Component{
       justifyContent: 'center',
       alignItems: 'flex-start',
       // border: '1px solid black',
-      padding: '6% 20%',
+      padding: '2% 20%',
       // margin: '5%',
       // marginBottom: 0,
       boxSizing: 'border-box'
     };  //style for the inside div of main component
 
     let catStyle = {
-      flex: '0 0 33.33%'
+      flex: '0 0 33.33%',
+      paddingBottom: '2%'
     }
 
     let backButton = {

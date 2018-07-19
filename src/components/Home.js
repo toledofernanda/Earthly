@@ -19,33 +19,37 @@ class Home extends Component {
   }
 
   render() {
-
     /* CSS */
     //outer div
     let mainDiv = {
-      margin: 'auto',
+      maxWidth: '1024px',
+      margin: '4% auto',
       display: 'flex',
-      paddingBottom: '4%',
-      justifyContent: 'center'
-    }
+      flexFlow: 'column wrap',
+      justifyContent: 'center',
+      alignItems: 'stretch',
+      backgroundColor: 'white',
+      borderRadius: 30,
+      textAlign:'center',
+      height: '70vh'
+    }//style for the outside div of main component
 
     //inner content div
     let mainContent = {
-      maxWidth: '1024px',
-      width: '100%',
-      height: '100%',
-      minHeight: '50vh',
+      // width: '100%',
+      // height: '100%',
+      // minHeight: '50vh',
       textAlign: 'center',
       display: 'flex',
       flexFlow: 'column nowrap',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'white',
-      borderRadius: 30,
-      border: '1px solid darkgrey',
+      // backgroundColor: 'white',
+      // borderRadius: 30,
+      // border: '1px solid darkgrey',
       padding: '7% 7%',
-      margin: '5%',
-      marginBottom: 0,
+      // margin: '5%',
+      // marginBottom: 0,
       boxSizing: 'border-box'
     }
 
@@ -61,6 +65,11 @@ class Home extends Component {
       color: 'white',
     }
 
+    let screenshots = {
+      display: 'flex',
+      flexFlow: 'row nowrap'
+    }
+
     /* JS */
     const hoverClass = this.state.isHovered ? "start-hover" : "";
 
@@ -68,7 +77,11 @@ class Home extends Component {
       <div className="main" style={mainDiv}>
         <div className="main-content" style={mainContent}>
           <h1>Welcome to Earthly!</h1>
-          <h3>Learn about world rankings and countries</h3>
+          <h3>Learn about countries and world rankings.</h3>
+          <div style = {screenshots}>
+          <img src={require(`images/chartsSample.png`)} alt={`chart Sample`}/>
+          <img src={require(`images/chartSample2.png`)} alt={`chart Sample`}/>
+          </div>
           <Link to={`/category`}>
             <button
               style={startButton}

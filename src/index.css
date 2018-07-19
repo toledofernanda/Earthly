@@ -39,3 +39,34 @@ a, a:visited {
   background-image: none !important;
   background-color: #F05027;
 }
+
+/* button style and background color for filters */
+.buttonIcon  {
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.buttonIconTopic {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.animalsColor {
+  background-color: #00B8A6;
+}
+
+.environmentColor {
+  background-color: #4AB85C;
+}
+
+.foodColor { background-color: #F05027;}
+.generalColor {  background-color:  #19A9E1;}
+.industryColor { background-color:  #D7DF23;}
+.sportsColor { background-color: #152D53;}
