@@ -123,7 +123,7 @@ class Chart extends Component{
         index++;
       }
     } else if(topic === 'most_soccer_world_cup_champion') { //ranking with specific ranking order (ties)
-      specificOrder = [1,2,2,3,3,4,4,4];
+      specificOrder = [1,2,2,3,3,3,4,4];
       let index = 0;
 
       // get all entities that appear on that category/topic
