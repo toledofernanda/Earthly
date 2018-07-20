@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 34 68" style="enable-background:new 0 0 34 68;" xml:space="preserve">
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F05127;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:#F05127;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<g>
-	<path class="st0" d="M17.2,66.5h0.8c0.1,0,0.3-0.1,0.3-0.3V23.8c0-0.1-0.1-0.3-0.3-0.3h-0.8c-0.1,0-0.3,0.1-0.3,0.3v42.5
-		C17,66.4,17.1,66.5,17.2,66.5z"/>
-	<path class="st1" d="M18.3,37.3C30.5,36.6,30.8,25,30.8,25C18.6,25.8,18.3,37.3,18.3,37.3z"/>
-	<path class="st1" d="M17,37.3C4.8,36.6,4.5,25,4.5,25C16.7,25.8,17,37.3,17,37.3z"/>
-	<path class="st1" d="M18.3,47.3C30.5,46.5,30.8,35,30.8,35C18.6,35.7,18.3,47.3,18.3,47.3z"/>
-	<path class="st1" d="M17,47.3C4.8,46.5,4.5,35,4.5,35C16.7,35.7,17,47.3,17,47.3z"/>
-	<path class="st0" d="M17.7,6.8c0,0-2-3.9-5-3.4"/>
-	<path class="st0" d="M22.7,3.4c-3-0.5-5,3.4-5,3.4V0.8"/>
-	<path class="st2" d="M17.6,24.5c8.1-9.2,0.1-17.6,0.1-17.6C9.6,16,17.6,24.5,17.6,24.5z"/>
-	<path class="st2" d="M18.3,27.5c12.2-0.8,12.5-12.4,12.5-12.4C18.6,15.9,18.3,27.5,18.3,27.5z"/>
-	<path class="st2" d="M17,27.5C4.8,26.7,4.5,15.1,4.5,15.1C16.7,15.9,17,27.5,17,27.5z"/>
-</g>
+<rect x="11.2" y="30.9" class="st0" width="78" height="51.8"/>
+<rect x="89.6" y="44.7" class="st0" width="7.8" height="24"/>
+<rect x="2.7" y="44.4" class="st0" width="7.8" height="24"/>
+<rect x="37" y="83.1" class="st0" width="26.4" height="8.5"/>
+<rect x="45.8" y="21.1" class="st0" width="9.1" height="9.1"/>
+<circle class="st0" cx="50.2" cy="12.4" r="8.7"/>
+<circle class="st1" cx="32.9" cy="50.8" r="5.6"/>
+<circle class="st1" cx="67.5" cy="51.1" r="5.6"/>
+<path class="st1" d="M37.6,65.7h25.1C62.7,65.7,51.1,90.1,37.6,65.7z"/>
 </svg>
