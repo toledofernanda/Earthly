@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
+  "engines": {
+    "node": "8.11.1",
+    "npm": "6.2.0"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
@@ -10,14 +14,16 @@
     "data.js": "^0.11.5",
     "express": "^4.16.3",
     "nodemailer": "^4.6.7",
-    "nodemon": "^1.17.5",
+    "nodemon": "^1.18.3",
+    "npm": "^6.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-stripe-checkout": "^2.6.3",
     "react-stripe-elements": "^2.0.1",
-    "reactstrap": "^6.2.0"
+    "reactstrap": "^6.3.0",
+    "cross-env": "^5.2.0"
   },
   "scripts": {
     "start": "concurrently \"cross-env NODE_PATH=src react-scripts start\" \"node form.js\"",
@@ -25,10 +31,8 @@
     "dev": "npm run server",
     "build": "react-scripts build",
     "test": "cross-env NODE_PATH=src react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "cross-env": "^5.1.6"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "NODE_PATH=src react-scripts build"
   },
   "description": "Earthly is a web application which dynamically generates visual charts of world ranking in categories children are interested in.",
   "main": "index.js",
@@ -41,6 +45,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Fernandatote/Earthly/issues"
-  },
-  "homepage": "https://github.com/Fernandatote/Earthly#readme"
+  }
 }
