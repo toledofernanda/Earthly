@@ -31,8 +31,7 @@ app.post('/api/form', (req,res) =>{
     var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'langara.earthly@gmail.com',
-    pass: 'wmdd4980team1'
+    user: 'langara.earthly@gmail.com'
   }
 });
 
