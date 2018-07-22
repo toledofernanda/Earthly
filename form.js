@@ -2,9 +2,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
+const path = require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
+
+
+// app.set('view engine', 'ejs');
+// app.use(express.static('public'))
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
+
 
 app.post('/api/form', (req,res) =>{
   nodemailer.createTestAccount(( err, account) => {
@@ -46,8 +54,14 @@ app.post('/api/form', (req,res) =>{
   })
 })
 
-const PORT = process.env.PORT || 3001
+//const PORT = process.env.PORT || 3001
+// res.sendFile(path.join(__dirname, '../public', 'index.html'));
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`)
-})
+
+app.use(express.static(__dirname + '/build'));
+
+
+
+app.listen(process.env.PORT, '0.0.0.0', function(err) {
+  console.log("Started listening on %s", app.url);
+});
