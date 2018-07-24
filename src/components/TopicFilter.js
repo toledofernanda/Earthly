@@ -16,14 +16,14 @@ class TopicFilter extends Component{
 
   render(){
     let outerDiv = {
-      maxWidth: '1024px',
-      margin: 'auto',
+      maxWidth: '1024px -10%',
+      margin: '4%',
       display: 'flex',
       flexFlow: 'column wrap',
       // paddingBottom: '4%',
       justifyContent: 'center',
-      marginTop: '5%',
-      marginBottom: '5%',
+      // marginTop: '5%',
+      // marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -45,15 +45,17 @@ class TopicFilter extends Component{
       justifyContent: 'center',
       alignItems: 'flex-start',
       // border: '1px solid black',
-      padding: '2% 20%',
+      padding: '2% 25%',
       // margin: '5%',
       // marginBottom: 0,
       boxSizing: 'border-box'
     };  //style for the inside div of main component
 
     let catStyle = {
-      flex: '0 0 33.33%',
-      paddingBottom: '2%'
+      flex: '0 0 25%',
+      paddingBottom: '3%',
+      margin: '0 1%',
+      marginLeft: 'calc(1% + .5vw)'
     }
 
     let backButton = {
