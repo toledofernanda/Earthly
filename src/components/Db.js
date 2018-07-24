@@ -788,7 +788,7 @@ export let db = {
         ranking: '1',
         entity_name: 'Norway',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '100',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -796,7 +796,7 @@ export let db = {
         ranking: '2',
         entity_name: 'Denmark',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '95',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -804,7 +804,7 @@ export let db = {
         ranking: '3',
         entity_name: 'Iceland',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '90',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -812,7 +812,7 @@ export let db = {
         ranking: '4',
         entity_name: 'Switzerland',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '85',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -820,7 +820,7 @@ export let db = {
         ranking: '5',
         entity_name: 'Finland',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '80',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -828,7 +828,7 @@ export let db = {
         ranking: '6',
         entity_name: 'Netherlands',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '75',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -836,7 +836,7 @@ export let db = {
         ranking: '7',
         entity_name: 'Canada',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '70',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -844,7 +844,7 @@ export let db = {
         ranking: '8',
         entity_name: 'New Zealand',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '65',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -852,7 +852,7 @@ export let db = {
         ranking: '9',
         entity_name: 'Australia',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '60',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       },
@@ -860,7 +860,7 @@ export let db = {
         ranking: '10',
         entity_name: 'Sweden',
         entity_type: 'country',
-        quantity: 'none',
+        quantity: '55',
         source_name: 'World Happiness Report',
         source_url: 'http://worldhappiness.report/ed/2018/'
       }
