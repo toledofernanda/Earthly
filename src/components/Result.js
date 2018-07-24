@@ -24,11 +24,6 @@ class Result extends Component {
       justifyContent: 'center'
     }
 
-    let rankingInfo = {
-      // display: 'flex',
-      // flexFlow: 'row nowrap',
-    };
-
     let chartHeader = {
       display: 'flex',
       justifyContent: 'space-between',
@@ -42,7 +37,6 @@ class Result extends Component {
       margin: '60px 5% 20px 5%',
       backgroundColor: 'white',
       borderRadius: 30,
-      border: '1px solid darkgrey',
     }
 
     let topicD = {
@@ -63,23 +57,11 @@ class Result extends Component {
             <h2 style={topicD} >{topicDescription}</h2>
             <Unit unit={unit} />
           </div>
-          <div className="ranking-info" style={rankingInfo}>
-            {/* <RankingEntity category={category} topic={topic} /> */}
+          <div className="ranking-info">
             <Chart category={category} topic={topic} />
           </div>
       </div>
     )
-
-    // function capitalizeAllLetters(string) {
-    //   var splitString = string.toLowerCase().split('_');
-    //   //loop through each string
-    //   for (var i = 0; i < splitString.length; i++) {
-    //    // assign it back to the array after capitalized
-    //    splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
-    //   }
-    //   // join all strings into an unique string and return it
-    //   return splitString.join(' ');
-    // }
 
     return (
       <div className="result" style={resultOuterDiv}>
