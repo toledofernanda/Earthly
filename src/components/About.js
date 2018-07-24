@@ -85,7 +85,7 @@ class About extends Component{
               Earthly is a world ranking app that makes it easy for children to get interested in and to learn about the world.
               We are a team of two designers and three developers. We wanted to make an web app that makes a learning experience exciting, fun and engaging.</p><p>
               We interviewed school teachers and ran a usability test with kids to learn about how we should realize the visual representation of data so that it is appealing and easy to understand for kids. </p><p>
-              All icons and images are created by Jenn and Marlowe. The app is developed in agile development method using performance-optimized React.js framework by Fernanda, Mana and Tomoko.</p><p>
+              All icons, images and pages are designed by Jenn and Marlowe. The app is developed with scalable React.js framework by Fernanda, Mana and Tomoko.</p><p>
               If you have any feedback, please feel free to let us know!
             </p>
           </div>

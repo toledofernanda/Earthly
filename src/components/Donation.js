@@ -28,7 +28,9 @@ const submitButton = {
   borderRadius: 7,
   width: '80px',
   height: '25px',
-  color:'white'
+  color:'white',
+  textDecoration:'none',
+  paddingTop:'3px'
 
 }
 
@@ -123,7 +125,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
                 />
               </FormGroup>
 
-              <FormGroup  style={{margin:'10px',paddingRight:'16px'}}>
+               {/* <FormGroup  style={{margin:'10px',paddingRight:'16px'}}>
                 <Label for="amount">Amoun</Label>
                 <input style={{border:'1px solid gray', borderRadius:7, marginLeft:'15px', padding:'3px'}}
                 type="text"
@@ -131,7 +133,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
                 onChange = {this.handleChange}
                 required
                 />
-              </FormGroup>
+              </FormGroup>  */}
 
               <FormGroup  style={{margin:'10px'}}>
                 <Label for="email">Email</Label>
@@ -156,17 +158,8 @@ Your donation will help us keep Earthly free and add new rankings and features.
               <div className="donationButton">
                 <div style={{listStyleType:'none', display:'flex', justifyContent:'space-around'}}>
 
-                    <StripeCheckout
-                      
-                      token={this.onToken}
-                      stripeKey="pk_test_xJ6YNAqBJOlMsVzqRKhUzJXw"
-                      name="Earthly"
-                      description="Donation"
-                      panelLabel="Donate"
-                      amount={amount}
-                      currency="CAD"
-                      label ="Donate"
-                    />
+                  <script src="https://gumroad.com/js/gumroad.js"></script>
+                  <a class="gumroad-button" href="https://gum.co/wDIjn" className = "button-shadow" style ={submitButton}>Donate</a>
                 </div>
             </div>
             </Form>
