@@ -18,7 +18,9 @@ class Ranking extends Component{
 
 		for (let item of subCat){
 			//show quantity for ranking
-			if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking')){
+			if(item['topic_description'] === 'Happiest Country') {
+				result = "";
+			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking')){
 				result = item['quantity'];
 			}
 		}
