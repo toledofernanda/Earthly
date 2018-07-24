@@ -40,12 +40,13 @@ class About extends Component{
 
     let earthly = {
       padding: '1% 25%',
+      textAlign: 'center'
     }
     let member = {
       flex: '0 0 16%',
       minWidth: '150px',
-      padding: '0 1%',
-      margin: '50px 1%',
+      padding: '0 1.5%',
+      margin: '50px .5%',
       color: 'white'
     };
     let fernanda = {
@@ -82,9 +83,9 @@ class About extends Component{
           <div className="aboutEarthly" style = {earthly}>
             <p>
               Earthly is a world ranking app that makes it easy for children to get interested in and to learn about the world.
-              We are a team of two designers and three developers studying Web and Mobile Design and Development at Langara College. We wanted to make an web app that makes a learning experience exciting, fun and engaging.</p><p>
+              We are a team of two designers and three developers. We wanted to make an web app that makes a learning experience exciting, fun and engaging.</p><p>
               We interviewed school teachers and ran a usability test with kids to learn about how we should realize the visual representation of data so that it is appealing and easy to understand for kids. </p><p>
-              We met almost everyday, designed a wireframe, designed a mockup and developed the app in agile development method using performance-optimized React framework.</p><p>
+              All icons and images are created by Jenn and Marlowe. The app is developed in agile development method using performance-optimized React.js framework by Fernanda, Mana and Tomoko.</p><p>
               If you have any feedback, please feel free to let us know!
             </p>
           </div>
@@ -93,21 +94,21 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
-              <p style={desc}>Fernanda has a background in Marketing and Advertising at Mackenzie University in São Paulo, Brazil.  She also holds a certificate in Internet and Web Technology, and CSPO.  Fernanda is Earthly’s lead Developer.  Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
+              <p style={desc}>Fernanda is Earthly’s Developer. She has a background in Marketing and Advertising at Mackenzie University in São Paulo, Brazil.  She also holds a certificate in Internet and Web Technology, and CSPO. Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
               </p>
             </div>
             <div style={Object.assign({}, member, mana)}>
               <img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
-              <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development.  Mana has a background in British and American studies.  In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
+              <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies.  In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
               </p>
             </div>
             <div style={Object.assign({}, member, tomo)}>
               <img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/>
               <h3>Tomoko</h3>
               <h4>Dev & PM</h4>
-              <p style={desc}>Tomoko has 5 years experience as a program manager at Microsoft, 6 years of experience as a university instructor in addition to 15-year background as an English to Japanese translator and interpreter. She is Earthly’s Developer and Project Manager. During her free time, she enjoys star gazing, board-gaming, and geocaching with her two sons.
+              <p style={desc}>Tomoko is Earthly’s Developer and Project Manager. She has 5 years experience as a program manager at Microsoft, 6 years of experience as a university instructor in addition to 15-year background as an English to Japanese translator and interpreter. During her free time, she enjoys star gazing, board-gaming, and geocaching with her two sons.
               </p>
             </div>
             <div style={Object.assign({}, member, jenn)}>

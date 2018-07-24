@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#1AA8E1;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
-<polyline class="st0" points="4.7,75.6 22.3,75.6 22.3,40.5 12.2,40.5 50.7,1.9 89.5,40.6 78.4,40.6 78.4,75.6 95.1,75.6 "/>
-<path class="st1" d="M37.7,99.4l2.7-2.7c0,0-4.2-4.8-0.6-16.5c0,0,2.9-7.9,2.2-15.2h2.8l-5.1-6.6l-5.6,6.6h3.4c0,0,1.4,7.8-2,15.2
-	C35.5,80.2,31,95,37.7,99.4z"/>
-<path class="st1" d="M49,99.5l2.7-2.7c0,0-4.2-4.8-0.6-16.5c0,0,2.9-7.9,2.2-15.2H56l-5.1-6.6l-5.6,6.6h3.4c0,0,1.4,7.8-2,15.2
-	C46.8,80.3,42.2,95,49,99.5z"/>
-<path class="st1" d="M60.3,99.5l2.7-2.7c0,0-4.2-4.8-0.6-16.5c0,0,2.9-7.9,2.2-15.2h2.8l-5.1-6.6l-5.6,6.6h3.4c0,0,1.4,7.8-2,15.2
-	C58.1,80.3,53.5,95,60.3,99.5z"/>
+<g>
+	<circle class="st0" cx="50.2" cy="49.7" r="14.6"/>
+	<path class="st0" d="M68.5,97.4H31.9c-2.1,0-3.9-1.8-3.9-3.9V69.3c0-2.1,1.8-3.9,3.9-3.9h36.6c2.1,0,3.9,1.8,3.9,3.9v24.1
+		C72.5,95.6,70.7,97.4,68.5,97.4z"/>
+	<g>
+		<path class="st0" d="M57.2,17.7c0-4-3.2-7.2-7.2-7.2c-4,0-7.2,3.2-7.2,7.2c0,2.7,1.5,5.1,3.7,6.3v2.9c0,1.2,1,2.1,2.1,2.1h3.2
+			c1.2,0,2.1-1,2.1-2.1v-3.2C55.9,22.4,57.2,20.2,57.2,17.7z"/>
+		<path class="st1" d="M48,25.4c0,0,1.3-4.8,0-5.1c-1.3-0.3,0.4,1.7,1.2,1.3c0.8-0.4,3.7-2.2,2.1-1.8c-1.6,0.4-1,2.6-0.3,2.8
+			l0.2,2.8"/>
+		<path class="st1" d="M53,29.9h-6.1c-0.6,0-1-0.5-1-1v-2.5c0-0.6,0.5-1,1-1H53c0.6,0,1,0.5,1,1v2.5C54,29.5,53.6,29.9,53,29.9z"/>
+		<line class="st1" x1="45.9" y1="27" x2="54" y2="26.9"/>
+		<line class="st1" x1="45.9" y1="28.3" x2="54" y2="28.3"/>
+		<line class="st1" x1="41.1" y1="13.7" x2="35.8" y2="11.8"/>
+		<line class="st1" x1="58.8" y1="13.7" x2="64.1" y2="11.8"/>
+		<line class="st1" x1="41.4" y1="5.9" x2="44.6" y2="8.9"/>
+		<line class="st1" x1="49.7" y1="2" x2="49.7" y2="6.7"/>
+		<line class="st1" x1="58.2" y1="5.9" x2="55" y2="8.9"/>
+	</g>
+</g>
 </svg>

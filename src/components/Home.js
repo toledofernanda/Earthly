@@ -77,7 +77,7 @@ class Home extends Component {
       <div className="main" style={mainDiv}>
         <div className="main-content" style={mainContent}>
           <h1>Welcome to Earthly!</h1>
-          <h3>Learn about countries and world rankings.</h3>
+          <h3>A site where you can learn about countries and world rankings.</h3>
           <div style = {screenshots}>
           <img src={require(`images/chartsSample.png`)} alt={`chart Sample`}/>
           <img src={require(`images/chartSample2.png`)} alt={`chart Sample`}/>
