@@ -33,8 +33,8 @@ class Result extends Component {
     }
 
     let resultChart = {
-      maxWidth: '1024px', /*only for this element so breadcrumb is 100%*/
-      margin: '60px 5% 20px 5%',
+      maxWidth: '1024px -10%', /*only for this element so breadcrumb is 100%*/
+      margin: '4%',
       backgroundColor: 'white',
       borderRadius: 30,
     }
