@@ -11,6 +11,7 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
+      maxWidth: '1024px',
       padding: '10px 4%',
       borderRadius: '30px',
       boxSizing: 'border-box',
