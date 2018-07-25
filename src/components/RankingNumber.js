@@ -5,6 +5,10 @@ class Ranking extends Component{
 	render(){
 
 		/* CSS */
+		let rankingNumHidden = { /* hapiness hidden ranking number */
+			visibility: 'hidden'
+		}
+
 		let rankingNum = {
 			fontSize: '.7em'
 		}
@@ -19,9 +23,22 @@ class Ranking extends Component{
 		for (let item of subCat){
 			//show quantity for ranking
 			if(item['topic_description'] === 'Happiest Country') {
-				result = "";
-			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking')){
+				result = "_";
+
+				return(
+					<div className = "ranking_quantity" style={rankingNumHidden}>
+							{result}
+					</div>
+				)
+
+			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking') && item['topic_description'] === 'Happiest Country'){
 				result = item['quantity'];
+
+				return(
+					<div className = "ranking_quantity" style={rankingNum}>
+							{result}
+					</div>
+				)
 			}
 		}
 
@@ -29,11 +46,11 @@ class Ranking extends Component{
     //   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     // }
 
-		return(
-			<div className = "ranking_quantity" style={rankingNum}>
-					{result}
-			</div>
-		)
+		// return(
+		// 	<div className = "ranking_quantity" style={rankingNum}>
+		// 			{result}
+		// 	</div>
+		// )
 	}
 }
 
