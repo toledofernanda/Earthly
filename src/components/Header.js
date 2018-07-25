@@ -41,7 +41,7 @@ const button = {
   borderRadius: 7,
   textDecoration:'none',
   color:'white',
-  
+
 }
 
 
@@ -56,7 +56,7 @@ class Header extends Component{
   }
 
   handleHover() {
-    console.log("hovered")
+    // console.log("hovered")
     this.setState({
         isHovered: !this.state.isHovered
     });

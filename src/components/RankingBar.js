@@ -26,7 +26,7 @@ class RankingBar extends Component{
 
     if( topic === 'most_soccer_world_cup_champion' | topic === 'basketball_world_cup_gold_medals'){
       iconCount = this.props.barLength;
-      console.log(iconCount);
+      // console.log(iconCount);
     }else{
       iconCount = parseInt(this.props.barLength / 5, 10); //supposing No.1 = 100% is 20 icons
     }
