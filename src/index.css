@@ -60,3 +60,7 @@ a, a:visited {
 .generalColor {  background-color:  #19A9E1;}
 .industryColor { background-color:  #E2C137;}
 .sportsColor { background-color: #152D53;}
+
+.ranking_quantity#happiest_countries {
+  visibility: hidden;
+}
