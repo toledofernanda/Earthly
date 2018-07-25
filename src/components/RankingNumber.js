@@ -5,12 +5,9 @@ class Ranking extends Component{
 	render(){
 
 		/* CSS */
-		let rankingNumHidden = { /* hapiness hidden ranking number */
-			visibility: 'hidden'
-		}
-
 		let rankingNum = {
-			fontSize: '.7em'
+			fontSize: '.7em',
+			paddingTop: '.5em'
 		}
 
 		/* JS */
@@ -24,33 +21,16 @@ class Ranking extends Component{
 			//show quantity for ranking
 			if(item['topic_description'] === 'Happiest Country') {
 				result = "_";
-
-				return(
-					<div className = "ranking_quantity" style={rankingNumHidden}>
-							{result}
-					</div>
-				)
-
-			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking') && item['topic_description'] === 'Happiest Country'){
+			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking')){
 				result = item['quantity'];
-
-				return(
-					<div className = "ranking_quantity" style={rankingNum}>
-							{result}
-					</div>
-				)
 			}
 		}
 
-		// function numberWithCommas(number) {
-    //   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    // }
-
-		// return(
-		// 	<div className = "ranking_quantity" style={rankingNum}>
-		// 			{result}
-		// 	</div>
-		// )
+		return(
+			<div className = "ranking_quantity" id={topic} style={rankingNum}>
+					{result}
+			</div>
+		)
 	}
 }
 
