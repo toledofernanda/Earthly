@@ -12,7 +12,7 @@ class Chart extends Component{
     /* CSS */
     let chart = {
       padding: '10px 4%',
-      borderRadius: '0px 30px 30px 0px',
+      borderRadius: '30px',
       boxSizing: 'border-box',
       height: 'fit-content',
       background: 'white',
