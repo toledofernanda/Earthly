@@ -11,10 +11,11 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      padding: '10px 30px 10px 30px',
+      padding: '10px 4%',
       borderRadius: '0px 30px 30px 0px',
       boxSizing: 'border-box',
-      height: 'fit-content'
+      height: 'fit-content',
+      background: 'white',
     }
 
     let labelSourceDiv = {
@@ -31,21 +32,23 @@ class Chart extends Component{
       alignItems: 'center',
       boxSizing: 'border-box',
       height: '10%',
-      minHeight: '70px',
+      minHeight: '90px',
       width: '100%',
-      position: 'relative'
+      position: 'relative',
+      borderBottom: '1px solid lightgrey'
     }
 
     let orderStyle = {
       fontSize: 'calc(0.5em + .5vw)',
-      flex: '1 1 1%',
+      flex: '1 1 2%',
       paddingBottom: '15px',
-      paddingRight: '5px'
+      paddingRight: '5px',
+      textAlign: 'right'
     }
 
     let entityFlagName = {
-      flex: '1 1 11%',
-      padding: '7px 8px 7px 0px',
+      flex: '1 1 10%',
+      padding: '7px 4% 7px 0px',
     }
 
     let borderDiv = {
