@@ -16,11 +16,9 @@ class Flag extends Component{
 	}
 
 	toggleTooltip() {
-		console.log("clicked flag");
 		this.setState({
 			tooltipOpen: !this.state.tooltipOpen
 		});
-		console.log("tooltipOpen");
 	}
 
 	render(){
