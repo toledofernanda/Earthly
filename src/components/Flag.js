@@ -16,16 +16,18 @@ class Flag extends Component{
 	}
 
 	toggleTooltip() {
-		console.log("clicked flag");
 		this.setState({
 			tooltipOpen: !this.state.tooltipOpen
 		});
-		console.log("tooltipOpen");
 	}
 
 	render(){
 
 		/* CSS */
+		let flagTooltipDiv = {
+			maxWidth: '75px'
+		}
+
 		let flag = {
 			width: '100%',
 			maxWidth: '75px',
@@ -34,7 +36,8 @@ class Flag extends Component{
 		}
 
 		let countryFlag = {
-			textAlign: 'center'
+			textAlign: 'center',
+			maxWidth: '75px'
 		}
 
 		let nepalFlag = {
@@ -114,7 +117,7 @@ class Flag extends Component{
 		if(this.state.tooltipOpen) {
 			// console.log('is open');
 			return (
-				<div className="flag-tooltip">
+				<div className="flag-tooltip" style={flagTooltipDiv}>
 					<div className = "country_flag" onClick={this.toggleTooltip}>
 				  	{myimg}
 					</div>
