@@ -35,14 +35,13 @@ class Chart extends Component{
       minHeight: '90px',
       width: '100%',
       position: 'relative',
-      borderBottom: '1px solid lightgrey'
     }
 
     let orderStyle = {
       fontSize: 'calc(0.5em + .5vw)',
       flex: '1 1 2%',
       paddingBottom: '15px',
-      paddingRight: '5px',
+      paddingRight: '10px',
       textAlign: 'right'
     }
 
