@@ -3201,13 +3201,13 @@ export let db = {
         source_url: 'http://data.un.org/Explorer.aspx?d=GHG'
       }
     ],
-    renewable_eletricity_production: [
+    renewable_electricity_production: [
       { topic_description: 'Renewable Electricity',
         ranking: '1',
         entity_name: 'Paraguay',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3217,7 +3217,7 @@ export let db = {
         entity_name: 'Iceland',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3227,7 +3227,7 @@ export let db = {
         entity_name: 'Ethiopia',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3237,7 +3237,7 @@ export let db = {
         entity_name: 'Bhutan',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3247,7 +3247,7 @@ export let db = {
         entity_name: 'Albania',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3257,7 +3257,7 @@ export let db = {
         entity_name: 'Nepal',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3267,7 +3267,7 @@ export let db = {
         entity_name: 'Lesotho',
         entity_type: 'country',
         quantity: '100',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3277,7 +3277,7 @@ export let db = {
         entity_name: 'DR Congo',
         entity_type: 'country',
         quantity: '99.8',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3287,7 +3287,7 @@ export let db = {
         entity_name: 'Costa Rica',
         entity_type: 'country',
         quantity: '99.1',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
@@ -3297,7 +3297,7 @@ export let db = {
         entity_name: 'Malawi',
         entity_type: 'country',
         quantity: '99.1',
-        label: 'Share of Renewable Energy (2015)',
+        label: 'Electricity Production from Renewable Sources (2015)',
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
