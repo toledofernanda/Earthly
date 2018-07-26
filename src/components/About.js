@@ -108,7 +108,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/>
               <h3>Tomoko</h3>
               <h4>Dev & PM</h4>
-              <p style={desc}>Tomoko is Earthly’s Developer and Project Manager. She has 5 years experience as a program manager at Microsoft, 6 years of experience as a university instructor in addition to 15-year background as an English to Japanese translator and interpreter. During her free time, she enjoys star gazing, board-gaming, and geocaching with her two sons.
+              <p style={desc}>Tomoko is Earthly’s Developer and Project Manager. She is a certified Scrum Master and has 5 years experience as a program manager at Microsoft, 6 years of experience as a university instructor in addition to 15-year background as an English to Japanese translator and interpreter. During her free time, she enjoys star gazing, board-gaming, and geocaching with her two sons.
               </p>
             </div>
             <div style={Object.assign({}, member, jenn)}>

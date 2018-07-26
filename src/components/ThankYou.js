@@ -14,7 +14,8 @@ class ThankYou extends Component {
       backgroundColor: 'white',
       borderRadius: 30,
       textAlign:'center',
-      height: '70vh'
+      height: '70vh',
+      paddingBottom: '2%'
     }; //style for the outside div of main component
     let navStyle = {
       padding: '3% 4%',
@@ -34,7 +35,7 @@ class ThankYou extends Component {
           <h1 style={titleStyle}>Thank You for contacting Team Earthly.</h1>
         </div>
         <img style ={{alignSelf: 'center', maxWidth:'300px', height:'auto', borderRadius:10}} src={require(`images/team.jpg`)} alt="donationImg" />
-        <p >We will get back to you as soon as possible.</p>
+        <p>We will get back to you as soon as possible.</p>
       </div>
     )
   }
