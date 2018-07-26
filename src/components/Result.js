@@ -41,7 +41,7 @@ class Result extends Component {
 
     let topicD = {
       flex: '0 0 60%',
-      fontSize: '14pt',
+      fontSize: 'calc(14px + 1vw)', /* responsive title */
     }
 
     /* JS */
