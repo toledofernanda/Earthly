@@ -11,7 +11,6 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      maxWidth: '1024px',
       padding: '10px 4%',
       borderRadius: '30px',
       boxSizing: 'border-box',
@@ -50,6 +49,9 @@ class Chart extends Component{
     let entityFlagName = {
       flex: '1 1 10%',
       padding: '7px 4% 7px 0px',
+      display: 'flex',
+      flexFlow: 'column nowrap',
+      alignItems: 'center'
     }
 
     let borderDiv = {
