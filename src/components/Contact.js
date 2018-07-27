@@ -23,7 +23,6 @@ const form = {
   display: 'flex',
   flexWrap: 'wrap',
   justifyContent: 'center',
-
 }
 
 const comment = {
@@ -89,14 +88,14 @@ class Contact extends Component {
 
   render() {
     let outerDiv = {
-      maxWidth: '1024px',
+      maxWidth: 'calc(1024px - 10%)',
       margin: 'auto',
       display: 'flex',
       flexFlow: 'column wrap',
       justifyContent: 'center',
-      marginTop: '5%',
-      marginBottom: '5%',
-      paddingBottom: '3%',
+      marginTop: '4%',
+      marginBottom: '2.5%',
+      paddingBottom: '2%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -123,25 +122,28 @@ class Contact extends Component {
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      padding: '0 10%'
     }
     let inputStyle = {
       flex: '1 0 40%',
       display:'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'flex-end',
       marginBottom:'1%'
     }
     let contactForm = {
       width: '60%',
-      margin: 'auto'
+      margin: 'auto',
     }
     let input = {
       border:'1px solid gray',
       borderRadius:7,
-      marginRight:'5%',
+      // marginRight:'5%',
     }
     let label = {
-      marginLeft : '10%'
+      // marginLeft : '10%',
+      marginRight: '3%',
+      textAlign: 'right'
     }
 
       if (this.state.submitted){
@@ -155,7 +157,7 @@ class Contact extends Component {
           <h1 style = {TitleStyle}>Contact</h1>
         </div>
         <div>
-          <p style={{width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>
+          <p style={{textAlign: 'center', width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>
@@ -179,7 +181,7 @@ class Contact extends Component {
               />
             </FormGroup>
           <FormGroup  style={inputStyle}>
-              <Label for="phone" style = {label}>phone</Label>
+              <Label for="phone" style = {label}>Phone</Label>
             <input style={input}
               type="text"
               pattern="[0-9]*"

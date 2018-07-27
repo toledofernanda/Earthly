@@ -10,14 +10,11 @@ class CategoryFilter extends Component{
 
   render(){
     let outerDiv = {
-      maxWidth: '1024px -10%',
-      margin: '4%',
+      maxWidth: 'calc(1024px - 10%)',
+      margin: '4% auto',
       display: 'flex',
       flexFlow: 'column wrap',
-      // paddingBottom: '4%',
       justifyContent: 'center',
-      // marginTop: '5%',
-      // marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -26,9 +23,6 @@ class CategoryFilter extends Component{
       padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '40px 10fr'
-      // display: 'flex',
-      // flexFlow: 'row nowrap',
-      // justifyContent: 'center'
     };
 
     let divStyle = {
@@ -38,11 +32,8 @@ class CategoryFilter extends Component{
       flexFlow: 'row wrap',
       justifyContent: 'center',
       alignItems: 'flex-start',
-      // border: '1px solid black',
       padding: '7% 25%',
       paddingTop: '4%',
-      // margin: '5%',
-      // marginBottom: 0,
       boxSizing: 'border-box'
     };  //style for the inside div of main component
 
@@ -51,10 +42,6 @@ class CategoryFilter extends Component{
       paddingBottom: '3%',
       margin: '0 1%',
       marginLeft: 'calc(1% + .5vw)'
-    }
-
-    let titleStyle = {
-      // flex: '0 0 80%'
     }
 
     let categoryList = [];

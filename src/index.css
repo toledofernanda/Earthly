@@ -72,3 +72,39 @@ a, a:visited {
 .generalColor {  background-color:  #19A9E1;}
 .industryColor { background-color:  #E2C137;}
 .sportsColor { background-color: #152D53;}
+
+.fernanda {
+  background-color: #4AB85C
+}
+.mana {
+  background-color: #F05027
+}
+.tomo {
+  background-color: #19A9E1
+}
+.jenn {
+  background-color: #00B8A6
+}
+.marlowe {
+   background-color: #152D53
+}
+
+.member {
+  flex: 0 0 100%;
+  min-width: 130px;
+  padding: 0 1.5%;
+  margin: 50px .5%;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .member {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .member {
+    flex: 1 0 16%;
+  }
+}

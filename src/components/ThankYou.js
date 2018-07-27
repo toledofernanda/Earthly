@@ -4,13 +4,13 @@ import BackButton from 'components/BackButton';
 class ThankYou extends Component {
   render(){
     let outerDiv = {
-      maxWidth: '1024px',
+      maxWidth: 'calc(1024px - 10%)',
       margin: 'auto',
       display: 'flex',
       flexFlow: 'column wrap',
       justifyContent: 'space-between',
-      marginTop: '5%',
-      marginBottom: '5%',
+      marginTop: '4%',
+      marginBottom: '2.5%',
       backgroundColor: 'white',
       borderRadius: 30,
       textAlign:'center',

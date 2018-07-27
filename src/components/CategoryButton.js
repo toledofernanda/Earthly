@@ -6,9 +6,7 @@ import FilterButtonText from 'components/FilterButtonText';
 class CategoryButton extends Component{
   render() {
     let buttonStyle = {
-      // flex: '0 0 33.33%',
-      textAlign: 'center',
-      // margin: '10px'
+      textAlign: 'center'
     };
 
 
