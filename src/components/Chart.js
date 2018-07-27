@@ -32,7 +32,7 @@ class Chart extends Component{
       alignItems: 'center',
       boxSizing: 'border-box',
       height: '10%',
-      minHeight: '90px',
+      minHeight: '6.5vw',
       width: '100%',
       position: 'relative',
     }
