@@ -55,10 +55,13 @@ a, a:visited {
 .industryColor { background-color:  #E2C137;}
 .sportsColor { background-color: #152D53;}
 
+<<<<<<< HEAD
 .ranking_quantity#happiest_countries {
   visibility: hidden;
 }
 
+=======
+>>>>>>> Staging
 .fernanda {
   background-color: #4AB85C
 }
@@ -93,3 +96,10 @@ a, a:visited {
   .member {
     flex: 1 0 16%;
   }
+<<<<<<< HEAD
+=======
+
+.ranking_quantity#happiest_countries {
+  visibility: hidden;
+}
+>>>>>>> Staging
