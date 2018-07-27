@@ -10,7 +10,7 @@ class Source extends Component{
 
     return (
       <div className="source" key="source" style={source}>
-        <span>Source: {this.props.source}</span>
+        <span>Source: <a href={this.props.sourceUrl} target='_blank'>{this.props.sourceName}</a></span>
       </div>
     )
   }

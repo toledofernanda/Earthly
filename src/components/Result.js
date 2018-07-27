@@ -19,29 +19,27 @@ class Result extends Component {
   render(){
 
     /* CSS */
-    let resultOuterDiv = {
-      display: 'flex',
-      justifyContent: 'center'
-    }
-
     let chartHeader = {
-      display: 'flex',
-      justifyContent: 'space-between',
+      padding: '25px 4%',
+      display: 'grid',
+      gridTemplateColumns: '20px 1fr',
+      justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      padding: '2% 4%'
     }
 
     let resultChart = {
-      maxWidth: '1024px -10%', /*only for this element so breadcrumb is 100%*/
+      maxWidth: 'calc(1024px -10%)', /*only for this element so breadcrumb is 100%*/
       margin: '60px 4%',
       backgroundColor: 'white',
       borderRadius: 30,
     }
 
     let topicD = {
-      flex: '0 0 60%',
-      fontSize: '14pt',
+      gridColumn: '2 / 3',
+      gridRow: '1 / 2',
+      fontSize: 'calc(14px + 1vw)', /* responsive title */
+      margin: '5px 0'
     }
 
     /* JS */
@@ -65,7 +63,7 @@ class Result extends Component {
     )
 
     return (
-      <div className="result" style={resultOuterDiv}>
+      <div className="result">
         <Breadcrumb category={category} topic={topic} />
         {renderData}
       </div>

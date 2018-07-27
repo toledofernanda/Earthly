@@ -74,7 +74,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
-              <p style={desc}>Fernanda is Earthly’s Developer. She has a background in Marketing and Advertising at Mackenzie University in São Paulo, Brazil. She also holds a certificate in Internet and Web Technology, and Certified Scrum Product Owner (CSPO). Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
+              <p style={desc}>Fernanda is Earthly’s Lead Developer. She has a Certificate of Internet and Web Technology from Langara College and is a certified Scrum Product Owner. She has 7 years experience with Customer Service as a supervisor and coordinator at tech companies and a Bachelor of Marketing and Advertising. Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
               </p>
             </div>
             <div className = {['member', 'mana'].join(' ')}>

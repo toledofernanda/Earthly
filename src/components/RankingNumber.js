@@ -6,7 +6,7 @@ class Ranking extends Component{
 
 		/* CSS */
 		let rankingNum = {
-			fontSize: '.7em',
+			fontSize: 'calc(5px + .5vw)', /* responsive title */
 			paddingTop: '.5em'
 		}
 
