@@ -27,7 +27,7 @@ class Result extends Component {
     let chartHeader = {
       padding: '25px 4%',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr',
+      gridTemplateColumns: '20px 1fr',
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
