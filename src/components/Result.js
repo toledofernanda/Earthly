@@ -25,11 +25,12 @@ class Result extends Component {
     }
 
     let chartHeader = {
-      display: 'flex',
-      justifyContent: 'space-between',
+      padding: '25px 4%',
+      display: 'grid',
+      gridTemplateColumns: '40px 10fr',
+      justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      padding: '2% 4%'
     }
 
     let resultChart = {
@@ -40,8 +41,10 @@ class Result extends Component {
     }
 
     let topicD = {
-      flex: '0 0 60%',
+      gridColumn: '2 / 3',
+      gridRow: '1 / 2',
       fontSize: 'calc(14px + 1vw)', /* responsive title */
+      margin: '5px 0'
     }
 
     /* JS */

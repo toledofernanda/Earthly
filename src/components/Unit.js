@@ -5,9 +5,9 @@ class Unit extends Component {
 
     /* CSS */
     let unitStyle = {
-      flex: '0 0 20%',
+      gridColumn: '2 / 3',
+      gridRow: '2 / 3',
       fontSize: 'calc(8px + .5vw)', /* responsive title */
-      textAlign: 'right'
     }
 
     /* JS */
