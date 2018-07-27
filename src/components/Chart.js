@@ -62,7 +62,8 @@ class Chart extends Component{
     let topic = this.props.topic; //props passed down
     let subCat = db[category][topic];
     let num = []; //an array to hold the percentage value for chart bars
-    let source = subCat[0].source_name;; //source name
+    let sourceName = subCat[0].source_name; //source name
+    let sourceUrl = subCat[0].source_url; //source url
     let label = subCat[0].label; //label
 
     // calculates percentage value for entities ranked within 10 ---------------------------
@@ -229,7 +230,7 @@ class Chart extends Component{
 
           <div className="label-source" style={labelSourceDiv} >
             <Label label={label} />
-            <Source source={source} />
+            <Source sourceName={sourceName} sourceUrl={sourceUrl} />
           </div>
       </div>
     )
