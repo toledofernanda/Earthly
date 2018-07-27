@@ -29,18 +29,19 @@ class Result extends Component {
       justifyContent: 'space-between',
       alignItems: 'center',
       textAlign: 'center',
-      padding: '0 30px'
+      padding: '2% 4%'
     }
 
     let resultChart = {
       maxWidth: '1024px -10%', /*only for this element so breadcrumb is 100%*/
-      margin: '4%',
+      margin: '60px 4%',
       backgroundColor: 'white',
       borderRadius: 30,
     }
 
     let topicD = {
-      flex: '0 0 60%'
+      flex: '0 0 60%',
+      fontSize: '14pt',
     }
 
     /* JS */
@@ -54,7 +55,7 @@ class Result extends Component {
       <div className="result-chart" key="result-chart" style={resultChart}>
           <div className="chart-header" style={chartHeader}>
             <BackButton category={category} component={'result'} />
-            <h2 style={topicD} >{topicDescription}</h2>
+            <h1 style={topicD} >{topicDescription}</h1>
             <Unit unit={unit} />
           </div>
           <div className="ranking-info">

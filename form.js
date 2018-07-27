@@ -28,10 +28,11 @@ app.post('/api/form', (req,res) =>{
       <p>${req.body.message}</p>
     `
 
-    var transporter = nodemailer.createTransport({
+  var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'langara.earthly@gmail.com'
+    user: process.env.GMAIL_EMAIL,
+    pass: process.env.GMAIL_PASS
   }
 });
 
