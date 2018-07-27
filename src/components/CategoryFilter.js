@@ -21,8 +21,8 @@ class CategoryFilter extends Component{
 
     let filterTopStyle = {
       padding: '3% 4%',
-      display: 'grid',
-      gridTemplateColumns: '40px 10fr'
+      // display: 'grid',
+      // gridTemplateColumns: '40px 10fr'
     };
 
     let divStyle = {
@@ -58,8 +58,7 @@ class CategoryFilter extends Component{
     return (
       <div className="category-filter" key="category-filter" style = {outerDiv}>
           <div className="filterTop" style={filterTopStyle}>
-            <BackButton component={'category'} className='button-shadow' />
-            <StepTitle title={title} style={titleStyle} />
+            <StepTitle title={title} />
           </div>
           <div className="category-list" style={divStyle}>
             {categoryList}

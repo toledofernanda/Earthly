@@ -123,7 +123,7 @@ class Contact extends Component {
       flexFlow: 'row wrap',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: '0 10%'
+      padding: '0 5%'
     }
     let inputStyle = {
       flex: '1 0 40%',
@@ -138,7 +138,7 @@ class Contact extends Component {
     let input = {
       border:'1px solid gray',
       borderRadius:7,
-      // marginRight:'5%',
+      marginRight:'10%',
     }
     let label = {
       // marginLeft : '10%',

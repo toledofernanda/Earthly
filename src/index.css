@@ -48,18 +48,16 @@ a, a:visited {
   padding: 20px;
 }
 
-.animalsColor {
-  background-color: #00B8A6;
-}
-
-.environmentColor {
-  background-color: #4AB85C;
-}
-
+.animalsColor { background-color: #00B8A6;}
+.environmentColor { background-color: #4AB85C;}
 .foodColor { background-color: #F05027;}
 .generalColor {  background-color:  #19A9E1;}
 .industryColor { background-color:  #E2C137;}
 .sportsColor { background-color: #152D53;}
+
+.ranking_quantity#happiest_countries {
+  visibility: hidden;
+}
 
 .fernanda {
   background-color: #4AB85C
@@ -95,7 +93,4 @@ a, a:visited {
   .member {
     flex: 1 0 16%;
   }
-
-.ranking_quantity#happiest_countries {
-  visibility: hidden;
 }
