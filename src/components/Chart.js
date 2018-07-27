@@ -11,7 +11,7 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      padding: '10px 4%',
+      padding: '0 4% 25px 4%',
       borderRadius: '30px',
       boxSizing: 'border-box',
       height: 'fit-content',
@@ -31,18 +31,17 @@ class Chart extends Component{
       justifyContent: 'flex-start',
       alignItems: 'center',
       boxSizing: 'border-box',
-      height: '10%',
-      minHeight: '90px',
+      height: '7w',
+      minHeight: '7vw',
       width: '100%',
       position: 'relative',
-      borderBottom: '1px solid lightgrey'
     }
 
     let orderStyle = {
       fontSize: 'calc(0.5em + .5vw)',
       flex: '1 1 2%',
       paddingBottom: '15px',
-      paddingRight: '5px',
+      paddingRight: '10px',
       textAlign: 'right'
     }
 
@@ -63,7 +62,8 @@ class Chart extends Component{
     let topic = this.props.topic; //props passed down
     let subCat = db[category][topic];
     let num = []; //an array to hold the percentage value for chart bars
-    let source = subCat[0].source_name;; //source name
+    let sourceName = subCat[0].source_name; //source name
+    let sourceUrl = subCat[0].source_url; //source url
     let label = subCat[0].label; //label
 
     // calculates percentage value for entities ranked within 10 ---------------------------
@@ -230,7 +230,7 @@ class Chart extends Component{
 
           <div className="label-source" style={labelSourceDiv} >
             <Label label={label} />
-            <Source source={source} />
+            <Source sourceName={sourceName} sourceUrl={sourceUrl} />
           </div>
       </div>
     )

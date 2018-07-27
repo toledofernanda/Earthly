@@ -6,7 +6,8 @@ class BackButton extends Component {
 
     /* CSS */
     let backButtonDiv = {
-      flex: '0 0 20%',
+      gridColumn: '1 / 2',
+      gridRow: '1 / 2',
       textAlign: 'left'
     }
 

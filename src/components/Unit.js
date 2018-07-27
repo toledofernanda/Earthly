@@ -5,9 +5,9 @@ class Unit extends Component {
 
     /* CSS */
     let unitStyle = {
-      flex: '0 0 20%',
-      fontSize: '.8em',
-      textAlign: 'right'
+      gridColumn: '2 / 3',
+      gridRow: '2 / 3',
+      fontSize: 'calc(7px + .5vw)', /* responsive title */
     }
 
     /* JS */
@@ -15,7 +15,7 @@ class Unit extends Component {
     let renderData = '';
 
     if(unit !== 'none') {
-      renderData = unit;
+      renderData = `Unit: ${unit}`;
     }
 
     return (
