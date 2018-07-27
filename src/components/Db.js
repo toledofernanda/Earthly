@@ -97,7 +97,7 @@ export let db = {
          entity_type: 'country',
          population: '36953765',
          language: 'English, French and others',
-         greeting: 'Hello'
+         greeting: 'Hello, bonjour'
        },
        { entity_name: 'Chad',
          capital: 'N\'Djamena',
