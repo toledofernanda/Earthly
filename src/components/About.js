@@ -4,13 +4,11 @@ import BackButton from 'components/BackButton';
 class About extends Component{
   render(){
     let outerDiv = {
-      maxWidth: '1024px - 10%',
-      margin: '4%',
+      maxWidth: 'calc(1024px - 10%)',
+      margin:'4% auto',
       display: 'flex',
       flexFlow: 'column wrap',
       justifyContent: 'center',
-      // marginTop: '5%',
-      // marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -43,28 +41,6 @@ class About extends Component{
       marginBottom: '2%',
       textAlign: 'center'
     }
-    let member = {
-      flex: '1 0 16%',
-      minWidth: '200px',
-      padding: '0 1.5%',
-      margin: '50px .5%',
-      color: 'white'
-    };
-    let fernanda = {
-      backgroundColor: '#4AB85C'
-    }
-    let mana = {
-      backgroundColor: '#F05027'
-    }
-    let tomo = {
-      backgroundColor: '#19A9E1'
-    }
-    let jenn = {
-      backgroundColor: '#00B8A6'
-    }
-    let marlowe = {
-       backgroundColor: '#152D53'
-    }
 
     let memberImage = {
       marginTop: '-50px',
@@ -94,35 +70,35 @@ class About extends Component{
             <h1 style = {TitleStyle}>Meet Team Earthly</h1>
           </div>
           <div className="meetMember" style={divStyle}>
-            <div style={Object.assign({}, member, fernanda)}>
+            <div className = {['member', 'fernanda'].join(' ')}>
               <img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
               <p style={desc}>Fernanda is Earthly’s Lead Developer. She has a Certificate of Internet and Web Technology from Langara College and is a certified Scrum Product Owner. She has 7 years experience with Customer Service as a supervisor and coordinator at tech companies and a Bachelor of Marketing and Advertising. Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
               </p>
             </div>
-            <div style={Object.assign({}, member, mana)}>
+            <div className = {['member', 'mana'].join(' ')}>
               <img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
               <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies. In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
               </p>
             </div>
-            <div style={Object.assign({}, member, tomo)}>
+            <div className = {['member', 'tomo'].join(' ')}>
               <img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/>
               <h3>Tomoko</h3>
               <h4>Dev & PM</h4>
               <p style={desc}>Tomoko is Earthly’s Developer and Project Manager. She is a certified Scrum Master and has 5 years experience as a program manager at Microsoft, 6 years of experience as a university instructor in addition to 15-year background as an English to Japanese translator and interpreter. During her free time, she enjoys star gazing, board-gaming, and geocaching with her two sons.
               </p>
             </div>
-            <div style={Object.assign({}, member, jenn)}>
+            <div className = {['member', 'jenn'].join(' ')}>
               <img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" />
               <h3>Jenn</h3>
               <h4>UX Lead</h4>
               <p style={desc}>Jenn is Earthly’s User Experience lead. She holds a Bachelor of Media Information and Technoculture from the University of Western Ontario in London, Canada. She also worked as a tree planter for 5 years in the Canadian provinces of Ontario, Saskatchewan, and Alberta. Jenn loves the outdoors; in her free time she enjoys camping, cycling, downhill skiing, and hiking.
               </p>
             </div>
-            <div style={Object.assign({}, member, marlowe)}>
+            <div className = {['member', 'marlowe'].join(' ')}>
               <img style = {memberImage} img src={require(`images/marlowe.jpg`)}  alt="marlowePic"/>
               <h3>Marlowe</h3>
               <h4>UI Lead</h4>

@@ -16,14 +16,11 @@ class TopicFilter extends Component{
 
   render(){
     let outerDiv = {
-      maxWidth: '1024px -10%',
-      margin: '4%',
+      maxWidth: 'calc(1024px - 10%)',
+      margin: '4% auto',
       display: 'flex',
       flexFlow: 'column wrap',
-      // paddingBottom: '4%',
       justifyContent: 'center',
-      // marginTop: '5%',
-      // marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -32,9 +29,6 @@ class TopicFilter extends Component{
       padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '40px 10fr'
-      // display: 'flex',
-      // flexFlow: 'row nowrap',
-      // justifyContent: 'center'
     };
 
     let divStyle = {
@@ -44,10 +38,7 @@ class TopicFilter extends Component{
       flexFlow: 'row wrap',
       justifyContent: 'center',
       alignItems: 'flex-start',
-      // border: '1px solid black',
       padding: '2% 25%',
-      // margin: '5%',
-      // marginBottom: 0,
       boxSizing: 'border-box'
     };  //style for the inside div of main component
 
@@ -66,9 +57,7 @@ class TopicFilter extends Component{
 
     let category = this.state.category;
     let topicList = [];
-    //Issue: isSelected value is not used effectively yet
     for (let topic in db[category]){
-        //if topic is entity_info don't display it on topic list, we just use it for tooltip component
         if(topic !== "entity_info") {
           topicList.push(
             <div key={`${topic}-button`} style={catStyle}>
@@ -89,6 +78,6 @@ class TopicFilter extends Component{
       </div>
     )
   }
-}  // <Link to={`/category`}><button style={backButton}>{'<'}</button></Link>
+}  
 
 export default TopicFilter;
