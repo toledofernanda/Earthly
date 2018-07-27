@@ -15,7 +15,7 @@ class Unit extends Component {
     let renderData = '';
 
     if(unit !== 'none') {
-      renderData = unit;
+      renderData = `Unit: ${unit}`;
     }
 
     return (
