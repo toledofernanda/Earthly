@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import StripeCheckout from 'react-stripe-checkout';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
 import BackButton from 'components/BackButton';
@@ -85,16 +84,16 @@ class Donation extends Component{
     })
 }
 
-  onToken = (token) => {
-    fetch('/save-stripe-token', {
-      method: 'POST',
-      body: JSON.stringify(token),
-    }).then(response => {
-      response.json().then(data => {
-        alert(`We are in business, ${data.email}`);
-      });
-    });
-  }
+  // onToken = (token) => {
+  //   fetch('/save-stripe-token', {
+  //     method: 'POST',
+  //     body: JSON.stringify(token),
+  //   }).then(response => {
+  //     response.json().then(data => {
+  //       alert(`We are in business, ${data.email}`);
+  //     });
+  //   });
+  // }
 
   render(){
     let amount = parseInt(this.state.amount) * 100;

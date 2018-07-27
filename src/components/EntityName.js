@@ -11,8 +11,8 @@ class EntityName extends Component {
     let entityNameSpan = {
       fontSize: 'calc(0.4em + .3vw)',
       fontWeight: 'normal',
-      textAlign: 'center',
       display: 'block',
+      textAlign: 'center'
     }
 
     /* JS */

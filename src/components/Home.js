@@ -12,7 +12,7 @@ class Home extends Component {
   }
 
   handleHover() {
-    console.log("hovered")
+    // console.log("hovered")
     this.setState({
         isHovered: !this.state.isHovered
     });

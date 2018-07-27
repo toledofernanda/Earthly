@@ -6,7 +6,8 @@ class Ranking extends Component{
 
 		/* CSS */
 		let rankingNum = {
-			fontSize: '.7em'
+			fontSize: '.7em',
+			paddingTop: '.5em'
 		}
 
 		/* JS */
@@ -19,18 +20,14 @@ class Ranking extends Component{
 		for (let item of subCat){
 			//show quantity for ranking
 			if(item['topic_description'] === 'Happiest Country') {
-				result = "";
+				result = "_";
 			} else if((item['entity_name'] === entityName) && item.hasOwnProperty('ranking')){
 				result = item['quantity'];
 			}
 		}
 
-		// function numberWithCommas(number) {
-    //   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    // }
-
 		return(
-			<div className = "ranking_quantity" style={rankingNum}>
+			<div className = "ranking_quantity" id={topic} style={rankingNum}>
 					{result}
 			</div>
 		)
