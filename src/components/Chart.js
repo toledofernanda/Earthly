@@ -31,8 +31,8 @@ class Chart extends Component{
       justifyContent: 'flex-start',
       alignItems: 'center',
       boxSizing: 'border-box',
-      height: '10%',
-      minHeight: '6.5vw',
+      height: '7w',
+      minHeight: '7vw',
       width: '100%',
       position: 'relative',
     }
