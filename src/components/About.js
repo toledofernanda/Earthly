@@ -4,13 +4,13 @@ import BackButton from 'components/BackButton';
 class About extends Component{
   render(){
     let outerDiv = {
-      maxWidth: '1024px',
-      margin: 'auto',
+      maxWidth: '1024px - 10%',
+      margin: '4%',
       display: 'flex',
       flexFlow: 'column wrap',
       justifyContent: 'center',
-      marginTop: '5%',
-      marginBottom: '5%',
+      // marginTop: '5%',
+      // marginBottom: '5%',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -33,18 +33,19 @@ class About extends Component{
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'space-around',
-      padding: '7% 2%',
+      padding: '1% 2%',
       boxSizing: 'border-box',
       textAlign: 'center'
     };  //style for the inside div of main component
 
     let earthly = {
       padding: '1% 25%',
+      marginBottom: '2%',
       textAlign: 'center'
     }
     let member = {
-      flex: '0 0 16%',
-      minWidth: '150px',
+      flex: '1 0 16%',
+      minWidth: '200px',
       padding: '0 1.5%',
       margin: '50px .5%',
       color: 'white'
@@ -89,19 +90,22 @@ class About extends Component{
               If you have any feedback, please feel free to let us know!
             </p>
           </div>
+          <div className="meetMemberTitle">
+            <h1 style = {TitleStyle}>Meet Team Earthly</h1>
+          </div>
           <div className="meetMember" style={divStyle}>
             <div style={Object.assign({}, member, fernanda)}>
               <img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
-              <p style={desc}>Fernanda is Earthly’s Lead Developer. She has a Certification of Internet and Web Technology from Langara College and is a certified Scrum Product Owner. She has 7 years experience with Customer Service as a supervisor and coordinator at tech companies and a Bachelor of Marketing and Advertising. Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
+              <p style={desc}>Fernanda is Earthly’s Lead Developer. She has a Certificate of Internet and Web Technology from Langara College and is a certified Scrum Product Owner. She has 7 years experience with Customer Service as a supervisor and coordinator at tech companies and a Bachelor of Marketing and Advertising. Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
               </p>
             </div>
             <div style={Object.assign({}, member, mana)}>
               <img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
-              <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies.  In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
+              <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies. In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
               </p>
             </div>
             <div style={Object.assign({}, member, tomo)}>
@@ -115,16 +119,22 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" />
               <h3>Jenn</h3>
               <h4>UX Lead</h4>
-              <p style={desc}>Jenn is Earthly’s User Experience lead.  She holds a Bachelor of Media Information and Technoculture from the University of Western Ontario in London, Canada.  She also worked as a tree planter for 5 years in the Canadian provinces of Ontario, Saskatchewan, and Alberta.  Jenn loves the outdoors; in her free time she enjoys camping, cycling, downhill skiing, and hiking.
+              <p style={desc}>Jenn is Earthly’s User Experience lead. She holds a Bachelor of Media Information and Technoculture from the University of Western Ontario in London, Canada. She also worked as a tree planter for 5 years in the Canadian provinces of Ontario, Saskatchewan, and Alberta. Jenn loves the outdoors; in her free time she enjoys camping, cycling, downhill skiing, and hiking.
               </p>
             </div>
             <div style={Object.assign({}, member, marlowe)}>
               <img style = {memberImage} img src={require(`images/marlowe.jpg`)}  alt="marlowePic"/>
               <h3>Marlowe</h3>
               <h4>UI Lead</h4>
-              <p style={desc}>Marlowe is Earthly’s User Interface Designer.  She has a background in English Literature, and a Bachelor of Arts from the University of British Columbia.  She has worked as a lifeguard and swim instructor for 10 years, and enjoys discovering new ways to facilitate children’s learning.  In her free time, Marlowe enjoys swimming, hiking, crossword puzzles, and playing computer games.
+              <p style={desc}>Marlowe is Earthly’s User Interface Designer. She has a background in English Literature, and a Bachelor of Arts from the University of British Columbia. She has worked as a lifeguard and swim instructor for 10 years, and enjoys discovering new ways to facilitate children’s learning. In her free time, Marlowe enjoys swimming, hiking, crossword puzzles, and playing computer games.
               </p>
             </div>
+          </div>
+          <div className="disclaimerTitle">
+            <h1 style = {TitleStyle}>Disclaimer</h1>
+          </div>
+          <div className="disclaimer" style = {earthly}>
+            <p>The reliability of data attributes to each data source. Due to limited space, Earthly does not contain every other languages and greeting, but that does not mean our team devalue any minority languages.</p>
           </div>
       </div>
     )
