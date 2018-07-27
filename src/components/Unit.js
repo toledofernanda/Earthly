@@ -7,7 +7,7 @@ class Unit extends Component {
     let unitStyle = {
       gridColumn: '2 / 3',
       gridRow: '2 / 3',
-      fontSize: 'calc(6px + .5vw)', /* responsive title */
+      fontSize: 'calc(7px + .5vw)', /* responsive title */
     }
 
     /* JS */
