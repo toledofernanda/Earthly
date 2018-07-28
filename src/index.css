@@ -120,3 +120,10 @@ a, a:visited {
     max-width: 1024px !important;
   }
 }
+
+/* make distance between flag and tooltip smaller on big screen to be over topics */
+@media screen and (min-width: 580px) {
+  .tooltip-screen {
+    left: 15% !important;
+  }
+}
