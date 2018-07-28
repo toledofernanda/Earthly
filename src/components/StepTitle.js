@@ -7,6 +7,7 @@ class StepTitle extends Component{
       textAlign: 'center',
       fontSize: '14pt',
       flex: '0 0 100%',
+      fontSize: 'calc(14px + 1vw)', // responsive title
       // marginBottom: '10%' //margin to detach the title from buttons
     };
     let step = ""; //variable to hold text to display
@@ -16,7 +17,7 @@ class StepTitle extends Component{
       step = "Step 2: Select a Ranking";
     }
     return (
-      <h1 style={catTitleStyle}>
+      <h1 className = "titleStyle" style={catTitleStyle}>
         {step}
       </h1>
       );
