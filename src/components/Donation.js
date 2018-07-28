@@ -6,17 +6,16 @@ import BackButton from 'components/BackButton';
 
 
 const donation = {
-  marginRight:'auto',
-  marginLeft:'auto',
-  marginTop:'100px',
-  marginBottom:'100px',
-  maxWidth: '1024px',
-  height: '70%',
-  boxSizing:'border-box',
-  backgroundColor: "white",
+  maxWidth: 'calc(1024px - 10%)',
+  margin: 'auto',
+  display: 'flex',
+  flexFlow: 'column wrap',
+  justifyContent: 'center',
+  marginTop: '4%',
+  marginBottom: '2.5%',
+  paddingBottom: '2%',
+  backgroundColor: 'white',
   borderRadius: 30,
-  padding: '20px',
-  border: '1px solid darkgrey',
 }
 
 const submitButton = {
@@ -33,22 +32,18 @@ const submitButton = {
 
 }
 
-let TitleStyle = {
-  textAlign: 'center',
-  fontSize: '14pt',
-  flex: '0 0 100%',
-}
-
 let filterTopStyle = {
   padding: '1.5% 4%',
   display: 'grid',
   gridTemplateColumns: '40px 10fr'
 };
 
-const back ={
-  textAlign: 'left !important'
-}
 
+let TitleStyle = {
+  textAlign: 'center',
+  flex: '0 0 100%',
+  fontSize: 'calc(14px + 1vw)'// responsive title
+};
 //hundle donation button
 class Donation extends Component{
 
@@ -96,18 +91,19 @@ class Donation extends Component{
   // }
 
   render(){
-    let amount = parseInt(this.state.amount) * 100;
+    const hoverClass = this.state.isHovered ? "donation-hover" : "";
+    // let amount = parseInt(this.state.amount) * 100;
     return(
       <div className="donation" style={donation}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'donation'} />
-          <h1 style = {TitleStyle}>Donation</h1>
+          <h1 className = "titleStyle" style = {TitleStyle} >Donation</h1>
         </div>
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
 
             <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
-Your donation will help us keep Earthly free and add new rankings and features.
-100% of your donations goes towards research and app development.</p>
+              Your donation will help us keep Earthly free and add new rankings and features.
+              100% of your donations goes towards research and app development.</p>
           </div>
 
           <div className = "contactForm">
@@ -167,7 +163,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
                 <div style={{listStyleType:'none', display:'flex', justifyContent:'center', marginLeft:'55px'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <a class="gumroad-button" href="https://gum.co/wDIjn" className = "button-shadow" style ={submitButton}>Donate</a>
+                  <a className={['gumroad-button','button-shadow', hoverClass].join(' ')} href="https://gum.co/wDIjn" style ={submitButton}>Donate</a>
                 </div>
             </div>
             </Form>
