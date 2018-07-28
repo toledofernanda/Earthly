@@ -136,8 +136,12 @@ a, a:visited {
     font-size: 12px !important;
   }
 
-  .order span {
-    font-size: 13px;
+  .order span, .entity-info {
+    font-size: 13px !important;
+  }
+
+  .entity-name h1 {
+    font-size: 21px !important;
   }
 }
 
