@@ -11,7 +11,7 @@ class TooltipScreen extends Component {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
-      left: '19%', //position relative to flag 
+      left: '19%', //position relative to flag
       top: '10px',
       zIndex: '2',
       backgroundColor: 'white',
@@ -41,7 +41,7 @@ class TooltipScreen extends Component {
       color: 'white',
       backgroundColor: 'red',
       width: '25px',
-      height: '25px',
+      height: '24px',
       borderRadius: 5,
       border: 'none',
       textAlign: 'center',
@@ -52,7 +52,6 @@ class TooltipScreen extends Component {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: '0 0 1px 0'
     }
 
     return (
