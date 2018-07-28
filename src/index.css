@@ -165,7 +165,7 @@ a, a:visited {
 }
 
 /*  smartphone horizontal mode*/
-/* @media only screen and (min-device-width: 411px)
+@media only screen and (min-device-width: 411px)
                    and (max-device-width: 823px)
                    and (orientation: landscape) {
                   .header ul {
@@ -175,6 +175,9 @@ a, a:visited {
                   .breadcrumb {
                     position: relative !important;
                     margin-top: -70px !important;
+                    width: 92% !important;
+                    padding-left: 4% !important;
+                    padding-right: 4% !important;
                   }
 
-} */
+}
