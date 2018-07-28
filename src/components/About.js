@@ -4,7 +4,7 @@ import BackButton from 'components/BackButton';
 class About extends Component{
   render(){
     let outerDiv = {
-      maxWidth: 'calc(1024px - 10%)',
+      // maxWidth: 'calc(1024px - 10%)',
       margin:'4% auto',
       display: 'flex',
       flexFlow: 'column wrap',

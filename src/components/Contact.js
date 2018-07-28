@@ -151,7 +151,7 @@ class Contact extends Component {
       }
       else {
         return(
-      <div style = {outerDiv} className = "donationBox" >
+      <div className = {contactOuterDiv} style = {outerDiv}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'category'} />
           <h1 style = {TitleStyle}>Contact</h1>
