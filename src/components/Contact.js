@@ -108,6 +108,7 @@ class Contact extends Component {
       textAlign: 'center',
       fontSize: '14pt',
       flex: '0 0 100%',
+      fontSize: 'calc(14px + 1vw)', // responsive title
     };
     let formStyle = {
       display:'flex',
@@ -151,10 +152,10 @@ class Contact extends Component {
       }
       else {
         return(
-      <div style = {outerDiv} className = "donationBox" >
+      <div className = "contactOuterDiv" style = {outerDiv}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'category'} />
-          <h1 style = {TitleStyle}>Contact</h1>
+          <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div>
           <p style={{textAlign: 'center', width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>
