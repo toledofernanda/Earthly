@@ -138,7 +138,15 @@ a, a:visited {
   }
 
   .order span {
-    font-size: 13px;
+    font-size: 13px !important;
+  }
+
+  .entity-info li {
+    font-size: 14px !important;
+  }
+
+  .entity-name h1 {
+    font-size: 23px !important;
   }
 }
 
@@ -149,8 +157,15 @@ a, a:visited {
   }
 }
 
+/* make distance between flag and tooltip smaller on big screen to be over topics */
+@media screen and (min-width: 580px) {
+  .tooltip-screen {
+    left: 15% !important;
+  }
+}
+
 /*  smartphone horizontal mode*/
-@media only screen and (min-device-width: 411px)
+/* @media only screen and (min-device-width: 411px)
                    and (max-device-width: 823px)
                    and (orientation: landscape) {
                   .header ul {
@@ -162,4 +177,4 @@ a, a:visited {
                     margin-top: -70px !important;
                   }
 
-}
+} */
