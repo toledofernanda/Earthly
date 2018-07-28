@@ -21,7 +21,6 @@ class About extends Component{
 
     let TitleStyle = {
       textAlign: 'center',
-      fontSize: '14pt',
       flex: '0 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
     };
