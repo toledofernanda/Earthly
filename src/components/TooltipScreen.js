@@ -37,11 +37,10 @@ class TooltipScreen extends Component {
     }
 
     let closeButton = {
-      fontSize: '12pt',
+      fontSize: '16px',
       color: 'white',
       backgroundColor: 'red',
-      width: '25px',
-      height: '25px',
+      padding: '10px',
       borderRadius: 5,
       border: 'none',
       textAlign: 'center',
@@ -50,7 +49,6 @@ class TooltipScreen extends Component {
       right: 20,
       marginBottom: '10px',
       lineHeight: '25px',
-      padding: 0
     }
 
     return (
