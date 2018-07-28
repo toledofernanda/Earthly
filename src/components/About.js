@@ -4,7 +4,7 @@ import BackButton from 'components/BackButton';
 class About extends Component{
   render(){
     let outerDiv = {
-      maxWidth: 'calc(1024px - 10%)',
+      maxWidth: '1200px',
       margin:'4% auto',
       display: 'flex',
       flexFlow: 'column wrap',
@@ -23,6 +23,7 @@ class About extends Component{
       textAlign: 'center',
       fontSize: '14pt',
       flex: '0 0 100%',
+      fontSize: 'calc(14px + 1vw)', // responsive title
     };
 
     let divStyle = {
@@ -53,7 +54,7 @@ class About extends Component{
 
     return(
       <div className="about" key="about" style = {outerDiv}>
-          <div className="aboutTitle" style={filterTopStyle}>
+          <div className = "titleStyle" style={filterTopStyle}>
             <BackButton component={'category'} />
             <h1 style = {TitleStyle}>About</h1>
           </div>

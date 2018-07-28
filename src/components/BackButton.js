@@ -8,7 +8,10 @@ class BackButton extends Component {
     let backButtonDiv = {
       gridColumn: '1 / 2',
       gridRow: '1 / 2',
-      textAlign: 'left'
+      textAlign: 'left',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
     }
 
     let backButton = {
