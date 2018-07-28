@@ -6,13 +6,13 @@ class EntityInfo extends Component {
 
     /* CSS */
     let infoUl = {
-      margin: '0',
+      margin: '20px 0 0 0',
       padding: '0',
     }
 
     let infoLi = {
       listStyleType: 'none',
-      fontSize: 'calc(8px + .4vw)', // responsive
+      fontSize: 'calc(8px + .6vw)', // responsive
       margin: '5px 0'
     }
 
