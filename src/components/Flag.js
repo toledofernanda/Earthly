@@ -36,7 +36,6 @@ class Flag extends Component{
 		}
 
 		let countryFlag = {
-			textAlign: 'center',
 			maxWidth: '75px'
 		}
 

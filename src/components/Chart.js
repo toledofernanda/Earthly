@@ -47,6 +47,7 @@ class Chart extends Component{
 
     let entityFlagName = {
       flex: '1 1 10%',
+      minWidth: '50px',
       padding: '7px 4% 7px 0px',
       display: 'flex',
       flexFlow: 'column nowrap',
