@@ -5,7 +5,8 @@ class Source extends Component{
 
     /* CSS */
     let source = {
-      fontSize: '.7em',
+      fontSize: 'calc(8px + .3vw)', // responsive 
+      marginBottom: '10px'
     }
 
     return (

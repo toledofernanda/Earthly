@@ -5,7 +5,8 @@ class Label extends Component{
 
     /* CSS */
     let label = {
-      fontSize: '.7em',
+      fontSize: 'calc(8px + .3vw)', // responsive 
+      marginBottom: '10px'
     }
 
     return (
