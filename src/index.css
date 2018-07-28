@@ -149,7 +149,7 @@ a, a:visited {
   }
 }
 
-/*  smartphone hprozontal mode*/
+/*  smartphone horizontal mode*/
 @media only screen and (min-device-width: 411px)
                    and (max-device-width: 823px)
                    and (orientation: landscape) {
