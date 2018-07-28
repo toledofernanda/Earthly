@@ -30,10 +30,10 @@ class TopicFilter extends Component{
       padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '20px 1fr',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-    };
+      // justifyContent: 'center',
+      // alignItems: 'center',
+      // textAlign: 'center',
+    }; //instead of gridTemplateColumns: '40px 10fr', it has 20px 1fr
 
     let divStyle = {
       height: '100%',

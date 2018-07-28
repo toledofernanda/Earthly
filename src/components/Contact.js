@@ -97,19 +97,20 @@ class Contact extends Component {
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
+
     let filterTopStyle = {
-      padding: '1.5% 4%',
+      padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '40px 10fr'
     };
+
     let TitleStyle = {
-      gridColumn: '1 / 3',
-      gridRow: '1 / 2',
       textAlign: 'center',
-      // fontSize: '14pt',
-      // flex: '0 0 100%',
+      fontSize: '14pt',
+      flex: '0 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
-    };
+    }; //Contact has calc
+
     let formStyle = {
       display:'flex',
       flexFlow:'row wrap',
@@ -128,7 +129,7 @@ class Contact extends Component {
     }
 
     let contactForm = {
-      margin: '1% 20%',
+      margin: '0 20%',
     }
     let input = {
       border:'1px solid gray',
@@ -152,7 +153,7 @@ class Contact extends Component {
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div>
-          <p style={{textAlign: 'center', width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>
+          <p style={{textAlign: 'center', width:'50%', margin: '0 auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>

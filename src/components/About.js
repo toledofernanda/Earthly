@@ -14,19 +14,16 @@ class About extends Component{
     }; //style for the outside div of main component
 
     let filterTopStyle = {
-      padding: '3% 4%',
-      display: 'grid',
-      gridTemplateColumns: '20px 1fr'
+           padding: '3% 4%',
+           display: 'grid',
+           gridTemplateColumns: '40px 10fr'
     };
 
     let TitleStyle = {
-      gridColumn: '1 / 3',
-      gridRow: '1 / 2',
-      textAlign: 'center',
-      // fontSize: '14pt',
-      // flex: '0 0 100%',
-      fontSize: 'calc(14px + 1vw)', // responsive title
-    };
+           textAlign: 'center',
+           fontSize: '14pt',
+           flex: '0 0 100%',
+    }; //removed calc from About
 
     let divStyle = {
       height: '100%',
@@ -62,8 +59,8 @@ class About extends Component{
               We interviewed school teachers and ran a usability test with kids to learn about how we should realize the visual representation of data so that it is appealing and easy to understand for kids. </p><p>
               All icons, images and pages are designed by Jenn and Marlowe. The app is developed with scalable React.js framework by Fernanda, Mana and Tomoko.</p>
               <p>
-              Earthly is designed for tablet devices and laptop and desktop computers. We recommend that you use a device with a screen that is 800px wide at the minimum. </p><p>
-              If you have any feedback, please feel free to let us know from the Contact page below.
+              Earthly is designed for tablet devices and computers. We recommend that you use a device with minimum of 800px screen width.</p><p>
+              Feel free to let us know your feedback from the Contact page below.
             </p>
           </div>
           <div className="titleStyle">
