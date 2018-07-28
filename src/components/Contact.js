@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
+import {Form, FormGroup, Label} from 'reactstrap';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import BackButton from 'components/BackButton';
 import ThankYou from 'components/ThankYou';
 
