@@ -148,3 +148,18 @@ a, a:visited {
     max-width: 1024px !important;
   }
 }
+
+/*  smartphone hprozontal mode*/
+@media only screen and (min-device-width: 411px)
+                   and (max-device-width: 823px)
+                   and (orientation: landscape) {
+                  .header ul {
+                    position: relative !important;
+                    margin: 0 !important;
+                    }
+                  .breadcrumb {
+                    position: relative !important;
+                    margin-top: -70px !important;
+                  }
+
+}

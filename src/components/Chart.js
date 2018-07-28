@@ -42,11 +42,13 @@ class Chart extends Component{
       flex: '1 1 2%',
       paddingBottom: '15px',
       paddingRight: '10px',
-      textAlign: 'right'
+      textAlign: 'right',
+      minWidth: '23px'
     }
 
     let entityFlagName = {
       flex: '1 1 10%',
+      minWidth: '50px',
       padding: '7px 4% 7px 0px',
       display: 'flex',
       flexFlow: 'column nowrap',
