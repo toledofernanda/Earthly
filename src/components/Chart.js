@@ -42,7 +42,8 @@ class Chart extends Component{
       flex: '1 1 2%',
       paddingBottom: '15px',
       paddingRight: '10px',
-      textAlign: 'right'
+      textAlign: 'right',
+      minWidth: '23px'
     }
 
     let entityFlagName = {
