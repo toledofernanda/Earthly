@@ -95,9 +95,9 @@ a, a:visited {
 /* Contact page form style */
 .inputStyle {
   flex: 1 0 100%;
-  margin-right:30%;
+  /* margin-right:30%; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-bottom: 1%;
 }
 
