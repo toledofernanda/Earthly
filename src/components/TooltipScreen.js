@@ -11,7 +11,7 @@ class TooltipScreen extends Component {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
-      left: '12%',
+      left: '19%', //position relative to flag 
       top: '10px',
       zIndex: '2',
       backgroundColor: 'white',
@@ -37,7 +37,7 @@ class TooltipScreen extends Component {
     }
 
     let closeButton = {
-      fontSize: '12pt',
+      fontSize: '16px',
       color: 'white',
       backgroundColor: 'red',
       width: '25px',
@@ -49,8 +49,10 @@ class TooltipScreen extends Component {
       position: 'absolute',
       right: 20,
       marginBottom: '10px',
-      lineHeight: '25px',
-      padding: 0
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '0 0 1px 0'
     }
 
     return (
