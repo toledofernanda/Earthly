@@ -108,7 +108,6 @@ class Donation extends Component{
             <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
 Your donation will help us keep Earthly free and add new rankings and features.
 100% of your donations goes towards research and app development.</p>
-            <img style ={{width:'40%', borderRadius:10, marginTop:'10px', marginBottom:'15px'}} src={require(`images/team.jpg`)} alt="donationImg" />
           </div>
 
           <div className = "contactForm">
@@ -116,7 +115,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
               <div>
               <FormGroup style={{margin:'10px'}}>
                 <Label for="firstName">Name</Label>
-                <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'10px', padding:'3px'}}
+                <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'10px', padding:'3px',width:'150px'}}
                 type="text"
                 name= "firstName"
                 onChange = {this.handleChange}
@@ -136,7 +135,7 @@ Your donation will help us keep Earthly free and add new rankings and features.
 
               <FormGroup  style={{margin:'10px'}}>
                 <Label for="email">Email</Label>
-                <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px'}}
+                <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px',width:'150px'}}
                 type="email"
                 name= "email"
                 onChange = {this.handleChange}
@@ -144,9 +143,9 @@ Your donation will help us keep Earthly free and add new rankings and features.
               </FormGroup>
             </div>
 
-              <FormGroup style ={{display:'flex', justifyContent:'center', flexWrap:'wrap'}}>
-                <Label for="message" style={{width:'100%'}}>Message</Label>
-                <textarea style={{width: '30%', margin:'20px',height:'200px',border:'1px solid black', borderRadius:7, padding:'10px', fontSize:'18px'}}
+              <FormGroup style={{margin:'10px', display:'flex', justifyContent:'center',}}>
+                <Label for="message">Message</Label>
+                <textarea style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px', width:'150px', height:'150px', marginRight:'24px'}}
                 type="textarea"
                 name= "message"
                 placeholder="Tell us what other rankings and features you’d like to see in Earthly!"
@@ -154,8 +153,18 @@ Your donation will help us keep Earthly free and add new rankings and features.
                 />
               </FormGroup>
 
+              {/* <FormGroup style ={{display:'flex', justifyContent:'center', flexWrap:'wrap'}}>
+                <Label for="message" style={{width:'100%'}}>Message</Label>
+                <textarea style={{width: '30%', margin:'20px',height:'200px',border:'1px solid black', borderRadius:7, padding:'10px', fontSize:'18px'}}
+                type="textarea"
+                name= "message"
+                placeholder="Tell us what other rankings and features you’d like to see in Earthly!"
+                onChange = {this.handleChange}
+                />
+              </FormGroup> */}
+
               <div className="donationButton">
-                <div style={{listStyleType:'none', display:'flex', justifyContent:'space-around'}}>
+                <div style={{listStyleType:'none', display:'flex', justifyContent:'center', marginLeft:'55px'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
                   <a class="gumroad-button" href="https://gum.co/wDIjn" className = "button-shadow" style ={submitButton}>Donate</a>
