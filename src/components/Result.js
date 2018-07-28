@@ -21,7 +21,9 @@ class Result extends Component {
     /* CSS */
     let chartOuterDiv = {
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      maxWidth: 'calc(1024px - 10%)', //to guarantee that on tablet (1024px) there will be a bit of margin on the sides
+      margin: '60px auto',
     }
 
     let chartHeader = {
@@ -34,9 +36,6 @@ class Result extends Component {
     }
 
     let resultChart = {
-      maxWidth: 'calc(1024px - 10%)', /*only for this element so breadcrumb is 100%*/
-      width: '100%',
-      margin: '60px 4%',
       backgroundColor: 'white',
       borderRadius: 30
     }
@@ -44,7 +43,7 @@ class Result extends Component {
     let topicD = {
       gridColumn: '2 / 3',
       gridRow: '1 / 2',
-      fontSize: 'calc(14px + 1vw)', /* responsive title */
+      fontSize: 'calc(14px + 1vw)', // responsive title 
       margin: '5px 0'
     }
 
