@@ -109,7 +109,7 @@ class Contact extends Component {
       fontSize: '14pt',
       flex: '0 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
-    }; //Contact has calc 
+    }; //Contact has calc
 
     let formStyle = {
       display:'flex',
@@ -129,7 +129,7 @@ class Contact extends Component {
     }
 
     let contactForm = {
-      margin: '1% 20%',
+      margin: '0 20%',
     }
     let input = {
       border:'1px solid gray',
@@ -153,7 +153,7 @@ class Contact extends Component {
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div>
-          <p style={{textAlign: 'center', width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>
+          <p style={{textAlign: 'center', width:'50%', margin: '0 auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>
