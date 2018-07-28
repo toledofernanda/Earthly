@@ -192,5 +192,8 @@ a, a:visited {
                     padding-left: 4% !important;
                     padding-right: 4% !important;
                   }
+                  .chartOuterDiv {
+                    margin: 100px auto !important;
+                  }
 
 }
