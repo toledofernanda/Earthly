@@ -91,6 +91,8 @@ class Flag extends Component{
 		let nonCountryPic = "mountain";//get a picture that discribes the ranking
 		let subCat = db[category][topic]; //always general and topic to check if is a country
 		let myimg; // image to display
+		let tooltipUp = this.props.tooltipUp; //check the position of country, if is last two, tooltip shows upward
+		let basketMobileStyle = this.props.basketMobileStyle; //for basketball ranking
 
 		//get the country flag
 			let countryAbb;
@@ -120,7 +122,7 @@ class Flag extends Component{
 				  	{myimg}
 					</div>
 					<div className="tooltip">
-						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} className='button-shadow' />
+						<TooltipScreen toggleTooltip={this.toggleTooltip} tooltipUp={tooltipUp} basketMobileStyle={basketMobileStyle} entityName={entityName} category={"general"} topic={"entity_info"} className='button-shadow' />
 					</div>
 				</div>
 			 );
