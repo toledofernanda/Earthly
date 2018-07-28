@@ -15,6 +15,7 @@ class Flag extends Component{
 		};
 	}
 
+	//get flag click and render or not tooltip
 	toggleTooltip() {
 		this.setState({
 			tooltipOpen: !this.state.tooltipOpen
@@ -99,8 +100,6 @@ class Flag extends Component{
 			for (let item of country){
 				if(item['country'] === entityName){
 
-					// console.log(entityName)
-            // console.log(item["countryCode"].toLowerCase());
 						countryAbb = item["countryCode"].toLowerCase()
 						if(countryAbb == 'np'){
 							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} className='button-shadow' />;
@@ -114,7 +113,7 @@ class Flag extends Component{
 			}
 
 		if(this.state.tooltipOpen) {
-			// console.log('is open');
+
 			return (
 				<div className="flag-tooltip" style={flagTooltipDiv}>
 					<div className = "country_flag" onClick={this.toggleTooltip}>
@@ -126,7 +125,6 @@ class Flag extends Component{
 				</div>
 			 );
 		} else {
-			// console.log('not open');
 
 			return (
 				<div className="flag-tooltip">
