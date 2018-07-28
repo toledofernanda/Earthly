@@ -16,6 +16,8 @@ const donation = {
   paddingBottom: '2%',
   backgroundColor: 'white',
   borderRadius: 30,
+  alignItems: 'stretch',
+  textAlign:'center',
 }
 
 const submitButton = {
@@ -35,7 +37,7 @@ const submitButton = {
 let filterTopStyle = {
   padding: '1.5% 4%',
   display: 'grid',
-  gridTemplateColumns: '40px 10fr'
+  gridTemplateColumns: '20px 10fr'
 };
 
 
