@@ -9,7 +9,7 @@ class EntityName extends Component {
     }
 
     let entityNameSpan = {
-      fontSize: 'calc(8px + .5vw)', /* responsive title */
+      fontSize: 'calc(8px + .4vw)', // responsive
       fontWeight: 'normal',
       display: 'block',
       textAlign: 'center'

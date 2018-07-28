@@ -11,7 +11,7 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      padding: '0 4% 25px 4%',
+      padding: '0 4% 15px 4%',
       borderRadius: '30px',
       boxSizing: 'border-box',
       height: 'fit-content',
@@ -32,7 +32,7 @@ class Chart extends Component{
       alignItems: 'center',
       boxSizing: 'border-box',
       height: '7w',
-      minHeight: '7vw',
+      maxHeight: '90px',
       width: '100%',
       position: 'relative',
     }
