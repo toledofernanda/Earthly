@@ -121,9 +121,17 @@ a, a:visited {
   }
 }
 
-/* make distance between flag and tooltip smaller on big screen to be over topics */
-@media screen and (min-width: 580px) {
-  .tooltip-screen {
-    left: 15% !important;
-  }
+/*  smartphone hprozontal mode*/
+@media only screen and (min-device-width: 411px)
+                   and (max-device-width: 823px)
+                   and (orientation: landscape) {
+                  .header ul {
+                    position: relative !important;
+                    margin: 0 !important;
+                    }
+                  .breadcrumb {
+                    position: relative !important;
+                    margin-top: -70px !important;
+                  }
+
 }
