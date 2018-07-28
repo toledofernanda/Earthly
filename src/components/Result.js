@@ -36,6 +36,7 @@ class Result extends Component {
     }
 
     let resultChart = {
+      width: '100%',
       backgroundColor: 'white',
       borderRadius: 30
     }
@@ -43,7 +44,7 @@ class Result extends Component {
     let topicD = {
       gridColumn: '2 / 3',
       gridRow: '1 / 2',
-      fontSize: 'calc(14px + 1vw)', // responsive title 
+      fontSize: 'calc(14px + 1vw)', // responsive title
       margin: '5px 0'
     }
 

@@ -12,7 +12,7 @@ class EntityInfo extends Component {
 
     let infoLi = {
       listStyleType: 'none',
-      fontSize: '.8em',
+      fontSize: 'calc(8px + .4vw)', // responsive
       margin: '5px 0'
     }
 
