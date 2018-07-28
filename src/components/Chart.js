@@ -105,6 +105,7 @@ class Chart extends Component{
     let entities = [];
     let order = 1;
     let specificOrder; //for cases where there are ties on ranking
+    let tooltipUp = false;
 
     //ranking with specific ranking order (ties)
     if(topic === 'basketball_world_cup_gold_medals') {
@@ -115,13 +116,28 @@ class Chart extends Component{
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // if are the last two countries on ranking, tooltip should show upwards
+        let basketMobileStyle;
+
+        if(entityName === 'United States') {
+          basketMobileStyle = '1';
+        } else if(entityName === 'Brazil') {
+          basketMobileStyle = '2';
+        } else if(entityName === 'Argentina') {
+          tooltipUp = true;
+          basketMobileStyle = '3';
+        } else { //Spain
+          tooltipUp = true;
+          basketMobileStyle = '4';
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
               <span>{specificOrder[index]}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} basketMobileStyle={basketMobileStyle}/>
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -138,13 +154,18 @@ class Chart extends Component{
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // if are the last two countries on ranking, tooltip should show upwards
+        if(specificOrder[index] === 4 || entityName === 'France') {
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
               <span>{specificOrder[index]}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -161,13 +182,18 @@ class Chart extends Component{
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // if are the last two countries on ranking, tooltip should show upwards
+        if(specificOrder[index] === 6 || specificOrder[index] === 7 || specificOrder[index] === 8) {
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
               <span>{specificOrder[index]}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -184,13 +210,18 @@ class Chart extends Component{
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // if are the last two countries on ranking, tooltip should show upwards
+        if(specificOrder[index] === 8 || specificOrder[index] === 9) {
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
               <span>{specificOrder[index]}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -206,13 +237,18 @@ class Chart extends Component{
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // if are the last two countries on ranking, tooltip should show upwards
+        if(index === 7 || index === 8 || index === 9) { //index starts at 0 and want to target no. 9 and 10
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
               <span>{order}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <div style={borderDiv}></div>

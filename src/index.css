@@ -164,6 +164,19 @@ a, a:visited {
   }
 }
 
+/* re-align tooltip upward with flag on large screen */
+@media screen and (min-width: 556px) {
+  .tooltip-screen.up {
+    top: -212px !important;
+  }
+}
+
+@media screen and (min-width: 661px) {
+  .tooltip-screen.up {
+    top: -192px !important;
+  }
+}
+
 /*  smartphone horizontal mode*/
 @media only screen and (min-device-width: 411px)
                    and (max-device-width: 823px)
@@ -178,6 +191,9 @@ a, a:visited {
                     width: 92% !important;
                     padding-left: 4% !important;
                     padding-right: 4% !important;
+                  }
+                  .chartOuterDiv {
+                    margin: 100px auto !important;
                   }
 
 }
