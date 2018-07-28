@@ -11,6 +11,7 @@ class CategoryFilter extends Component{
   render(){
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
+      minWidth: '80vw',
       margin: '4% auto',
       display: 'flex',
       flexFlow: 'column wrap',
@@ -21,8 +22,6 @@ class CategoryFilter extends Component{
 
     let filterTopStyle = {
       padding: '3% 4%',
-      // display: 'grid',
-      // gridTemplateColumns: '40px 10fr'
     };
 
     let divStyle = {

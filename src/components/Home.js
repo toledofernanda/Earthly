@@ -23,6 +23,7 @@ class Home extends Component {
     //outer div
     let mainDiv = {
       maxWidth: 'calc(1024px - 10%)',
+      minWidth: '80vw',
       margin: '4% auto',
       display: 'flex',
       flexFlow: 'column wrap',

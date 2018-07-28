@@ -43,7 +43,8 @@ const submitButton = {
   height: '25px',
   color:'white',
   fontSize:'15px',
-  boxShadow: '1px 3px 1px lightgray'
+  boxShadow: '1px 3px 1px lightgray',
+  marginBottom: '20px'
 }
 
 class Contact extends Component {
@@ -89,13 +90,10 @@ class Contact extends Component {
   render() {
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
-      margin: 'auto',
       display: 'flex',
       flexFlow: 'column wrap',
       justifyContent: 'center',
-      marginTop: '4%',
-      marginBottom: '2.5%',
-      paddingBottom: '2%',
+      margin: '4% auto',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
@@ -108,8 +106,8 @@ class Contact extends Component {
       gridColumn: '1 / 3',
       gridRow: '1 / 2',
       textAlign: 'center',
-      fontSize: '14pt',
-      flex: '0 0 100%',
+      // fontSize: '14pt',
+      // flex: '0 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
     };
     let formStyle = {
@@ -126,12 +124,11 @@ class Contact extends Component {
       flexFlow: 'row wrap',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: '0 5%'
+      // padding: '0 5%'
     }
 
     let contactForm = {
-      width: '60%',
-      margin: 'auto',
+      margin: '1% 20%',
     }
     let input = {
       border:'1px solid gray',

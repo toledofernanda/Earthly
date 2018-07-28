@@ -23,8 +23,8 @@ class About extends Component{
       gridColumn: '1 / 3',
       gridRow: '1 / 2',
       textAlign: 'center',
-      fontSize: '14pt',
-      flex: '0 0 100%',
+      // fontSize: '14pt',
+      // flex: '0 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
     };
 
@@ -57,13 +57,16 @@ class About extends Component{
           <div className="aboutEarthly">
             <p>
               Earthly is a world ranking app that makes it easy for children to get interested in and to learn about the world.
-              We are a team of two designers and three developers. We wanted to make an web app that makes a learning experience exciting, fun and engaging.</p><p>
+              We are a team of two designers and three developers. We wanted to make an web app that makes a learning experience exciting, fun and engaging.</p>
+              <p>
               We interviewed school teachers and ran a usability test with kids to learn about how we should realize the visual representation of data so that it is appealing and easy to understand for kids. </p><p>
-              All icons, images and pages are designed by Jenn and Marlowe. The app is developed with scalable React.js framework by Fernanda, Mana and Tomoko.</p><p>
-              If you have any feedback, please feel free to let us know!
+              All icons, images and pages are designed by Jenn and Marlowe. The app is developed with scalable React.js framework by Fernanda, Mana and Tomoko.</p>
+              <p>
+              Earthly is designed for tablet devices and laptop and desktop computers. We recommend that you use a device with a screen that is 800px wide at the minimum. </p><p>
+              If you have any feedback, please feel free to let us know from the Contact page below.
             </p>
           </div>
-          <div className="meetMemberTitle">
+          <div className="titleStyle">
             <h1 style = {TitleStyle}>Meet Team Earthly</h1>
           </div>
           <div className="meetMember" style={divStyle}>
@@ -103,7 +106,7 @@ class About extends Component{
               </p>
             </div>
           </div>
-          <div className="disclaimerTitle">
+          <div className="titleStyle">
             <h1 style = {TitleStyle}>Disclaimer</h1>
           </div>
           <div className="disclaimer">

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { db } from './Db';
+
 //This component displays a category in primary categories
 class FilterButtonText extends Component{
   render() {
     let catTextStyle = {
       textAlign: 'center',
       fontSize: '12pt',
-      margin: 0
+      margin: 0,
+      marginBottom: '3%'
     };
     let category = this.props.category;
     let topic = this.props.topic;
