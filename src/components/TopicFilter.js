@@ -17,6 +17,7 @@ class TopicFilter extends Component{
   render(){
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
+      minWidth: '80vw',
       margin: '4% auto',
       display: 'flex',
       flexFlow: 'column wrap',
@@ -28,7 +29,10 @@ class TopicFilter extends Component{
     let filterTopStyle = {
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr'
+      gridTemplateColumns: '20px 1fr',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
     };
 
     let divStyle = {
@@ -49,10 +53,10 @@ class TopicFilter extends Component{
       marginLeft: 'calc(1% + .5vw)'
     }
 
-    let backButton = {
-      width: '19px',
-      cursor: 'pointer'
-    }
+    // let backButton = {
+    //   width: '19px',
+    //   cursor: 'pointer'
+    // }
 
 
     let category = this.state.category;
@@ -78,6 +82,6 @@ class TopicFilter extends Component{
       </div>
     )
   }
-}  
+}
 
 export default TopicFilter;
