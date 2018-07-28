@@ -105,6 +105,8 @@ class Contact extends Component {
       gridTemplateColumns: '40px 10fr'
     };
     let TitleStyle = {
+      gridColumn: '1 / 3',
+      gridRow: '1 / 2',
       textAlign: 'center',
       fontSize: '14pt',
       flex: '0 0 100%',
@@ -126,12 +128,7 @@ class Contact extends Component {
       alignItems: 'center',
       padding: '0 5%'
     }
-    let inputStyle = {
-      flex: '1 0 40%',
-      display:'flex',
-      justifyContent: 'flex-end',
-      marginBottom:'1%'
-    }
+
     let contactForm = {
       width: '60%',
       margin: 'auto',
@@ -165,7 +162,7 @@ class Contact extends Component {
         <div className = "contactForm" style = {contactForm}>
           <Form onSubmit={this.handleSubmit} style={formStyle}>
             <div className = "inputForms" style = {inputForms}>
-            <FormGroup  style={inputStyle}>
+            <FormGroup  className = "inputStyle">
               <Label for="firstName" style = {label}>First Name</Label>
               <input style={input}
               type="text"
@@ -173,7 +170,7 @@ class Contact extends Component {
               onChange = {this.handleChange}
               />
             </FormGroup>
-            <FormGroup  style={inputStyle}>
+            <FormGroup  className = "inputStyle">
               <Label for="lastName" style = {label}>Last Name</Label>
               <input style={input}
               type="text"
@@ -181,7 +178,7 @@ class Contact extends Component {
               onChange = {this.handleChange}
               />
             </FormGroup>
-          <FormGroup  style={inputStyle}>
+            <FormGroup  className = "inputStyle">
               <Label for="phone" style = {label}>Phone</Label>
             <input style={input}
               type="text"
@@ -190,7 +187,7 @@ class Contact extends Component {
               onChange = {this.handleChange}
               />
             </FormGroup>
-            <FormGroup  style={inputStyle}>
+            <FormGroup  className = "inputStyle">
               <Label for="email" style = {label}>Email</Label>
               <input style={input}
               type="email"

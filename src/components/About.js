@@ -16,10 +16,12 @@ class About extends Component{
     let filterTopStyle = {
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr'
+      gridTemplateColumns: '20px 1fr'
     };
 
     let TitleStyle = {
+      gridColumn: '1 / 3',
+      gridRow: '1 / 2',
       textAlign: 'center',
       fontSize: '14pt',
       flex: '0 0 100%',
@@ -37,12 +39,6 @@ class About extends Component{
       textAlign: 'center'
     };  //style for the inside div of main component
 
-    let earthly = {
-      padding: '1% 25%',
-      marginBottom: '2%',
-      textAlign: 'center'
-    }
-
     let memberImage = {
       marginTop: '-50px',
       borderRadius: '50%'
@@ -58,7 +54,7 @@ class About extends Component{
             <BackButton component={'category'} />
             <h1 style = {TitleStyle}>About</h1>
           </div>
-          <div className="aboutEarthly" style = {earthly}>
+          <div className="aboutEarthly">
             <p>
               Earthly is a world ranking app that makes it easy for children to get interested in and to learn about the world.
               We are a team of two designers and three developers. We wanted to make an web app that makes a learning experience exciting, fun and engaging.</p><p>
@@ -110,7 +106,7 @@ class About extends Component{
           <div className="disclaimerTitle">
             <h1 style = {TitleStyle}>Disclaimer</h1>
           </div>
-          <div className="disclaimer" style = {earthly}>
+          <div className="disclaimer">
             <p>The reliability of data attributes to each data source. Due to limited space, Earthly does not contain every other languages and greeting, but that does not mean our team devalue any minority languages.</p>
           </div>
       </div>

@@ -59,6 +59,13 @@ a, a:visited {
   visibility: hidden;
 }
 
+/* About page style */
+.aboutEarthly, .disclaimer {
+  padding: 1% 10%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
 .fernanda {
   background-color: #4AB85C
 }
@@ -82,8 +89,28 @@ a, a:visited {
   margin: 50px .5%;
   color: white;
 }
+/* end of About page style */
 
-@media screen and (min-width: 600px) {
+/* Contact page form style */
+.inputStyle {
+  flex: 1 0 100%;
+  margin-right:30%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1%;
+}
+
+@media screen and (min-width: 920px){
+  .inputStyle{
+    flex: 1 0 40%;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+
+/* end of Contact page style */
+
+@media screen and (min-width: 700px) {
   .member {
     flex: 0 0 40%;
   }
@@ -92,6 +119,10 @@ a, a:visited {
 @media screen and (min-width: 1000px) {
   .member {
     flex: 1 0 16%;
+  }
+
+  .aboutEarthly, .disclaimer {
+    padding: 1% 25%;
   }
 }
 
