@@ -90,6 +90,22 @@ a, a:visited {
   margin: 50px .5%;
   color: white;
 }
+
+@media screen and (min-width: 700px) {
+  .member {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .member {
+    flex: 1 0 16%;
+  }
+
+  .aboutEarthly, .disclaimer {
+    margin: 1% 25%;
+  }
+}
 /* end of About page style */
 
 /* Contact page form style */
@@ -110,22 +126,6 @@ a, a:visited {
 }
 
 /* end of Contact page style */
-
-@media screen and (min-width: 700px) {
-  .member {
-    flex: 0 0 40%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .member {
-    flex: 1 0 16%;
-  }
-
-  .aboutEarthly, .disclaimer {
-    margin: 1% 25%;
-  }
-}
 
 /* fix font size for chart text once screen is bigger than tablet (1024px) */
 @media screen and (min-width: 1024px) {

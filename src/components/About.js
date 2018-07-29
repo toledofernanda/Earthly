@@ -45,6 +45,12 @@ class About extends Component{
       textAlign: 'left'
     }
 
+    let hr = {
+      width: '20%',
+      height: '3px',
+      background: 'white'
+    }
+
     return(
       <div className="about" key="about" style = {outerDiv}>
           <div className = "titleStyle" style={filterTopStyle}>
@@ -71,6 +77,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
+              <hr style = {hr} />
               <p style={desc}>Fernanda is Earthly’s Lead Developer. She has a Certificate of Internet and Web Technology from Langara College and is a certified Scrum Product Owner. She has 7 years experience with Customer Service as a supervisor and coordinator at tech companies and a Bachelor of Marketing and Advertising. Her hobbies are figure skating, biking, and watching TV series with her cat, Garfield.
               </p>
             </div>
@@ -78,6 +85,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
+              <hr style = {hr} />
               <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies. In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
               </p>
             </div>
@@ -85,6 +93,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/>
               <h3>Tomoko</h3>
               <h4>Dev & PM</h4>
+              <hr style = {hr} />
               <p style={desc}>Tomoko is Earthly’s Developer and Project Manager. She is a certified Scrum Master and has 5 years experience as a program manager at Microsoft, 6 years of experience as a university instructor in addition to 15-year background as an English to Japanese translator and interpreter. During her free time, she enjoys star gazing, board-gaming, and geocaching with her two sons.
               </p>
             </div>
@@ -92,6 +101,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" />
               <h3>Jenn</h3>
               <h4>UX Lead</h4>
+              <hr style = {hr} />
               <p style={desc}>Jenn is Earthly’s User Experience lead. She holds a Bachelor of Media Information and Technoculture from the University of Western Ontario in London, Canada. She also worked as a tree planter for 5 years in the Canadian provinces of Ontario, Saskatchewan, and Alberta. Jenn loves the outdoors; in her free time she enjoys camping, cycling, downhill skiing, and hiking.
               </p>
             </div>
@@ -99,6 +109,7 @@ class About extends Component{
               <img style = {memberImage} img src={require(`images/marlowe.jpg`)}  alt="marlowePic"/>
               <h3>Marlowe</h3>
               <h4>UI Lead</h4>
+              <hr style = {hr} />
               <p style={desc}>Marlowe is Earthly’s User Interface Designer. She has a background in English Literature, and a Bachelor of Arts from the University of British Columbia. She has worked as a lifeguard and swim instructor for 10 years, and enjoys discovering new ways to facilitate children’s learning. In her free time, Marlowe enjoys swimming, hiking, crossword puzzles, and playing computer games.
               </p>
             </div>
