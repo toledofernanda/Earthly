@@ -3,7 +3,6 @@ import { db } from './Db';
 import TopicButton from 'components/TopicButton';
 import StepTitle from 'components/StepTitle';
 import BackButton from 'components/BackButton';
-import { Link } from "react-router-dom";
 
 //This component displays a list of secondary categories (topics)
 class TopicFilter extends Component{
@@ -17,19 +16,19 @@ class TopicFilter extends Component{
   render(){
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
-      margin: '4% auto',
       display: 'flex',
-      flexFlow: 'column wrap',
+      flexFlow: 'row wrap',
       justifyContent: 'center',
+      margin: '4% auto',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
 
     let filterTopStyle = {
+      flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '20px 1fr',
-      gridTempleteRows: '30px'
+      gridTemplateColumns: '20px 1fr'
     };
 
     let divStyle = {
@@ -49,12 +48,6 @@ class TopicFilter extends Component{
       margin: '0 1%',
       marginLeft: 'calc(1% + .5vw)'
     }
-
-    let backButton = {
-      width: '19px',
-      cursor: 'pointer'
-    }
-
 
     let category = this.state.category;
     let topicList = [];

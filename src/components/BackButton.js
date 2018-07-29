@@ -6,7 +6,9 @@ class BackButton extends Component {
 
     /* CSS */
     let backButtonDiv = {
-      marginTop: 10
+      margin: 'auto',
+      alignSelf: 'flex-start',
+      paddingLeft: '40px'
     }
 
     let backButton = {
@@ -15,15 +17,9 @@ class BackButton extends Component {
     }
 
     /* JS */
-    let unit = this.props.unit;
     let component = this.props.component;
-    let renderData = '';
     let category = '';
     let link = '';
-
-    if(unit !== 'none') {
-      renderData = unit;
-    }
 
     if(component === 'result') {
       category = this.props.category;

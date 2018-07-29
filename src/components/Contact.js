@@ -1,37 +1,8 @@
 import React, { Component } from 'react';
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
+import {Form, FormGroup, Label} from 'reactstrap';
+// import axios from 'axios';
 import BackButton from 'components/BackButton';
 import ThankYou from 'components/ThankYou';
-
-const boxPosition = {
-  marginRight:'auto',
-  marginLeft:'auto',
-  marginTop:'100px',
-  marginBottom:'100px',
-  maxWidth: '1024px',
-  height: '70%',
-  boxSizing:'border-box',
-  backgroundColor: "white",
-  borderRadius: 30,
-  padding: '20px',
-  border: '1px solid darkgrey',
-}
-
-const form = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center',
-}
-
-const comment = {
-  display: 'flex',
-  justifyContent: 'center',
-  flexDirection: 'column',
-  marginTop: '20px',
-  width:'100%'
-}
 
 const submitButton = {
   with: '100px',
@@ -75,23 +46,22 @@ class Contact extends Component {
     e.preventDefault();
     this.setState({'submitted': true});
 
-    const {firstName, lastName, email,phone, message} = this.state
+    // const {firstName, lastName, email,phone, message} = this.state
 
-    const form = await axios.post('/api/form',{
-      firstName,
-      lastName,
-      email,
-      phone,
-      message
-    })
-
-}
+    // const form = await axios.post('/api/form',{
+    //   firstName,
+    //   lastName,
+    //   email,
+    //   phone,
+    //   message
+    // })
+}//commented out items that were not used
 
   render() {
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
       display: 'flex',
-      flexFlow: 'column wrap',
+      flexFlow: 'row wrap',
       justifyContent: 'center',
       margin: '4% auto',
       backgroundColor: 'white',
@@ -99,47 +69,45 @@ class Contact extends Component {
     }; //style for the outside div of main component
 
     let filterTopStyle = {
+      flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
       gridTemplateColumns: '20px 1fr'
-    };
+    };//style for the contact white box's header
 
     let TitleStyle = {
       textAlign: 'center',
-      fontSize: '14pt',
-      flex: '0 0 100%',
+      flex: '1 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
-    }; //Contact has calc
+    }; //"Contact"
 
     let formStyle = {
       display:'flex',
       flexFlow:'row wrap',
       justifyContent:'space-around',
-      // marginBottom: '3%',
-      // textAlign:'center',
       color:'#58595B'
     };
+
     let inputForms = {
       margin: '1%',
       display: 'flex',
       flexFlow: 'row wrap',
       justifyContent: 'center',
       alignItems: 'center',
-      // padding: '0 5%'
     }
 
     let contactForm = {
       margin: '0 20%',
     }
+
     let input = {
       flex: '0 0 45%',
       border:'1px solid gray',
       borderRadius:7,
-      // marginRight:'10%',
       alignSelf: 'flex-start'
     }
+
     let label = {
-      // marginLeft : '10%',
       marginRight: '3%',
       textAlign: 'right',
       alignSelf: 'flex-end',
@@ -170,6 +138,7 @@ class Contact extends Component {
               type="text"
               name= "firstName"
               onChange = {this.handleChange}
+              required
               />
             </FormGroup>
             <FormGroup  className = "inputStyle">
@@ -195,6 +164,7 @@ class Contact extends Component {
               type="email"
               name= "email"
               onChange = {this.handleChange}
+              required
               />
             </FormGroup>
           </div>
@@ -205,19 +175,17 @@ class Contact extends Component {
               type="textarea"
               name= "message"
               onChange = {this.handleChange}
+              required
               />
             </FormGroup>
 
             <button style={submitButton}>Submit</button>
           </Form>
-
-
           </div>
       </div>
-
     );
   }
-}
+ }
 }
 
 export default Contact;

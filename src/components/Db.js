@@ -2969,7 +2969,6 @@ export let db = {
         quantity: '113',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -2980,7 +2979,6 @@ export let db = {
         quantity: '106',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -2991,7 +2989,6 @@ export let db = {
         quantity: '77',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -3002,7 +2999,6 @@ export let db = {
         quantity: '61',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -3013,7 +3009,6 @@ export let db = {
         quantity: '44',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -3024,7 +3019,6 @@ export let db = {
         quantity: '41',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -3035,7 +3029,6 @@ export let db = {
         quantity: '33',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -3046,7 +3039,6 @@ export let db = {
         quantity: '32',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
@@ -3057,7 +3049,6 @@ export let db = {
         quantity: '32',
         unit: 'none',
         label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
         source_name: 'Safe Destinations',
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       }
@@ -3080,7 +3071,6 @@ export let db = {
         quantity: '166',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3091,7 +3081,6 @@ export let db = {
         quantity: '139',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3102,7 +3091,6 @@ export let db = {
         quantity: '112',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3113,7 +3101,6 @@ export let db = {
         quantity: '104',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3124,7 +3111,6 @@ export let db = {
         quantity: '57',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3135,7 +3121,6 @@ export let db = {
         quantity: '53',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3146,7 +3131,6 @@ export let db = {
         quantity: '50',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3157,7 +3141,6 @@ export let db = {
         quantity: '43',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       },
@@ -3168,7 +3151,6 @@ export let db = {
         quantity: '39',
         unit: 'none',
         label: 'Number of active volcanoes',
-        unit: 'none',
         source_name: 'The Telegraph',
         source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       }
@@ -6015,7 +5997,6 @@ export let db = {
         quantity: '2,381',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6026,7 +6007,6 @@ export let db = {
         quantity: '1,544',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6037,7 +6017,6 @@ export let db = {
         quantity: '1,535',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6048,7 +6027,6 @@ export let db = {
         quantity: '1,300',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6059,7 +6037,6 @@ export let db = {
         quantity: '1,275',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6070,7 +6047,6 @@ export let db = {
         quantity: '1,192',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6081,7 +6057,6 @@ export let db = {
         quantity: '1,116',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6092,7 +6067,6 @@ export let db = {
         quantity: '1,082',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6103,7 +6077,6 @@ export let db = {
         quantity: '1,065',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -6114,7 +6087,6 @@ export let db = {
         quantity: '995',
         unit: 'head',
         label: 'Threatened species in each country',
-        unit: 'head',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       }
