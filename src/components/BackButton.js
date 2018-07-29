@@ -11,12 +11,13 @@ class BackButton extends Component {
       textAlign: 'left',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      zIndex: '10' //for backbutton to work on Firefox
     }
 
     let backButton = {
       width: '19px',
-      cursor: 'pointer'
+      cursor: 'pointer',
     }
 
     /* JS */

@@ -90,26 +90,6 @@ a, a:visited {
   margin: 50px .5%;
   color: white;
 }
-/* end of About page style */
-
-/* Contact page form style */
-.inputStyle {
-  flex: 1 0 100%;
-  margin-right:30%;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1%;
-}
-
-@media screen and (min-width: 920px){
-  .inputStyle{
-    flex: 1 0 40%;
-    justify-content: flex-end;
-    margin-right: 0;
-  }
-}
-
-/* end of Contact page style */
 
 @media screen and (min-width: 700px) {
   .member {
@@ -126,6 +106,26 @@ a, a:visited {
     margin: 1% 25%;
   }
 }
+/* end of About page style */
+
+/* Contact page form style */
+.inputStyle {
+  flex: 1 0 100%;
+  /* margin-right:30%; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+@media screen and (min-width: 920px){
+  .inputStyle{
+    flex: 1 0 40%;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+
+/* end of Contact page style */
 
 /* fix font size for chart text once screen is bigger than tablet (1024px) */
 @media screen and (min-width: 1024px) {

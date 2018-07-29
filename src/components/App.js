@@ -31,9 +31,9 @@ class App extends Component {
     let mainContent = {
       backgroundImage: `url(${bg})`,
       flex: '1 0 auto',
-      display: 'flex',
-      flexFlow: 'column wrap',
-      justifyContent: 'center'
+      // display: 'flex',
+      // flexFlow: 'column wrap',
+      // justifyContent: 'center'
     }
 
     let footer = {
