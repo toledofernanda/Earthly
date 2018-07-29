@@ -172,9 +172,14 @@ a, a:visited {
   }
 }
 
+@media screen and (min-width: 510px) {
+  .tooltip-screen {
+    left: 18% !important;
+  }
+}
 /* make distance between flag and tooltip smaller on big screen to be over topics */
 /* re-align tooltip upward with flag on large screen */
-@media screen and (min-width: 556px) {
+@media screen and (min-width: 575px) {
   .tooltip-screen {
     left: 15% !important;
   }
