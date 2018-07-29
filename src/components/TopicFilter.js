@@ -28,7 +28,8 @@ class TopicFilter extends Component{
       flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '20px 1fr'
+      gridTemplateColumns: '20px 1fr',
+      boxSizing: 'border-box'
     };
 
     let divStyle = {
