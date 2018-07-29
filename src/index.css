@@ -159,6 +159,19 @@ a, a:visited {
   }
 }
 
+@media screen and (min-width: 1100px) {
+
+  .ranking-icon img {
+    width: 38px !important;
+  }
+}
+
+@media screen and (min-width: 1075px) and (max-width: 1100px) {
+  .ranking-icon img {
+    width: 32px !important;
+  }
+}
+
 /* make distance between flag and tooltip smaller on big screen to be over topics */
 /* re-align tooltip upward with flag on large screen */
 @media screen and (min-width: 556px) {
