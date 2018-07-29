@@ -117,18 +117,18 @@ class Chart extends Component{
         entityName = entity["entity_name"]; //get entityName to get info
 
         // if are the last two countries on ranking, tooltip should show upwards
-        let basketMobileStyle;
+        let centeredMobileStyle;
 
         if(entityName === 'United States') {
-          basketMobileStyle = '1';
+          centeredMobileStyle = '1';
         } else if(entityName === 'Brazil') {
-          basketMobileStyle = '2';
+          centeredMobileStyle = '2';
         } else if(entityName === 'Argentina') {
           tooltipUp = true;
-          basketMobileStyle = '3';
+          centeredMobileStyle = '3';
         } else { //Spain
           tooltipUp = true;
-          basketMobileStyle = '4';
+          centeredMobileStyle = '4';
         }
 
         entities.push(
@@ -137,7 +137,47 @@ class Chart extends Component{
               <span>{specificOrder[index]}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} basketMobileStyle={basketMobileStyle}/>
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} centeredMobileStyle={centeredMobileStyle}/>
+              <EntityName entityName={entityName} parent={'ranking-entity'} />
+            </div>
+            <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
+          </div>
+        )
+
+        index++;
+      }
+    } else //tidal small ranking with specifc rule for tooltip on mobile (centered)
+    if(topic === 'wave_tidal_power_generation') {
+      let index = 0;
+
+      // get all entities that appear on that category/topic
+      for (let entity of subCat) {
+        entityName = entity["entity_name"]; //get entityName to get info
+
+        // if are the last two countries on ranking, tooltip should show upwards
+        let centeredMobileStyle;
+
+        if(entityName === 'South Korea') {
+          centeredMobileStyle = '1';
+        } else if(entityName === 'France') {
+          centeredMobileStyle = '2';
+        } else if(entityName === 'Canada') {
+          centeredMobileStyle = '3';
+        } else if(entityName === 'China') {
+          tooltipUp = true;
+          centeredMobileStyle = '4';
+        } else { //United Kingdom
+          tooltipUp = true;
+          centeredMobileStyle = '5';
+        }
+
+        entities.push(
+          <div className="ranking-entity" key={entityName} style={rankingEntity}>
+            <div className="order" style={orderStyle}>
+              <span>{index}</span>
+            </div>
+            <div className="entity-flag-name" style={entityFlagName}>
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} centeredMobileStyle={centeredMobileStyle}/>
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />

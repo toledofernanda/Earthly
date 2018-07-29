@@ -35,8 +35,8 @@ class TooltipScreen extends Component {
       marginLeft: '15px'
     }
 
-    /* United States */
-    let basket1 = {
+    /* United States / South Korea */
+    let centered1 = {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
@@ -50,8 +50,8 @@ class TooltipScreen extends Component {
       marginLeft: '15px',
     }
 
-    /* Brazil */
-    let basket2 = {
+    /* Brazil / France */
+    let centered2 = {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
@@ -65,8 +65,8 @@ class TooltipScreen extends Component {
       marginLeft: '15px',
     }
 
-    /* Argentina */
-    let basket3 = {
+    /* Argentina / Canada */
+    let centered3 = {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
@@ -80,13 +80,28 @@ class TooltipScreen extends Component {
       marginLeft: '15px',
     }
 
-    /* Spain */
-    let basket4 = {
+    /* Spain / China */
+    let centered4 = {
       width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%',
       top: '-260px',
+      zIndex: '2',
+      backgroundColor: 'white',
+      padding: '10px 20px 20px 20px',
+      borderRadius: '20px',
+      border: '1px solid darkgrey',
+      marginLeft: '15px',
+    }
+
+    /* United Kingdom */
+    let centered5 = {
+      width: '60vw',
+      maxWidth: '600px',
+      position: 'absolute',
+      left: '21%',
+      top: '-280px',
       zIndex: '2',
       backgroundColor: 'white',
       padding: '10px 20px 20px 20px',
@@ -102,7 +117,8 @@ class TooltipScreen extends Component {
 
     let entityInfo  = {
       flex: '1 0 40%',
-      minWidth: '150px'
+      minWidth: '150px',
+      marginRight: '5px'
     }
 
     let entityMap = {
@@ -130,18 +146,18 @@ class TooltipScreen extends Component {
 
     /* JS */
     let tooltipUp = this.props.tooltipUp;
-    let basketMobileStyle = this.props.basketMobileStyle;
+    let centeredMobileStyle = this.props.centeredMobileStyle;
 
     console.log('tts', tooltipUp)
-    console.log('basketMobileStyle', basketMobileStyle)
+    console.log('centeredMobileStyle', centeredMobileStyle)
 
     if (tooltipUp) { //if true, tooltip style is set to upward
       console.log('tooltip up')
 
-      if (basketMobileStyle === '1') {  // if is up and is basketball ranking 1
+      if (centeredMobileStyle === '1') {  // if is up and is basketball/tidal ranking 1
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket1}>
+          <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered1}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -156,10 +172,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '2') { // if is up and is basketball ranking 2
+      } else if (centeredMobileStyle === '2') { // if is up and is basketball/tidal ranking 2
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket2}>
+          <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered2}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -174,10 +190,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '3') { // if is up and is basketball ranking 3
+      } else if (centeredMobileStyle === '3') { // if is up and is basketball/tidal ranking 3
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket3}>
+          <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered3}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -192,10 +208,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '4') { // if is up and is basketball ranking 4
+      } else if (centeredMobileStyle === '4') { // if is up and is basketball/tidal ranking 4
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket4}>
+          <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered4}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -210,7 +226,25 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else {   // if is up and not basketball ranking
+      } else if (centeredMobileStyle === '5') { // if is up and is basketball/tidal ranking 5
+
+        return (
+          <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered5}>
+            <div className="close-button">
+              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
+            </div>
+            <div className="info-map" style={infoMap}>
+              <div className="entity-info" style={entityInfo}>
+                <EntityName {...this.props} parent={'tooltip'} />
+                <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="entity-map" style={entityMap}>
+                <Map entity={this.props.entityName} />
+              </div>
+            </div>
+          </div>
+        );
+      } else {   // if is up and not basketball/tidal ranking
         return (
           <div className={['tooltip-screen', 'up'].join(' ')} style={tooltipUpStyle}>
             <div className="close-button">
@@ -231,10 +265,10 @@ class TooltipScreen extends Component {
     } else { //if false, tooltip style is set to down
       console.log('tooltip down')
 
-      if (basketMobileStyle === '1') {  // if is down and is basketball ranking 1
+      if (centeredMobileStyle === '1') {  // if is down and is basketball/tidal ranking 1
 
         return (
-          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket1}>
+          <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered1}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -249,10 +283,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '2') { // if is down and is basketball ranking 2
+      } else if (centeredMobileStyle === '2') { // if is down and is basketball/tidal ranking 2
 
         return (
-          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket2}>
+          <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered2}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -267,10 +301,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '3') { // if is down and is basketball ranking 3
+      } else if (centeredMobileStyle === '3') { // if is down and is basketball/tidal ranking 3
 
         return (
-          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket3}>
+          <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered3}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -285,10 +319,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '4') { // if is down and is basketball ranking 4
+      } else if (centeredMobileStyle === '4') { // if is down and is basketball/tidal ranking 4
 
         return (
-          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket4}>
+          <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered4}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -303,7 +337,25 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else { // if is down and not basketball ranking
+      } else if (centeredMobileStyle === '5') { // if is up and is basketball/tidal ranking 5
+
+        return (
+          <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered5}>
+            <div className="close-button">
+              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
+            </div>
+            <div className="info-map" style={infoMap}>
+              <div className="entity-info" style={entityInfo}>
+                <EntityName {...this.props} parent={'tooltip'} />
+                <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="entity-map" style={entityMap}>
+                <Map entity={this.props.entityName} />
+              </div>
+            </div>
+          </div>
+        );
+      } else { // if is down and not basketball/tidal ranking
         return (
           <div className={['tooltip-screen', 'down'].join(' ')} style={tooltipDownStyle}>
             <div className="close-button">

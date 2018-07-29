@@ -127,6 +127,8 @@ a, a:visited {
 
 /* end of Contact page style */
 
+/* CHART RESULT CSS -------------------------------------------------------------*/
+
 /* fix font size for chart text once screen is bigger than tablet (1024px) */
 @media screen and (min-width: 1024px) {
   .titleStyle, .chart-header h1 {
@@ -158,16 +160,24 @@ a, a:visited {
 }
 
 /* make distance between flag and tooltip smaller on big screen to be over topics */
-@media screen and (min-width: 580px) {
+/* re-align tooltip upward with flag on large screen */
+@media screen and (min-width: 556px) {
   .tooltip-screen {
     left: 15% !important;
   }
-}
 
-/* re-align tooltip upward with flag on large screen */
-@media screen and (min-width: 556px) {
-  .tooltip-screen.up, .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4 {
-    top: -212px !important;
+  .tooltip-screen.down {
+    top: 10px !important;
+    border-radius: 0 20px 20px 20px !important;
+  }
+
+  .tooltip-screen.up {
+    top: -202px !important;
+    border-radius: 20px 20px 20px 0 !important;
+  }
+
+  .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4 {
+    top: -202px !important;
   }
 }
 
@@ -194,6 +204,8 @@ a, a:visited {
     border-radius: 20px 20px 20px 0;
   }
 }
+
+/* END OF CHART RESULT CSS -------------------------------------------------------------*/
 
 /*  smartphone horizontal mode*/
 @media only screen and (min-device-width: 411px)
