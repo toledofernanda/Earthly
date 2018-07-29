@@ -117,7 +117,7 @@ a, a:visited {
   margin-bottom: 1%;
 }
 
-@media screen and (min-width: 920px){
+@media screen and (min-width: 900px){
   .inputStyle{
     flex: 1 0 40%;
     justify-content: flex-end;
@@ -238,7 +238,7 @@ a, a:visited {
 }
 
 /*  smartphone horizontal mode*/
-@media only screen and (max-device-height: 812px) 
+@media only screen and (max-device-height: 812px)
                    and (max-device-width: 823px)
                    and (orientation: landscape) {
                   .header ul {

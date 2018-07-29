@@ -11,9 +11,8 @@ const donation = {
   display: 'flex',
   flexFlow: 'column wrap',
   justifyContent: 'center',
-  marginTop: '4%',
+  marginTop: '3%',
   marginBottom: '2.5%',
-  paddingBottom: '2%',
   backgroundColor: 'white',
   borderRadius: 30,
   alignItems: 'stretch',
@@ -27,14 +26,14 @@ const submitButton = {
   border: 'none',
   borderRadius: 7,
   width: '80px',
-  height: '25px',
+  height: '35px',
   color:'white',
   fontSize:'15px',
   boxShadow: '1px 3px 1px lightgray',
   marginBottom: '20px',
   listStyle:'none',
   textDecoration:'none',
-  paddingTop:'5px'
+
 }
 
 let filterTopStyle = {
