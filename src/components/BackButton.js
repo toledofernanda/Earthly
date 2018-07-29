@@ -6,18 +6,12 @@ class BackButton extends Component {
 
     /* CSS */
     let backButtonDiv = {
-      gridColumn: '1 / 2',
-      gridRow: '1 / 2',
-      textAlign: 'left',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      zIndex: '10' //for backbutton to work on Firefox
+      marginTop: 10
     }
 
     let backButton = {
       width: '19px',
-      cursor: 'pointer',
+      cursor: 'pointer'
     }
 
     /* JS */
