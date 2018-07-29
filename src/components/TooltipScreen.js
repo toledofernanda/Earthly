@@ -8,7 +8,6 @@ class TooltipScreen extends Component {
 
     /* CSS */
     let tooltipUpStyle = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%', //position relative to flag
@@ -22,7 +21,6 @@ class TooltipScreen extends Component {
     }
 
     let tooltipDownStyle = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%', //position relative to flag
@@ -37,7 +35,6 @@ class TooltipScreen extends Component {
 
     /* United States / South Korea */
     let centered1 = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%',
@@ -52,7 +49,6 @@ class TooltipScreen extends Component {
 
     /* Brazil / France */
     let centered2 = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%',
@@ -67,7 +63,6 @@ class TooltipScreen extends Component {
 
     /* Argentina / Canada */
     let centered3 = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%',
@@ -82,7 +77,6 @@ class TooltipScreen extends Component {
 
     /* Spain / China */
     let centered4 = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%',
@@ -97,7 +91,6 @@ class TooltipScreen extends Component {
 
     /* United Kingdom */
     let centered5 = {
-      width: '60vw',
       maxWidth: '600px',
       position: 'absolute',
       left: '21%',
@@ -111,19 +104,29 @@ class TooltipScreen extends Component {
     }
 
     let infoMap = {
-      display: 'flex',
-      flexFlow: 'row wrap',
+      display: 'grid',
+      gridTemplateColumns: '1fr 25px',
+      gridTemplateRows: '40% 60%',
     }
 
     let entityInfo  = {
-      flex: '1 0 40%',
+      gridColumn: '1 / 2',
+      gridRow: '1 / 2',
       minWidth: '150px',
       marginRight: '5px'
     }
 
     let entityMap = {
       flex: '1 0 55%',
-      marginTop: 30
+      marginTop: '10px',
+      gridColumn: '1 / 3',
+      gridRow: '2 / 3',
+    }
+
+    let closeButtonDiv = {
+      height: '25px',
+      gridColumn: '2 / 3',
+      gridRow: '1 / 2',
     }
 
     let closeButton = {
@@ -138,7 +141,6 @@ class TooltipScreen extends Component {
       cursor: 'pointer',
       position: 'absolute',
       right: 20,
-      marginBottom: '10px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -158,13 +160,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered1}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -176,13 +178,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered2}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -194,13 +196,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered3}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -212,13 +214,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered4}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -230,13 +232,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered5}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -247,13 +249,13 @@ class TooltipScreen extends Component {
       } else {   // if is up and not basketball/tidal ranking
         return (
           <div className={['tooltip-screen', 'up'].join(' ')} style={tooltipUpStyle}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -269,13 +271,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered1}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -287,13 +289,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered2}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -305,13 +307,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered3}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -323,13 +325,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'down', centeredMobileStyle].join(' ')} style={centered4}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -341,13 +343,13 @@ class TooltipScreen extends Component {
 
         return (
           <div className={['tooltip-screen', 'up', centeredMobileStyle].join(' ')} style={centered5}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -358,13 +360,13 @@ class TooltipScreen extends Component {
       } else { // if is down and not basketball/tidal ranking
         return (
           <div className={['tooltip-screen', 'down'].join(' ')} style={tooltipDownStyle}>
-            <div className="close-button">
-              <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
-            </div>
             <div className="info-map" style={infoMap}>
               <div className="entity-info" style={entityInfo}>
                 <EntityName {...this.props} parent={'tooltip'} />
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
+              </div>
+              <div className="close-button" style={closeButtonDiv} style={closeButtonDiv}>
+                <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
