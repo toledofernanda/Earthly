@@ -4,26 +4,27 @@ import BackButton from 'components/BackButton';
 class About extends Component{
   render(){
     let outerDiv = {
-      maxWidth: '1200px',
-      margin:'4% auto',
+      maxWidth: '1200px',//About is exception
       display: 'flex',
-      flexFlow: 'column wrap',
+      flexFlow: 'row wrap',
       justifyContent: 'center',
+      margin: '4% auto',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
 
     let filterTopStyle = {
-           padding: '3% 4%',
-           display: 'grid',
-           gridTemplateColumns: '40px 10fr'
-    };
+      flex: '1 0 100%',
+      padding: '3% 4%',
+      display: 'grid',
+      gridTemplateColumns: '20px 1fr'
+    };//style for white box header
 
     let TitleStyle = {
-           textAlign: 'center',
-           fontSize: '14pt',
-           flex: '0 0 100%',
-    }; //removed calc from About
+      textAlign: 'center',
+      flex: '1 0 100%',
+      fontSize: 'calc(14px + 1vw)', // responsive title
+    }; //"About"
 
     let divStyle = {
       height: '100%',
@@ -34,16 +35,16 @@ class About extends Component{
       padding: '1% 2%',
       boxSizing: 'border-box',
       textAlign: 'center'
-    };  //style for the inside div of main component
+    }; //style for the inside div of main component
 
     let memberImage = {
       marginTop: '-50px',
       borderRadius: '50%'
-    }
+    }//round photos of members
 
     let desc = {
       textAlign: 'left'
-    }
+    }//profile description
 
     let hr = {
       width: '20%',
