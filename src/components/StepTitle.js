@@ -4,11 +4,8 @@ import React, { Component } from 'react';
 class StepTitle extends Component{
   render() {
     let catTitleStyle = {
-      gridColumn: '1 / 3',
-      gridRow: '1 / 2',
       textAlign: 'center',
-      // fontSize: '14pt',
-      // flex: '0 0 100%',
+      marginRight: '20px',
       fontSize: 'calc(14px + 1vw)', // responsive title
       // marginBottom: '10%' //margin to detach the title from buttons
     };
