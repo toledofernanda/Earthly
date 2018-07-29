@@ -127,6 +127,8 @@ a, a:visited {
 
 /* end of Contact page style */
 
+/* CHART RESULT CSS -------------------------------------------------------------*/
+
 /* fix font size for chart text once screen is bigger than tablet (1024px) */
 @media screen and (min-width: 1024px) {
   .titleStyle, .chart-header h1 {
@@ -157,25 +159,71 @@ a, a:visited {
   }
 }
 
-/* make distance between flag and tooltip smaller on big screen to be over topics */
-@media screen and (min-width: 580px) {
-  .tooltip-screen {
-    left: 15% !important;
+@media screen and (min-width: 1100px) {
+
+  .ranking-icon img {
+    width: 38px !important;
   }
 }
 
+@media screen and (min-width: 1075px) and (max-width: 1100px) {
+  .ranking-icon img {
+    width: 32px !important;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .tooltip-screen {
+    left: 18% !important;
+  }
+}
+/* make distance between flag and tooltip smaller on big screen to be over topics */
 /* re-align tooltip upward with flag on large screen */
-@media screen and (min-width: 556px) {
+@media screen and (min-width: 575px) {
+  .tooltip-screen {
+    left: 15% !important;
+  }
+
+  .tooltip-screen.down {
+    top: 10px !important;
+    border-radius: 0 20px 20px 20px !important;
+  }
+
   .tooltip-screen.up {
-    top: -212px !important;
+    top: -202px !important;
+    border-radius: 20px 20px 20px 0 !important;
+  }
+
+  .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4 {
+    top: -202px !important;
   }
 }
 
 @media screen and (min-width: 661px) {
   .tooltip-screen.up {
     top: -192px !important;
+    border-radius: 20px 20px 20px 0 !important;
+  }
+
+  .tooltip-screen.up.1 {
+    top: -192px !important;
+  }
+
+  .tooltip-screen.up.2 {
+    top: -192px !important;
+  }
+
+  .tooltip-screen.up.3 {
+    top: -192px !important;
+  }
+
+  .tooltip-screen.up.4 {
+    top: -192px !important;
+    border-radius: 20px 20px 20px 0;
   }
 }
+
+/* END OF CHART RESULT CSS -------------------------------------------------------------*/
 
 /* Donation page input field on iphones */
 @media screen and (max-width: 390px) {
