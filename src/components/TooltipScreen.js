@@ -231,10 +231,10 @@ class TooltipScreen extends Component {
     } else { //if false, tooltip style is set to down
       console.log('tooltip down')
 
-      if (basketMobileStyle === '1') {  // if is up and is basketball ranking 1
+      if (basketMobileStyle === '1') {  // if is down and is basketball ranking 1
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket1}>
+          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket1}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -249,10 +249,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '2') { // if is up and is basketball ranking 2
+      } else if (basketMobileStyle === '2') { // if is down and is basketball ranking 2
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket2}>
+          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket2}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -267,10 +267,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '3') { // if is up and is basketball ranking 3
+      } else if (basketMobileStyle === '3') { // if is down and is basketball ranking 3
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket3}>
+          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket3}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>
@@ -285,10 +285,10 @@ class TooltipScreen extends Component {
             </div>
           </div>
         );
-      } else if (basketMobileStyle === '4') { // if is up and is basketball ranking 4
+      } else if (basketMobileStyle === '4') { // if is down and is basketball ranking 4
 
         return (
-          <div className={['tooltip-screen', 'up', basketMobileStyle].join(' ')} style={basket4}>
+          <div className={['tooltip-screen', 'down', basketMobileStyle].join(' ')} style={basket4}>
             <div className="close-button">
               <button id="close-tooltip" style={closeButton} onClick={this.props.toggleTooltip}>x</button>
             </div>

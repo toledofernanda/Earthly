@@ -166,7 +166,7 @@ a, a:visited {
 
 /* re-align tooltip upward with flag on large screen */
 @media screen and (min-width: 556px) {
-  .tooltip-screen.up {
+  .tooltip-screen.up, .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4 {
     top: -212px !important;
   }
 }
@@ -174,6 +174,24 @@ a, a:visited {
 @media screen and (min-width: 661px) {
   .tooltip-screen.up {
     top: -192px !important;
+    border-radius: 20px 20px 20px 0 !important;
+  }
+
+  .tooltip-screen.up.1 {
+    top: -192px !important;
+  }
+
+  .tooltip-screen.up.2 {
+    top: -192px !important;
+  }
+
+  .tooltip-screen.up.3 {
+    top: -192px !important;
+  }
+
+  .tooltip-screen.up.4 {
+    top: -192px !important;
+    border-radius: 20px 20px 20px 0;
   }
 }
 
