@@ -101,7 +101,7 @@ class Contact extends Component {
     let filterTopStyle = {
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr'
+      gridTemplateColumns: '20px 1fr'
     };
 
     let TitleStyle = {
@@ -132,14 +132,18 @@ class Contact extends Component {
       margin: '0 20%',
     }
     let input = {
+      flex: '0 0 45%',
       border:'1px solid gray',
       borderRadius:7,
-      marginRight:'10%',
+      // marginRight:'10%',
+      alignSelf: 'flex-start'
     }
     let label = {
       // marginLeft : '10%',
       marginRight: '3%',
-      textAlign: 'right'
+      textAlign: 'right',
+      alignSelf: 'flex-end',
+      flex: '0 0 50%',
     }
 
       if (this.state.submitted){
@@ -153,7 +157,7 @@ class Contact extends Component {
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div>
-          <p style={{textAlign: 'center', width:'50%', margin: '0 auto', color:'#58595B'}}>
+          <p style={{textAlign: 'center', width:'50%', margin: '1% auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>
