@@ -238,7 +238,7 @@ a, a:visited {
 }
 
 /*  smartphone horizontal mode*/
-@media only screen and (min-device-width: 411px)
+@media only screen and (max-device-height: 812px) 
                    and (max-device-width: 823px)
                    and (orientation: landscape) {
                   .header ul {

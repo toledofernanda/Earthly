@@ -72,8 +72,7 @@ class Contact extends Component {
       flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '20px 1fr',
-      boxSizing: 'border-box'
+      gridTemplateColumns: '20px 1fr'
     };//style for the contact white box's header
 
     let TitleStyle = {
