@@ -174,7 +174,7 @@ class Chart extends Component{
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
-              <span>{index}</span>
+              <span>{order}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
               <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} centeredMobileStyle={centeredMobileStyle}/>
@@ -184,6 +184,7 @@ class Chart extends Component{
           </div>
         )
 
+        order++;
         index++;
       }
     } else if(topic === 'most_soccer_world_cup_champion') { //ranking with specific ranking order (ties)
