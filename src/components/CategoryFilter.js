@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { db } from './Db';
 import CategoryButton from 'components/CategoryButton';
 import StepTitle from 'components/StepTitle';
-import BackButton from 'components/BackButton';
-import { Link } from "react-router-dom";
 
 //This component displays a list of categories
 class CategoryFilter extends Component{
