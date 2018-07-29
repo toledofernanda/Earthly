@@ -177,6 +177,18 @@ a, a:visited {
   }
 }
 
+/* Donation page input field on iphones */
+@media screen and (max-width: 390px) {
+  .contactForm input{
+    width: 150px !important;
+    margin-right: 10px !important;
+  }
+  .contactForm textarea{
+    width: 150px !important;
+    margin-right: 35px !important;
+  }
+}
+
 /*  smartphone horizontal mode*/
 @media only screen and (min-device-width: 411px)
                    and (max-device-width: 823px)
