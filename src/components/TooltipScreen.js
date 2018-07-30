@@ -12,7 +12,7 @@ class TooltipScreen extends Component {
       maxWidth: '600px',
       position: 'absolute',
       left: '21%', //position relative to flag
-      top: '-340px',
+      top: '-320px',
       zIndex: '2',
       backgroundColor: 'white',
       padding: '10px 20px 20px 20px',
