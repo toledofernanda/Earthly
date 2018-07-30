@@ -31,12 +31,36 @@ class Home extends Component {
       justifyContent: 'space-between',
       height: 'calc(100vh - 120px)', //100% height minus header and footer height
       minHeight: '446px',
-      padding: '20% 4% 0 4%',
+      // padding: '20% 4% 0 4%',
       boxSizing: 'border-box',
       // backgroundColor: 'white',
       // borderRadius: 30,
       textAlign:'center'
     }//style for the outside div of main component
+
+    let introDiv = {
+      flex: '1 0 50%',
+    }
+
+    let image = {
+      flex: '1 0 50%',
+      // minHeight: '50%'
+      display: 'flex',
+      flexFlow: 'column',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      boxSizing: 'border-box',
+
+      // height: '100%'
+    }
+
+    let imgStyle = {
+      // flex: '0 0 100%',
+      width: 'auto',
+      minWidth: '350px',
+      maxWidth: '820px',
+      height: 'auto'
+    }
 
     let h1 = {
       fontSize: 'calc(22px + .8vw)',
@@ -61,34 +85,16 @@ class Home extends Component {
       flex: '1 0 16%'
     }
 
-    let image = {
-      flex: '1 0 50%',
-      // minHeight: '50%'
-      display: 'flex',
-      flexFlow: 'column',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      // height: '100%'
-    }
 
-    let imgStyle = {
-      // flex: '0 0 100%',
-      width: '50vw',
-      minWidth: '350px',
-      maxWidth: '820px',
-      height: 'auto'
-    }
 
     /* JS */
     const hoverClass = this.state.isHovered ? "start-hover" : "";
 
     return (
       <div className="main" style={mainDiv}>
-        <div>
+        <div style={introDiv}>
           <h1 style={h1}>Welcome to Earthly!</h1>
-          <h3 style={h3}>Explore world rankings and learn about countries in the world.</h3>
-        </div>
-        <div>
+          <h3 style={h3}>Explore world rankings and learn about countries.</h3>
           <Link to={`/category`}>
             <button
             style={startButton}
@@ -99,7 +105,7 @@ class Home extends Component {
           </Link>
         </div>
         <div style = {image}>
-          <img src={require(`images/landing_page_graphic.svg`)} style = {imgStyle} alt={`chart Sample`}/>
+          <img src={require(`images/landing_page_graphic1.svg`)} style = {imgStyle} alt={`chart Sample`}/>
         </div>
       </div>
 
