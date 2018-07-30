@@ -72,12 +72,12 @@ class Header extends Component{
               <Link to="/" style={{textDecoration:'none'}}>
                 <div style={logoName}>
                   <img src={require(`images/earthly_logo.svg`)} style={logo} alt={'Earthly'} />
-                  <span style={appName}>earthly</span>
+                  <span className="appNameHeader" style={appName}>earthly</span>
                 </div>
               </Link>
             </li>
             <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}
-            className={['button-shadow', hoverClass].join(' ')}
+            className={['donationHeader','button-shadow', hoverClass].join(' ')}
             onMouseEnter={this.handleHover}
             onMouseLeave={this.handleHover}
             >Donate</Link></li>

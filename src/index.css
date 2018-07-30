@@ -59,6 +59,12 @@ a, a:visited {
   visibility: hidden;
 }
 
+/* Submit button style */
+
+.submitButton:hover {
+  background-color: rgb(236, 120, 91) !important;
+}
+
 /* About page style ------------------- */
 .aboutEarthly, .disclaimer {
   margin: 1% 10%;
@@ -253,8 +259,15 @@ a, a:visited {
   }
 }
 
+
 /* END OF CHART RESULT CSS -------------------------------------------------------------*/
 
+/* About page padding */
+@media screen and (max-width: 600px) {
+  .member p {
+      padding: 5px;
+  }
+}
 
 
 
@@ -300,6 +313,16 @@ a, a:visited {
                   }
                   .chartOuterDiv {
                     margin: 100px auto !important;
+                  }
+
+}
+
+
+/* smart phone header css */
+@media only screen and (max-device-width: 420px){
+                  .donationHeader {
+                    font-size: 13px !important;
+                    padding: 8px !important;
                   }
 
 }
