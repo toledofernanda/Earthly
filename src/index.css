@@ -307,6 +307,40 @@ a, a:visited {
   }
 }
 
+/* hide landing page img when on landscape and height of screen is smaller than 550px */
+@media only screen and (max-height: 550px)
+                   and (orientation: landscape) {
+
+   .intro-div {
+     flex: 1 0 100% !important;
+   }
+   .earth-img-div {
+     flex: 0 0 0 !important;
+     background-image: none !important;
+   }
+}
+
+/* make intro text height bigger when width is very narrow */
+@media only screen and (max-width: 380px) {
+  .intro-div {
+    flex: 1 0 40% !important;
+  }
+  .earth-img-div {
+    flex: 1 0 auto !important;
+  }
+}
+
+/* make more centered intro div when is iphone 8 plus portrait */
+@media only screen and (max-width: 450px) and (min-height: 700px) {
+  .intro-div {
+    flex: 1 0 40% !important;
+  }
+  .earth-img-div {
+    flex: 1 0 auto !important;
+  }
+}
+
+
 /*  smartphone horizontal mode*/
 @media only screen and (max-device-height: 812px)
                    and (max-device-width: 823px)
@@ -325,7 +359,6 @@ a, a:visited {
                   .chartOuterDiv {
                     margin: 100px auto !important;
                   }
-
 }
 
 /* Filters Media Queries -------------------------------------- */
