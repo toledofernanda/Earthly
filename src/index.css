@@ -320,6 +320,9 @@ a, a:visited {
   }
 }
 
+
+/* HOME CSS -------------------------------------------------------------*/
+
 /* hide landing page img when on landscape and height of screen is smaller than 550px */
 @media only screen and (max-height: 550px)
                    and (orientation: landscape) {
@@ -353,6 +356,7 @@ a, a:visited {
   }
 }
 
+/* END OF HOME CSS -------------------------------------------------------------*/
 
 /*  smartphone horizontal mode*/
 @media only screen and (max-device-height: 812px)
