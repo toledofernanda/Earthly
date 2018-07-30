@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#1AA8E1;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
+<path class="st0" d="M79.3,69.9c-5.2-6.4-3-12.7-2.4-14.2c0.1-0.2,0.3-0.3,0.3-0.5c0.8-4.9,17-19.7,4.9-40.9
+	c-13.1-23-48.9-7.8-48.9-7.8C30.8,7.1,17,23,20.8,32.9c1.8,4.7,1.6,8.6,1.4,10.4c-0.1,0.6-0.5,1.2-1,1.4c-14.4,6-7.1,9.5-3.7,10.6
+	c0.8,0.3,2.7-0.3,1.1,2c-1,1.5-0.6,4.6,0.4,6.1c1.4,2.2,1.5,5.9,1.5,6.4c0,0,0,0.1,0,0.1c-1.4,7.5,11.2,7.3,18,5
+	c5.7-2,7.5,1.9,7.9,3.2c0.1,0.2,0.1,0.5,0.1,0.7c-0.3,2.8-2.3,21.2-1.6,18.1c0.6-2.7,31.5-12.7,41.3-15.8c1.2-0.4,1.6-2.1,0.6-3
+	C85.3,76.8,83.4,75,79.3,69.9z"/>
+<path class="st0" d="M20.1,66.9c0,0,7.8,1.7,14.2-6.3"/>
+<ellipse class="st1" cx="30.6" cy="37" rx="2.7" ry="2.6"/>
 <g>
-	<circle class="st0" cx="50.2" cy="49.7" r="14.6"/>
-	<path class="st0" d="M68.5,97.4H31.9c-2.1,0-3.9-1.8-3.9-3.9V69.3c0-2.1,1.8-3.9,3.9-3.9h36.6c2.1,0,3.9,1.8,3.9,3.9v24.1
-		C72.5,95.6,70.7,97.4,68.5,97.4z"/>
-	<g>
-		<path class="st0" d="M57.2,17.7c0-4-3.2-7.2-7.2-7.2s-7.2,3.2-7.2,7.2c0,2.7,1.5,5.1,3.7,6.3v2.9c0,1.2,1,2.1,2.1,2.1h3.2
-			c1.2,0,2.1-1,2.1-2.1v-3.2C55.9,22.4,57.2,20.2,57.2,17.7z"/>
-		<path class="st1" d="M48,25.4c0,0,1.3-4.8,0-5.1s0.4,1.7,1.2,1.3c0.8-0.4,3.7-2.2,2.1-1.8c-1.6,0.4-1,2.6-0.3,2.8l0.2,2.8"/>
-		<path class="st1" d="M53,29.9h-6.1c-0.6,0-1-0.5-1-1v-2.5c0-0.6,0.5-1,1-1H53c0.6,0,1,0.5,1,1v2.5C54,29.5,53.6,29.9,53,29.9z"/>
-		<line class="st0" x1="45.9" y1="27" x2="54" y2="26.9"/>
-		<line class="st0" x1="45.9" y1="28.3" x2="54" y2="28.3"/>
-		<line class="st0" x1="41.1" y1="13.7" x2="35.8" y2="11.8"/>
-		<line class="st0" x1="58.8" y1="13.7" x2="64.1" y2="11.8"/>
-		<line class="st0" x1="41.4" y1="5.9" x2="44.6" y2="8.9"/>
-		<line class="st0" x1="49.7" y1="2" x2="49.7" y2="6.7"/>
-		<line class="st0" x1="58.2" y1="5.9" x2="55" y2="8.9"/>
-	</g>
+	<ellipse class="st0" cx="58.2" cy="27.7" rx="22.2" ry="21.8"/>
+	<path class="st0" d="M52.1,6.7c0,0,0.8,9-3.5,11.2s0,8.8,0,8.8s9.1-0.7,9.5,2.9c0.4,3.7,2.6,7.3,2.6,7.3s9.9-2.2,10.1-9.3
+		s2-10.4,2.6-6.9s5.4,1.1,5.4,1.1S75.9,3.2,52.1,6.7z"/>
+	<path class="st0" d="M54.3,49.1c0,0-2.4-8.9-9.5-11c-7.1-2.1,1.5-5.7,1.6-4.8c0.1,0.9,5.5,4.4,7,3.7s7.1,3.5,6,5.1s4.5,3.8,6.7,1.1
+		c2.2-2.7,7.9,0,6.4,1.2C70.8,45.5,63.6,50.7,54.3,49.1z"/>
 </g>
 </svg>

@@ -22,37 +22,38 @@ class Home extends Component {
     /* CSS */
     //outer div
     let mainDiv = {
-      maxWidth: 'calc(1024px - 10%)',
-      minWidth: '80vw',
-      margin: '4% auto',
+      // maxWidth: 'calc(1024px - 10%)',
+      // minWidth: '80vw',
+      width: '100vw',
+      margin: 'auto',
       display: 'flex',
       flexFlow: 'column wrap',
-      justifyContent: 'center',
+      // justifyContent: 'center',
       alignItems: 'stretch',
-      backgroundColor: 'white',
-      borderRadius: 30,
-      textAlign:'center',
-      height: '70vh'
-    }//style for the outside div of main component
-
-    //inner content div
-    let mainContent = {
-      // width: '100%',
-      // height: '100%',
-      // minHeight: '50vh',
-      textAlign: 'center',
-      display: 'flex',
-      flexFlow: 'column nowrap',
-      justifyContent: 'center',
-      alignItems: 'center',
       // backgroundColor: 'white',
       // borderRadius: 30,
-      // border: '1px solid darkgrey',
-      padding: '7% 7%',
-      // margin: '5%',
-      // marginBottom: 0,
-      boxSizing: 'border-box'
-    }
+      textAlign:'center',
+      minHeight: '88vh',
+    }//style for the outside div of main component
+
+
+    //
+    // let homeDiv = {
+    //   display :'flex',
+    //   flexFlow: 'column wrap',
+    //   justifyContent: 'stretch',
+    //
+    // }
+    //inner content div
+    // let mainContent = {
+    //   textAlign: 'center',
+    //   display: 'flex',
+    //   flexFlow: 'column nowrap',
+    //   justifyContent: 'center',
+    //   alignItems: 'center',
+    //   padding: '7% 7%',
+    //   boxSizing: 'border-box'
+    // }
 
     let startButton = {
       border: 'none',
@@ -66,9 +67,16 @@ class Home extends Component {
       color: 'white',
     }
 
-    let screenshots = {
+    let image = {
       display: 'flex',
-      flexFlow: 'row nowrap'
+      alignItems: 'center',
+      // textAlign: 'center',
+      // flex: '1 1 100%'
+    }
+
+    let imgStyle = {
+      flex: '0 1 100%',
+      height: '20%'
     }
 
     /* JS */
@@ -76,22 +84,21 @@ class Home extends Component {
 
     return (
       <div className="main" style={mainDiv}>
-        <div className="main-content" style={mainContent}>
+
           <h1>Welcome to Earthly!</h1>
           <h3>A site where you can learn about countries and world rankings.</h3>
-          <div style = {screenshots}>
-          <img src={require(`images/chartsSample.png`)} alt={`chart Sample`}/>
-          <img src={require(`images/chartSample2.png`)} alt={`chart Sample`}/>
-          </div>
           <Link to={`/category`}>
             <button
-              style={startButton}
-              className={['button-shadow', hoverClass].join(' ')}
-              onMouseEnter={this.handleHover}
-              onMouseLeave={this.handleHover}
-              >Start</button>
+            style={startButton}
+            className={['button-shadow', hoverClass].join(' ')}
+            onMouseEnter={this.handleHover}
+            onMouseLeave={this.handleHover}
+            >Start</button>
           </Link>
-        </div>
+          <div style = {image}>
+          <img src={require(`images/landing_page_graphic.svg`)} style = {imgStyle} alt={`chart Sample`}/>
+          </div>
+
       </div>
 
     );
