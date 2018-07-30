@@ -8,7 +8,7 @@ const footerDes = {
   margin: '0',
   listStyleType:'none',
   height:'40px',
-  paddingTop:'10px',
+  paddingTop:'14px',
   paddingLeft:'0'
 }
 
