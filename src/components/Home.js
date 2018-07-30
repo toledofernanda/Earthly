@@ -93,7 +93,7 @@ class Home extends Component {
       <div className="main" style={mainDiv}>
         <div className="intro-div" style={introDiv}>
           <h1 style={h1}>Welcome to Earthly!</h1>
-          <h3 style={h3}>Explore world rankings and learn about countries in the world.</h3>
+          <h3 style={h3}>Explore world rankings and learn about countries.</h3>
           <Link to={`/category`}>
             <button
             style={startButton}
