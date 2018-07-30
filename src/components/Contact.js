@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Form, FormGroup, Label} from 'reactstrap';
-// import axios from 'axios';
+import axios from 'axios';
 import BackButton from 'components/BackButton';
 import ThankYou from 'components/ThankYou';
 
@@ -47,15 +47,15 @@ class Contact extends Component {
     e.preventDefault();
     this.setState({'submitted': true});
 
-    // const {firstName, lastName, email,phone, message} = this.state
+    const {firstName, lastName, email,phone, message} = this.state
 
-    // const form = await axios.post('/api/form',{
-    //   firstName,
-    //   lastName,
-    //   email,
-    //   phone,
-    //   message
-    // })
+    const form = await axios.post('/api/form',{
+      firstName,
+      lastName,
+      email,
+      phone,
+      message
+    })
 }//commented out items that were not used
 
   render() {
