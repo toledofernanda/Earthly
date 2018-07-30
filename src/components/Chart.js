@@ -47,12 +47,13 @@ class Chart extends Component{
     }
 
     let entityFlagName = {
-      flex: '1 1 10%',
+      flex: '1 1 11%',
       minWidth: '50px',
       padding: '7px 4% 7px 0px',
       display: 'flex',
       flexFlow: 'column nowrap',
-      alignItems: 'center'
+      justifyContent: 'center',
+      alignItems: 'center',
     }
 
     let borderDiv = {
@@ -82,7 +83,6 @@ class Chart extends Component{
     } else if ( topic === 'most_soccer_world_cup_champion' | topic === 'basketball_world_cup_gold_medals'){
       for (let i=0; i<subCat.length; i++){
         num[i] = subCat[i].quantity;
-        console.log(num[i]);
       }
     }//for these topics, we need to show exact number of icons
     else {
