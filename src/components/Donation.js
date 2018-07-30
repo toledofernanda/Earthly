@@ -10,7 +10,7 @@ const donation = {
   display: 'flex',
   flexFlow: 'row wrap',
   justifyContent: 'center',
-  margin: '4% auto',
+  margin: '2% auto',
   backgroundColor: 'white',
   borderRadius: 30,
 }
@@ -76,7 +76,7 @@ class Donation extends Component{
 
     e.preventDefault();
     this.setState({'submitted': true});
-
+    console.log("updated")
     const {firstName, lastName, email,phone, message} = this.state
 
     const form = await axios.post('/api/form',{
@@ -110,7 +110,7 @@ class Donation extends Component{
         </div>
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
 
-            <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
+            <p style={{width:'60%', textAlign:'center', marginTop:'0'}}>Help us improve Earthly!
               Your donation will help us keep Earthly free and add new rankings and features.
               100% of your donations goes towards research and app development.</p>
               <img style ={{alignSelf: 'center', width:'200px', height:'auto', borderRadius:10}} src={require(`images/team.jpg`)} alt="donationImg" />
