@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Form, FormGroup, Label} from 'reactstrap';
-// import axios from 'axios';
+import axios from 'axios';
 import BackButton from 'components/BackButton';
 import ThankYou from 'components/ThankYou';
 
@@ -47,37 +47,34 @@ class Contact extends Component {
     e.preventDefault();
     this.setState({'submitted': true});
 
-    // const {firstName, lastName, email,phone, message} = this.state
+    const {firstName, lastName, email,phone, message} = this.state
 
-    // const form = await axios.post('/api/form',{
-    //   firstName,
-    //   lastName,
-    //   email,
-    //   phone,
-    //   message
-    // })
+    const form = await axios.post('/api/form',{
+      firstName,
+      lastName,
+      email,
+      phone,
+      message
+    })
 }//commented out items that were not used
 
   render() {
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
-      margin: 'auto',
       display: 'flex',
-      flexFlow: 'column wrap',
+      flexFlow: 'row wrap',
       justifyContent: 'center',
-      marginTop: '3%',
-      marginBottom: '2.5%',
+      margin: '4% auto',
       backgroundColor: 'white',
       borderRadius: 30,
-      alignItems: 'stretch',
-      textAlign:'center',
     }; //style for the outside div of main component
 
     let filterTopStyle = {
       flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '20px 1fr'
+      gridTemplateColumns: '20px 1fr',
+      boxSizing: 'border-box'
     };//style for the contact white box's header
 
     let TitleStyle = {
@@ -128,7 +125,7 @@ class Contact extends Component {
           <BackButton component={'category'} />
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
-        <div>
+        <div className="contactText">
           <p style={{textAlign: 'center', width:'50%', margin: '1% auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>

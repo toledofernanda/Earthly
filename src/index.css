@@ -279,15 +279,31 @@ a, a:visited {
 
 /* END OF CHART RESULT CSS -------------------------------------------------------------*/
 
-/* Donation page input field on iphones */
-@media screen and (max-width: 390px) {
+
+
+
+/* Contact page input field on iphones */
+
+
+@media screen and (max-width: 359px) {
   .contactForm input{
     width: 150px !important;
-    margin-right: 10px !important;
+    margin: 5px 10px 5px 0!important;
+
   }
+  .contactForm label{
+    margin: 5px 10px 5px 0!important;
+
+  }
+   .contactText{
+     margin-bottom: 10px !important;
+   }
   .contactForm textarea{
     width: 150px !important;
-    margin-right: 35px !important;
+  }
+
+  #donationTextarea {
+    margin-right: 50px;
   }
 }
 
