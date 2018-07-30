@@ -22,31 +22,12 @@ class CategoryFilter extends Component{
       padding: '3% 4%',
     };
 
-    let divStyle = {
-      height: '100%',
-      minHeight: '50vh',
-      display: 'flex',
-      flexFlow: 'row wrap',
-      justifyContent: 'center',
-      alignItems: 'flex-start',
-      padding: '7% 25%',
-      paddingTop: '4%',
-      boxSizing: 'border-box'
-    };  //style for the inside div of main component
-
-    let catStyle = {
-      flex: '0 0 25%',
-      paddingBottom: '3%',
-      margin: '0 1%',
-      marginLeft: 'calc(1% + .5vw)'
-    }
-
     let categoryList = [];
     let title = "step1";
 
     for (let category in db){
       categoryList.push(
-        <div key={`${category}-button`} style={catStyle}>
+        <div key={`${category}-button`} className = "catStyle">
           <CategoryButton key={category} category={category}  />
         </div>
       );
@@ -57,7 +38,7 @@ class CategoryFilter extends Component{
           <div className="filterTop" style={filterTopStyle}>
             <StepTitle title={title} />
           </div>
-          <div className="category-list" style={divStyle}>
+          <div className="category-list" className = "filterDiv" >
             {categoryList}
           </div>
       </div>

@@ -59,7 +59,7 @@ a, a:visited {
   visibility: hidden;
 }
 
-/* About page style */
+/* About page style ------------------- */
 .aboutEarthly, .disclaimer {
   margin: 1% 10%;
   margin-bottom: 2%;
@@ -106,9 +106,9 @@ a, a:visited {
     margin: 1% 25%;
   }
 }
-/* end of About page style */
+/* end of About page style ------------------- */
 
-/* Contact page form style */
+/* Contact page form style ------------------- */
 .inputStyle {
   flex: 1 0 100%;
   /* margin-right:30%; */
@@ -117,7 +117,7 @@ a, a:visited {
   margin-bottom: 1%;
 }
 
-@media screen and (min-width: 920px){
+@media screen and (min-width: 900px){
   .inputStyle{
     flex: 1 0 40%;
     justify-content: flex-end;
@@ -125,7 +125,7 @@ a, a:visited {
   }
 }
 
-/* end of Contact page style */
+/* end of Contact page style -------------------*/
 
 /* CHART RESULT CSS -------------------------------------------------------------*/
 
@@ -268,7 +268,7 @@ a, a:visited {
 }
 
 /*  smartphone horizontal mode*/
-@media only screen and (min-device-width: 411px)
+@media only screen and (max-device-height: 812px)
                    and (max-device-width: 823px)
                    and (orientation: landscape) {
                   .header ul {
@@ -287,3 +287,28 @@ a, a:visited {
                   }
 
 }
+
+/* Filters Media Queries -------------------------------------- */
+.filterDiv {
+  height: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 7% 15%;
+}
+.catStyle {
+  flex: 0 0 48%;
+  padding-bottom: 4%;
+}
+
+@media screen and (min-width: 700px){
+  .filterDiv {
+    padding: 7% 25%;
+  }
+  .catStyle {
+    flex: 0 0 30%;
+  }
+}
+/* End of Filters Media Queries -------------------------------------- */

@@ -183,6 +183,13 @@ export let db = {
          language: 'Arabic',
          greeting: 'As-salam alaykom'
        },
+       { entity_name: 'England',
+         capital: 'London',
+         entity_type: 'country',
+         population: '53010000',
+         language: 'English',
+         greeting: 'Hello'
+       },
        { entity_name: 'United Kingdom',
          capital: 'London',
          entity_type: 'country',
@@ -1192,7 +1199,7 @@ export let db = {
       }
     ],
     highest_temperatures: [
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '1',
         entity_name: 'United States',
         entity_type: 'country',
@@ -1202,7 +1209,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '2',
         entity_name: 'Tunisia',
         entity_type: 'country',
@@ -1212,7 +1219,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '3',
         entity_name: 'Iran',
         entity_type: 'country',
@@ -1222,7 +1229,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '4',
         entity_name: 'Israel',
         entity_type: 'country',
@@ -1232,7 +1239,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '5',
         entity_name: 'Kuwait',
         entity_type: 'country',
@@ -1242,7 +1249,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '6',
         entity_name: 'Iraq',
         entity_type: 'country',
@@ -1252,7 +1259,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '7',
         entity_name: 'Pakistan',
         entity_type: 'country',
@@ -1262,7 +1269,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '8',
         entity_name: 'United Arab Emirates',
         entity_type: 'country',
@@ -1272,7 +1279,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '9',
         entity_name: 'Saudi Arabia',
         entity_type: 'country',
@@ -1282,7 +1289,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Record High Temperature',
         ranking: '10',
         entity_name: 'Egypt',
         entity_type: 'country',
@@ -1294,7 +1301,7 @@ export let db = {
       }
     ],
     lowest_temperatures: [
-      { topic_description: 'Lowest Temperatures',
+      { topic_description: 'Record Low Temperatures',
         ranking: '1',
         entity_name: 'Russia',
         entity_type: 'country',
@@ -1304,7 +1311,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '2',
         entity_name: 'Greenland',
         entity_type: 'country',
@@ -1314,7 +1321,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '3',
         entity_name: 'Canada',
         entity_type: 'country',
@@ -1324,7 +1331,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '4',
         entity_name: 'United States',
         entity_type: 'country',
@@ -1333,7 +1340,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '5',
         entity_name: 'Mongolia',
         entity_type: 'country',
@@ -1343,7 +1350,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '6',
         entity_name: 'Kyrgyzstan',
         entity_type: 'country',
@@ -1353,7 +1360,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '7',
         entity_name: 'Sweden',
         entity_type: 'country',
@@ -1363,7 +1370,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '8',
         entity_name: 'China',
         entity_type: 'country',
@@ -1373,7 +1380,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '9',
         entity_name: 'Afghanistan',
         entity_type: 'country',
@@ -1383,7 +1390,7 @@ export let db = {
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Record Low Temperature',
         ranking: '10',
         entity_name: 'Finland',
         entity_type: 'country',
@@ -1505,7 +1512,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a120'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=1'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '2',
@@ -1515,7 +1522,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a121'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=11'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '3',
@@ -1525,7 +1532,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a122'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=12'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '4',
@@ -1535,7 +1542,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a123'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=13'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '5',
@@ -1545,7 +1552,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a124'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=14'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '6',
@@ -1555,7 +1562,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a125'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=15'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '7',
@@ -1565,7 +1572,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a126'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=16'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '8',
@@ -1575,7 +1582,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a127'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=17'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '9',
@@ -1585,7 +1592,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a128'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=18'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '10',
@@ -1595,7 +1602,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a129'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=19'
       }
     ],
     happiest_countries: [
@@ -1681,108 +1688,6 @@ export let db = {
         source_url: 'http://worldhappiness.report/ed/2018/'
       }
     ],
-    natural_resources_revenue: [
-      { topic_description: 'Natural Resources',
-        ranking: '1',
-        entity_name: 'Russia',
-        entity_type: 'country',
-        quantity: '75,000,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '2',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '45,000,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '3',
-        entity_name: 'Saudi Arabia',
-        entity_type: 'country',
-        quantity: '33,200,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '4',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '33,200,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '5',
-        entity_name: 'Iran',
-        entity_type: 'country',
-        quantity: '27,300,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '6',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '23,000,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '7',
-        entity_name: 'Brazil',
-        entity_type: 'country',
-        quantity: '21,800,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '8',
-        entity_name: 'Australia',
-        entity_type: 'country',
-        quantity: '19,900,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '9',
-        entity_name: 'Iraq',
-        entity_type: 'country',
-        quantity: '15,900,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      },
-      { topic_description: 'Natural Resources Revenue',
-        ranking: '10',
-        entity_name: 'Venezuela',
-        entity_type: 'country',
-        quantity: '14,300,000,000,000',
-        label: 'Countries With The Most Natural Resources Revenue',
-        unit: 'USD',
-        source_name: '10 Countries With The Most Natural Resources',
-        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
-      }
-    ]
   },
   industry: {
     market_share_electric_cars: [
@@ -2183,6 +2088,108 @@ export let db = {
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/car_ex.html'
       }
     ],
+    natural_resources_revenue: [
+      { topic_description: 'Natural Resources',
+        ranking: '1',
+        entity_name: 'Russia',
+        entity_type: 'country',
+        quantity: '75,000,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '2',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '45,000,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '3',
+        entity_name: 'Saudi Arabia',
+        entity_type: 'country',
+        quantity: '33,200,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '4',
+        entity_name: 'Canada',
+        entity_type: 'country',
+        quantity: '33,200,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '5',
+        entity_name: 'Iran',
+        entity_type: 'country',
+        quantity: '27,300,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '6',
+        entity_name: 'China',
+        entity_type: 'country',
+        quantity: '23,000,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '7',
+        entity_name: 'Brazil',
+        entity_type: 'country',
+        quantity: '21,800,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '8',
+        entity_name: 'Australia',
+        entity_type: 'country',
+        quantity: '19,900,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '9',
+        entity_name: 'Iraq',
+        entity_type: 'country',
+        quantity: '15,900,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      },
+      { topic_description: 'Natural Resources Revenue',
+        ranking: '10',
+        entity_name: 'Venezuela',
+        entity_type: 'country',
+        quantity: '14,300,000,000,000',
+        label: 'Countries With The Most Natural Resources Revenue',
+        unit: 'USD',
+        source_name: '10 Countries With The Most Natural Resources',
+        source_url: 'https://www.investopedia.com/articles/markets-economy/090516/10-countries-most-natural-resources.asp'
+      }
+    ],
     hydropower_generation: [
       { topic_description: 'Hydro Power',
         ranking: '1',
@@ -2387,108 +2394,6 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
       }
     ],
-    biomass_waste_power_generation: [
-      { topic_description: 'Biomass Power',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '77,660',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '2',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '63,729',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '3',
-        entity_name: 'Germany',
-        entity_type: 'country',
-        quantity: '57,379',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '4',
-        entity_name: 'Brazil',
-        entity_type: 'country',
-        quantity: '48,802',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '5',
-        entity_name: 'Japan',
-        entity_type: 'country',
-        quantity: '41,460',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '6',
-        entity_name: 'United Kingdom',
-        entity_type: 'country',
-        quantity: '32,972',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '7',
-        entity_name: 'India',
-        entity_type: 'country',
-        quantity: '26,542',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '8',
-        entity_name: 'Italy',
-        entity_type: 'country',
-        quantity: '21,826',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '9',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '12,776',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '10',
-        entity_name: 'Sweden',
-        entity_type: 'country',
-        quantity: '11,968',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      }
-    ],
     solar_power_generation: [
       { topic_description: 'Solar Power',
         ranking: '1',
@@ -2591,160 +2496,6 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
       }
     ],
-    geothermal_power_generation: [
-      { topic_description: 'Geothermal Power',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '15,918',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '2',
-        entity_name: 'Philippines',
-        entity_type: 'country',
-        quantity: '11,040',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '3',
-        entity_name: 'Indonesia',
-        entity_type: 'country',
-        quantity: '10,050',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '4',
-        entity_name: 'New Zealand',
-        entity_type: 'country',
-        quantity: '7,411',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '5',
-        entity_name: 'Mexico',
-        entity_type: 'country',
-        quantity: '5,995',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '6',
-        entity_name: 'Italy',
-        entity_type: 'country',
-        quantity: '5,824',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '7',
-        entity_name: 'Iceland',
-        entity_type: 'country',
-        quantity: '5,003',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '8',
-        entity_name: 'Kenya',
-        entity_type: 'country',
-        quantity: '4,480',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '9',
-        entity_name: 'Turkey',
-        entity_type: 'country',
-        quantity: '2,924',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '10',
-        entity_name: 'Japan',
-        entity_type: 'country',
-        quantity: '2,337',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      }
-    ],
-    wave_tidal_power_generation: [
-      { topic_description: 'Tidal Power',
-        ranking: '1',
-        entity_name: 'South Korea',
-        entity_type: 'country',
-        quantity: '529',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '2',
-        entity_name: 'France',
-        entity_type: 'country',
-        quantity: '487',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '3',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '15',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '4',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '8',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '5',
-        entity_name: 'United Kingdom',
-        entity_type: 'country',
-        quantity: '2',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      }
-    ],
     women_share_legislators_managers: [
       { topic_description: 'Women in Power',
         ranking: '1',
@@ -2754,7 +2505,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a120'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=10'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '2',
@@ -2764,7 +2515,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a121'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=11'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '3',
@@ -2774,7 +2525,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a122'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=12'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '4',
@@ -2784,7 +2535,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a123'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=13'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '5',
@@ -2794,7 +2545,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a124'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=14'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '6',
@@ -2804,7 +2555,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a125'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=15'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '7',
@@ -2814,7 +2565,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a126'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=16'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '8',
@@ -2824,7 +2575,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a127'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=17'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '9',
@@ -2834,7 +2585,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a128'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=18'
       },
       { topic_description: 'Women\'s Share of Legislators and Managers',
         ranking: '10',
@@ -2844,7 +2595,7 @@ export let db = {
         label: 'Percentage of Women in Politics and Management (2006)',
         unit: 'percent (%)',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inIDpercent (%)3a129'
+        source_url: 'http://data.un.org/Data.aspx?q=women+share&d=GenderStat&f=inID:120&c=1,2,3,4,5,6&s=crEngName:asc,sgvEngName:asc,timeEngName:desc&v=19'
       }
     ],
   },
@@ -2949,210 +2700,6 @@ export let db = {
         unit: 'percent (%)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/Recycling_rates_by_country'
-      }
-    ],
-    most_earthquakes: [
-      { topic_description: 'Most Earthquakes',
-        ranking: '1',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '157',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        unit: 'none',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '2',
-        entity_name: 'Indonesia',
-        entity_type: 'country',
-        quantity: '113',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '3',
-        entity_name: 'Iran',
-        entity_type: 'country',
-        quantity: '106',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '4',
-        entity_name: 'Turkey',
-        entity_type: 'country',
-        quantity: '77',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '5',
-        entity_name: 'Japan',
-        entity_type: 'country',
-        quantity: '61',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '6',
-        entity_name: 'Peru',
-        entity_type: 'country',
-        quantity: '44',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '7',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '41',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '8',
-        entity_name: 'Italy',
-        entity_type: 'country',
-        quantity: '33',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '9',
-        entity_name: 'Afghanistan',
-        entity_type: 'country',
-        quantity: '32',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      },
-      { topic_description: 'Most Earthquakes',
-        ranking: '10',
-        entity_name: 'India',
-        entity_type: 'country',
-        quantity: '32',
-        unit: 'none',
-        label: 'Average number of earthquakes above 5 on the Richter scale per year',
-        source_name: 'Safe Destinations',
-        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
-      }
-    ],
-    most_volcanoes: [
-      { topic_description: 'Most Volcanoes',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '173',
-        label: 'Number of active volcanoes',
-        unit: 'none',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '2',
-        entity_name: 'Russia',
-        entity_type: 'country',
-        quantity: '166',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '3',
-        entity_name: 'Indonesia',
-        entity_type: 'country',
-        quantity: '139',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '4',
-        entity_name: 'Japan',
-        entity_type: 'country',
-        quantity: '112',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '5',
-        entity_name: 'Chile',
-        entity_type: 'country',
-        quantity: '104',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '6',
-        entity_name: 'Ethiopia',
-        entity_type: 'country',
-        quantity: '57',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '7',
-        entity_name: 'Papua New Guinea',
-        entity_type: 'country',
-        quantity: '53',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '8',
-        entity_name: 'Philippines',
-        entity_type: 'country',
-        quantity: '50',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '9',
-        entity_name: 'Mexico',
-        entity_type: 'country',
-        quantity: '43',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
-      },
-      { topic_description: 'Most Volcanos',
-        ranking: '10',
-        entity_name: 'Argentina',
-        entity_type: 'country',
-        quantity: '39',
-        unit: 'none',
-        label: 'Number of active volcanoes',
-        source_name: 'The Telegraph',
-        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
       }
     ],
     co2_emission: [
@@ -3359,207 +2906,464 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
       }
     ],
-    highest_temperatures: [
-      { topic_description: 'Highest Temperature',
+    most_earthquakes: [
+      { topic_description: 'Most Earthquakes',
         ranking: '1',
-        entity_name: 'United States',
+        entity_name: 'China',
         entity_type: 'country',
-        quantity: '56.7',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '157',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        unit: 'none',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '2',
-        entity_name: 'Tunisia',
+        entity_name: 'Indonesia',
         entity_type: 'country',
-        quantity: '55',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '113',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '3',
         entity_name: 'Iran',
         entity_type: 'country',
-        quantity: '54',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '106',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '4',
-        entity_name: 'Israel',
+        entity_name: 'Turkey',
         entity_type: 'country',
-        quantity: '54',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '77',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '5',
-        entity_name: 'Kuwait',
+        entity_name: 'Japan',
         entity_type: 'country',
-        quantity: '54',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '61',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '6',
-        entity_name: 'Iraq',
+        entity_name: 'Peru',
         entity_type: 'country',
-        quantity: '53.9',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '44',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Highest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '7',
-        entity_name: 'Pakistan',
-        entity_type: 'country',
-        quantity: '53.5',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Highest Temperature',
-        ranking: '8',
-        entity_name: 'United Arab Emirates',
-        entity_type: 'country',
-        quantity: '52.1',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Highest Temperature',
-        ranking: '9',
-        entity_name: 'Saudi Arabia',
-        entity_type: 'country',
-        quantity: '52',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Highest Temperature',
-        ranking: '10',
-        entity_name: 'Egypt',
-        entity_type: 'country',
-        quantity: '51',
-        label: 'Record High Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      }
-    ],
-    lowest_temperatures: [
-      { topic_description: 'Lowest Temperatures',
-        ranking: '1',
-        entity_name: 'Russia',
-        entity_type: 'country',
-        quantity: '-67.8 ',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Lowest Temperature',
-        ranking: '2',
-        entity_name: 'Greenland',
-        entity_type: 'country',
-        quantity: '-66.1 ',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Lowest Temperature',
-        ranking: '3',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '-63.0',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Lowest Temperature',
-        ranking: '4',
         entity_name: 'United States',
         entity_type: 'country',
-        quantity: '-62.2',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '41',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Lowest Temperature',
-        ranking: '5',
-        entity_name: 'Mongolia',
-        entity_type: 'country',
-        quantity: '-55.3',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Lowest Temperature',
-        ranking: '6',
-        entity_name: 'Kyrgyzstan',
-        entity_type: 'country',
-        quantity: '-53.6',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Lowest Temperature',
-        ranking: '7',
-        entity_name: 'Sweden',
-        entity_type: 'country',
-        quantity: '-53.0',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
-      },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '8',
-        entity_name: 'China',
+        entity_name: 'Italy',
         entity_type: 'country',
-        quantity: '-52.3',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '33',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '9',
         entity_name: 'Afghanistan',
         entity_type: 'country',
-        quantity: '-52.2',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        quantity: '32',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
-      { topic_description: 'Lowest Temperature',
+      { topic_description: 'Most Earthquakes',
         ranking: '10',
-        entity_name: 'Finland',
+        entity_name: 'India',
         entity_type: 'country',
-        quantity: '-51.5',
-        label: 'Record Low Temperatures',
-        unit: 'Celcius (°C)',
+        quantity: '32',
+        unit: 'none',
+        label: 'Average number of earthquakes above 5 on the Richter scale per year',
+        source_name: 'Safe Destinations',
+        source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
+      }
+    ],
+    most_volcanoes: [
+      { topic_description: 'Most Volcanoes',
+        ranking: '1',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '173',
+        label: 'Number of active volcanoes',
+        unit: 'none',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '2',
+        entity_name: 'Russia',
+        entity_type: 'country',
+        quantity: '166',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '3',
+        entity_name: 'Indonesia',
+        entity_type: 'country',
+        quantity: '139',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '4',
+        entity_name: 'Japan',
+        entity_type: 'country',
+        quantity: '112',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '5',
+        entity_name: 'Chile',
+        entity_type: 'country',
+        quantity: '104',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '6',
+        entity_name: 'Ethiopia',
+        entity_type: 'country',
+        quantity: '57',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '7',
+        entity_name: 'Papua New Guinea',
+        entity_type: 'country',
+        quantity: '53',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '8',
+        entity_name: 'Philippines',
+        entity_type: 'country',
+        quantity: '50',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '9',
+        entity_name: 'Mexico',
+        entity_type: 'country',
+        quantity: '43',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      },
+      { topic_description: 'Most Volcanos',
+        ranking: '10',
+        entity_name: 'Argentina',
+        entity_type: 'country',
+        quantity: '39',
+        unit: 'none',
+        label: 'Number of active volcanoes',
+        source_name: 'The Telegraph',
+        source_url: 'https://www.telegraph.co.uk/travel/maps-and-graphics/mapped-the-worlds-most-dangerous-volcanoes/'
+      }
+    ],
+    geothermal_power_generation: [
+      { topic_description: 'Geothermal Power',
+        ranking: '1',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '15,918',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
         source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '2',
+        entity_name: 'Philippines',
+        entity_type: 'country',
+        quantity: '11,040',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '3',
+        entity_name: 'Indonesia',
+        entity_type: 'country',
+        quantity: '10,050',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '4',
+        entity_name: 'New Zealand',
+        entity_type: 'country',
+        quantity: '7,411',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '5',
+        entity_name: 'Mexico',
+        entity_type: 'country',
+        quantity: '5,995',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '6',
+        entity_name: 'Italy',
+        entity_type: 'country',
+        quantity: '5,824',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '7',
+        entity_name: 'Iceland',
+        entity_type: 'country',
+        quantity: '5,003',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '8',
+        entity_name: 'Kenya',
+        entity_type: 'country',
+        quantity: '4,480',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '9',
+        entity_name: 'Turkey',
+        entity_type: 'country',
+        quantity: '2,924',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Geothermal Power Generation',
+        ranking: '10',
+        entity_name: 'Japan',
+        entity_type: 'country',
+        quantity: '2,337',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      }
+    ],
+    wave_tidal_power_generation: [
+      { topic_description: 'Tidal Power',
+        ranking: '1',
+        entity_name: 'South Korea',
+        entity_type: 'country',
+        quantity: '529',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Wave and Tidal Power Generation',
+        ranking: '2',
+        entity_name: 'France',
+        entity_type: 'country',
+        quantity: '487',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Wave and Tidal Power Generation',
+        ranking: '3',
+        entity_name: 'Canada',
+        entity_type: 'country',
+        quantity: '15',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Wave and Tidal Power Generation',
+        ranking: '4',
+        entity_name: 'China',
+        entity_type: 'country',
+        quantity: '8',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Wave and Tidal Power Generation',
+        ranking: '5',
+        entity_name: 'United Kingdom',
+        entity_type: 'country',
+        quantity: '2',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      }
+    ],
+    biomass_waste_power_generation: [
+      { topic_description: 'Biomass Power',
+        ranking: '1',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '77,660',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '2',
+        entity_name: 'China',
+        entity_type: 'country',
+        quantity: '63,729',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '3',
+        entity_name: 'Germany',
+        entity_type: 'country',
+        quantity: '57,379',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '4',
+        entity_name: 'Brazil',
+        entity_type: 'country',
+        quantity: '48,802',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '5',
+        entity_name: 'Japan',
+        entity_type: 'country',
+        quantity: '41,460',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '6',
+        entity_name: 'United Kingdom',
+        entity_type: 'country',
+        quantity: '32,972',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '7',
+        entity_name: 'India',
+        entity_type: 'country',
+        quantity: '26,542',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '8',
+        entity_name: 'Italy',
+        entity_type: 'country',
+        quantity: '21,826',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '9',
+        entity_name: 'Canada',
+        entity_type: 'country',
+        quantity: '12,776',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
+      },
+      { topic_description: 'Biomass and Waste Power Generation',
+        ranking: '10',
+        entity_name: 'Sweden',
+        entity_type: 'country',
+        quantity: '11,968',
+        label: 'Amount of Power Generation (2015)',
+        unit: 'Gigawatt (GW)',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
       }
     ],
     hydropower_generation: [
@@ -3766,108 +3570,6 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
       }
     ],
-    biomass_waste_power_generation: [
-      { topic_description: 'Biomass Power',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '77,660',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '2',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '63,729',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '3',
-        entity_name: 'Germany',
-        entity_type: 'country',
-        quantity: '57,379',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '4',
-        entity_name: 'Brazil',
-        entity_type: 'country',
-        quantity: '48,802',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '5',
-        entity_name: 'Japan',
-        entity_type: 'country',
-        quantity: '41,460',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '6',
-        entity_name: 'United Kingdom',
-        entity_type: 'country',
-        quantity: '32,972',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '7',
-        entity_name: 'India',
-        entity_type: 'country',
-        quantity: '26,542',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '8',
-        entity_name: 'Italy',
-        entity_type: 'country',
-        quantity: '21,826',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '9',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '12,776',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Biomass and Waste Power Generation',
-        ranking: '10',
-        entity_name: 'Sweden',
-        entity_type: 'country',
-        quantity: '11,968',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      }
-    ],
     solar_power_generation: [
       { topic_description: 'Solar Power',
         ranking: '1',
@@ -3964,160 +3666,6 @@ export let db = {
         entity_name: 'India',
         entity_type: 'country',
         quantity: '5,640',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      }
-    ],
-    geothermal_power_generation: [
-      { topic_description: 'Geothermal Power',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '15,918',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '2',
-        entity_name: 'Philippines',
-        entity_type: 'country',
-        quantity: '11,040',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '3',
-        entity_name: 'Indonesia',
-        entity_type: 'country',
-        quantity: '10,050',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '4',
-        entity_name: 'New Zealand',
-        entity_type: 'country',
-        quantity: '7,411',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '5',
-        entity_name: 'Mexico',
-        entity_type: 'country',
-        quantity: '5,995',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '6',
-        entity_name: 'Italy',
-        entity_type: 'country',
-        quantity: '5,824',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '7',
-        entity_name: 'Iceland',
-        entity_type: 'country',
-        quantity: '5,003',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '8',
-        entity_name: 'Kenya',
-        entity_type: 'country',
-        quantity: '4,480',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '9',
-        entity_name: 'Turkey',
-        entity_type: 'country',
-        quantity: '2,924',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Geothermal Power Generation',
-        ranking: '10',
-        entity_name: 'Japan',
-        entity_type: 'country',
-        quantity: '2,337',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      }
-    ],
-    wave_tidal_power_generation: [
-      { topic_description: 'Tidal Power',
-        ranking: '1',
-        entity_name: 'South Korea',
-        entity_type: 'country',
-        quantity: '529',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '2',
-        entity_name: 'France',
-        entity_type: 'country',
-        quantity: '487',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '3',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '15',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '4',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '8',
-        label: 'Amount of Power Generation (2015)',
-        unit: 'Gigawatt (GW)',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production_from_renewable_sources'
-      },
-      { topic_description: 'Wave and Tidal Power Generation',
-        ranking: '5',
-        entity_name: 'United Kingdom',
-        entity_type: 'country',
-        quantity: '2',
         label: 'Amount of Power Generation (2015)',
         unit: 'Gigawatt (GW)',
         source_name: 'Wikipedia',
@@ -4228,48 +3776,6 @@ export let db = {
     ]
   },
   sports: {
-    basketball_world_cup_gold_medals: [
-      { topic_description: 'Basketball World Cup',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '5',
-        label: 'Number of Medals in Basketball World Cup',
-        unit: 'none',
-        source_name: 'FIBA archive',
-        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
-      },
-      { topic_description: 'Most Gold Medals in Basketball World Cup',
-        ranking: '2',
-        entity_name: 'Brazil',
-        entity_type: 'country',
-        quantity: '2',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'FIBA archive',
-        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
-      },
-      { topic_description: 'Most Gold Medals in Basketball World Cup',
-        ranking: '3',
-        entity_name: 'Argentina',
-        entity_type: 'country',
-        quantity: '1',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'FIBA archive',
-        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
-      },
-      { topic_description: 'Most Gold Medals in Basketball World Cup',
-        ranking: '4',
-        entity_name: 'Spain',
-        entity_type: 'country',
-        quantity: '1',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'FIBA archive',
-        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
-      }
-    ],
     most_soccer_world_cup_champion: [
       { topic_description: 'Soccer Champion',
         ranking: '1',
@@ -4333,7 +3839,7 @@ export let db = {
       },
       { topic_description: 'Most World Champions in Soccer World Cup',
         ranking: '7',
-        entity_name: 'United Kingdom',
+        entity_name: 'England',
         entity_type: 'country',
         quantity: '1',
         label: 'Number of Times that Won World Cup',
@@ -4354,27 +3860,27 @@ export let db = {
       }
     ],
     most_soccer_world_cup_wins: [
-      { topic_description: 'World Cup Wins',
+      { topic_description: 'World Cup Game Wins',
         ranking: '1',
         entity_name: 'Brazil',
         entity_type: 'country',
-        quantity: '70',
+        quantity: '73',
         label: 'Number of Historical Wins at the Soccer World Cup',
         unit: 'none',
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
+      { topic_description: 'World Cup Game Wins',
         ranking: '2',
         entity_name: 'Germany',
         entity_type: 'country',
-        quantity: '66',
+        quantity: '67',
         label: 'Historical Wins',
         unit: 'none',
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
+      { topic_description: 'World Cup Game Wins',
         ranking: '3',
         entity_name: 'Italy',
         entity_type: 'country',
@@ -4384,19 +3890,39 @@ export let db = {
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
+      { topic_description: 'World Cup Game Wins',
         ranking: '4',
         entity_name: 'Argentina',
         entity_type: 'country',
-        quantity: '42',
+        quantity: '43',
         label: 'Historical Wins',
         unit: 'none',
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
+      { topic_description: 'World Cup Game Wins',
         ranking: '5',
+        entity_name: 'France',
+        entity_type: 'country',
+        quantity: '34',
+        label: 'Historical Wins',
+        unit: 'none',
+        source_name: 'TigerKAZ',
+        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+      },
+      { topic_description: 'World Cup Game Wins',
+        ranking: '6',
         entity_name: 'Spain',
+        entity_type: 'country',
+        quantity: '30',
+        label: 'Historical Wins',
+        unit: 'none',
+        source_name: 'TigerKAZ',
+        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+      },
+      { topic_description: 'World Cup Game Wins',
+        ranking: '7',
+        entity_name: 'England',
         entity_type: 'country',
         quantity: '29',
         label: 'Historical Wins',
@@ -4404,18 +3930,8 @@ export let db = {
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
-        ranking: '6',
-        entity_name: 'France',
-        entity_type: 'country',
-        quantity: '28',
-        label: 'Historical Wins',
-        unit: 'none',
-        source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
-      },
-      { topic_description: 'Most Wins in Soccer World Cup',
-        ranking: '7',
+      { topic_description: 'World Cup Game Wins',
+        ranking: '8',
         entity_name: 'Netherlands',
         entity_type: 'country',
         quantity: '27',
@@ -4424,31 +3940,21 @@ export let db = {
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
-        ranking: '8',
-        entity_name: 'United Kingdom',
-        entity_type: 'country',
-        quantity: '26',
-        label: 'Historical Wins',
-        unit: 'none',
-        source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
-      },
-      { topic_description: 'Most Wins in Soccer World Cup',
+      { topic_description: 'World Cup Game Wins',
         ranking: '9',
         entity_name: 'Uruguay',
         entity_type: 'country',
-        quantity: '20',
+        quantity: '24',
         label: 'Historical Wins',
         unit: 'none',
         source_name: 'TigerKAZ',
         source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
       },
-      { topic_description: 'Most Wins in Soccer World Cup',
+      { topic_description: 'World Cup Game Wins',
         ranking: '10',
-        entity_name: 'Sweden',
+        entity_name: 'Belgium',
         entity_type: 'country',
-        quantity: '16',
+        quantity: '20',
         label: 'Historical Wins',
         unit: 'none',
         source_name: 'TigerKAZ',
@@ -4456,7 +3962,7 @@ export let db = {
       }
     ],
     soccer_world_cup_average_goals: [
-      { topic_description: 'Goals',
+      { topic_description: 'World Cup Average Goals',
         ranking: '1',
         entity_name: 'Hungary',
         entity_type: 'country',
@@ -4464,29 +3970,29 @@ export let db = {
         label: 'Average of Goals per game at the Soccer World Cup',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '2',
-        entity_name: 'Brazil',
-        entity_type: 'country',
-        quantity: '2.13',
-        label: 'Average Goals',
-        unit: 'none',
-        source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
-      },
-      { topic_description: 'Average Goals at a World Cup',
-        ranking: '3',
         entity_name: 'Germany',
         entity_type: 'country',
         quantity: '2.11',
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
+        ranking: '3',
+        entity_name: 'Brazil',
+        entity_type: 'country',
+        quantity: '2.10',
+        label: 'Average Goals',
+        unit: 'none',
+        source_name: 'TigerKAZ',
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
+      },
+      { topic_description: 'World Cup Goals',
         ranking: '4',
         entity_name: 'Turkey',
         entity_type: 'country',
@@ -4494,9 +4000,9 @@ export let db = {
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '5',
         entity_name: 'France',
         entity_type: 'country',
@@ -4504,9 +4010,9 @@ export let db = {
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '6',
         entity_name: 'Netherlands',
         entity_type: 'country',
@@ -4514,29 +4020,29 @@ export let db = {
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '7',
-        entity_name: 'Argentina',
+        entity_name: 'Russia',
         entity_type: 'country',
-        quantity: '1.7',
+        quantity: '1.714',
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '8',
-        entity_name: 'Denmark',
+        entity_name: 'Argentina',
         entity_type: 'country',
         quantity: '1.69',
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '9',
         entity_name: 'Cuba',
         entity_type: 'country',
@@ -4544,17 +4050,263 @@ export let db = {
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
       },
-      { topic_description: 'Average Goals at a World Cup',
+      { topic_description: 'World Cup Goals',
         ranking: '10',
         entity_name: 'Portugal',
         entity_type: 'country',
-        quantity: '1.65',
+        quantity: '1.63',
         label: 'Average Goals',
         unit: 'none',
         source_name: 'TigerKAZ',
-        source_url: 'http://www.tigerkaz.info/worldcup/countryranking.html'
+        source_url: 'http://www.tigerkaz.info/worldcup/averagescore.html'
+      }
+    ],
+    basketball_world_cup_gold_medals: [
+      { topic_description: 'Basketball World Cup',
+        ranking: '1',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '5',
+        label: 'Number of Medals in Basketball World Cup',
+        unit: 'none',
+        source_name: 'FIBA archive',
+        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
+      },
+      { topic_description: 'Most Gold Medals in Basketball World Cup',
+        ranking: '2',
+        entity_name: 'Brazil',
+        entity_type: 'country',
+        quantity: '2',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'FIBA archive',
+        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
+      },
+      { topic_description: 'Most Gold Medals in Basketball World Cup',
+        ranking: '3',
+        entity_name: 'Argentina',
+        entity_type: 'country',
+        quantity: '1',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'FIBA archive',
+        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
+      },
+      { topic_description: 'Most Gold Medals in Basketball World Cup',
+        ranking: '4',
+        entity_name: 'Spain',
+        entity_type: 'country',
+        quantity: '1',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'FIBA archive',
+        source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
+      }
+    ],
+    most_summer_olympic_gold_medals: [
+      { topic_description: 'Summer Olympics',
+        ranking: '1',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '1022',
+        label: 'Number of Historical Gold Medals at Summer Olympics',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '2',
+        entity_name: 'United Kingdom',
+        entity_type: 'country',
+        quantity: '263',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '3',
+        entity_name: 'China',
+        entity_type: 'country',
+        quantity: '224',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '4',
+        entity_name: 'France',
+        entity_type: 'country',
+        quantity: '212',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '5',
+        entity_name: 'Italy',
+        entity_type: 'country',
+        quantity: '206',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '6',
+        entity_name: 'Germany',
+        entity_type: 'country',
+        quantity: '191',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '7',
+        entity_name: 'Hungary',
+        entity_type: 'country',
+        quantity: '175',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '8',
+        entity_name: 'Russia',
+        entity_type: 'country',
+        quantity: '149',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '9',
+        entity_name: 'Australia',
+        entity_type: 'country',
+        quantity: '147',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Summer Olympic Games',
+        ranking: '10',
+        entity_name: 'Sweden',
+        entity_type: 'country',
+        quantity: '145',
+        label: 'Number of Gold Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      }
+    ],
+    most_winter_olympic_gold_medals: [
+      { topic_description: 'Winter Olympics',
+        ranking: '1',
+        entity_name: 'Norway',
+        entity_type: 'country',
+        quantity: '132',
+        label: 'Number of Historical Gold Medals at Winter Olympics',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '2',
+        entity_name: 'United States',
+        entity_type: 'country',
+        quantity: '105',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '3',
+        entity_name: 'Germany',
+        entity_type: 'country',
+        quantity: '92',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '4',
+        entity_name: 'Canada',
+        entity_type: 'country',
+        quantity: '73',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '5',
+        entity_name: 'Austria',
+        entity_type: 'country',
+        quantity: '64',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '6',
+        entity_name: 'Sweden',
+        entity_type: 'country',
+        quantity: '57',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '7',
+        entity_name: 'Switzerland',
+        entity_type: 'country',
+        quantity: '55',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '8',
+        entity_name: 'Russia',
+        entity_type: 'country',
+        quantity: '47',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '9',
+        entity_name: 'Netherlands',
+        entity_type: 'country',
+        quantity: '45',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
+      },
+      { topic_description: 'Most Gold Medals in Winter Olympic Games',
+        ranking: '10',
+        entity_name: 'Finland',
+        entity_type: 'country',
+        quantity: '43',
+        label: 'Number of Medals',
+        unit: 'none',
+        source_name: 'Wikipedia',
+        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
       }
     ],
     olympic_team_size_2018: [
@@ -4863,210 +4615,6 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/All-time_Paralympic_Games_medal_table'
       }
     ],
-    most_summer_olympic_gold_medals: [
-      { topic_description: 'Summer Olympics',
-        ranking: '1',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '1022',
-        label: 'Number of Historical Gold Medals at Summer Olympics',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '2',
-        entity_name: 'United Kingdom',
-        entity_type: 'country',
-        quantity: '263',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '3',
-        entity_name: 'China',
-        entity_type: 'country',
-        quantity: '224',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '4',
-        entity_name: 'France',
-        entity_type: 'country',
-        quantity: '212',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '5',
-        entity_name: 'Italy',
-        entity_type: 'country',
-        quantity: '206',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '6',
-        entity_name: 'Germany',
-        entity_type: 'country',
-        quantity: '191',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '7',
-        entity_name: 'Hungary',
-        entity_type: 'country',
-        quantity: '175',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '8',
-        entity_name: 'Russia',
-        entity_type: 'country',
-        quantity: '149',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '9',
-        entity_name: 'Australia',
-        entity_type: 'country',
-        quantity: '147',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Summer Olympic Games',
-        ranking: '10',
-        entity_name: 'Sweden',
-        entity_type: 'country',
-        quantity: '145',
-        label: 'Number of Gold Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      }
-    ],
-    most_winter_olympic_gold_medals: [
-      { topic_description: 'Winter Olympics',
-        ranking: '1',
-        entity_name: 'Norway',
-        entity_type: 'country',
-        quantity: '132',
-        label: 'Number of Historical Gold Medals at Winter Olympics',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '2',
-        entity_name: 'United States',
-        entity_type: 'country',
-        quantity: '105',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '3',
-        entity_name: 'Germany',
-        entity_type: 'country',
-        quantity: '92',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '4',
-        entity_name: 'Canada',
-        entity_type: 'country',
-        quantity: '73',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '5',
-        entity_name: 'Austria',
-        entity_type: 'country',
-        quantity: '64',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '6',
-        entity_name: 'Sweden',
-        entity_type: 'country',
-        quantity: '57',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '7',
-        entity_name: 'Switzerland',
-        entity_type: 'country',
-        quantity: '55',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '8',
-        entity_name: 'Russia',
-        entity_type: 'country',
-        quantity: '47',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '9',
-        entity_name: 'Netherlands',
-        entity_type: 'country',
-        quantity: '45',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      },
-      { topic_description: 'Most Gold Medals in Winter Olympic Games',
-        ranking: '10',
-        entity_name: 'Finland',
-        entity_type: 'country',
-        quantity: '43',
-        label: 'Number of Medals',
-        unit: 'none',
-        source_name: 'Wikipedia',
-        source_url: 'https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table'
-      }
-    ]
   },
   food: {
     banana_production: [
@@ -5078,7 +4626,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a486'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '2',
@@ -5088,7 +4636,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a487'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '3',
@@ -5098,7 +4646,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a488'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '4',
@@ -5108,7 +4656,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a489'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '5',
@@ -5118,7 +4666,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a490'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '6',
@@ -5128,7 +4676,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a491'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '7',
@@ -5138,7 +4686,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a492'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '8',
@@ -5148,7 +4696,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a493'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '9',
@@ -5158,7 +4706,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a494'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       },
       { topic_description: 'Banana Production',
         ranking: '10',
@@ -5168,7 +4716,7 @@ export let db = {
         label: 'Banana Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a495'
+        source_url: 'http://data.un.org/Data.aspx?q=bananas&d=FAO&f=itemCode%3a2615'
       }
     ],
     orange_production: [
@@ -5180,7 +4728,7 @@ export let db = {
         label: 'Orange Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a490'
+        source_url: 'http://data.un.org/Data.aspx?q=oranges&d=FAO&f=itemCode:490&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Orange Production',
         ranking: '2',
@@ -5190,7 +4738,7 @@ export let db = {
         label: 'Orange Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a491'
+        source_url: 'http://data.un.org/Data.aspx?q=oranges&d=FAO&f=itemCode:490&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Orange Production',
         ranking: '3',
@@ -5200,7 +4748,7 @@ export let db = {
         label: 'Orange Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a492'
+        source_url: 'http://data.un.org/Data.aspx?q=oranges&d=FAO&f=itemCode:490&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Orange Production',
         ranking: '4',
@@ -5210,7 +4758,7 @@ export let db = {
         label: 'Orange Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a493'
+        source_url: 'http://data.un.org/Data.aspx?q=oranges&d=FAO&f=itemCode:490&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Orange Production',
         ranking: '5',
@@ -5220,7 +4768,7 @@ export let db = {
         label: 'Orange Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a494'
+        source_url: 'http://data.un.org/Data.aspx?q=oranges&d=FAO&f=itemCode:490&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Orange Production',
         ranking: '6',
@@ -5230,7 +4778,7 @@ export let db = {
         label: 'Orange Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a495'
+        source_url: 'http://data.un.org/Data.aspx?q=oranges&d=FAO&f=itemCode:490&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Orange Production',
         ranking: '7',
@@ -5274,7 +4822,7 @@ export let db = {
       }
     ],
     avocado_production: [
-      { topic_description: 'Avocado',
+      { topic_description: 'Avocados',
         ranking: '1',
         entity_name: 'Mexico',
         entity_type: 'country',
@@ -5282,7 +4830,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a572'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '2',
@@ -5292,7 +4840,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a573'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '3',
@@ -5302,7 +4850,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a574'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '4',
@@ -5312,7 +4860,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a575'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '5',
@@ -5322,7 +4870,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a576'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '6',
@@ -5332,7 +4880,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a577'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '7',
@@ -5342,7 +4890,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a578'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '8',
@@ -5352,7 +4900,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a579'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '9',
@@ -5362,7 +4910,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a580'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Avocado Production',
         ranking: '10',
@@ -5372,7 +4920,7 @@ export let db = {
         label: 'Avocado Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a581'
+        source_url: 'http://data.un.org/Data.aspx?q=avocadoes&d=FAO&f=itemCode:572&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     coffee_beans_production: [
@@ -5384,7 +4932,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a656'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '2',
@@ -5394,7 +4942,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a657'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '3',
@@ -5404,7 +4952,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a658'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '4',
@@ -5414,7 +4962,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a659'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '5',
@@ -5424,7 +4972,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a660'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '6',
@@ -5434,7 +4982,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a661'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '7',
@@ -5444,7 +4992,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a662'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '8',
@@ -5454,7 +5002,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a663'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '9',
@@ -5464,7 +5012,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a664'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Coffee Beans Production',
         ranking: '10',
@@ -5474,7 +5022,7 @@ export let db = {
         label: 'Coffee Beans Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a665'
+        source_url: 'http://data.un.org/Data.aspx?q=coffee&d=FAO&f=itemCode:656&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     wheat_production: [
@@ -5486,7 +5034,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a15'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '2',
@@ -5496,7 +5044,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a16'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '3',
@@ -5506,7 +5054,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a17'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '4',
@@ -5516,7 +5064,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a18'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '5',
@@ -5526,7 +5074,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a19'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '6',
@@ -5536,7 +5084,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a20'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '7',
@@ -5546,7 +5094,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a21'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '8',
@@ -5556,7 +5104,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a22'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '9',
@@ -5566,7 +5114,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a23'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Wheat Production',
         ranking: '10',
@@ -5576,7 +5124,7 @@ export let db = {
         label: 'Wheat Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a24'
+        source_url: 'http://data.un.org/Data.aspx?q=wheat&d=FAO&f=itemCode:15&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     lemon_lime_production: [
@@ -5588,7 +5136,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a497'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '2',
@@ -5598,7 +5146,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a498'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '3',
@@ -5608,7 +5156,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a499'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '4',
@@ -5618,7 +5166,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a500'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '5',
@@ -5628,7 +5176,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a501'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '6',
@@ -5638,7 +5186,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a502'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '7',
@@ -5648,7 +5196,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a503'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '8',
@@ -5658,7 +5206,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a504'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '9',
@@ -5668,7 +5216,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a505'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Lemon and Lime Production',
         ranking: '10',
@@ -5678,7 +5226,7 @@ export let db = {
         label: 'Lemon/Lime Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a506'
+        source_url: 'http://data.un.org/Data.aspx?q=lemons&d=FAO&f=itemCode:497&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     kiwi_fruit_production: [
@@ -5690,7 +5238,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a592'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '2',
@@ -5700,7 +5248,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a593'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '3',
@@ -5710,7 +5258,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a594'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '4',
@@ -5720,7 +5268,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a595'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '5',
@@ -5730,7 +5278,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a596'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '6',
@@ -5740,7 +5288,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a597'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '7',
@@ -5750,7 +5298,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a598'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '8',
@@ -5760,7 +5308,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a599'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '9',
@@ -5770,7 +5318,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a600'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Kiwi Fruit Production',
         ranking: '10',
@@ -5780,7 +5328,7 @@ export let db = {
         label: 'Kiwi Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a601'
+        source_url: 'http://data.un.org/Data.aspx?q=kiwi&d=FAO&f=itemCode:592&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     apple_production: [
@@ -5792,7 +5340,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a515'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '2',
@@ -5802,7 +5350,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a516'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '3',
@@ -5812,7 +5360,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a517'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '4',
@@ -5822,7 +5370,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a518'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '5',
@@ -5832,7 +5380,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a519'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '6',
@@ -5842,7 +5390,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a520'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '7',
@@ -5852,7 +5400,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a521'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '8',
@@ -5862,7 +5410,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a522'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '9',
@@ -5872,7 +5420,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a523'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Apple Production',
         ranking: '10',
@@ -5882,7 +5430,7 @@ export let db = {
         label: 'Apples Production (2016)',
         unit: 'tonne',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a524'
+        source_url: 'http://data.un.org/Data.aspx?q=apples&d=FAO&f=itemCode:515&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     tea_leaves_production: [
@@ -6202,7 +5750,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1096'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '2',
@@ -6212,7 +5760,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1097'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '3',
@@ -6222,7 +5770,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1098'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '4',
@@ -6232,7 +5780,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1099'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '5',
@@ -6242,7 +5790,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1100'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '6',
@@ -6252,7 +5800,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1101'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '7',
@@ -6262,7 +5810,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1102'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '8',
@@ -6272,7 +5820,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1103'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '9',
@@ -6282,7 +5830,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1104'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Horses',
         ranking: '10',
@@ -6292,7 +5840,7 @@ export let db = {
         label: 'Number of Horses (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1105'
+        source_url: 'http://data.un.org/Data.aspx?q=horses&d=FAO&f=itemCode:1096&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     most_camels: [
@@ -6304,7 +5852,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1126'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '2',
@@ -6314,7 +5862,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1127'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '3',
@@ -6324,7 +5872,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1128'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '4',
@@ -6334,7 +5882,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1129'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '5',
@@ -6344,7 +5892,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1130'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '6',
@@ -6354,7 +5902,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1131'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '7',
@@ -6364,7 +5912,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1132'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '8',
@@ -6374,7 +5922,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1133'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '9',
@@ -6384,7 +5932,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1134'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Camels',
         ranking: '10',
@@ -6394,7 +5942,7 @@ export let db = {
         label: 'Number of Camels (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1135'
+        source_url: 'http://data.un.org/Data.aspx?q=camels&d=FAO&f=itemCode:1126&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     most_sheep: [
@@ -6406,7 +5954,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a976'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '2',
@@ -6416,7 +5964,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a977'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '3',
@@ -6426,7 +5974,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a978'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '4',
@@ -6436,7 +5984,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a979'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '5',
@@ -6446,7 +5994,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a980'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '6',
@@ -6456,7 +6004,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a981'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '7',
@@ -6466,7 +6014,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a982'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '8',
@@ -6476,7 +6024,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a983'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '9',
@@ -6486,7 +6034,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a984'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Sheep',
         ranking: '10',
@@ -6496,7 +6044,7 @@ export let db = {
         label: 'Number of Sheep (2016)',
         unit: 'head',
         source_name: 'UN Data ',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a985'
+        source_url: 'http://data.un.org/Data.aspx?q=sheep&d=FAO&f=itemCode:976&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     most_goats: [
@@ -6508,7 +6056,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1016'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '2',
@@ -6518,7 +6066,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1017'
+        source_url: 'hhttp://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '3',
@@ -6528,7 +6076,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1018'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '4',
@@ -6538,7 +6086,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1019'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '5',
@@ -6548,7 +6096,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1020'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '6',
@@ -6558,7 +6106,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1021'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '7',
@@ -6568,7 +6116,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1022'
+        source_url: 'hhttp://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '8',
@@ -6578,7 +6126,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1023'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '9',
@@ -6588,7 +6136,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1024'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       },
       { topic_description: 'Most Goats',
         ranking: '10',
@@ -6598,7 +6146,7 @@ export let db = {
         label: 'Number of Goats (2016)',
         unit: 'head',
         source_name: 'UN Data',
-        source_url: 'http://data.un.org/Data.aspx?d=FAO&f=itemCodepercent (%)3a1025'
+        source_url: 'http://data.un.org/Data.aspx?q=goats&d=FAO&f=itemCode:1016&c=2,4,5,6,7&s=countryName:asc,elementCode:asc,year:desc&v=1'
       }
     ],
     most_cats: [

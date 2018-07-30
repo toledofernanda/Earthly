@@ -1,4 +1,5 @@
 export let countryData = `country,countryCode,currency,code
+England,EN,Pound,ENG
 New Zealand,NZ,New Zealand Dollars,NZD
 Cook Islands,CK,New Zealand Dollars,NZD
 Niue,NU,New Zealand Dollars,NZD

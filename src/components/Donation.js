@@ -11,9 +11,8 @@ const donation = {
   display: 'flex',
   flexFlow: 'column wrap',
   justifyContent: 'center',
-  marginTop: '4%',
+  marginTop: '3%',
   marginBottom: '2.5%',
-  paddingBottom: '2%',
   backgroundColor: 'white',
   borderRadius: 30,
   alignItems: 'stretch',
@@ -27,14 +26,14 @@ const submitButton = {
   border: 'none',
   borderRadius: 7,
   width: '80px',
-  height: '25px',
+  height: '35px',
   color:'white',
   fontSize:'15px',
   boxShadow: '1px 3px 1px lightgray',
   marginBottom: '20px',
   listStyle:'none',
   textDecoration:'none',
-  paddingTop:'5px'
+
 }
 
 let filterTopStyle = {
@@ -151,7 +150,8 @@ class Donation extends Component{
                 <div style={{letterSpacing:'.5px',listStyleType:'none', display:'flex', justifyContent:'center'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <a className={['gumroad-button','button-shadow', hoverClass].join(' ')} href="https://gum.co/wDIjn" style ={submitButton}>Submit</a>
+                  <button style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
+
                 </div>
             </div>
             </Form>

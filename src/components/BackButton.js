@@ -8,7 +8,7 @@ class BackButton extends Component {
     let backButtonDiv = {
       margin: 'auto',
       alignSelf: 'flex-start',
-      paddingLeft: '40px'
+      zIndex: '10' //Firefox requires this order
     }
 
     let backButton = {

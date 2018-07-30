@@ -11,11 +11,12 @@ const submitButton = {
   border: 'none',
   borderRadius: 7,
   width: '80px',
-  height: '25px',
+  height: '35px',
   color:'white',
   fontSize:'15px',
   boxShadow: '1px 3px 1px lightgray',
-  marginBottom: '20px'
+  marginBottom: '20px',
+  cursor: 'pointer'
 }
 
 class Contact extends Component {
@@ -60,12 +61,16 @@ class Contact extends Component {
   render() {
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
+      margin: 'auto',
       display: 'flex',
-      flexFlow: 'row wrap',
+      flexFlow: 'column wrap',
       justifyContent: 'center',
-      margin: '4% auto',
+      marginTop: '3%',
+      marginBottom: '2.5%',
       backgroundColor: 'white',
       borderRadius: 30,
+      alignItems: 'stretch',
+      textAlign:'center',
     }; //style for the outside div of main component
 
     let filterTopStyle = {
@@ -92,8 +97,7 @@ class Contact extends Component {
       margin: '1%',
       display: 'flex',
       flexFlow: 'row wrap',
-      justifyContent: 'center',
-      alignItems: 'center',
+      marginRight:'77px'
     }
 
     let contactForm = {
@@ -101,7 +105,7 @@ class Contact extends Component {
     }
 
     let input = {
-      flex: '0 0 45%',
+      flex: '0 0 30%',
       border:'1px solid gray',
       borderRadius:7,
       alignSelf: 'flex-start'
@@ -171,7 +175,7 @@ class Contact extends Component {
 
             <FormGroup style={{flex:'1 0 100%', textAlign:'center', marginTop:'3%', marginBottom: '3%'}}>
               <Label for="message" style={{margin:'10px'}}>Message<br /></Label>
-              <textarea style={{fontSize:'18px', padding:'5px', marginTop:'10px',marginBottom:'10px', width: '100%', height:'160px',border:'1px solid black', borderRadius:7}}
+              <textarea style={{fontSize:'12px', padding:'5px', marginTop:'10px',marginBottom:'10px', width: '90%', height:'160px',border:'1px solid black', borderRadius:7}}
               type="textarea"
               name= "message"
               onChange = {this.handleChange}

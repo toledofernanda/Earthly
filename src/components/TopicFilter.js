@@ -28,33 +28,16 @@ class TopicFilter extends Component{
       flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '20px 1fr'
-    };
-
-    let divStyle = {
-      height: '100%',
-      minHeight: '50vh',
-      display: 'flex',
-      flexFlow: 'row wrap',
-      justifyContent: 'center',
-      alignItems: 'flex-start',
-      padding: '2% 25%',
+      gridTemplateColumns: '20px 1fr',
       boxSizing: 'border-box'
-    };  //style for the inside div of main component
-
-    let catStyle = {
-      flex: '0 0 25%',
-      paddingBottom: '3%',
-      margin: '0 1%',
-      marginLeft: 'calc(1% + .5vw)'
-    }
+    };
 
     let category = this.state.category;
     let topicList = [];
     for (let topic in db[category]){
         if(topic !== "entity_info") {
           topicList.push(
-            <div key={`${topic}-button`} style={catStyle}>
+            <div key={`${topic}-button`} className = "catStyle">
               <TopicButton category={category} topic={topic}  />
             </div>
           );
@@ -66,7 +49,7 @@ class TopicFilter extends Component{
             <BackButton component={'topic'} className='button-shadow' />
             <StepTitle />
          </div>
-         <div className="topic-list" style={divStyle}>
+         <div className="topic-list" className = "filterDiv">
             {topicList}
           </div>
       </div>

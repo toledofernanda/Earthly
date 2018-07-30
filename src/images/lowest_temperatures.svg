@@ -3,22 +3,22 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 	.st1{fill:#FFFFFF;}
-	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
-	<path class="st0" d="M75.9,58.8V10.5c0-5.2-4.2-9.4-9.4-9.4c-5.2,0-9.4,4.2-9.4,9.4v48.4c-7,3.5-11.8,10.6-11.8,18.9
+	<path class="st0" d="M75.9,58.8V10.5c0-5.2-4.2-9.4-9.4-9.4s-9.4,4.2-9.4,9.4v48.4c-7,3.5-11.8,10.6-11.8,18.9
 		c0,11.7,9.5,21.2,21.2,21.2s21.2-9.5,21.2-21.2C87.7,69.5,82.9,62.3,75.9,58.8z"/>
 	<g>
-		<path class="st0" d="M83.2,17.8h-5.2c-0.1,0-0.1-0.1-0.1-0.1V17c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1v0.7
+		<path class="st0" d="M83.2,17.8H78c-0.1,0-0.1-0.1-0.1-0.1V17c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1L83.2,17.8
 			C83.3,17.7,83.2,17.8,83.2,17.8z"/>
-		<path class="st0" d="M83.2,28.7h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1v0.7
+		<path class="st0" d="M83.2,28.7H78c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1v0.7
 			C83.3,28.6,83.2,28.7,83.2,28.7z"/>
-		<path class="st0" d="M83.2,50.4h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1v0.7
+		<path class="st0" d="M83.2,50.4H78c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1L83.2,50.4
 			C83.3,50.4,83.2,50.4,83.2,50.4z"/>
-		<path class="st0" d="M83.2,39.6h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1v0.7
+		<path class="st0" d="M83.2,39.6H78c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1h5.2c0.1,0,0.1,0.1,0.1,0.1L83.2,39.6
 			C83.3,39.5,83.2,39.6,83.2,39.6z"/>
 	</g>
 	<circle class="st1" cx="66.5" cy="77.3" r="15.5"/>
