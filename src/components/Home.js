@@ -22,38 +22,17 @@ class Home extends Component {
     /* CSS */
     //outer div
     let mainDiv = {
-      // maxWidth: 'calc(1024px - 10%)',
-      // minWidth: '80vw',
-      width: '100vw',
-      margin: 'auto',
+      maxWidth: 'calc(1024px - 10%)',
+      minWidth: '80vw',
+      margin: '6% auto',
+      marginBottom: '0',
       display: 'flex',
       flexFlow: 'column wrap',
-      // justifyContent: 'center',
-      alignItems: 'stretch',
+      justifyContent: 'center',
       // backgroundColor: 'white',
       // borderRadius: 30,
-      textAlign:'center',
-      minHeight: '88vh',
+      textAlign:'center'
     }//style for the outside div of main component
-
-
-    //
-    // let homeDiv = {
-    //   display :'flex',
-    //   flexFlow: 'column wrap',
-    //   justifyContent: 'stretch',
-    //
-    // }
-    //inner content div
-    // let mainContent = {
-    //   textAlign: 'center',
-    //   display: 'flex',
-    //   flexFlow: 'column nowrap',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   padding: '7% 7%',
-    //   boxSizing: 'border-box'
-    // }
 
     let startButton = {
       border: 'none',
@@ -65,18 +44,20 @@ class Home extends Component {
       marginTop: '19px',
       letterSpacing: '3px',
       color: 'white',
+      flex: '1 0 100%'
     }
 
     let image = {
+      flex: '1 0 auto',
       display: 'flex',
+      flexFlow: 'column wrap',
+      justifyContent: 'flex-end',
       alignItems: 'center',
-      // textAlign: 'center',
-      // flex: '1 1 100%'
     }
 
     let imgStyle = {
-      flex: '0 1 100%',
-      height: '20%'
+      // flex: '0 0 100%',
+      width: '40vw'
     }
 
     /* JS */
@@ -84,9 +65,11 @@ class Home extends Component {
 
     return (
       <div className="main" style={mainDiv}>
-
+        <div>
           <h1>Welcome to Earthly!</h1>
-          <h3>A site where you can learn about countries and world rankings.</h3>
+          <h3>Explore world rankings and learn about countries in the world.</h3>
+        </div>
+        <div>
           <Link to={`/category`}>
             <button
             style={startButton}
@@ -95,10 +78,10 @@ class Home extends Component {
             onMouseLeave={this.handleHover}
             >Start</button>
           </Link>
+        </div>
           <div style = {image}>
           <img src={require(`images/landing_page_graphic.svg`)} style = {imgStyle} alt={`chart Sample`}/>
           </div>
-
       </div>
 
     );
