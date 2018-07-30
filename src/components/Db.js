@@ -1000,7 +1000,7 @@ export let db = {
         entity_name: 'China',
         entity_type: 'country',
         quantity: '1,415,045,928',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1010,7 +1010,7 @@ export let db = {
         entity_name: 'India',
         entity_type: 'country',
         quantity: '1,354,051,854',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1020,7 +1020,7 @@ export let db = {
         entity_name: 'United States',
         entity_type: 'country',
         quantity: '326,766,748',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1030,7 +1030,7 @@ export let db = {
         entity_name: 'Indonesia',
         entity_type: 'country',
         quantity: '266,794,980',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1040,7 +1040,7 @@ export let db = {
         entity_name: 'Brazil',
         entity_type: 'country',
         quantity: '210,867,954',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1050,7 +1050,7 @@ export let db = {
         entity_name: 'Pakistan',
         entity_type: 'country',
         quantity: '200,813,818',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1060,7 +1060,7 @@ export let db = {
         entity_name: 'Nigeria',
         entity_type: 'country',
         quantity: '195,875,237',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1070,7 +1070,7 @@ export let db = {
         entity_name: 'Bangladesh',
         entity_type: 'country',
         quantity: '166,368,149',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1080,7 +1080,7 @@ export let db = {
         entity_name: 'Russia',
         entity_type: 'country',
         quantity: '143,964,709',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
@@ -1090,7 +1090,7 @@ export let db = {
         entity_name: 'Mexico',
         entity_type: 'country',
         quantity: '130,759,074',
-        label: 'Population (2018)',
+        label: 'Largest Population (2018)',
         unit: 'none',
         source_name: 'Worldometers',
         source_url: 'http://www.worldometers.info/world-population/population-by-country/'
