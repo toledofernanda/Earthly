@@ -796,7 +796,7 @@ export let db = {
         entity_name: 'Russia',
         entity_type: 'country',
         quantity: '17,098,246',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -806,7 +806,7 @@ export let db = {
         entity_name: 'Canada',
         entity_type: 'country',
         quantity: '9,984,670',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -816,7 +816,7 @@ export let db = {
         entity_name: 'China',
         entity_type: 'country',
         quantity: '9,596,961',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -826,7 +826,7 @@ export let db = {
         entity_name: 'United States',
         entity_type: 'country',
         quantity: '9,525,067',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -836,7 +836,7 @@ export let db = {
         entity_name: 'Brazil',
         entity_type: 'country',
         quantity: '8,515,767',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -846,7 +846,7 @@ export let db = {
         entity_name: 'Australia',
         entity_type: 'country',
         quantity: '7,692,024',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -856,7 +856,7 @@ export let db = {
         entity_name: 'India',
         entity_type: 'country',
         quantity: '3,287,263',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -866,7 +866,7 @@ export let db = {
         entity_name: 'Argentina',
         entity_type: 'country',
         quantity: '2,780,400',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -876,7 +876,7 @@ export let db = {
         entity_name: 'Kazakhstan',
         entity_type: 'country',
         quantity: '2,724,900',
-        label: 'Area',
+        label: 'Largest Countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -886,7 +886,7 @@ export let db = {
         entity_name: 'Algeria',
         entity_type: 'country',
         quantity: '2,381,741',
-        label: 'Area',
+        label: 'Largest Countries measured by areaa',
         unit: 'square kilometer (km²)',
         source_name: 'Wikipedia',
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_area'
@@ -898,7 +898,7 @@ export let db = {
         entity_name: 'Vatican',
         entity_type: 'country',
         quantity: '0.44',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -908,7 +908,7 @@ export let db = {
         entity_name: 'Monaco',
         entity_type: 'country',
         quantity: '2',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -918,7 +918,7 @@ export let db = {
         entity_name: 'Nauru',
         entity_type: 'country',
         quantity: '21',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -928,7 +928,7 @@ export let db = {
         entity_name: 'Tuvalu',
         entity_type: 'country',
         quantity: '26',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -938,7 +938,7 @@ export let db = {
         entity_name: 'San Marino',
         entity_type: 'country',
         quantity: '61',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -948,7 +948,7 @@ export let db = {
         entity_name: 'Lichtenstein',
         entity_type: 'country',
         quantity: '160',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -958,7 +958,7 @@ export let db = {
         entity_name: 'Marshall Islands',
         entity_type: 'country',
         quantity: '181',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -968,7 +968,7 @@ export let db = {
         entity_name: 'Cook Islands',
         entity_type: 'country',
         quantity: '236',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -978,7 +978,7 @@ export let db = {
         entity_name: 'Niue',
         entity_type: 'country',
         quantity: '260',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -988,7 +988,7 @@ export let db = {
         entity_name: 'Saint Kitts and Nevis',
         entity_type: 'country',
         quantity: '261',
-        label: 'Area',
+        label: 'Smallest countries measured by area',
         unit: 'square kilometer (km²)',
         source_name: 'UN Data',
         source_url: 'https://unstats.un.org/unsd/demographic-social/products/dyb/'
@@ -3782,7 +3782,7 @@ export let db = {
         entity_name: 'Brazil',
         entity_type: 'country',
         quantity: '5',
-        label: 'Number of Times it has become the World Champion at Soccer World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3792,7 +3792,7 @@ export let db = {
         entity_name: 'Germany',
         entity_type: 'country',
         quantity: '4',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3802,7 +3802,7 @@ export let db = {
         entity_name: 'Italy',
         entity_type: 'country',
         quantity: '4',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3812,7 +3812,7 @@ export let db = {
         entity_name: 'Argentina',
         entity_type: 'country',
         quantity: '2',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3822,7 +3822,7 @@ export let db = {
         entity_name: 'Uruguay',
         entity_type: 'country',
         quantity: '2',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3832,7 +3832,7 @@ export let db = {
         entity_name: 'France',
         entity_type: 'country',
         quantity: '2',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3842,7 +3842,7 @@ export let db = {
         entity_name: 'England',
         entity_type: 'country',
         quantity: '1',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -3853,7 +3853,7 @@ export let db = {
         entity_name: 'Spain',
         entity_type: 'country',
         quantity: '1',
-        label: 'Number of Times that Won World Cup',
+        label: 'Number of times the country has become the World Champion at Soccer World Cup',
         unit: 'none',
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
@@ -5544,7 +5544,7 @@ export let db = {
         entity_type: 'country',
         quantity: '2,381',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5554,7 +5554,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,544',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5564,7 +5564,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,535',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5574,7 +5574,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,300',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5584,7 +5584,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,275',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5594,7 +5594,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,192',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5604,7 +5604,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,116',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5614,7 +5614,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,082',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5624,7 +5624,7 @@ export let db = {
         entity_type: 'country',
         quantity: '1,065',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       },
@@ -5634,7 +5634,7 @@ export let db = {
         entity_type: 'country',
         quantity: '995',
         unit: 'head',
-        label: 'Threatened species in each country',
+        label: 'Number of endangered species in each country',
         source_name: 'International Union for Conservation of Nature and Natural Resources',
         source_url: 'https://www.mofa.go.jp/mofaj/kids/ranking/animal.html'
       }

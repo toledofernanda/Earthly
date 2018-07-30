@@ -34,7 +34,7 @@ const submitButton = {
 
 let filterTopStyle = {
   flex: '1 0 100%',
-  padding: '3% 4%',
+  padding: '3% 4% 1%',
   display: 'grid',
   gridTemplateColumns: '20px 1fr',
   boxSizing: 'border-box'
@@ -76,7 +76,7 @@ class Donation extends Component{
 
     e.preventDefault();
     this.setState({'submitted': true});
-
+    console.log("updated")
     const {firstName, lastName, email,phone, message} = this.state
 
     const form = await axios.post('/api/form',{
@@ -110,7 +110,7 @@ class Donation extends Component{
         </div>
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
 
-            <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
+            <p style={{width:'60%', textAlign:'center', marginTop:'0'}}>Help us improve Earthly!
               Your donation will help us keep Earthly free and add new rankings and features.
               100% of your donations goes towards research and app development.</p>
               <img style ={{alignSelf: 'center', width:'200px', height:'auto', borderRadius:10}} src={require(`images/team.jpg`)} alt="donationImg" />
@@ -144,7 +144,7 @@ class Donation extends Component{
 
               <FormGroup style={{margin:'10px', display:'flex', justifyContent:'center',}}>
                 <Label for="message">Message</Label>
-                <textarea id = "donationTextarea" style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px', width:'200px', height:'150px', marginRight:'79px'}}
+                <textarea id = "donationTextarea" style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px', width:'200px', height:'100px', marginRight:'79px'}}
                 type="textarea"
                 name= "message"
                 placeholder="Tell us what other rankings and features you’d like to see in Earthly!"
@@ -158,7 +158,7 @@ class Donation extends Component{
                 <div style={{letterSpacing:'.5px',listStyleType:'none', display:'flex', justifyContent:'center'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <button style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
+                  <button className="submitButton" style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" target="_blank" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
 
                 </div>
             </div>
