@@ -29,6 +29,7 @@ const submitButton = {
   marginBottom: '20px',
   listStyle:'none',
   textDecoration:'none',
+  display:'block'
 
 }
 
@@ -73,10 +74,10 @@ class Donation extends Component{
   async handleSubmit(e){
     // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
     //alert('Thank you for your feedback ' + this.state.firstName + '!');
-
+    window.location.href = 'http://localhost:300/redirect';
     e.preventDefault();
     this.setState({'submitted': true});
-    console.log("updated")
+
     const {firstName, lastName, email,phone, message} = this.state
 
     const form = await axios.post('/api/form',{
@@ -158,7 +159,7 @@ class Donation extends Component{
                 <div style={{letterSpacing:'.5px',listStyleType:'none', display:'flex', justifyContent:'center'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <button className="submitButton" style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
+                  <button className="submitButton" style ={submitButton}>Submit</button>
 
                 </div>
             </div>
