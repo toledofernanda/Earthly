@@ -7,16 +7,12 @@ import BackButton from 'components/BackButton';
 
 const donation = {
   maxWidth: 'calc(1024px - 10%)',
-  margin: 'auto',
   display: 'flex',
-  flexFlow: 'column wrap',
+  flexFlow: 'row wrap',
   justifyContent: 'center',
-  marginTop: '3%',
-  marginBottom: '2.5%',
+  margin: '4% auto',
   backgroundColor: 'white',
   borderRadius: 30,
-  alignItems: 'stretch',
-  textAlign:'center',
 }
 
 const submitButton = {
@@ -37,9 +33,12 @@ const submitButton = {
 }
 
 let filterTopStyle = {
-  padding: '1.5% 4%',
+  flex: '1 0 100%',
+  padding: '3% 4%',
   display: 'grid',
-  gridTemplateColumns: '20px 10fr'
+  gridTemplateColumns: '20px 1fr',
+  boxSizing: 'border-box'
+
 };
 
 
@@ -106,9 +105,10 @@ class Donation extends Component{
             <p style={{width:'60%', textAlign:'center'}}>Help us improve Earthly!
               Your donation will help us keep Earthly free and add new rankings and features.
               100% of your donations goes towards research and app development.</p>
+              <img style ={{alignSelf: 'center', width:'200px', height:'auto', borderRadius:10}} src={require(`images/team.jpg`)} alt="donationImg" />
+
           </div>
 
-          <img style ={{alignSelf: 'center', width:'200px', height:'auto', borderRadius:10}} src={require(`images/team.jpg`)} alt="donationImg" />
 
           <div className = "contactForm">
             <Form onSubmit={this.handleSubmit} style={{textAlign:'center'}}>
@@ -136,7 +136,7 @@ class Donation extends Component{
 
               <FormGroup style={{margin:'10px', display:'flex', justifyContent:'center',}}>
                 <Label for="message">Message</Label>
-                <textarea style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px', width:'200px', height:'150px', marginRight:'79px'}}
+                <textarea id = "donationTextarea" style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px', width:'200px', height:'150px', marginRight:'79px'}}
                 type="textarea"
                 name= "message"
                 placeholder="Tell us what other rankings and features you’d like to see in Earthly!"

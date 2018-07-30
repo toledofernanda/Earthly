@@ -13,7 +13,8 @@ const headerDes = {
   top: '0',
   listStyleType:'none',
   paddingLeft: '4%',
-  paddingRight: '4%'
+  paddingRight: '4%',
+  zIndex:'20'
 }
 
 let logoName = {
@@ -65,7 +66,7 @@ class Header extends Component{
   render(){
     const hoverClass = this.state.isHovered ? "donation-hover" : "";
     return(
-        <header className="header">
+        <header className="header" style={{zIndex:'20'}}>
           <ul style={headerDes}>
             <li style= {{width: '250px', marginTop:'5px'}}>
               <Link to="/" style={{textDecoration:'none'}}>
