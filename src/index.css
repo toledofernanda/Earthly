@@ -129,6 +129,11 @@ a, a:visited {
 
 /* CHART RESULT CSS -------------------------------------------------------------*/
 
+.country_flag img:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 3px black;
+}
+
 /* fix font size for chart text once screen is bigger than tablet (1024px) */
 @media screen and (min-width: 1024px) {
   .titleStyle, .chart-header h1 {
