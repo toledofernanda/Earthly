@@ -158,7 +158,7 @@ class Donation extends Component{
                 <div style={{letterSpacing:'.5px',listStyleType:'none', display:'flex', justifyContent:'center'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <button className="submitButton" style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" target="_blank" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
+                  <button className="submitButton" style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
 
                 </div>
             </div>
