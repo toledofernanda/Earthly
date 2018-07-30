@@ -180,7 +180,7 @@ class Contact extends Component {
               />
             </FormGroup>
 
-            <button style={submitButton}>Submit</button>
+            <button className="submitButton" style={submitButton}>Submit</button>
           </Form>
           </div>
       </div>
