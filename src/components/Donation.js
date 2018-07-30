@@ -50,14 +50,15 @@ let TitleStyle = {
 //hundle donation button
 class Donation extends Component{
 
-  //hundle email
   constructor(){
     super()
     this.state={
-      firstname:'',
+      firstName:'',
+      lastName:'',
       email:'',
-      message:''
-
+      phone:'',
+      message:'',
+      submitted: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -70,15 +71,22 @@ class Donation extends Component{
   }
 
   async handleSubmit(e){
-    e.preventDefault()
-    const {firstName, email, message} = this.state
+    // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
+    //alert('Thank you for your feedback ' + this.state.firstName + '!');
+
+    e.preventDefault();
+    this.setState({'submitted': true});
+
+    const {firstName, lastName, email,phone, message} = this.state
 
     const form = await axios.post('/api/form',{
       firstName,
+      lastName,
       email,
+      phone,
       message
     })
-}
+}//commented out items that were not
 
   // onToken = (token) => {
   //   fetch('/save-stripe-token', {
