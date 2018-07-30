@@ -15,7 +15,7 @@ class About extends Component{
 
     let filterTopStyle = {
       flex: '1 0 100%',
-      padding: '3% 4%',
+      padding: '3% 4% 0 4%',
       display: 'grid',
       gridTemplateColumns: '20px 1fr',
       boxSizing: 'border-box'
@@ -26,6 +26,13 @@ class About extends Component{
       flex: '1 0 100%',
       fontSize: 'calc(14px + 1vw)', // responsive title
     }; //"About"
+
+    let TitleStyle2 = {
+      textAlign: 'center',
+      flex: '1 0 100%',
+      marginBottom:'0',
+      fontSize: 'calc(14px + 1vw)', // responsive title
+    };
 
     let divStyle = {
       height: '100%',
@@ -50,7 +57,9 @@ class About extends Component{
     let hr = {
       width: '20%',
       height: '3px',
-      background: 'white'
+      background: 'white',
+      border:'none'
+
     }
 
     return(
@@ -76,7 +85,7 @@ class About extends Component{
           </div>
           <div className="meetMember" style={divStyle}>
             <div className = {['member', 'fernanda'].join(' ')}>
-              <img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/>
+              <a href="https://www.linkedin.com/in/toledofernanda/"><img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/></a>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
               <hr style = {hr} />
@@ -84,15 +93,15 @@ class About extends Component{
               </p>
             </div>
             <div className = {['member', 'mana'].join(' ')}>
-              <img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/>
+              <a href="https://www.linkedin.com/in/mana-koike"><img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/></a>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
               <hr style = {hr} />
-              <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies. In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
+              <p style={desc}>Mana is Earthly’s Quality Assurance expert, and she also played a key role in development. Mana has a background in British and American studies. She has five years of customer service experience in Nagoya, Japan. In her spare time, she enjoys cooking Japanese food, playing the piano, shopping, and playing with dogs.
               </p>
             </div>
             <div className = {['member', 'tomo'].join(' ')}>
-              <img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/>
+            <a href="https://www.linkedin.com/in/toledofernanda/"><img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/></a>
               <h3>Tomoko</h3>
               <h4>Dev & PM</h4>
               <hr style = {hr} />
@@ -100,11 +109,11 @@ class About extends Component{
               </p>
             </div>
             <div className = {['member', 'jenn'].join(' ')}>
-              <img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" />
+              <a href="https://www.linkedin.com/in/jennifer-louise-clements/"><img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" /></a>
               <h3>Jenn</h3>
               <h4>UX Lead</h4>
               <hr style = {hr} />
-              <p style={desc}>Jenn is Earthly’s User Experience lead. She holds a Bachelor of Media Information and Technoculture from the University of Western Ontario in London, Canada. She also worked as a tree planter for 5 years in the Canadian provinces of Ontario, Saskatchewan, and Alberta. Jenn loves the outdoors; in her free time she enjoys camping, cycling, downhill skiing, and hiking.
+              <p style={desc}>Jenn is Earthly’s User Experience lead. She holds a Bachelor of Arts in Media, Information, and Technoculture from the University of Western Ontario in London, Canada. She also worked as a tree planter for 5 years in the Canadian provinces of Ontario, Saskatchewan, and Alberta. Jenn loves the outdoors; in her free time she enjoys camping, cycling, downhill skiing, and hiking.
               </p>
             </div>
             <div className = {['member', 'marlowe'].join(' ')}>
@@ -117,7 +126,7 @@ class About extends Component{
             </div>
           </div>
           <div className="titleStyle">
-            <h1 style = {TitleStyle}>Disclaimer</h1>
+            <h1 style = {TitleStyle2}>Disclaimer</h1>
           </div>
           <div className="disclaimer">
             <p>The reliability of data attributes to each data source. Due to limited space, Earthly does not contain every other languages and greeting, but that does not mean our team devalue any minority languages.</p>
