@@ -85,7 +85,7 @@ class About extends Component{
           </div>
           <div className="meetMember" style={divStyle}>
             <div className = {['member', 'fernanda'].join(' ')}>
-              <a href="https://www.linkedin.com/in/toledofernanda/"><img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic"/></a>
+              <a href="https://www.linkedin.com/in/toledofernanda/"><img style = {memberImage} img src={require(`images/fernanda.jpg`)} alt="FernandaPic" title="https://www.linkedin.com/in/toledofernanda/"/></a>
               <h3>Fernanda</h3>
               <h4>Dev Lead</h4>
               <hr style = {hr} />
@@ -93,7 +93,7 @@ class About extends Component{
               </p>
             </div>
             <div className = {['member', 'mana'].join(' ')}>
-              <a href="https://www.linkedin.com/in/mana-koike"><img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic"/></a>
+              <a href="https://www.linkedin.com/in/mana-koike"><img style = {memberImage} img src={require(`images/mana.jpg`) } alt="manaPic" title="https://www.linkedin.com/in/mana-koike"/></a>
               <h3>Mana</h3>
               <h4>Dev & QA</h4>
               <hr style = {hr} />
@@ -101,7 +101,7 @@ class About extends Component{
               </p>
             </div>
             <div className = {['member', 'tomo'].join(' ')}>
-            <a href="https://www.linkedin.com/in/toledofernanda/"><img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic"/></a>
+            <a href="https://www.linkedin.com/in/tomokookochi/"><img style = {memberImage} img src={require(`images/tomo.jpg`) } alt="tomokoPic" title="https://www.linkedin.com/in/tomokookochi/"/></a>
               <h3>Tomoko</h3>
               <h4>Dev & PM</h4>
               <hr style = {hr} />
@@ -109,7 +109,7 @@ class About extends Component{
               </p>
             </div>
             <div className = {['member', 'jenn'].join(' ')}>
-              <a href="https://www.linkedin.com/in/jennifer-louise-clements/"><img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" /></a>
+              <a href="https://www.linkedin.com/in/jennifer-louise-clements/"><img style = {memberImage} img src={require(`images/jenn.jpg`)}  alt="jennPic" title="https://www.linkedin.com/in/jennifer-louise-clements/"/></a>
               <h3>Jenn</h3>
               <h4>UX Lead</h4>
               <hr style = {hr} />
