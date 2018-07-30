@@ -52,12 +52,6 @@ class Flag extends Component{
 			maxWidth: '75px'
 		}
 
-		let nepalFlag = {
-			paddingRight:'20px',
-			height:'43px',
-			borderRadius: '5px'
-		}
-
 		/* JS */
 		function parseCSV(data) {
 
@@ -114,15 +108,8 @@ class Flag extends Component{
 			for (let item of country){
 				if(item['country'] === entityName){
 
-						countryAbb = item["countryCode"].toLowerCase()
-						if(countryAbb == 'np'){
-							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} className='button-shadow' />;
-
-						} else{
-							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} className='button-shadow' />;
-
-						}
-
+					countryAbb = item["countryCode"].toLowerCase()
+					myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} className='button-shadow' />;
 				}
 			}
 
