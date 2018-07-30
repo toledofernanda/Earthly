@@ -3,13 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <path class="st0" d="M40.5,73.1c0,0,3.7,6,7.8-0.6c0,0,0.3-9.7,1.2-11c0,0,5,2.2,9.3,1.6c0,0,7.5-0.6,11.8-4.1c0,0,7.2-5,10.9-12.9
 	c0,0,3.1-7.8,2.8-14.1c0,0-0.3-11-3.4-17.2c0,0-2.8-6.6-7.2-11.6c0,0-1.9,5.6-7.5,10.3c0,0-8.7,6-14,7.5c0,0-9.3,3.8-11.8,7.5
 	c0,0-7.2,7.8-4.1,17.2c0,0,2.5,8.8,7.5,12.2C44.2,58.7,41.1,66.5,40.5,73.1z"/>
 <path class="st1" d="M14.3,87c0,0-7.8-7.7,7.5-8.9c0,0,5.1-9.5,15.5-2.6c0,0,10.7-13.6,23.9,0.2c0,0,12-3.6,14.9,4.2
-	c0,0,2.1,5.7-7.2,8.6c0,0-14.7,7.9-14.9,8.3C53.8,97.2,23,93,14.3,87z"/>
+	c0,0,2.1,5.7-7.2,8.6c0,0-14.7,7.9-14.9,8.3S23,93,14.3,87z"/>
 <path class="st0" d="M49.5,57.3c0,0,24.6-12.8,25.3-39"/>
 </svg>

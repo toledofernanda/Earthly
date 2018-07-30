@@ -24,22 +24,32 @@ class Home extends Component {
     let mainDiv = {
       maxWidth: 'calc(1024px - 10%)',
       minWidth: '80vw',
-      margin: '6% auto',
+      height: 'calc(100vh - 120px)',
+      margin: '0 auto',
       marginBottom: '0',
       display: 'flex',
-      flexFlow: 'column wrap',
+      flexFlow: 'column nowrap',
       justifyContent: 'center',
       // backgroundColor: 'white',
       // borderRadius: 30,
       textAlign:'center'
     }//style for the outside div of main component
 
+    let h1 = {
+      marginTop: '4%',
+      fontSize: 'calc(20px + .8vw)',
+    }
+
+    let h3 = {
+      fontSize: 'calc(10px + .8vw)',
+    }
+
     let startButton = {
       border: 'none',
       backgroundColor: 'rgb(0,184,166)',
       borderRadius: 10,
-      padding: '20px',
-      fontSize: '1.7em',
+      padding: 'calc(12px + .5vw)',
+      fontSize: 'calc(20px + .5vw)',
       cursor: 'pointer',
       marginTop: '19px',
       letterSpacing: '3px',
@@ -47,7 +57,21 @@ class Home extends Component {
       flex: '1 0 100%'
     }
 
-    let image = {
+    let img = require(`images/landing_page_graphic.svg`);
+
+    let introDiv = {
+      flex: '0 0 50%',
+      display: 'flex',
+      flexFlow: 'column nowrap',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 4%'
+    }
+
+    let earthImgDiv = {
+      backgroundImage: `url(${img})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center bottom',
       flex: '1 0 auto',
       display: 'flex',
       flexFlow: 'column wrap',
@@ -60,16 +84,16 @@ class Home extends Component {
       width: '40vw'
     }
 
+
+
     /* JS */
     const hoverClass = this.state.isHovered ? "start-hover" : "";
 
     return (
       <div className="main" style={mainDiv}>
-        <div>
-          <h1>Welcome to Earthly!</h1>
-          <h3>Explore world rankings and learn about countries in the world.</h3>
-        </div>
-        <div>
+        <div className="intro-div" style={introDiv}>
+          <h1 style={h1}>Welcome to Earthly!</h1>
+          <h3 style={h3}>Explore world rankings and learn about countries in the world.</h3>
           <Link to={`/category`}>
             <button
             style={startButton}
@@ -79,9 +103,8 @@ class Home extends Component {
             >Start</button>
           </Link>
         </div>
-          <div style = {image}>
-          <img src={require(`images/landing_page_graphic.svg`)} style = {imgStyle} alt={`chart Sample`}/>
-          </div>
+        <div className='earth-img-div' style={earthImgDiv}>
+        </div>
       </div>
 
     );
