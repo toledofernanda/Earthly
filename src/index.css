@@ -204,6 +204,7 @@ a, a:visited {
 
   .tooltip-screen {
     left: 15% !important;
+    width: 70vw;
   }
 
   .tooltip-screen.down {
