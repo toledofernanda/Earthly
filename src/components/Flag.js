@@ -3,7 +3,6 @@ import {countryData} from './FlagData';
 import {db} from './Db';
 import TooltipScreen from 'components/TooltipScreen';
 
-
 class Flag extends Component{
 	constructor(props) {
 		super(props);
@@ -17,12 +16,10 @@ class Flag extends Component{
 
 	//get flag click and render or not tooltip
 	toggleTooltip() {
-		console.log('clicked')
 		this.setState({
 			tooltipOpen: !this.state.tooltipOpen
 		});
 	}
-
 
 	render(){
 
