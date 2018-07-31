@@ -60,6 +60,7 @@ class Donation extends Component{
       email:'',
       phone:'',
       message:'',
+      category:'donation',
       submitted: false
     }
     this.handleChange = this.handleChange.bind(this);
@@ -79,14 +80,15 @@ class Donation extends Component{
     e.preventDefault();
     this.setState({'submitted': true});
 
-    const {firstName, lastName, email,phone, message} = this.state
+    const {firstName, lastName, email,phone, message, category} = this.state
 
     const form = await axios.post('/api/form',{
       firstName,
       lastName,
       email,
       phone,
-      message
+      message,
+      category
     })
 }//commented out items that were not
 
@@ -116,6 +118,12 @@ class Donation extends Component{
           <div className = "contactForm">
             <Form onSubmit={this.handleSubmit} style={{textAlign:'center'}}>
               <div>
+
+                <input
+                type="hidden"
+                name= "donation"
+                />
+
               <FormGroup style={{margin:'10px'}}>
                 <Label for="firstName">Name</Label>
                 <input style={{border:'1px solid gray', borderRadius:7,marginLeft:'10px', padding:'3px',width:'200px', marginRight:'55px'}}

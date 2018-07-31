@@ -33,8 +33,8 @@ app.post('/api/form', (req,res) =>{
   let mailOptions = {
     from: 'test@testacount.com',
     to:'app.earthly@gmail.com',
-    replyTo: req.body.emai,
-    subject: 'new Message',
+    replyTo: req.body.email,
+    subject: req.body.category,
     text: req.body.message,
     html: htmlEmail
   }
