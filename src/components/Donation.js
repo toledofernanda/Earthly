@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
 import BackButton from 'components/BackButton';
+import ThankYou from 'components/ThankYou';
 
 
 
@@ -74,7 +75,7 @@ class Donation extends Component{
   async handleSubmit(e){
     // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
     //alert('Thank you for your feedback ' + this.state.firstName + '!');
-    window.location.href = 'http://localhost:300/redirect';
+    window.open('https://gum.co/wDIjn', '_blank');
     e.preventDefault();
     this.setState({'submitted': true});
 
@@ -103,7 +104,11 @@ class Donation extends Component{
   render(){
     const hoverClass = this.state.isHovered ? "donation-hover" : "";
     // let amount = parseInt(this.state.amount) * 100;
-    return(
+    if (this.state.submitted){
+      return <ThankYou />;
+    }
+    else {
+      return(
       <div className="donation" style={donation}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'donation'} />
@@ -173,6 +178,7 @@ class Donation extends Component{
 
     )
   }
+}
 }
 
 export default Donation;
