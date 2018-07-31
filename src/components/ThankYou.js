@@ -34,7 +34,7 @@ class ThankYou extends Component {
           <BackButton component={'category'} className='button-shadow' />
           <h1 style={titleStyle}>Thank You for contacting Team Earthly.</h1>
         </div>
-        <img style ={{alignSelf: 'center', maxWidth:'300px', height:'auto', borderRadius:10}} src={require(`images/team.jpg`)} alt="donationImg" />
+        <img style ={{alignSelf: 'center', maxWidth: '100%', height:'auto', borderRadius:10}} src={require(`images/teamThankYou.jpg`)} alt="donationImg" />
         <p>We will get back to you as soon as possible.</p>
       </div>
     )

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
 import BackButton from 'components/BackButton';
+import ThankYou from 'components/ThankYou';
 
 
 
@@ -29,6 +30,7 @@ const submitButton = {
   marginBottom: '20px',
   listStyle:'none',
   textDecoration:'none',
+  display:'block'
 
 }
 
@@ -73,10 +75,10 @@ class Donation extends Component{
   async handleSubmit(e){
     // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
     //alert('Thank you for your feedback ' + this.state.firstName + '!');
-
+    window.open('https://gum.co/wDIjn', '_blank');
     e.preventDefault();
     this.setState({'submitted': true});
-    console.log("updated")
+
     const {firstName, lastName, email,phone, message} = this.state
 
     const form = await axios.post('/api/form',{
@@ -102,7 +104,11 @@ class Donation extends Component{
   render(){
     const hoverClass = this.state.isHovered ? "donation-hover" : "";
     // let amount = parseInt(this.state.amount) * 100;
-    return(
+    if (this.state.submitted){
+      return <ThankYou />;
+    }
+    else {
+      return(
       <div className="donation" style={donation}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'donation'} />
@@ -158,7 +164,7 @@ class Donation extends Component{
                 <div style={{letterSpacing:'.5px',listStyleType:'none', display:'flex', justifyContent:'center'}}>
 
                   <script src="https://gumroad.com/js/gumroad.js"></script>
-                  <button className="submitButton" style ={submitButton}><a className='gumroad-button' href="https://gum.co/wDIjn" target="_blank" style ={{color: 'white', textDecoration:'none' }}>Submit</a></button>
+                  <button className="submitButton" style ={submitButton}>Submit</button>
 
                 </div>
             </div>
@@ -172,6 +178,7 @@ class Donation extends Component{
 
     )
   }
+}
 }
 
 export default Donation;
