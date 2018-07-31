@@ -33,8 +33,10 @@ class ThankYou extends Component {
           <BackButton component={'category'} className='button-shadow' />
           <h1 style={titleStyle}>Thank You for contributing to Team Earthly.</h1>
         </div>
+        <div style = {{flex: '1 0 100%', textAlign: 'center'}}>
         <img style ={{alignSelf: 'center', maxWidth: '100%', height:'auto', borderRadius:10}} src={require(`images/teamThankYou.jpg`)} alt="donationImg" />
-        <p>Your donation will help us improve our website.</p>
+        </div>
+      <p>Your donation will help us improve Earthly.</p>
       </div>
     )
   }
