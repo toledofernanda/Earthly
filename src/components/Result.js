@@ -3,7 +3,6 @@ import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
 import BackButton from 'components/BackButton';
 import Unit from 'components/Unit';
-import { Link } from "react-router-dom";
 import { db } from './Db';
 
 class Result extends Component {
