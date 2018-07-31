@@ -11,6 +11,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "concurrently": "^3.6.0",
+    "cross-env": "^5.2.0",
     "data.js": "^0.11.5",
     "express": "^4.16.3",
     "nodemailer": "^4.6.7",
@@ -18,10 +19,10 @@
     "npm": "^6.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
-    "reactstrap": "^6.3.0",
-    "cross-env": "^5.2.0"
+    "reactstrap": "^6.3.0"
   },
   "scripts": {
     "start": "concurrently \"cross-env NODE_PATH=src react-scripts start\" \"node form.js\"",

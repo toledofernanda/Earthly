@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BackButton from 'components/BackButton';
+import {Helmet} from "react-helmet";
 
 class About extends Component{
   render(){
@@ -64,6 +65,9 @@ class About extends Component{
 
     return(
       <div className="about" key="about" style = {outerDiv}>
+        <Helmet>
+          <script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="521506" async="async"></script>
+        </Helmet>
           <div className = "titleStyle" style={filterTopStyle}>
             <BackButton component={'category'} />
             <h1 id="mobileTitle" style = {TitleStyle}>About</h1>
