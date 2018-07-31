@@ -30,6 +30,7 @@ a, a:visited {
 }
 
 
+
 /* button style and background color for filters */
 .buttonIcon  {
   width: 100px;
@@ -95,6 +96,12 @@ a, a:visited {
   padding: 0 1.5%;
   margin: 50px .5%;
   color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .about p, .contactOuterDiv p, .donation p{
+    font-size: calc(10px + 1vw);
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -272,7 +279,7 @@ a, a:visited {
 /* Contact page input field on iphones */
 
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 361px) {
   .contactForm input{
     width: 150px !important;
     margin: 5px 10px 5px 0!important;
@@ -284,14 +291,21 @@ a, a:visited {
   }
    .contactText{
      margin-bottom: 10px !important;
+
    }
   .contactForm textarea{
     width: 150px !important;
   }
 
   #donationTextarea {
-    margin-right: 50px;
+    margin-right: 65px !important;
+    margin-left: 0 !important;
   }
+
+  #donationTextLabel {
+    padding-left: 25px!important;
+  }
+
 }
 
 
@@ -354,13 +368,13 @@ a, a:visited {
 
 
 /* smart phone header css */
-@media only screen and (max-device-width: 420px){
+/* @media only screen and (max-device-width: 420px){
                   .donationHeader {
                     font-size: 13px !important;
                     padding: 8px !important;
                   }
 
-}
+} */
 
 /* Filters Media Queries -------------------------------------- */
 .filterDiv {

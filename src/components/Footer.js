@@ -7,7 +7,7 @@ const footerDes = {
   margin: '0',
   listStyleType:'none',
   height:'40px',
-  paddingTop:'14px',
+  alignItems:'center',
   paddingLeft:'0'
 }
 

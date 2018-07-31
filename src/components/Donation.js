@@ -6,6 +6,7 @@ import ThankYouDonation from 'components/ThankYouDonation';
 
 
 
+
 const donation = {
   maxWidth: 'calc(1024px - 10%)',
   display: 'flex',
@@ -103,7 +104,7 @@ class Donation extends Component{
       <div className="donation" style={donation}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'donation'} />
-          <h1 className = "titleStyle" style = {TitleStyle} >Donation</h1>
+          <h1 id="mobileTitle" className = "titleStyle" style = {TitleStyle} >Donation</h1>
         </div>
           <div className="dontationContent" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
 
@@ -146,7 +147,7 @@ class Donation extends Component{
             </div>
 
               <FormGroup style={{margin:'10px', display:'flex', justifyContent:'center',}}>
-                <Label for="message">Message</Label>
+                <Label id="donationTextLabel" for="message">Message</Label>
                 <textarea id = "donationTextarea" style={{border:'1px solid gray', borderRadius:7,marginLeft:'13px', padding:'3px', width:'200px', height:'100px', marginRight:'79px'}}
                 type="textarea"
                 name= "message"
