@@ -237,28 +237,30 @@ a, a:visited {
     width: 70vw;
   }
 
+  /* this is here just to force basketball and tidal rankings to change position on big screen */
   .tooltip-screen.down {
     top: 10px !important;
     border-radius: 0 20px 20px 20px !important;
   }
 
+  /* make all last rankings tooltips show in a upwards relative to flag when map is sideways to info */
   .tooltip-screen.up {
     top: -198px !important;
     border-radius: 20px 20px 20px 0 !important;
   }
 
-  .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4, .tooltip-screen.up.5 {
+  /* .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4,  {
     top: -198px !important;
-  }
+  } */
 }
 /*
 @media screen and (min-width: 661px) {
   .tooltip-screen.up {
     top: -192px !important;
     border-radius: 20px 20px 20px 0 !important;
-  }
+  } */
 
-  .tooltip-screen.up.1 {
+  /* .tooltip-screen.up.1 {
     top: -192px !important;
   }
 
