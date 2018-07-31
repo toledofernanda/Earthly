@@ -12,7 +12,6 @@ class Home extends Component {
   }
 
   handleHover() {
-    // console.log("hovered")
     this.setState({
         isHovered: !this.state.isHovered
     });
@@ -30,8 +29,6 @@ class Home extends Component {
       display: 'flex',
       flexFlow: 'column nowrap',
       justifyContent: 'center',
-      // backgroundColor: 'white',
-      // borderRadius: 30,
       textAlign:'center'
     }//style for the outside div of main component
 
@@ -80,7 +77,6 @@ class Home extends Component {
     }
 
     let imgStyle = {
-      // flex: '0 0 100%',
       width: '40vw'
     }
 

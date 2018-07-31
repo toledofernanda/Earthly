@@ -151,11 +151,7 @@ class TooltipScreen extends Component {
     let tooltipUp = this.props.tooltipUp;
     let centeredMobileStyle = this.props.centeredMobileStyle;
 
-    // console.log('tts', tooltipUp)
-    // console.log('centeredMobileStyle', centeredMobileStyle)
-
     if (tooltipUp) { //if true, tooltip style is set to upward
-      // console.log('tooltip up')
 
        if (centeredMobileStyle === '3' && this.props.entityName === 'Argentina') { // if is up and is basketball ranking 3
 
