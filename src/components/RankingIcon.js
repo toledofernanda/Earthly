@@ -23,10 +23,11 @@ class RankingIcon extends Component{
 
     let iconCount = this.props.iconCount; //props from RankingBar
     let topic = this.props.topic; //props passed down
-    let image =  <img src={require(`images/${topic}_colored.svg`)} alt={`${topic}`} style={rankingIcon}/>   //image tag for icon
+    let image;
     let renderData = []; //variable to hold iconCount number of icons
 
     for(let i=0; i<iconCount; i++){
+      image = <img src={require(`images/${topic}_colored.svg`)} alt={`${topic}`} key={`${topic}_${i}`}style={rankingIcon}/>   //image tag for icon, included unique key (required)
       renderData.push(image);
     }
 
