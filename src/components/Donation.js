@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
 import axios from 'axios';
 import BackButton from 'components/BackButton';
-import ThankYou from 'components/ThankYou';
+import ThankYouDonation from 'components/ThankYouDonation';
 
 
 
@@ -73,8 +73,8 @@ class Donation extends Component{
   }
 
   async handleSubmit(e){
-    // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
-    //alert('Thank you for your feedback ' + this.state.firstName + '!');
+
+
     window.open('https://gum.co/wDIjn', '_blank');
     e.preventDefault();
     this.setState({'submitted': true});
@@ -90,22 +90,11 @@ class Donation extends Component{
     })
 }//commented out items that were not
 
-  // onToken = (token) => {
-  //   fetch('/save-stripe-token', {
-  //     method: 'POST',
-  //     body: JSON.stringify(token),
-  //   }).then(response => {
-  //     response.json().then(data => {
-  //       alert(`We are in business, ${data.email}`);
-  //     });
-  //   });
-  // }
+
 
   render(){
-    const hoverClass = this.state.isHovered ? "donation-hover" : "";
-    // let amount = parseInt(this.state.amount) * 100;
     if (this.state.submitted){
-      return <ThankYou />;
+      return <ThankYouDonation />;
     }
     else {
       return(

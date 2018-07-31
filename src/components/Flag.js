@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {countryData} from './FlagData';
 import {db} from './Db';
 import TooltipScreen from 'components/TooltipScreen';
-// import { findDOMNode } from 'react-dom';
-// import $ from 'jquery';
 
 
 class Flag extends Component{
@@ -23,16 +21,8 @@ class Flag extends Component{
 		this.setState({
 			tooltipOpen: !this.state.tooltipOpen
 		});
-
-		// this.getTooltips();
 	}
 
-	// getTooltips() {
-	// 	const tooltips = findDOMNode(this.refs.toggle);
-  //   $(tooltips).slideToggle();
-	// 	// let tooltips = $('tooltip-screen');
-	// 	console.log('tooltips', tooltips)
-	// }
 
 	render(){
 
