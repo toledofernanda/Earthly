@@ -12,7 +12,6 @@ class Home extends Component {
   }
 
   handleHover() {
-    // console.log("hovered")
     this.setState({
         isHovered: !this.state.isHovered
     });
@@ -30,10 +29,18 @@ class Home extends Component {
       display: 'flex',
       flexFlow: 'column nowrap',
       justifyContent: 'center',
-      // backgroundColor: 'white',
-      // borderRadius: 30,
       textAlign:'center'
     }//style for the outside div of main component
+
+    // text and start button div
+    let introDiv = {
+      flex: '0 0 50%',
+      display: 'flex',
+      flexFlow: 'column nowrap',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '0 4%'
+    }
 
     let h1 = {
       marginTop: '4%',
@@ -57,16 +64,8 @@ class Home extends Component {
       flex: '1 0 100%'
     }
 
+    //home page earth image
     let img = require(`images/landing_page_graphic.svg`);
-
-    let introDiv = {
-      flex: '0 0 50%',
-      display: 'flex',
-      flexFlow: 'column nowrap',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '0 4%'
-    }
 
     let earthImgDiv = {
       backgroundImage: `url(${img})`,
@@ -78,13 +77,6 @@ class Home extends Component {
       justifyContent: 'flex-end',
       alignItems: 'center',
     }
-
-    let imgStyle = {
-      // flex: '0 0 100%',
-      width: '40vw'
-    }
-
-
 
     /* JS */
     const hoverClass = this.state.isHovered ? "start-hover" : "";

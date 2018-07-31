@@ -151,11 +151,7 @@ class TooltipScreen extends Component {
     let tooltipUp = this.props.tooltipUp;
     let centeredMobileStyle = this.props.centeredMobileStyle;
 
-    // console.log('tts', tooltipUp)
-    // console.log('centeredMobileStyle', centeredMobileStyle)
-
     if (tooltipUp) { //if true, tooltip style is set to upward
-      // console.log('tooltip up')
 
        if (centeredMobileStyle === '3' && this.props.entityName === 'Argentina') { // if is up and is basketball ranking 3
 
@@ -167,7 +163,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -185,7 +181,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -203,7 +199,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -220,7 +216,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -241,7 +237,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -259,7 +255,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -277,7 +273,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />
@@ -294,7 +290,7 @@ class TooltipScreen extends Component {
                 <EntityInfo {...this.props} category={"general"}  topic={"entity_info"}/>
               </div>
               <div id="close-tooltip" className="close-button" onClick={this.props.toggleTooltip} style={closeButtonDiv}>
-                <img src={require(`images/close_button.png`)} style={closeButton}/>
+                <img src={require(`images/close_button.png`)} alt="close button" style={closeButton}/>
               </div>
               <div className="entity-map" style={entityMap}>
                 <Map entity={this.props.entityName} />

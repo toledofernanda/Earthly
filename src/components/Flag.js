@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {countryData} from './FlagData';
-import {db} from './Db';
 import TooltipScreen from 'components/TooltipScreen';
 
 class Flag extends Component{
@@ -79,10 +78,6 @@ class Flag extends Component{
 
 
 		let entityName = this.props.entityName;
-		let category = this.props.category;
-    let topic = this.props.topic;
-		let nonCountryPic = "mountain";//get a picture that discribes the ranking
-		let subCat = db[category][topic]; //always general and topic to check if is a country
 		let myimg; // image to display
 		let tooltipUp = this.props.tooltipUp; //check the position of country, if is last two, tooltip shows upward
 		let centeredMobileStyle = this.props.centeredMobileStyle; //for basketball ranking

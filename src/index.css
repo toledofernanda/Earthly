@@ -248,35 +248,7 @@ a, a:visited {
     top: -198px !important;
     border-radius: 20px 20px 20px 0 !important;
   }
-
-  /* .tooltip-screen.up.1, .tooltip-screen.up.2, .tooltip-screen.up.3, .tooltip-screen.up.4,  {
-    top: -198px !important;
-  } */
 }
-/*
-@media screen and (min-width: 661px) {
-  .tooltip-screen.up {
-    top: -192px !important;
-    border-radius: 20px 20px 20px 0 !important;
-  } */
-
-  /* .tooltip-screen.up.1 {
-    top: -192px !important;
-  }
-
-  .tooltip-screen.up.2 {
-    top: -192px !important;
-  }
-
-  .tooltip-screen.up.3 {
-    top: -192px !important;
-  }
-
-  .tooltip-screen.up.4 {
-    top: -192px !important;
-    border-radius: 20px 20px 20px 0;
-  }
-} */
 
 @media screen and (min-width: 1024px) {
   .entity-flag-name {
@@ -284,7 +256,6 @@ a, a:visited {
       max-height: 104px;
   }
 }
-
 
 /* END OF CHART RESULT CSS -------------------------------------------------------------*/
 
