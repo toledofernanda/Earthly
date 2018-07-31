@@ -47,22 +47,7 @@ const button = {
 
 class Header extends Component{
 
-  constructor(props){
-    super(props);
-    this.state = {
-      isHovered: false
-    }
-    this.handleHover = this.handleHover.bind(this);
-  }
-
-  handleHover() {
-    this.setState({
-        isHovered: !this.state.isHovered
-    });
-  }
-
   render(){
-    const hoverClass = this.state.isHovered ? "donation-hover" : "";
     return(
         <header className="header" style={{zIndex:'20'}}>
           <ul style={headerDes}>
@@ -75,7 +60,7 @@ class Header extends Component{
               </Link>
             </li>
             <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}
-            className={['donationHeader','button-shadow', hoverClass].join(' ')}
+            className={['donationHeader','button-shadow'].join(' ')}
             onMouseEnter={this.handleHover}
             onMouseLeave={this.handleHover}
             >Donate</Link></li>

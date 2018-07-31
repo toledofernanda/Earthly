@@ -21,7 +21,7 @@ a, a:visited {
   background-color: #4DCABD !important;
 }
 
-.donation-hover {
+.donationHeader:hover {
   background-color: rgb(236, 120, 91) !important;
 }
 
