@@ -28,6 +28,7 @@ class Contact extends Component {
       email:'',
       phone:'',
       message:'',
+      category:'Contact',
       submitted: false
     }
     this.handleChange = this.handleChange.bind(this);
@@ -45,14 +46,15 @@ class Contact extends Component {
     e.preventDefault();
     this.setState({'submitted': true});
 
-    const {firstName, lastName, email,phone, message} = this.state
+    const {firstName, lastName, email,phone, message, category} = this.state
 
     const form = await axios.post('/api/form',{
       firstName,
       lastName,
       email,
       phone,
-      message
+      message,
+      category
     })
 }
 
@@ -122,7 +124,7 @@ class Contact extends Component {
       <div className = "contactOuterDiv" style = {outerDiv}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'category'} />
-          <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
+          <h1 id="mobileTitle" className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div className="contactText" style={{padding: '0 4%'}}>
           <p style={{textAlign: 'center', margin: '3% auto', color:'#58595B', margin: '20px 0'}}>
@@ -132,6 +134,12 @@ class Contact extends Component {
         <div className = "contactForm" style = {contactForm}>
           <Form onSubmit={this.handleSubmit} style={formStyle}>
             <div className = "inputForms" style = {inputForms}>
+
+              <input
+              type="hidden"
+              name= "donation"
+              />
+
             <FormGroup  className = "inputStyle">
               <Label for="firstName" style = {label}>First Name</Label>
               <input style={input}

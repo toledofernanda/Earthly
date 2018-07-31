@@ -66,7 +66,7 @@ class About extends Component{
       <div className="about" key="about" style = {outerDiv}>
           <div className = "titleStyle" style={filterTopStyle}>
             <BackButton component={'category'} />
-            <h1 style = {TitleStyle}>About</h1>
+            <h1 id="mobileTitle" style = {TitleStyle}>About</h1>
           </div>
           <div className="aboutEarthly">
             <p>
