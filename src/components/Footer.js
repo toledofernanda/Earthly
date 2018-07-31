@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'; //first npm install react-render-dom
-
+import { Link } from 'react-router-dom';
 
 const footerDes = {
   display:'flex',

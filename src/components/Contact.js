@@ -41,9 +41,7 @@ class Contact extends Component {
   }
 
   async handleSubmit(e){
-    // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
-    //alert('Thank you for your feedback ' + this.state.firstName + '!');
-
+  
     e.preventDefault();
     this.setState({'submitted': true});
 
@@ -56,7 +54,7 @@ class Contact extends Component {
       phone,
       message
     })
-}//commented out items that were not used
+}
 
   render() {
     let outerDiv = {
@@ -126,7 +124,7 @@ class Contact extends Component {
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div className="contactText">
-          <p style={{textAlign: 'center', width:'50%', margin: '1% auto', color:'#58595B'}}>
+          <p style={{textAlign: 'center', width:'100%', margin: '3% auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>

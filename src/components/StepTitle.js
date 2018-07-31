@@ -6,8 +6,7 @@ class StepTitle extends Component{
     let catTitleStyle = {
       textAlign: 'center',
       marginRight: '20px',
-      fontSize: 'calc(14px + 1vw)', // responsive title
-      // marginBottom: '10%' //margin to detach the title from buttons
+      fontSize: 'calc(14px + 1vw)' // responsive title
     };
     let step = ""; //variable to hold text to display
     if (this.props.title === "step1"){

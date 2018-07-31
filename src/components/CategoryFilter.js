@@ -38,7 +38,7 @@ class CategoryFilter extends Component{
           <div className="filterTop" style={filterTopStyle}>
             <StepTitle title={title} />
           </div>
-          <div className="category-list" className = "filterDiv" >
+          <div className="category-list filterDiv" >
             {categoryList}
           </div>
       </div>
