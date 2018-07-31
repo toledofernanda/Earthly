@@ -251,7 +251,7 @@ a, a:visited {
     top: -202px !important;
   }
 }
-
+/* 
 @media screen and (min-width: 661px) {
   .tooltip-screen.up {
     top: -192px !important;
@@ -274,7 +274,7 @@ a, a:visited {
     top: -192px !important;
     border-radius: 20px 20px 20px 0;
   }
-}
+} */
 
 @media screen and (min-width: 1024px) {
   .entity-flag-name {
