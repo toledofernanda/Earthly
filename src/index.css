@@ -265,6 +265,12 @@ a, a:visited {
   }
 }
 
+@media screen and (max-width: 390px) {
+  .ranking-bar {
+    padding-left: 0px !important;
+  }
+}
+
 /* END OF CHART RESULT CSS -------------------------------------------------------------*/
 
 /* About page padding */
