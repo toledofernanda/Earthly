@@ -99,7 +99,7 @@ a, a:visited {
 }
 
 @media screen and (max-width: 700px) {
-  .about p, .contactOuterDiv p, .donation p{
+  .about p, .contactOuterDiv p, .donation p, .contactForm label{
     font-size: calc(10px + 1vw);
   }
 }
