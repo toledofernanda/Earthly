@@ -48,7 +48,7 @@ class Home extends Component {
     }
 
     let h3 = {
-      fontSize: 'calc(10px + .8vw)',
+      fontSize: 'calc(12px + .8vw)',
     }
 
     let startButton = {

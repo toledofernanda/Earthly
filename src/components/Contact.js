@@ -41,7 +41,7 @@ class Contact extends Component {
   }
 
   async handleSubmit(e){
-  
+
     e.preventDefault();
     this.setState({'submitted': true});
 
@@ -70,6 +70,7 @@ class Contact extends Component {
     let filterTopStyle = {
       flex: '1 0 100%',
       padding: '3% 4%',
+      paddingBottom: '0',
       display: 'grid',
       gridTemplateColumns: '20px 1fr',
       boxSizing: 'border-box'
@@ -123,8 +124,8 @@ class Contact extends Component {
           <BackButton component={'category'} />
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
-        <div className="contactText">
-          <p style={{textAlign: 'center', width:'100%', margin: '3% auto', color:'#58595B'}}>
+        <div className="contactText" style={{padding: '0 4%'}}>
+          <p style={{textAlign: 'center', margin: '3% auto', color:'#58595B', margin: '20px 0'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>

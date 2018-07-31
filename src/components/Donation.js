@@ -30,8 +30,8 @@ const submitButton = {
   marginBottom: '20px',
   listStyle:'none',
   textDecoration:'none',
-  display:'block'
-
+  display:'block',
+  cursor: 'pointer'
 }
 
 let filterTopStyle = {
