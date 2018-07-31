@@ -49,7 +49,7 @@ class TopicFilter extends Component{
             <BackButton component={'topic'} className='button-shadow' />
             <StepTitle />
          </div>
-         <div className="topic-list" className = "filterDiv">
+         <div className="topic-list filterDiv">
             {topicList}
           </div>
       </div>

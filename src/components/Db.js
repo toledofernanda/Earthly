@@ -3777,7 +3777,7 @@ export let db = {
   },
   sports: {
     most_soccer_world_cup_champion: [
-      { topic_description: 'Soccer Champion',
+      { topic_description: 'World Cup Champion',
         ranking: '1',
         entity_name: 'Brazil',
         entity_type: 'country',
@@ -3787,7 +3787,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '2',
         entity_name: 'Germany',
         entity_type: 'country',
@@ -3797,7 +3797,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '2',
         entity_name: 'Italy',
         entity_type: 'country',
@@ -3807,7 +3807,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '4',
         entity_name: 'Argentina',
         entity_type: 'country',
@@ -3817,7 +3817,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '4',
         entity_name: 'Uruguay',
         entity_type: 'country',
@@ -3827,7 +3827,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '4',
         entity_name: 'France',
         entity_type: 'country',
@@ -3837,7 +3837,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '7',
         entity_name: 'England',
         entity_type: 'country',
@@ -3847,8 +3847,7 @@ export let db = {
         source_name: 'The Soccer World Cups',
         source_url: 'http://www.thesoccerworldcups.com/statistics/all_time_standings.php'
       },
-
-      { topic_description: 'Most World Champions in Soccer World Cup',
+      { topic_description: 'World Cup Champion',
         ranking: '7',
         entity_name: 'Spain',
         entity_type: 'country',
