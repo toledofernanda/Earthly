@@ -1230,7 +1230,7 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
       { topic_description: 'Record High Temperature',
-        ranking: '4',
+        ranking: '3',
         entity_name: 'Israel',
         entity_type: 'country',
         quantity: '54',
@@ -1240,7 +1240,7 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/List_of_countries_by_extreme_temperatures'
       },
       { topic_description: 'Record High Temperature',
-        ranking: '5',
+        ranking: '3',
         entity_name: 'Kuwait',
         entity_type: 'country',
         quantity: '54',
@@ -1473,7 +1473,7 @@ export let db = {
         source_url: 'https://www.cia.gov/library/publications/the-world-factbook/rankorder/2102rank.html'
       },
       { topic_description: 'Average Life Expectancy',
-        ranking: '8',
+        ranking: '7',
         entity_name: 'Switzerland',
         entity_type: 'country',
         quantity: '82.6',
@@ -1493,7 +1493,7 @@ export let db = {
         source_url: 'https://www.cia.gov/library/publications/the-world-factbook/rankorder/2102rank.html'
       },
       { topic_description: 'Average Life Expectancy',
-        ranking: '10',
+        ranking: '9',
         entity_name: 'Israel',
         entity_type: 'country',
         quantity: '82.5',
@@ -2632,7 +2632,7 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/Recycling_rates_by_country'
       },
       { topic_description: 'Recycling Rate',
-        ranking: '4',
+        ranking: '3',
         entity_name: 'Slovenia',
         entity_type: 'country',
         quantity: '58',
@@ -2672,7 +2672,7 @@ export let db = {
         source_url: 'https://en.wikipedia.org/wiki/Recycling_rates_by_country'
       },
       { topic_description: 'Recycling Rate',
-        ranking: '8',
+        ranking: '7',
         entity_name: 'Sweden',
         entity_type: 'country',
         quantity: '50',
@@ -2998,7 +2998,7 @@ export let db = {
         source_url: 'https://safedestinations.com/countries-with-the-most-earthquakes-natural-disasters/'
       },
       { topic_description: 'Most Earthquakes',
-        ranking: '10',
+        ranking: '9',
         entity_name: 'India',
         entity_type: 'country',
         quantity: '32',
@@ -4094,7 +4094,7 @@ export let db = {
         source_url: 'https://archive.fiba.com/pages/eng/fa/keyfigures/p/rc//tid//tid2//lid_38179_ct/0/cid/WMM/_//index.html'
       },
       { topic_description: 'Most Gold Medals in Basketball World Cup',
-        ranking: '4',
+        ranking: '3',
         entity_name: 'Spain',
         entity_type: 'country',
         quantity: '1',
