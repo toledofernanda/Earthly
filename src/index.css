@@ -21,7 +21,7 @@ a, a:visited {
   background-color: #4DCABD !important;
 }
 
-.donation-hover {
+.donationHeader:hover {
   background-color: rgb(236, 120, 91) !important;
 }
 
@@ -99,7 +99,7 @@ a, a:visited {
 }
 
 @media screen and (max-width: 700px) {
-  .about p, .contactOuterDiv p, .donation p{
+  .about p, .contactOuterDiv p, .donation p, .contactForm label{
     font-size: calc(10px + 1vw);
   }
 }
@@ -262,6 +262,12 @@ a, a:visited {
   .entity-flag-name {
       height: 104px;
       max-height: 104px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .ranking-bar {
+    padding-left: 0px !important;
   }
 }
 

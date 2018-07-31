@@ -43,7 +43,7 @@ class Chart extends Component{
       paddingBottom: '15px',
       paddingRight: '10px',
       textAlign: 'right',
-      minWidth: '23px'
+      minWidth: '13px'
     }
 
     let entityFlagName = {
