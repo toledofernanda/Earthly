@@ -8,12 +8,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
 
-// app.set('view engine', 'ejs');
-// app.use(express.static('public'))
-// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
-
-
-
 app.post('/api/form', (req,res) =>{
   nodemailer.createTestAccount(( err, account) => {
     const htmlEmail = `
@@ -39,8 +33,8 @@ app.post('/api/form', (req,res) =>{
   let mailOptions = {
     from: 'test@testacount.com',
     to:'app.earthly@gmail.com',
-    replyTo: 'test@testacount.com',
-    subject: 'new Message',
+    replyTo: req.body.email,
+    subject: req.body.category,
     text: req.body.message,
     html: htmlEmail
   }

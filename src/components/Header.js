@@ -8,7 +8,6 @@ const headerDes = {
   backgroundColor: '#19A9E1',
   marginTop: '0',
   position:'fixed',
-  zIndex: 5,
   width: '92%',
   top: '0',
   listStyleType:'none',
@@ -57,7 +56,6 @@ class Header extends Component{
   }
 
   handleHover() {
-    // console.log("hovered")
     this.setState({
         isHovered: !this.state.isHovered
     });

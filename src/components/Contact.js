@@ -41,9 +41,7 @@ class Contact extends Component {
   }
 
   async handleSubmit(e){
-    // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
-    //alert('Thank you for your feedback ' + this.state.firstName + '!');
-
+  
     e.preventDefault();
     this.setState({'submitted': true});
 
@@ -56,7 +54,7 @@ class Contact extends Component {
       phone,
       message
     })
-}//commented out items that were not used
+}
 
   render() {
     let outerDiv = {

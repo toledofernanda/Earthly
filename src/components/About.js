@@ -117,7 +117,7 @@ class About extends Component{
               </p>
             </div>
             <div className = {['member', 'marlowe'].join(' ')}>
-              <img style = {memberImage} img src={require(`images/marlowe.jpg`)}  alt="marlowePic"/>
+              <a href="https://www.linkedin.com/in/marlowe-vaughan"><img style = {memberImage} img src={require(`images/marlowe.jpg`)}  alt="marlowePic" title="https://www.linkedin.com/in/marlowe-vaughan"/></a>
               <h3>Marlowe</h3>
               <h4>UI Lead</h4>
               <hr style = {hr} />
