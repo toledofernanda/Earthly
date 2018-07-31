@@ -126,7 +126,7 @@ class Contact extends Component {
           <h1 className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
         <div className="contactText">
-          <p style={{textAlign: 'center', width:'50%', margin: '1% auto', color:'#58595B'}}>
+          <p style={{textAlign: 'center', width:'100%', margin: '3% auto', color:'#58595B'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>
