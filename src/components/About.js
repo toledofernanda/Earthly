@@ -3,6 +3,12 @@ import BackButton from 'components/BackButton';
 import {Helmet} from "react-helmet";
 
 class About extends Component{
+
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render(){
     let outerDiv = {
       maxWidth: '1200px',//About is exception

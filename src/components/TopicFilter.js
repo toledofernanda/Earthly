@@ -13,6 +13,11 @@ class TopicFilter extends Component{
     }
   }
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render(){
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',
