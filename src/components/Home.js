@@ -17,6 +17,11 @@ class Home extends Component {
     });
   }
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     /* CSS */
     //outer div

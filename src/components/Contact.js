@@ -35,6 +35,11 @@ class Contact extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value

@@ -6,6 +6,11 @@ import StepTitle from 'components/StepTitle';
 //This component displays a list of categories
 class CategoryFilter extends Component{
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render(){
     let outerDiv = {
       maxWidth: 'calc(1024px - 10%)',

@@ -15,6 +15,11 @@ class Result extends Component {
       }
   } //above is default event handler found on React doc
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render(){
 
     /* CSS */
