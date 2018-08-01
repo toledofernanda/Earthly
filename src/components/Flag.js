@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {countryData} from './FlagData';
-import {db} from './Db';
 import TooltipScreen from 'components/TooltipScreen';
-
 
 class Flag extends Component{
 	constructor(props) {
@@ -15,17 +13,20 @@ class Flag extends Component{
 		};
 	}
 
+	//get flag click and render or not tooltip
 	toggleTooltip() {
-		console.log("clicked flag");
 		this.setState({
 			tooltipOpen: !this.state.tooltipOpen
 		});
-		console.log("tooltipOpen");
 	}
 
 	render(){
 
 		/* CSS */
+		let flagTooltipDiv = {
+			maxWidth: '75px'
+		}
+
 		let flag = {
 			width: '100%',
 			maxWidth: '75px',
@@ -34,13 +35,7 @@ class Flag extends Component{
 		}
 
 		let countryFlag = {
-			textAlign: 'center'
-		}
-
-		let nepalFlag = {
-			paddingRight:'20px',
-			height:'43px',
-			borderRadius: '5px'
+			maxWidth: '75px'
 		}
 
 		/* JS */
@@ -83,11 +78,9 @@ class Flag extends Component{
 
 
 		let entityName = this.props.entityName;
-		let category = this.props.category;
-    let topic = this.props.topic;
-		let nonCountryPic = "mountain";//get a picture that discribes the ranking
-		let subCat = db[category][topic]; //always general and topic to check if is a country
 		let myimg; // image to display
+		let tooltipUp = this.props.tooltipUp; //check the position of country, if is last two, tooltip shows upward
+		let centeredMobileStyle = this.props.centeredMobileStyle; //for basketball ranking
 
 		//get the country flag
 			let countryAbb;
@@ -97,34 +90,24 @@ class Flag extends Component{
 			for (let item of country){
 				if(item['country'] === entityName){
 
-					// console.log(entityName)
-            // console.log(item["countryCode"].toLowerCase());
-						countryAbb = item["countryCode"].toLowerCase()
-						if(countryAbb == 'np'){
-							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={nepalFlag} alt={countryAbb} className='button-shadow' />;
-
-						} else{
-							myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} className='button-shadow' />;
-
-						}
-
+					countryAbb = item["countryCode"].toLowerCase()
+					myimg = <img src={require(`images/flags/${countryAbb}.png`)} style={flag} alt={countryAbb} className='button-shadow' />;
 				}
 			}
 
 		if(this.state.tooltipOpen) {
-			// console.log('is open');
+
 			return (
-				<div className="flag-tooltip">
+				<div className="flag-tooltip" style={flagTooltipDiv}>
 					<div className = "country_flag" onClick={this.toggleTooltip}>
 				  	{myimg}
 					</div>
 					<div className="tooltip">
-						<TooltipScreen toggleTooltip={this.toggleTooltip} entityName={entityName} category={"general"} topic={"entity_info"} className='button-shadow' />
+						<TooltipScreen toggleTooltip={this.toggleTooltip} tooltipUp={tooltipUp} centeredMobileStyle={centeredMobileStyle} entityName={entityName} category={"general"} topic={"entity_info"} className='button-shadow' />
 					</div>
 				</div>
 			 );
 		} else {
-			// console.log('not open');
 
 			return (
 				<div className="flag-tooltip">

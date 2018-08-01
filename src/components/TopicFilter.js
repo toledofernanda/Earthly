@@ -3,7 +3,6 @@ import { db } from './Db';
 import TopicButton from 'components/TopicButton';
 import StepTitle from 'components/StepTitle';
 import BackButton from 'components/BackButton';
-import { Link } from "react-router-dom";
 
 //This component displays a list of secondary categories (topics)
 class TopicFilter extends Component{
@@ -14,61 +13,36 @@ class TopicFilter extends Component{
     }
   }
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render(){
     let outerDiv = {
-      maxWidth: '1024px',
-      margin: 'auto',
+      maxWidth: 'calc(1024px - 10%)',
       display: 'flex',
-      flexFlow: 'column wrap',
-      // paddingBottom: '4%',
+      flexFlow: 'row wrap',
       justifyContent: 'center',
-      marginTop: '5%',
-      marginBottom: '5%',
+      margin: '4% auto',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
 
     let filterTopStyle = {
+      flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr'
-      // display: 'flex',
-      // flexFlow: 'row nowrap',
-      // justifyContent: 'center'
-    };
-
-    let divStyle = {
-      height: '100%',
-      minHeight: '50vh',
-      display: 'flex',
-      flexFlow: 'row wrap',
-      justifyContent: 'center',
-      alignItems: 'flex-start',
-      // border: '1px solid black',
-      padding: '6% 20%',
-      // margin: '5%',
-      // marginBottom: 0,
+      gridTemplateColumns: '20px 1fr',
       boxSizing: 'border-box'
-    };  //style for the inside div of main component
-
-    let catStyle = {
-      flex: '0 0 33.33%'
-    }
-
-    let backButton = {
-      width: '19px',
-      cursor: 'pointer'
-    }
-
+    };
 
     let category = this.state.category;
     let topicList = [];
-    //Issue: isSelected value is not used effectively yet
     for (let topic in db[category]){
-        //if topic is entity_info don't display it on topic list, we just use it for tooltip component
         if(topic !== "entity_info") {
           topicList.push(
-            <div key={`${topic}-button`} style={catStyle}>
+            <div key={`${topic}-button`} className = "catStyle">
               <TopicButton category={category} topic={topic}  />
             </div>
           );
@@ -80,12 +54,12 @@ class TopicFilter extends Component{
             <BackButton component={'topic'} className='button-shadow' />
             <StepTitle />
          </div>
-         <div className="topic-list" style={divStyle}>
+         <div className="topic-list filterDiv">
             {topicList}
           </div>
       </div>
     )
   }
-}  // <Link to={`/category`}><button style={backButton}>{'<'}</button></Link>
+}
 
 export default TopicFilter;

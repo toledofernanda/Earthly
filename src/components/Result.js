@@ -3,7 +3,6 @@ import Chart from 'components/Chart';
 import Breadcrumb from 'components/Breadcrumb';
 import BackButton from 'components/BackButton';
 import Unit from 'components/Unit';
-import { Link } from "react-router-dom";
 import { db } from './Db';
 
 class Result extends Component {
@@ -16,37 +15,41 @@ class Result extends Component {
       }
   } //above is default event handler found on React doc
 
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render(){
 
     /* CSS */
-    let resultOuterDiv = {
+    let chartOuterDiv = {
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      maxWidth: 'calc(1024px - 10%)', //to guarantee that on tablet (1024px) there will be a bit of margin on the sides
+      margin: '60px auto',
     }
 
-    let rankingInfo = {
-      // display: 'flex',
-      // flexFlow: 'row nowrap',
-    };
-
     let chartHeader = {
-      display: 'flex',
-      justifyContent: 'space-between',
+      padding: '25px 4%',
+      display: 'grid',
+      gridTemplateColumns: '20px 1fr',
+      justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      padding: '0 30px'
     }
 
     let resultChart = {
-      maxWidth: '1024px', /*only for this element so breadcrumb is 100%*/
-      margin: '60px 5% 20px 5%',
+      width: '100%',
       backgroundColor: 'white',
-      borderRadius: 30,
-      border: '1px solid darkgrey',
+      borderRadius: 30
     }
 
     let topicD = {
-      flex: '0 0 60%'
+      gridColumn: '2 / 3',
+      gridRow: '1 / 2',
+      fontSize: 'calc(14px + 1vw)', // responsive title
+      margin: '5px 0'
     }
 
     /* JS */
@@ -60,31 +63,23 @@ class Result extends Component {
       <div className="result-chart" key="result-chart" style={resultChart}>
           <div className="chart-header" style={chartHeader}>
             <BackButton category={category} component={'result'} />
-            <h2 style={topicD} >{topicDescription}</h2>
+            <h1 style={topicD} >{topicDescription}</h1>
             <Unit unit={unit} />
           </div>
-          <div className="ranking-info" style={rankingInfo}>
-            {/* <RankingEntity category={category} topic={topic} /> */}
+          <div className="ranking-info">
             <Chart category={category} topic={topic} />
           </div>
       </div>
     )
 
-    // function capitalizeAllLetters(string) {
-    //   var splitString = string.toLowerCase().split('_');
-    //   //loop through each string
-    //   for (var i = 0; i < splitString.length; i++) {
-    //    // assign it back to the array after capitalized
-    //    splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
-    //   }
-    //   // join all strings into an unique string and return it
-    //   return splitString.join(' ');
-    // }
-
     return (
-      <div className="result" style={resultOuterDiv}>
-        <Breadcrumb category={category} topic={topic} />
-        {renderData}
+      <div className="result">
+        <div className="breadcrumbOuterDiv">
+          <Breadcrumb category={category} topic={topic} />
+        </div>
+        <div className="chartOuterDiv" style={chartOuterDiv} >
+          {renderData}
+        </div>
       </div>
     )
   }

@@ -21,7 +21,7 @@ a, a:visited {
   background-color: #4DCABD !important;
 }
 
-.donation-hover {
+.donationHeader:hover {
   background-color: rgb(236, 120, 91) !important;
 }
 
@@ -29,13 +29,380 @@ a, a:visited {
   color: white; /*affects breadcrumb links */
 }
 
-.StripeCheckout {
-  background-color: pink !important;
-  background: none !important;
-  box-shadow: none !important;
+
+
+/* button style and background color for filters */
+.buttonIcon  {
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.StripeCheckout span {
-  background-image: none !important;
-  background-color: #F05027;
+.buttonIconTopic {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
 }
+
+.animalsColor { background-color: #00B8A6;}
+.environmentColor { background-color: #4AB85C;}
+.foodColor { background-color: #F05027;}
+.generalColor {  background-color:  #19A9E1;}
+.industryColor { background-color:  #E2C137;}
+.sportsColor { background-color: #152D53;}
+
+.ranking_quantity#happiest_countries {
+  visibility: hidden;
+}
+
+/* Submit button style */
+
+.submitButton:hover {
+  background-color: rgb(236, 120, 91) !important;
+}
+
+/* About page style ------------------- */
+.aboutEarthly, .disclaimer {
+  margin: 1% 10%;
+  margin-bottom: 2%;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.fernanda {
+  background-color: #4AB85C
+}
+.mana {
+  background-color: #F05027
+}
+.tomo {
+  background-color: #19A9E1
+}
+.jenn {
+  background-color: #00B8A6
+}
+.marlowe {
+   background-color: #152D53
+}
+
+.member {
+  flex: 0 0 100%;
+  min-width: 130px;
+  padding: 0 1.5%;
+  margin: 50px .5%;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .about p, .contactOuterDiv p, .donation p, .contactForm label{
+    font-size: calc(10px + 1vw);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .member {
+    flex: 0 0 40%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .member {
+    flex: 1 0 16%;
+  }
+
+  .aboutEarthly, .disclaimer {
+    margin: 1% 25%;
+  }
+}
+/* end of About page style ------------------- */
+
+/* Contact page form style ------------------- */
+.inputStyle {
+  flex: 1 0 100%;
+  /* margin-right:30%; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+@media screen and (min-width: 900px){
+  .inputStyle{
+    flex: 1 0 40%;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+}
+
+/* end of Contact page style -------------------*/
+
+/* CHART RESULT CSS -------------------------------------------------------------*/
+
+.country_flag img:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 3px black;
+}
+
+/* fix font size for chart text once screen is bigger than tablet (1024px) */
+@media screen and (min-width: 1024px) {
+  .main h1 {
+    font-size: 30px !important;
+  }
+
+  .main h3 {
+    font-size: 20px !important;
+  }
+
+  .main button {
+    font-size: 25px !important;
+  }
+
+  .titleStyle, .chart-header h1, .titleStyle h1 {
+    font-size: 24px !important;
+  }
+
+  .entity-name span, .ranking_quantity {
+    font-size: 12px !important;
+  }
+
+  .order span {
+    font-size: 13px !important;
+  }
+
+  .entity-info li {
+    font-size: 14px !important;
+  }
+
+  .entity-name h1 {
+    font-size: 23px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    /* padding-top: 5% !important; */
+  }
+}
+
+
+/* make boxes 1024px when screen is bigger than 1100px */
+@media screen and (min-width: 1100px) {
+  .chartOuterDiv, .category-filter, .topic-filter, .main, .contactOuterDiv, .donation {
+    max-width: 1024px !important;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .ranking-icon img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+}
+
+@media screen and (min-width: 1075px) and (max-width: 1100px) {
+  .ranking-icon img {
+    width: 32px !important;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .tooltip-screen {
+    left: 18% !important;
+  }
+}
+/* make distance between flag and tooltip smaller on big screen to be over topics */
+/* re-align tooltip upward with flag on large screen */
+@media screen and (min-width: 575px) {
+
+  /* tooltip grid for large screen */
+  .info-map {
+    grid-template-columns: 40% 60% !important;
+    grid-template-rows: 25px 1fr !important;
+  }
+
+  .entity-info {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 / 3 !important;
+  }
+
+  .entity-map {
+    grid-column: 2 / 3 !important;
+    grid-row: 2 / 3 !important;
+  }
+
+  .close-button {
+    grid-column: 2 / 3 !important;
+    grid-row: 1 / 2 !important;
+  }
+
+  .tooltip-screen {
+    left: 15% !important;
+    width: 70vw;
+  }
+
+  /* this is here just to force basketball and tidal rankings to change position on big screen */
+  .tooltip-screen.down {
+    top: 10px !important;
+    border-radius: 0 20px 20px 20px !important;
+  }
+
+  /* make all last rankings tooltips show in a upwards relative to flag when map is sideways to info */
+  .tooltip-screen.up {
+    top: -198px !important;
+    border-radius: 20px 20px 20px 0 !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .entity-flag-name {
+      height: 104px;
+      max-height: 104px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .ranking-bar {
+    padding-left: 0px !important;
+  }
+}
+
+/* END OF CHART RESULT CSS -------------------------------------------------------------*/
+
+/* About page padding */
+@media screen and (max-width: 600px) {
+  .member p {
+      padding: 5px;
+  }
+}
+
+
+
+/* Contact page input field on iphones */
+
+
+@media screen and (max-width: 361px) {
+  .contactForm input{
+    width: 150px !important;
+    margin: 5px 10px 5px 0!important;
+
+  }
+  .contactForm label{
+    margin: 5px 10px 5px 0!important;
+
+  }
+   .contactText{
+     margin-bottom: 10px !important;
+
+   }
+  .contactForm textarea{
+    width: 150px !important;
+  }
+
+  #donationTextarea {
+    margin-right: 65px !important;
+    margin-left: 0 !important;
+  }
+
+  #donationTextLabel {
+    padding-left: 25px!important;
+  }
+
+}
+
+
+/* HOME CSS -------------------------------------------------------------*/
+
+/* hide landing page img when on landscape and height of screen is smaller than 550px */
+@media only screen and (max-height: 550px)
+                   and (orientation: landscape) {
+
+   .intro-div {
+     flex: 1 0 100% !important;
+   }
+   .earth-img-div {
+     flex: 0 0 0 !important;
+     background-image: none !important;
+   }
+}
+
+/* make intro text height bigger when width is very narrow */
+@media only screen and (max-width: 380px) {
+  .intro-div {
+    flex: 1 0 40% !important;
+  }
+  .earth-img-div {
+    flex: 1 0 auto !important;
+  }
+}
+
+/* make more centered intro div when is iphone 8 plus portrait */
+@media only screen and (max-width: 450px) and (min-height: 700px) {
+  .intro-div {
+    flex: 1 0 40% !important;
+  }
+  .earth-img-div {
+    flex: 1 0 auto !important;
+  }
+}
+
+/* END OF HOME CSS -------------------------------------------------------------*/
+
+/*  smartphone horizontal mode*/
+@media only screen and (max-device-height: 812px)
+                   and (max-device-width: 823px)
+                   and (orientation: landscape) {
+                  .header ul {
+                    position: relative !important;
+                    margin: 0 !important;
+                    }
+                  .breadcrumb {
+                    position: relative !important;
+                    margin-top: -70px !important;
+                    width: 92% !important;
+                    padding-left: 4% !important;
+                    padding-right: 4% !important;
+                  }
+                  .chartOuterDiv {
+                    margin: 100px auto !important;
+                  }
+}
+
+
+/* smart phone header css */
+/* @media only screen and (max-device-width: 420px){
+                  .donationHeader {
+                    font-size: 13px !important;
+                    padding: 8px !important;
+                  }
+
+} */
+
+/* Filters Media Queries -------------------------------------- */
+.filterDiv {
+  height: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 7% 15%;
+}
+.catStyle {
+  flex: 0 0 48%;
+  padding-bottom: 4%;
+}
+
+@media screen and (min-width: 700px){
+  .filterDiv {
+    padding: 7% 25%;
+  }
+  .catStyle {
+    flex: 0 0 30%;
+  }
+}
+/* End of Filters Media Queries -------------------------------------- */

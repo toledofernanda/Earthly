@@ -7,10 +7,10 @@ class Breadcrumb extends Component {
     /* CSS */
     let breadcrumb = {
       position: 'fixed',
-      zIndex: 3,
+      zIndex: 20,
       width: '100%',
       backgroundColor: '#43C5ED',
-      padding: '10px 10px 10px 12%',
+      padding: '10px 10px 10px 4%',
       fontSize: '0.7em',
       fontWeight: 'bold',
       letterSpacing: '1px',

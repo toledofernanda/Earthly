@@ -5,14 +5,14 @@ class EntityName extends Component {
 
     /* CSS */
     let entityNameH1 = {
-      fontSize: '1.3em',
+      fontSize: 'calc(12px + 1vw)', // responsive title
     }
 
     let entityNameSpan = {
-      fontSize: 'calc(0.4em + .3vw)',
+      fontSize: 'calc(8px + .4vw)', // responsive
       fontWeight: 'normal',
-      textAlign: 'center',
       display: 'block',
+      textAlign: 'center'
     }
 
     /* JS */

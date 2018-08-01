@@ -5,12 +5,13 @@ class Source extends Component{
 
     /* CSS */
     let source = {
-      fontSize: '.7em',
+      fontSize: 'calc(8px + .3vw)', // responsive 
+      marginBottom: '10px'
     }
 
     return (
       <div className="source" key="source" style={source}>
-        <span>Source: {this.props.source}</span>
+        <span>Source: <a href={this.props.sourceUrl} target='_blank'>{this.props.sourceName}</a></span>
       </div>
     )
   }

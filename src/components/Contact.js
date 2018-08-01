@@ -1,38 +1,8 @@
 import React, { Component } from 'react';
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
+import {Form, FormGroup, Label} from 'reactstrap';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import BackButton from 'components/BackButton';
 import ThankYou from 'components/ThankYou';
-
-const boxPosition = {
-  marginRight:'auto',
-  marginLeft:'auto',
-  marginTop:'100px',
-  marginBottom:'100px',
-  maxWidth: '1024px',
-  height: '70%',
-  boxSizing:'border-box',
-  backgroundColor: "white",
-  borderRadius: 30,
-  padding: '20px',
-  border: '1px solid darkgrey',
-}
-
-const form = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center',
-
-}
-
-const comment = {
-  display: 'flex',
-  justifyContent: 'center',
-  flexDirection: 'column',
-  marginTop: '20px',
-  width:'100%'
-}
 
 const submitButton = {
   with: '100px',
@@ -41,10 +11,12 @@ const submitButton = {
   border: 'none',
   borderRadius: 7,
   width: '80px',
-  height: '25px',
+  height: '35px',
   color:'white',
   fontSize:'15px',
-  boxShadow: '1px 3px 1px lightgray'
+  boxShadow: '1px 3px 1px lightgray',
+  marginBottom: '20px',
+  cursor: 'pointer'
 }
 
 class Contact extends Component {
@@ -56,10 +28,16 @@ class Contact extends Component {
       email:'',
       phone:'',
       message:'',
+      category:'Contact',
       submitted: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  //scroll window to top when opening new route
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   handleChange = e => {
@@ -69,79 +47,78 @@ class Contact extends Component {
   }
 
   async handleSubmit(e){
-    // if(!alert('Thank you for your feedback ' + this.state.firstName + '!')){window.location.reload();}
-    //alert('Thank you for your feedback ' + this.state.firstName + '!');
 
     e.preventDefault();
     this.setState({'submitted': true});
 
-    const {firstName, lastName, email,phone, message} = this.state
+    const {firstName, lastName, email,phone, message, category} = this.state
 
     const form = await axios.post('/api/form',{
       firstName,
       lastName,
       email,
       phone,
-      message
+      message,
+      category
     })
-
 }
 
   render() {
     let outerDiv = {
-      maxWidth: '1024px',
-      margin: 'auto',
+      maxWidth: 'calc(1024px - 10%)',
       display: 'flex',
-      flexFlow: 'column wrap',
+      flexFlow: 'row wrap',
       justifyContent: 'center',
-      marginTop: '5%',
-      marginBottom: '5%',
-      paddingBottom: '3%',
+      margin: '4% auto',
       backgroundColor: 'white',
       borderRadius: 30,
     }; //style for the outside div of main component
+
     let filterTopStyle = {
-      padding: '1.5% 4%',
+      flex: '1 0 100%',
+      padding: '3% 4%',
+      paddingBottom: '0',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr'
-    };
+      gridTemplateColumns: '20px 1fr',
+      boxSizing: 'border-box'
+    };//style for the contact white box's header
+
     let TitleStyle = {
       textAlign: 'center',
-      fontSize: '14pt',
-      flex: '0 0 100%',
-    };
+      flex: '1 0 100%',
+      fontSize: 'calc(14px + 1vw)', // responsive title
+    }; //"Contact"
+
     let formStyle = {
       display:'flex',
       flexFlow:'row wrap',
       justifyContent:'space-around',
-      // marginBottom: '3%',
-      // textAlign:'center',
       color:'#58595B'
     };
+
     let inputForms = {
       margin: '1%',
       display: 'flex',
       flexFlow: 'row wrap',
-      justifyContent: 'center',
-      alignItems: 'center'
+      marginRight:'77px'
     }
-    let inputStyle = {
-      flex: '1 0 40%',
-      display:'flex',
-      justifyContent: 'space-between',
-      marginBottom:'1%'
-    }
+
     let contactForm = {
-      width: '60%',
-      margin: 'auto'
+      margin: '0 20%',
     }
+
     let input = {
+      flex: '0 0 30%',
       border:'1px solid gray',
       borderRadius:7,
-      marginRight:'5%',
+      alignSelf: 'flex-start'
     }
+
     let label = {
-      marginLeft : '10%'
+      marginRight: '3%',
+      textAlign: 'right',
+      alignSelf: 'flex-end',
+      flex: '0 0 50%',
     }
 
       if (this.state.submitted){
@@ -149,28 +126,35 @@ class Contact extends Component {
       }
       else {
         return(
-      <div style = {outerDiv} className = "donationBox" >
+      <div className = "contactOuterDiv" style = {outerDiv}>
         <div className="contactTitle" style={filterTopStyle}>
           <BackButton component={'category'} />
-          <h1 style = {TitleStyle}>Contact</h1>
+          <h1 id="mobileTitle" className = "titleStyle" style = {TitleStyle}>Contact</h1>
         </div>
-        <div>
-          <p style={{width:'50%', marginLeft:'auto', marginRight:'auto', color:'#58595B'}}>
+        <div className="contactText" style={{padding: '0 4%'}}>
+          <p style={{textAlign: 'center', margin: '3% auto', color:'#58595B', margin: '20px 0'}}>
             Get in touch with Earthly's design and development team!
           </p>
         </div>
         <div className = "contactForm" style = {contactForm}>
           <Form onSubmit={this.handleSubmit} style={formStyle}>
             <div className = "inputForms" style = {inputForms}>
-            <FormGroup  style={inputStyle}>
+
+              <input
+              type="hidden"
+              name= "donation"
+              />
+
+            <FormGroup  className = "inputStyle">
               <Label for="firstName" style = {label}>First Name</Label>
               <input style={input}
               type="text"
               name= "firstName"
               onChange = {this.handleChange}
+              required
               />
             </FormGroup>
-            <FormGroup  style={inputStyle}>
+            <FormGroup  className = "inputStyle">
               <Label for="lastName" style = {label}>Last Name</Label>
               <input style={input}
               type="text"
@@ -178,8 +162,8 @@ class Contact extends Component {
               onChange = {this.handleChange}
               />
             </FormGroup>
-          <FormGroup  style={inputStyle}>
-              <Label for="phone" style = {label}>phone</Label>
+            <FormGroup  className = "inputStyle">
+              <Label for="phone" style = {label}>Phone</Label>
             <input style={input}
               type="text"
               pattern="[0-9]*"
@@ -187,35 +171,34 @@ class Contact extends Component {
               onChange = {this.handleChange}
               />
             </FormGroup>
-            <FormGroup  style={inputStyle}>
+            <FormGroup  className = "inputStyle">
               <Label for="email" style = {label}>Email</Label>
               <input style={input}
               type="email"
               name= "email"
               onChange = {this.handleChange}
+              required
               />
             </FormGroup>
           </div>
 
             <FormGroup style={{flex:'1 0 100%', textAlign:'center', marginTop:'3%', marginBottom: '3%'}}>
               <Label for="message" style={{margin:'10px'}}>Message<br /></Label>
-              <textarea style={{fontSize:'18px', padding:'5px', marginTop:'10px',marginBottom:'10px', width: '100%', height:'160px',border:'1px solid black', borderRadius:7}}
+              <textarea style={{fontSize:'12px', padding:'5px', marginTop:'10px',marginBottom:'10px', width: '90%', height:'160px',border:'1px solid black', borderRadius:7}}
               type="textarea"
               name= "message"
               onChange = {this.handleChange}
+              required
               />
             </FormGroup>
 
-            <button style={submitButton}>Submit</button>
+            <button className="submitButton" style={submitButton}>Submit</button>
           </Form>
-
-
           </div>
       </div>
-
     );
   }
-}
+ }
 }
 
 export default Contact;

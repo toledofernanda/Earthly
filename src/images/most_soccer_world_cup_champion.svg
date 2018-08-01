@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 34 68" style="enable-background:new 0 0 34 68;" xml:space="preserve">
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F05127;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:#F05127;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:#6AFF84;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
 </style>
 <g>
-	<path class="st0" d="M17.2,66.5h0.8c0.1,0,0.3-0.1,0.3-0.3V23.8c0-0.1-0.1-0.3-0.3-0.3h-0.8c-0.1,0-0.3,0.1-0.3,0.3v42.5
-		C17,66.4,17.1,66.5,17.2,66.5z"/>
-	<path class="st1" d="M18.3,37.3C30.5,36.6,30.8,25,30.8,25C18.6,25.8,18.3,37.3,18.3,37.3z"/>
-	<path class="st1" d="M17,37.3C4.8,36.6,4.5,25,4.5,25C16.7,25.8,17,37.3,17,37.3z"/>
-	<path class="st1" d="M18.3,47.3C30.5,46.5,30.8,35,30.8,35C18.6,35.7,18.3,47.3,18.3,47.3z"/>
-	<path class="st1" d="M17,47.3C4.8,46.5,4.5,35,4.5,35C16.7,35.7,17,47.3,17,47.3z"/>
-	<path class="st0" d="M17.7,6.8c0,0-2-3.9-5-3.4"/>
-	<path class="st0" d="M22.7,3.4c-3-0.5-5,3.4-5,3.4V0.8"/>
-	<path class="st2" d="M17.6,24.5c8.1-9.2,0.1-17.6,0.1-17.6C9.6,16,17.6,24.5,17.6,24.5z"/>
-	<path class="st2" d="M18.3,27.5c12.2-0.8,12.5-12.4,12.5-12.4C18.6,15.9,18.3,27.5,18.3,27.5z"/>
-	<path class="st2" d="M17,27.5C4.8,26.7,4.5,15.1,4.5,15.1C16.7,15.9,17,27.5,17,27.5z"/>
+	<path class="st0" d="M26.4,91.7c0,0,0.6-5.4,8.7-5.4h29c0,0,8.8-0.5,8.8,5.4H26.4z"/>
+	<path class="st0" d="M28.5,55.4c0,0-9.8-2.6-15.7-10.7c0,0-4.8-6.8-3.1-13.3c0,0,1.3-3.3,5.2-3.2c0,0,5-0.6,5.6,4.3
+		c0,0-1.3,7.8,3.8,7.1c0,0-2.1-14.9-1.3-15.3c0,0-9.5-5.8-17.3,1.9c0,0-6.1,8.1-0.6,16.4c0,0,9.1,18.3,28.5,20.2
+		C33.6,62.8,28.6,57,28.5,55.4z"/>
+	<path class="st0" d="M70.6,56c0,0,10.2-2.7,16.2-11c0,0,5-7,3.2-13.7c0,0-1.4-3.4-5.4-3.3c0,0-5.2-0.6-5.8,4.5c0,0,1.4,8-4,7.3
+		c0,0,2.1-15.3,1.3-15.8c0,0,9.9-5.9,17.9,2c0,0,6.3,8.3,0.6,16.8c0,0-9.4,18.8-29.5,20.8C65.3,63.6,70.5,57.7,70.6,56z"/>
+	<circle class="st1" cx="49.6" cy="38.4" r="17.5"/>
+	<path class="st2" d="M34.2,31.2l0.4,4.4l4.5-2.4c0,0,1.9-5.6,2.9-6.4l-3.8-1.6C38.4,25.1,35,27.7,34.2,31.2z"/>
+	<polygon class="st2" points="55,22.2 51.6,24.6 56.1,29.2 61.2,29.5 59.2,23.8 	"/>
+	<polygon class="st2" points="45.4,39.4 53.1,37.8 57.1,44.2 51.9,50.1 44.5,46.8 	"/>
+	<path class="st2" d="M32.9,42c0,0,3,5.1,5.3,6.6l0.2,3.2C38.4,51.8,33.2,47.1,32.9,42z"/>
+	<path class="st2" d="M66.8,35.3l-3.1,8.6l0.4,3.6C64.1,47.6,68.4,41.3,66.8,35.3z"/>
+	<line class="st3" x1="39.2" y1="33.1" x2="45.4" y2="39.4"/>
+	<path class="st3" d="M34.2,36.2"/>
+	<path class="st3" d="M34.7,35.5c0,0-1.9,4.4-0.7,8.2"/>
+	<path class="st3" d="M38.2,48.6"/>
+	<line class="st3" x1="44.5" y1="46.8" x2="38.2" y2="48.6"/>
+	<line class="st3" x1="57.1" y1="44.2" x2="63.7" y2="43.9"/>
+	<line class="st3" x1="56.1" y1="29.2" x2="53.1" y2="37.8"/>
+	<path class="st1" d="M61.2,29.5c0,0,3.9,2.8,5.1,7.2"/>
+	<line class="st3" x1="51.9" y1="50.1" x2="53.1" y2="55.1"/>
+	<path class="st1" d="M42.1,26.7c0,0,5.2-3.3,9.5-2.1"/>
+	<path class="st0" d="M23.4,21.2c0,0,0-4.8,4.6-4.8h44.1c0,0,4.9-0.5,3.6,5.4c0,0,1.6,27.3-8,38.9c0,0-3.1,4.2-8,7.1
+		c0,0-5.3,1.5-4,6.4c0,0-1.3,5.3,2.8,7c0,0,6.7,1.2,5.6,5h-29c0,0-0.6-3.7,5.2-4.9c0,0,4.6-1.6,3.7-6.3c0,0,1.9-4.2-3-6.5
+		c0,0-11-5.6-14.1-17.2C26.9,51.3,21.5,32.7,23.4,21.2z"/>
+	<path class="st4" d="M56.1,76.8H43.6c-1.4,0-2.6-1.2-2.6-2.6v0c0-1.4,1.2-2.6,2.6-2.6h12.5c1.4,0,2.6,1.2,2.6,2.6v0
+		C58.6,75.7,57.5,76.8,56.1,76.8z"/>
 </g>
 </svg>

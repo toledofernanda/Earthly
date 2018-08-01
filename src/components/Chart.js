@@ -11,10 +11,11 @@ class Chart extends Component{
 
     /* CSS */
     let chart = {
-      padding: '10px 30px 10px 30px',
-      borderRadius: '0px 30px 30px 0px',
+      padding: '0 4% 15px 4%',
+      borderRadius: '30px',
       boxSizing: 'border-box',
-      height: 'fit-content'
+      height: 'fit-content',
+      background: 'white',
     }
 
     let labelSourceDiv = {
@@ -30,22 +31,29 @@ class Chart extends Component{
       justifyContent: 'flex-start',
       alignItems: 'center',
       boxSizing: 'border-box',
-      height: '10%',
-      minHeight: '70px',
+      height: '7w',
+      maxHeight: '90px',
       width: '100%',
-      position: 'relative'
+      position: 'relative',
     }
 
     let orderStyle = {
       fontSize: 'calc(0.5em + .5vw)',
-      flex: '1 1 1%',
+      flex: '1 1 2%',
       paddingBottom: '15px',
-      paddingRight: '5px'
+      paddingRight: '10px',
+      textAlign: 'right',
+      minWidth: '13px'
     }
 
     let entityFlagName = {
       flex: '1 1 11%',
-      padding: '7px 8px 7px 0px',
+      minWidth: '50px',
+      padding: '7px 4% 7px 0px',
+      display: 'flex',
+      flexFlow: 'column nowrap',
+      justifyContent: 'center',
+      alignItems: 'center',
     }
 
     let borderDiv = {
@@ -57,7 +65,8 @@ class Chart extends Component{
     let topic = this.props.topic; //props passed down
     let subCat = db[category][topic];
     let num = []; //an array to hold the percentage value for chart bars
-    let source = subCat[0].source_name;; //source name
+    let sourceName = subCat[0].source_name; //source name
+    let sourceUrl = subCat[0].source_url; //source url
     let label = subCat[0].label; //label
 
     // calculates percentage value for entities ranked within 10 ---------------------------
@@ -74,7 +83,6 @@ class Chart extends Component{
     } else if ( topic === 'most_soccer_world_cup_champion' | topic === 'basketball_world_cup_gold_medals'){
       for (let i=0; i<subCat.length; i++){
         num[i] = subCat[i].quantity;
-        console.log(num[i]);
       }
     }//for these topics, we need to show exact number of icons
     else {
@@ -95,25 +103,41 @@ class Chart extends Component{
     // builds chart countries and ranking bars ------------------------------------------------------
     let entityName = "";
     let entities = [];
-    let order = 1;
-    let specificOrder; //for cases where there are ties on ranking
+    let tooltipUp = false;
 
     //ranking with specific ranking order (ties)
-    if(topic === 'basketball_world_cup_gold_medals') {
-      specificOrder = [1,2,3,3];
+    if(topic === 'basketball_world_cup_gold_medals') { //basketball small ranking with specifc rule for tooltip on mobile (centered)
       let index = 0;
 
       // get all entities that appear on that category/topic
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // get country ranking position
+        let orderNum = subCat[index].ranking;
+
+        // if are the last two countries on ranking, tooltip should show upwards
+        let centeredMobileStyle;
+
+        if(entityName === 'United States') {
+          centeredMobileStyle = '1';
+        } else if(entityName === 'Brazil') {
+          centeredMobileStyle = '2';
+        } else if(entityName === 'Argentina') {
+          tooltipUp = true;
+          centeredMobileStyle = '3';
+        } else { //Spain
+          tooltipUp = true;
+          centeredMobileStyle = '4';
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
-              <span>{specificOrder[index]}</span>
+              <span>{orderNum}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} centeredMobileStyle={centeredMobileStyle}/>
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -122,21 +146,40 @@ class Chart extends Component{
 
         index++;
       }
-    } else if(topic === 'most_soccer_world_cup_champion') { //ranking with specific ranking order (ties)
-      specificOrder = [1,2,2,3,3,4,4,4];
+    } else if(topic === 'wave_tidal_power_generation') { //tidal small ranking with specifc rule for tooltip on mobile (centered)
       let index = 0;
 
       // get all entities that appear on that category/topic
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // get country ranking position
+        let orderNum = subCat[index].ranking;
+
+        // if are the last two countries on ranking, tooltip should show upwards
+        let centeredMobileStyle;
+
+        if(entityName === 'South Korea') {
+          centeredMobileStyle = '1';
+        } else if(entityName === 'France') {
+          centeredMobileStyle = '2';
+        } else if(entityName === 'Canada') {
+          centeredMobileStyle = '3';
+        } else if(entityName === 'China') {
+          tooltipUp = true;
+          centeredMobileStyle = '4';
+        } else { //United Kingdom
+          tooltipUp = true;
+          centeredMobileStyle = '5';
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
-              <span>{specificOrder[index]}</span>
+              <span>{orderNum}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} centeredMobileStyle={centeredMobileStyle}/>
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -145,21 +188,28 @@ class Chart extends Component{
 
         index++;
       }
-    } else if(topic === 'highest_temperature') { //ranking with specific ranking order (ties)
-      specificOrder = [1,2,3,3,3,4,5,6,7,8];
+    } else if(topic === 'most_soccer_world_cup_champion') { //ranking with specific ranking order (ties) to set tooltip position
       let index = 0;
 
       // get all entities that appear on that category/topic
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // get country ranking position
+        let orderNum = subCat[index].ranking;
+
+        // if are the last three countries on ranking, tooltip should show upwards
+        if(orderNum === '7' || entityName === 'France') {
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
-              <span>{specificOrder[index]}</span>
+              <span>{orderNum}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -169,20 +219,27 @@ class Chart extends Component{
         index++;
       }
     } else if(topic === 'most_earthquakes') { //ranking with specific ranking order (ties)
-      specificOrder = [1,2,3,4,5,6,7,8,9,9];
       let index = 0;
 
       // get all entities that appear on that category/topic
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // get country ranking position
+        let orderNum = subCat[index].ranking;
+
+        // if are the last three countries on ranking, tooltip should show upwards
+        if(orderNum === '8' || orderNum === '9') {
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
-              <span>{specificOrder[index]}</span>
+              <span>{orderNum}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <RankingBar barLength={num[index]} topic={topic} category={category} entityName={entityName} />
@@ -191,20 +248,28 @@ class Chart extends Component{
 
         index++;
       }
-    } else { //rankings with normal 1-10 order
+    } else { //rankings with normal 1-10 order (no ties or small ranking size)
 
       let index = 0;
       // get all entities that appear on that category/topic
       for (let entity of subCat) {
         entityName = entity["entity_name"]; //get entityName to get info
 
+        // get country ranking position
+        let orderNum = subCat[index].ranking;
+
+        // if are the last three countries on ranking, tooltip should show upwards
+        if(orderNum === '8' || orderNum === '9' || orderNum === '10') { //target last three countries
+          tooltipUp = true;
+        }
+
         entities.push(
           <div className="ranking-entity" key={entityName} style={rankingEntity}>
             <div className="order" style={orderStyle}>
-              <span>{order}</span>
+              <span>{orderNum}</span>
             </div>
             <div className="entity-flag-name" style={entityFlagName}>
-              <Flag entityName={entityName} category={"general"} topic={"entity_info"} />
+              <Flag entityName={entityName} category={"general"} topic={"entity_info"} tooltipUp={tooltipUp} />
               <EntityName entityName={entityName} parent={'ranking-entity'} />
             </div>
             <div style={borderDiv}></div>
@@ -213,7 +278,6 @@ class Chart extends Component{
           </div>
         )
 
-        order++;
         index++;
       }
     }
@@ -224,7 +288,7 @@ class Chart extends Component{
 
           <div className="label-source" style={labelSourceDiv} >
             <Label label={label} />
-            <Source source={source} />
+            <Source sourceName={sourceName} sourceUrl={sourceUrl} />
           </div>
       </div>
     )

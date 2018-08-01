@@ -8,12 +8,12 @@ const headerDes = {
   backgroundColor: '#19A9E1',
   marginTop: '0',
   position:'fixed',
-  zIndex: 5,
   width: '92%',
   top: '0',
   listStyleType:'none',
   paddingLeft: '4%',
-  paddingRight: '4%'
+  paddingRight: '4%',
+  zIndex:'20'
 }
 
 let logoName = {
@@ -41,42 +41,26 @@ const button = {
   borderRadius: 7,
   textDecoration:'none',
   color:'white',
-  boxShadow: '1px 3px 1px lightgray'
+
 }
 
 
 class Header extends Component{
 
-  constructor(props){
-    super(props);
-    this.state = {
-      isHovered: false
-    }
-    this.handleHover = this.handleHover.bind(this);
-  }
-
-  handleHover() {
-    console.log("hovered")
-    this.setState({
-        isHovered: !this.state.isHovered
-    });
-  }
-
   render(){
-    const hoverClass = this.state.isHovered ? "donation-hover" : "";
     return(
-        <header className="header">
+        <header className="header" style={{zIndex:'20'}}>
           <ul style={headerDes}>
             <li style= {{width: '250px', marginTop:'5px'}}>
               <Link to="/" style={{textDecoration:'none'}}>
                 <div style={logoName}>
                   <img src={require(`images/earthly_logo.svg`)} style={logo} alt={'Earthly'} />
-                  <span style={appName}>earthly</span>
+                  <span className="appNameHeader" style={appName}>earthly</span>
                 </div>
               </Link>
             </li>
             <li style= {{marginTop:'25px'}}><Link to="/donation" style={button}
-            className={hoverClass}
+            className={['donationHeader','button-shadow'].join(' ')}
             onMouseEnter={this.handleHover}
             onMouseLeave={this.handleHover}
             >Donate</Link></li>

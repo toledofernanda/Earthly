@@ -6,8 +6,9 @@ class BackButton extends Component {
 
     /* CSS */
     let backButtonDiv = {
-      flex: '0 0 20%',
-      textAlign: 'left'
+      margin: 'auto',
+      alignSelf: 'flex-start',
+      zIndex: '10' //Firefox requires this order
     }
 
     let backButton = {
@@ -16,15 +17,9 @@ class BackButton extends Component {
     }
 
     /* JS */
-    let unit = this.props.unit;
     let component = this.props.component;
-    let renderData = '';
     let category = '';
     let link = '';
-
-    if(unit !== 'none') {
-      renderData = unit;
-    }
 
     if(component === 'result') {
       category = this.props.category;

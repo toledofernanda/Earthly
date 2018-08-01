@@ -2,9 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
+const path = require('path');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
+
 
 app.post('/api/form', (req,res) =>{
   nodemailer.createTestAccount(( err, account) => {
@@ -20,19 +22,19 @@ app.post('/api/form', (req,res) =>{
       <p>${req.body.message}</p>
     `
 
-    var transporter = nodemailer.createTransport({
+  var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'langara.earthly@gmail.com',
-    pass: 'wmdd4980team1'
+    user: process.env.GMAIL_EMAIL,
+    pass: process.env.GMAIL_PASS
   }
 });
 
   let mailOptions = {
-    from: 'test@testacount.com',
-    to:'langara.earthly@gmail.com',
-    replyTo: 'test@testacount.com',
-    subject: 'new Message',
+    from: req.body.email,
+    to:'app.earthly@gmail.com',
+    replyTo: req.body.email,
+    subject: req.body.category,
     text: req.body.message,
     html: htmlEmail
   }
@@ -46,8 +48,14 @@ app.post('/api/form', (req,res) =>{
   })
 })
 
-const PORT = process.env.PORT || 3001
+//const PORT = process.env.PORT || 3001
+// res.sendFile(path.join(__dirname, '../public', 'index.html'));
 
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`)
-})
+
+app.use(express.static(__dirname + '/build'));
+
+
+
+app.listen(process.env.PORT, '0.0.0.0', function(err) {
+  console.log("Started listening on %s", app.url);
+});

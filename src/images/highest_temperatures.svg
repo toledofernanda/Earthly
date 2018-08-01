@@ -3,35 +3,34 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;}
-	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#19A8E1;}
+	.st2{fill:#19A8E1;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;}
 </style>
 <g>
-	<g>
-		<g>
-			<line class="st0" x1="31.8" y1="10.2" x2="31.8" y2="54.4"/>
-			<line class="st0" x1="16.2" y1="16.7" x2="47.4" y2="47.9"/>
-			<line class="st0" x1="9.8" y1="32.3" x2="53.9" y2="32.3"/>
-			<line class="st0" x1="16.2" y1="47.9" x2="47.4" y2="16.7"/>
-		</g>
-		<circle class="st1" cx="32.2" cy="31.9" r="15.2"/>
-		<circle class="st1" cx="31.8" cy="31.9" r="9.9"/>
-	</g>
-	<path class="st2" d="M77.8,58.8v-48c0-5.1-4.2-9.3-9.3-9.3c-5.1,0-9.3,4.2-9.3,9.3v48c-6.9,3.4-11.7,10.5-11.7,18.8
-		c0,11.6,9.4,21,21,21s21-9.4,21-21C89.5,69.3,84.7,62.2,77.8,58.8z"/>
-	<g>
-		<path class="st2" d="M85,18h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1v0.7
-			C85.1,18,85.1,18,85,18z"/>
-		<path class="st2" d="M85,28.8h-5.2c-0.1,0-0.1-0.1-0.1-0.1V28c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1v0.7
-			C85.1,28.8,85.1,28.8,85,28.8z"/>
-		<path class="st2" d="M85,50.4h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1v0.7
-			C85.1,50.4,85.1,50.4,85,50.4z"/>
-		<path class="st2" d="M85,39.6h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1v0.7
-			C85.1,39.6,85.1,39.6,85,39.6z"/>
-	</g>
-	<circle class="st1" cx="68.5" cy="77.1" r="15.4"/>
-	<line class="st3" x1="68.5" y1="11.9" x2="68.5" y2="77.8"/>
+	<line class="st0" x1="23.8" y1="10.2" x2="23.8" y2="54.4"/>
+	<line class="st0" x1="8.2" y1="16.7" x2="39.4" y2="47.9"/>
+	<line class="st0" x1="1.8" y1="32.3" x2="45.9" y2="32.3"/>
+	<line class="st0" x1="8.2" y1="47.9" x2="39.4" y2="16.7"/>
 </g>
+<circle class="st1" cx="24.2" cy="31.9" r="15.2"/>
+<circle class="st2" cx="23.8" cy="31.9" r="9.9"/>
+<path class="st3" d="M75.8,58.8v-48c0-5.1-4.2-9.3-9.3-9.3c-5.1,0-9.3,4.2-9.3,9.3v48c-6.9,3.4-11.7,10.5-11.7,18.8
+	c0,11.6,9.4,21,21,21s21-9.4,21-21C87.5,69.3,82.7,62.2,75.8,58.8z"/>
+<g>
+	<path class="st4" d="M85,18h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1v0.7
+		C85.1,18,85.1,18,85,18z"/>
+	<path class="st4" d="M85,28.8h-5.2c-0.1,0-0.1-0.1-0.1-0.1V28c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1L85,28.8
+		C85.1,28.8,85.1,28.8,85,28.8z"/>
+	<path class="st4" d="M85,50.4h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1L85,50.4
+		C85.1,50.4,85.1,50.4,85,50.4z"/>
+	<path class="st4" d="M85,39.6h-5.2c-0.1,0-0.1-0.1-0.1-0.1v-0.7c0-0.1,0.1-0.1,0.1-0.1H85c0.1,0,0.1,0.1,0.1,0.1L85,39.6
+		C85.1,39.6,85.1,39.6,85,39.6z"/>
+</g>
+<circle class="st5" cx="66.5" cy="77.1" r="15.4"/>
+<path class="st5" d="M66.5,80.5L66.5,80.5c1.1,0,2-0.9,2-2V15.9c0-1.1-0.9-2-2-2l0,0c-1.1,0-2,0.9-2,2v62.6
+	C64.5,79.6,65.4,80.5,66.5,80.5z"/>
 </svg>
