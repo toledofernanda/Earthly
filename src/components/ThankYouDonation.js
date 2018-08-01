@@ -7,20 +7,19 @@ class ThankYou extends Component {
       maxWidth: 'calc(1024px - 10%)',
       margin: 'auto',
       display: 'flex',
-      flexFlow: 'column wrap',
-      justifyContent: 'space-between',
+      flexFlow: 'row wrap',
+      justifyContent: 'center',
       marginTop: '4%',
       marginBottom: '2.5%',
       backgroundColor: 'white',
       borderRadius: 30,
-      textAlign:'center',
-      height: '70vh',
-      paddingBottom: '2%'
     }; //style for the outside div of main component
     let navStyle = {
+      flex: '1 0 100%',
       padding: '3% 4%',
       display: 'grid',
-      gridTemplateColumns: '40px 10fr'
+      gridTemplateColumns: '20px 1fr',
+      boxSizing: 'border-box'
     }
     let titleStyle = {
       textAlign: 'center',
@@ -34,8 +33,10 @@ class ThankYou extends Component {
           <BackButton component={'category'} className='button-shadow' />
           <h1 style={titleStyle}>Thank You for contributing to Team Earthly.</h1>
         </div>
+        <div style = {{flex: '1 0 100%', textAlign: 'center'}}>
         <img style ={{alignSelf: 'center', maxWidth: '100%', height:'auto', borderRadius:10}} src={require(`images/teamThankYou.jpg`)} alt="donationImg" />
-        <p>Your donation will help us improve our website.</p>
+        </div>
+      <p>Your donation will help us improve Earthly.</p>
       </div>
     )
   }
