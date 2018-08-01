@@ -31,7 +31,7 @@ app.post('/api/form', (req,res) =>{
 });
 
   let mailOptions = {
-    from: 'test@testacount.com',
+    from: req.body.email,
     to:'app.earthly@gmail.com',
     replyTo: req.body.email,
     subject: req.body.category,
