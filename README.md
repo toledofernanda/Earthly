@@ -25,6 +25,6 @@ Application developed using:
 info@earthly.world
 
 Earthly is live at https://www.earthly.world <br />
-Watch our presentation video at https://lnkd.in/dPNbu67
+Watch our presentation video at https://youtu.be/FeqZrUj06cs
 
 
