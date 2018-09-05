@@ -3,7 +3,7 @@
 
 ### What is it?
 
-Earthly is a fun, interactive and educational world ranking web application that serves as a gateway for kids to learn about countries in the world.
+Earthly is an interactive world ranking web application that makes it easier for children to become interested in world geography and ranking statistics.
 
 [![Earthly Intro](http://fernandatote.com/wp-content/uploads/2018/09/earthly-video-shot.png)](http://fernandatote.com/wp-content/uploads/2018/09/Earthly-1.mp4)
 
